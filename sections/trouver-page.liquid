@@ -1,0 +1,393 @@
+{% assign background_rgb = section.settings['color-bg-overlay'] | color_to_rgb %}
+{% assign text_rgb = section.settings['color-body-text'] | color_to_rgb %}
+{{ 'complexion.css' | asset_url | stylesheet_tag }} 
+{{ 'complexion.js' | asset_url | script_tag }}
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+<style>
+  section[id="shopify-section-{{ section.id }}"]{
+      {% if section.settings.full-width-enabled %}
+        --border-radius: 0;
+      {% endif %}
+
+      {% if background_rgb != 'rgba(0, 0, 0, 0.0)' %}
+        --color-overlay-rgb: {{ section.settings.color-bg-overlay | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-overlay-opacity: {{ section.settings['color-overlay-opacity'] | divided_by: 100.0 }};
+      {% endif %}
+
+      {% if text_rgb != 'rgba(0, 0, 0, 0.0)' %}
+        --color-custom-text: {{ section.settings.color-body-text }};
+      {% endif %}
+
+      {% if section.settings.margin-top %}
+          --section-gap-top: {{ section.settings.margin-top }}px;
+      {% endif %}
+
+      {% if section.settings.margin-bottom %}
+          --section-gap-bottom: {{ section.settings.margin-bottom }}px;
+      {% endif %}
+
+      --font-headline-scale-desk: {{ section.settings.size_heading | divided_by: 100.0 }};
+
+      --font-headline-scale: {{ section.settings.size_heading_mobile | divided_by: 100.0 }};
+
+  }
+</style>
+
+<div
+  data-section-id="{{ section.id }}"
+  class="wt-page {% if section.settings.compact-size-enabled == true %}  wt-page--compact{% endif %} custom_group_page">
+  <div class="content-container"> 
+    <div class="index-container" id="index-container">
+      <h1 class="wt-page__title">
+        {{ page.title | escape }}
+      </h1>
+      <div class="idealfoundation w100">
+        <span class="already">
+        {{ 'sections.trouver.idealfoundation' | t }}
+          <br>
+       {{ 'sections.trouver.ultimateshade' | t }}
+        </span>
+      </div>
+      <a href="#" class="hf-begin">  {{ 'sections.trouver.complexionguide' | t }}</a>
+      <div class="pdf-link w100">
+        <a href="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/guide-teints.pdf?v=1743681223" target="_blank" class="already">
+        {{ 'sections.trouver.already' | t }}
+          <br>
+       {{ 'sections.trouver.anotherrange' | t }}
+      </a>
+      </div>
+    </div>
+    <div class="rte wt-page__wrapper">
+      {{ page.content }}
+    </div>
+    <form class="form-step" style="display: none;">
+      <input type="hidden" id="mainProductGroup" name="mainProductResult" value="">
+      <input type="hidden" id="relatedProductGroup" name="relatedProductResult" value="">
+    </form>
+    <div class="step1 step" id="step1">
+        <div class="h1"> {{ 'sections.hair.step1' | t }} </div>
+        <div class="h2"> {{ 'sections.trouver.carnation' | t }} </div>
+        <div class="choices row">
+          <a class="hf-choice choice1 img"  data-class="choice1" href="#" data-type="family" data-key="family0" data-text="{{ 'sections.trouver.family0' | t }}">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/trouver0.jpg?v=1743743467" width="277" height="340">
+          <span class="name">{{ 'sections.trouver.family0' | t }}</span>
+          </a>
+          <a class="hf-choice choice2 img" data-class="choice2" href="#" data-type="family" data-key="family1" data-text="{{ 'sections.trouver.family1' | t }}">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/trouver1.jpg?v=1743743467" width="277" height="340">
+          <span class="name">{{ 'sections.trouver.family1' | t }}</span>
+          </a>
+          <a class="hf-choice choice3 img" data-class="choice3" href="#" data-type="family" data-key="family2" data-text="{{ 'sections.trouver.family2' | t }}">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/trouver2.jpg?v=1743743467" width="277" height="340">
+          <span class="name">{{ 'sections.trouver.family2' | t }}</span>
+          </a>
+          <a class="hf-choice choice1 img"  data-class="choice1" href="#" data-type="family" data-key="family3" data-text="{{ 'sections.trouver.family3' | t }}">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/trouver3.jpg?v=1743743467" width="277" height="340">
+          <span class="name">{{ 'sections.trouver.family3' | t }}</span>
+          </a>
+          <a class="hf-choice choice2 img" data-class="choice2" href="#" data-type="family" data-key="family4" data-text="{{ 'sections.trouver.family4' | t }}">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/trouver4.jpg?v=1743743467" width="277" height="340">
+          <span class="name">{{ 'sections.trouver.family4' | t }}</span>
+          </a>
+          <a class="hf-choice choice3 img" data-class="choice3" href="#" data-type="family" data-key="family4" data-text="{{ 'sections.trouver.family5' | t }}">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/trouver5.jpg?v=1743743466" width="277" height="340">
+          <span class="name">{{ 'sections.trouver.family5' | t }}</span>
+          </a>
+        </div>
+        <div class="back back-to-step0">
+          {{ 'sections.hair.backstep0' | t }}
+        </div>
+    </div>
+    <div class="step2 step" id="step2">
+        <div class="h1"> {{ 'sections.hair.step2' | t }} </div>
+        <div class="h2"> {{ 'sections.trouver.coverage' | t }} </div>
+        <div class="choices-text row">
+           <div class="choice-btn-container">
+              <span class="hf-choice-txt" data-coverage="light" data-option="option1"> {{ 'sections.trouver.light' | t }}  </span>
+              <span class="hf-choice-txt" data-coverage="medium" data-option="option2"> {{ 'sections.trouver.medium' | t }}</span>
+              <span class="hf-choice-txt" data-coverage="full" data-option="option3"> {{ 'sections.trouver.full' | t }}</span>
+           </div>
+        </div>
+        <div class="back back-to-step1">
+          {{ 'sections.hair.backstep1' | t }}
+        </div>
+    </div>
+    <div class="step3 step" id="step3">
+        <div class="h1"> {{ 'sections.hair.step3' | t }} </div>
+        <div class="h2"> {{ 'sections.trouver.texture' | t }} </div>
+        <div class="choices-text row">
+             <div class="choice-btn-container">
+                  <span data-texture ="fluid" class="texture"> {{ 'sections.trouver.fluid' | t }} </span>
+                  <span data-texture ="cream" class="texture option3"> {{ 'sections.trouver.cream' | t }} </span>
+                  <span data-texture ="Powderedcream" class="texture "> {{ 'sections.trouver.Powderedcream' | t }} </span>
+             </div>
+        </div>
+      <div class="back back-to-step2">
+      {{ 'sections.hair.backstep2' | t }}
+      </div>
+    </div>
+     <div class="step4 step" id="step4">
+        <div class="h1"> {{ 'sections.hair.step4' | t }} </div>
+        <div class="h2"> {{ 'sections.trouver.recommended' | t }} </div>
+        <div id="final-product-list"></div>
+       
+        <div class="h2 related_group_title">{{ 'sections.trouver.also_like' | t }}</div>
+        <div id="related-product-list"></div>
+      <div class="back-container"> 
+        <div class="back back-to-step3">
+        {{ 'sections.hair.backstep3' | t }}
+        </div>
+        <div class="back back-to-home">
+        {{ 'sections.trouver.startover' | t }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+{% comment %} window.productCombinations = [
+  { combo: ["family0", "light", "fluid"], productIds: ["8477689217191"] },
+  { combo: ["family0", "light", "cream"], productIds: ["8477688103079","8475347288231"] },
+  { combo: ["family0", "light", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family0", "medium", "fluid"], productIds: ["8477688070311"] },
+  { combo: ["family0", "medium", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family0", "medium", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family0", "full", "fluid"], productIds: ["8477688135847"] },
+  { combo: ["family0", "full", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family1", "light", "fluid"], productIds: ["8477689217191", "8477688168615"] },
+  { combo: ["family1", "light", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family1", "light", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family1", "medium", "fluid"], productIds: ["8477688070311"] },
+  { combo: ["family1", "medium", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family1", "medium", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family1", "full", "fluid"], productIds: ["8477689151655", "8477688135847"] },
+  { combo: ["family1", "full", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family2", "light", "fluid"], productIds: ["8477689217191", "8477688168615"] },
+  { combo: ["family2", "light", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family2", "light", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family2", "medium", "fluid"], productIds: ["8477688070311"] },
+  { combo: ["family2", "medium", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family2", "medium", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family2", "full", "fluid"], productIds: ["8477688135847", "8477689151655"] },
+  { combo: ["family2", "full", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family3", "light", "fluid"], productIds: ["8477689217191", "8477688168615"] },
+  { combo: ["family3", "light", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family3", "light", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family3", "medium", "fluid"], productIds: ["8477688070311"] },
+  { combo: ["family3", "medium", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family3", "medium", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family3", "full", "fluid"], productIds: ["8477688135847", "8477689151655"] },
+  { combo: ["family3", "full", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family4", "light", "fluid"], productIds: ["8477689217191", "8477688168615"] },
+  { combo: ["family4", "light", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family4", "light", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family4", "medium", "fluid"], productIds: ["8477688070311"] },
+  { combo: ["family4", "medium", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family4", "medium", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family4", "full", "fluid"], productIds: ["8477688135847", "8477689151655"] },
+  { combo: ["family4", "full", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family5", "light", "fluid"], productIds: ["8477689217191", "8477688168615"] },
+  { combo: ["family5", "light", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family5", "light", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family5", "medium", "fluid"], productIds: ["8477688070311"] },
+  { combo: ["family5", "medium", "cream"], productIds: ["8477688103079"] },
+  { combo: ["family5", "medium", "Powderedcream"], productIds: ["8477689479335"] },
+  { combo: ["family5", "full", "fluid"], productIds: ["8477688135847", "8477689151655"] },
+  { combo: ["family5", "full", "Powderedcream"], productIds: ["8477689479335"] }
+]; {% endcomment %}
+
+window.productCombinations = [
+{combo: ["family0","light","cream"],productIds: ["8477688103079","8475347288231"],"sku": ["TW02","MDP"],"variantId": ["46611950076071","46606078771367"]},
+{combo: ["family0","light","fluid"],productIds: ["8477689217191"],"sku": ["FNAT01"],"variantId": ["46611954008231"]},
+{combo: ["family0","medium","cream"],productIds: ["8477688103079"],"sku": ["TW02"],"variantId": ["46611950076071"]},
+{combo: ["family0","medium","fluid"],productIds: ["8477688070311"],"sku": ["NFL00"],"variantId": ["46611949486247"]},
+{combo: ["family0","medium","Powderedcream"],productIds: ["8477689479335"],"sku": [],"variantId": ["46611954991271"]},
+{combo: ["family0","full","fluid"],productIds: ["8477688135847"],"sku": ["HC00"],"variantId": ["46611950010535"]},
+{combo: ["family1","full","fluid"],productIds: ["8477689151655","8477688135847"],"sku": ["FNT00","HC01","HC02","HC03","FNT03"],"variantId": ["46611953615015","46611949519015","46611949551783","46611949584551","46611952992423"]},
+{combo: ["family0","full","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT01"],"variantId": ["46611954991271"]},
+{combo: ["family1","light","cream"],productIds: ["8477688103079"],"sku": ["TW01"],"variantId": ["46611950043303"]},
+{combo: ["family1","light","fluid"],productIds: ["8477689217191","8477688168615"],"sku": ["FNAT02","CC01"],"variantId": ["46611953713319","46611950502055"]},
+{combo: ["family1","light","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT02"],"variantId": ["46611954696359"]},
+{combo: ["family1","medium","cream"],productIds: ["8477688103079"],"sku": ["TW01"],"variantId": ["46611950043303"]},
+{combo: ["family1","medium","fluid"],productIds: ["8477688070311"],"sku": ["NFL01","NFL01B","NFL02","NFL03"],"variantId": ["46611948863655","46611948896423","46611948929191","46611948961959"]},
+{combo: ["family1","medium","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT02"],"variantId": ["46611954696359"]},
+{combo: ["family1","full","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT02"],"variantId": ["46611954696359"]},
+{combo: ["family2","light","cream"],productIds: ["8477688103079"],"sku": ["TW01","TW11","TW11B"],"variantId": ["46611950043303","46611950239911","46611950469287"]},
+{combo: ["family2","light","fluid"],productIds: ["8477689217191","8477688168615"],"sku": ["FNAT03","FNAT04","CC02"],"variantId": ["46611953746087","46611953778855","46611950633127"]},
+{combo: ["family2","light","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT03","FCNAT04"],"variantId": ["46611954729127","46611954761895"]},
+{combo: ["family2","medium","cream"],productIds: ["8477688103079"],"sku": ["TW01","TW11","TW11B"],"variantId": ["46611950043303","46611950239911","46611950469287"]},
+{combo: ["family2","medium","fluid"],productIds: ["8477688070311"],"sku": ["NFL04","NFL05","NFL06","NFL07"],"variantId": ["46611948994727","46611949027495","46611949060263","46611949093031"]},
+{combo: ["family2","medium","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT03","FCNAT04"],"variantId": ["46611954729127","46611954761895"]},
+{combo: ["family2","full","fluid"],productIds: ["8477688135847","8477689151655"],"sku": ["HC04","HC05","HC06","FNT04","FNT05","FNT06","FNT07","FNT08"],"variantId": ["46611949617319","46611949650087","46611949682855","46611953025191","46611953057959","46611953090727","46611953123495","46611953156263"]},
+{combo: ["family2","full","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT03","FCNAT04"],"variantId": ["46611954729127","46611954761895"]},
+{combo: ["family3","light","cream"],productIds: ["8477688103079"],"sku": ["TW03","TW04","TW12"],"variantId": ["46611950108839","46611950141607","46611950272679"]},
+{combo: ["family3","light","fluid"],productIds: ["8477689217191","8477688168615"],"sku": ["FNAT05","FNAT06","CC03"],"variantId": ["46611953811623","46611953844391","46611950534823"]},
+{combo: ["family3","light","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT05","FCNAT06"],"variantId": ["46611954794663","46611954827431"]},
+{combo: ["family3","medium","cream"],productIds: ["8477688103079"],"sku": ["TW03","TW04","TW12"],"variantId": ["46611950108839","46611950141607","46611950272679"]},
+{combo: ["family3","medium","fluid"],productIds: ["8477688070311"],"sku": ["NFL08","NFL09","NFL10","NFL11"],"variantId": ["46611949125799","46611949158567","46611949191335","46611949224103"]},
+{combo: ["family3","medium","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT05","FCNAT06"],"variantId": ["46611954794663","46611954827431"]},
+{combo: ["family3","full","fluid"],productIds: ["8477688135847","8477689151655"],"sku": ["HC07","HC08","HC09","HC10","FNT09","FNT14"],"variantId": ["46611949715623","46611949748391","46611949781159","46611949813927","46611953189031","46611953352871"]},
+{combo: ["family3","full","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT05","FCNAT06"],"variantId": ["46611954794663","46611954827431"]},
+{combo: ["family4","light","cream"],productIds: ["8477688103079"],"sku": ["TW05","TW15B","TW16"],"variantId": ["46611950174375","46611950370983","46611950403751"]},
+{combo: ["family4","light","fluid"],productIds: ["8477689217191","8477688168615"],"sku": ["FNAT07","FNAT08","CC04"],"variantId": ["46611953877159","46611953909927","46611950567591"]},
+{combo: ["family4","light","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT07","FCNAT08"],"variantId": ["46611954860199","46611954892967"]},
+{combo: ["family4","medium","cream"],productIds: ["8477688103079"],"sku": ["TW05","TW15B","TW16"],"variantId": ["46611950174375","46611950370983","46611950403751"]},
+{combo: ["family4","medium","fluid"],productIds: ["8477688070311"],"sku": ["NFL12","NFL13","NFL14","NFL15"],"variantId": ["46611949256871","46611949289639","46611949322407","46611949355175"]},
+{combo: ["family4","medium","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT07","FCNAT08"],"variantId": ["46611954860199","46611954892967"]},
+{combo: ["family4","full","fluid"],productIds: ["8477688135847","8477689151655"],"sku": ["HC11","HC12","HC13","FNT16"],"variantId": ["46611949846695","46611949879463","46611949912231","46611953418407"]},
+{combo: ["family4","full","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT07","FCNAT08"],"variantId": ["46611954860199","46611954892967"]},
+{combo: ["family5","light","cream"],productIds: ["8477688103079"],"sku": ["TW06","TW13","TW14","TW17"],"variantId": ["46611950207143","46611950305447","46611950338215","46611950436519"]},
+{combo: ["family5","light","fluid"],productIds: ["8477689217191","8477688168615"],"sku": ["FNAT09","FNAT10","CC05"],"variantId": ["46611953942695","46611953975463","46611950600359"]},
+{combo: ["family5","light","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT09","FCNAT10"],"variantId": ["46611954925735","46611954958503"]},
+{combo: ["family5","medium","cream"],productIds: ["8477688103079"],"sku": ["TW06","TW13","TW14","TW17"],"variantId": ["46611950207143","46611950305447","46611950338215","46611950436519"]},
+{combo: ["family5","medium","fluid"],productIds: ["8477688070311"],"sku": ["NFL16","NFL17","NFL18"],"variantId": ["46611949387943","46611949420711","46611949453479"]},
+{combo: ["family5","medium","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT09","FCNAT10"],"variantId": ["46611954925735","46611954958503"]},
+{combo: ["family5","full","fluid"],productIds: ["8477688135847","8477689151655"],"sku": ["HC14","HC15","FNT21"],"variantId": ["46611949944999","46611949977767","46611953582247"]},
+{combo: ["family5","full","Powderedcream"],productIds: ["8477689479335"],"sku": ["FCNAT09","FCNAT10"],"variantId": ["46611954925735","46611954958503"]},
+];
+
+window.relatedProductCombinations = [
+  { combo: ["family0", "light", "fluid"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family0", "light", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family0", "light", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family0", "medium", "fluid"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family0", "medium", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family0", "medium", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family0", "full", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family0", "full", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family1", "light", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family1", "light", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family1", "light", "Powderedcream"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family1", "medium", "fluid"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family1", "medium", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family1", "medium", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family1", "full", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family1", "full", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family2", "light", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family2", "light", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family2", "light", "Powderedcream"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family2", "medium", "fluid"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family2", "medium", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family2", "medium", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family2", "full", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family2", "full", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family3", "light", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family3", "light", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family3", "light", "Powderedcream"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family3", "medium", "fluid"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family3", "medium", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family3", "medium", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family3", "full", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family3", "full", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family4", "light", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family4", "light", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family4", "light", "Powderedcream"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family4", "medium", "fluid"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family4", "medium", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family4", "medium", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family4", "full", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family4", "full", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family5", "light", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family5", "light", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family5", "light", "Powderedcream"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family5", "medium", "fluid"], productIds: ["8443838496935", "8477689249959","8475347288231"] },
+  { combo: ["family5", "medium", "cream"], productIds: ["8477689249959","8475347288231"] },
+  { combo: ["family5", "medium", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family5", "full", "fluid"], productIds: ["8443838496935","8477689249959","8475347288231"] },
+  { combo: ["family5", "full", "Powderedcream"], productIds: ["8443838496935","8477689249959","8475347288231"] }
+];
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.page.main_name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "compact-size-enabled",
+      "label": "Use compact size for big screens",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "size_heading",
+      "min": 50,
+      "max": 500,
+      "step": 10,
+      "default": 140,
+      "label": "t:sections.settings.settings.size-heading.label",
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "size_heading_mobile",
+      "min": 80,
+      "max": 300,
+      "step": 10,
+      "default": 100,
+      "label": "t:sections.settings.settings.size-heading-mobile.label",
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.colors",
+      "info": "t:sections.global.colors-info"
+    },
+    {
+      "type": "color",
+      "id": "color-body-text",
+      "default": "transparent",
+      "label": "t:sections.settings.settings.text-color.label"
+    },
+    {
+      "type": "color",
+      "id": "color-bg-overlay",
+      "default": "transparent",
+      "label": "t:sections.settings.settings.background-color.label"
+    },
+    {
+      "type": "range",
+      "id": "color-overlay-opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100,
+      "label": "t:sections.settings.settings.background-opacity.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.section_spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin-top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.settings.settings.distance-top.label"
+    },
+    {
+      "type": "range",
+      "id": "margin-bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 0,
+      "unit": "px",
+      "label": "t:sections.settings.settings.distance-bottom.label",
+      "info": "t:sections.settings.settings.distance-bottom.info"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}

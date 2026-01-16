@@ -1,0 +1,561 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "image_banner_mj63pG": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_UBXNcG": {
+          "type": "heading",
+          "settings": {
+            "heading": "LA MARQUE",
+            "disable_on_mobile": false,
+            "size_heading": 190,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_UBXNcG"
+      ],
+      "settings": {
+        "heading": "",
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 600,
+        "mobile_fixed_height": 460,
+        "desktop_image": "shopify://shop_images/LAMARQUE.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_image": "shopify://shop_images/LaMarque_b5ff1bd2-ae13-4e52-bd42-0e10fe8bc53a.jpg",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "color-heading": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "#ffffff",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 20,
+        "margin-bottom": 0
+      }
+    },
+    "separator_JnhRcY": {
+      "type": "separator",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "show-separator-line": false,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 12,
+        "margin-bottom": 4
+      }
+    },
+    "rich_text_RRbR8c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JexeCY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Parce que chaque peau mérite l'excellence.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_JexeCY"
+      ],
+      "custom_css": [
+        ".hero__overlay {background: rgba(var(--color-overlay-rgb), var(--color-overlay-opacity)); display: none;}",
+        "@media screen and (max-width: 767px) {.hero__overlay {display: flex !important; }}"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "image_with_text_w4qAPw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_7t4qya": {
+          "type": "heading",
+          "settings": {
+            "heading": "Parce que chaque peau mérite l'excellence.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_yPaz7q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>black Up est la première marque française de maquillage dédiée aux carnations mattes à foncées . Pensée avec des makeup artists, notre approche teint-first garantit des teintes invisibles, des pigments puissants et couvrance parfaite. Nos formules vont au-delà de la performance : fonds de teint 100 % vegan, formules cruelty-free, fabrication européenne, avec une sélection de produits made in France. Une beauté sans compromis. Parce que la peau noire mérite l’excellence.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7t4qya",
+        "text_yPaz7q"
+      ],
+      "custom_css": [
+        ".hero__title {overflow: visible; display: block;}",
+        "@media screen and (max-width: 767px) {.hero__title {display: none !important; }}"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/Brand1.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_image": "shopify://shop_images/Brand1.jpg",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "separator_EUw6Bh": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": true,
+        "full-width-line": true,
+        "color-background": "#f2f2f2",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "rich_text_6erK4y": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_njcQRw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Beauté puissante. Authentique. Déterminée. Invincible.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_njcQRw"
+      ],
+      "custom_css": [
+        ".hero__overlay {background: rgba(var(--color-overlay-rgb), var(--color-overlay-opacity)); display: none;}",
+        "@media screen and (max-width: 767px) {.hero__overlay {display: flex !important; }}"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "image_with_text_JrEQGk": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_cVfbTk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Beauté puissante. Authentique. Déterminée. Invincible.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_ikhWJM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chez black Up, la beauté dépasse la couleur : elle incarne la présence, l’éclat et l’identité. Nos formules, riches en pigments, sont pensées pour révéler chaque nuance des peaux foncées, sans jamais masquer.</p><p>Ici, la beauté ne suit pas les règles. Elle les crée. Chaque produit rend hommage à l’aura, à la confiance et à l’individualité des femmes noires.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cVfbTk",
+        "text_ikhWJM"
+      ],
+      "custom_css": [
+        ".hero__title {overflow: visible; display: block;}",
+        "@media screen and (max-width: 767px) {.hero__title {display: none !important; }}"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "text_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/Brand2.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_image": "shopify://shop_images/Brand2.jpg",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "separator_tiebgc": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": true,
+        "full-width-line": true,
+        "color-background": "#f2f2f2",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "rich_text_wBMFc8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dfU87a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Innovation sans compromis. Beauté qui ne s’efface jamais.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_dfU87a"
+      ],
+      "custom_css": [
+        ".hero__overlay {background: rgba(var(--color-overlay-rgb), var(--color-overlay-opacity)); display: none;}",
+        "@media screen and (max-width: 767px) {.hero__overlay {display: flex !important; }}"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "image_with_text_Tqgmag": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_UiHaDG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Innovation sans compromis. Beauté qui ne s’efface jamais.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_T3wYJp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Née à Paris, black Up allie un héritage culturel fort à une expertise cosmétique de pointe. Depuis nos débuts, nous répondons aux besoins spécifiques des peaux foncées avec des formules pensées pour célébrer, jamais pour compromettre.</p><p>Des pigments puissants à la tenue irréprochable, chaque création reflète une vision exigeante : honorer le passé, répondre aux exigences d’aujourd’hui, et faire rayonner la beauté noire demain.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UiHaDG",
+        "text_T3wYJp"
+      ],
+      "custom_css": [
+        ".hero__title {overflow: visible; display: block;}",
+        "@media screen and (max-width: 767px) {.hero__title {display: none !important; }}"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/Brand3.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_image": "shopify://shop_images/Brand3.jpg",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "rich_text_7Jhj7j": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mFjMJ9": {
+          "type": "heading",
+          "settings": {
+            "heading": "NOS COLLECTIONS",
+            "disable_on_mobile": false,
+            "size_heading": 140,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_aemJNQ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Des formules précises, conçues pour sublimer les peaux mates à foncées.</h3>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mFjMJ9",
+        "text_aemJNQ"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#ffffff",
+        "margin-top": 12,
+        "margin-bottom": 0
+      }
+    },
+    "button_FNQArq": {
+      "type": "button",
+      "disabled": true,
+      "settings": {
+        "button_select": "primary",
+        "button_horizontal_position": "center",
+        "button_label": "TOUS NOS PRODUITS",
+        "button_link": "shopify://collections/tous-nos-produits",
+        "margin-top": 40,
+        "margin-bottom": 40,
+        "background_color": "rgba(0,0,0,0)"
+      }
+    },
+    "collection_list_3cq844": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_HQdLzh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maquillage-teint",
+            "text_collection": "Teint"
+          }
+        },
+        "featured_collection_zAaR4r": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maquillage-yeux",
+            "text_collection": "Yeux"
+          }
+        },
+        "featured_collection_CFeDRY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maquillage-levres",
+            "text_collection": "Lèvres"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_HQdLzh",
+        "featured_collection_zAaR4r",
+        "featured_collection_CFeDRY"
+      ],
+      "settings": {
+        "heading": "",
+        "enable_swipe": true,
+        "disable_images": false,
+        "number_of_column_desktop": 3,
+        "number_of_column_mobile": 1.5,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "rich_text_gVtchT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VggdKj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Un concept fort...",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_q9EfLE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>black|Up</strong> est la <strong>première marque française</strong> de cosmétiques <strong>haut de gamme</strong> spécialement dédiée aux <strong>peaux mates à foncées</strong>. Notre marque <strong>parisienne</strong> est renommée pour son <strong>large choix</strong> de produits de maquillage de <strong>qualité professionnelle</strong> développés par des <strong>makeup artists</strong> pour répondre aux besoins spécifiques des <strong>peaux mates à foncées</strong>. Nos produits ne sont <strong>pas testés sur les animaux</strong>. La majorité des produits de notre gamme sont <strong>vegan</strong> et nous travaillons chaque jour à en proposer de plus en plus. Nous sommes déjà très fiers que tous nos <strong>fonds de teint</strong> soient <strong>100 % vegan</strong>. La quasi-totalité de nos formules sont fabriquées en <strong>Europe</strong> et nous portons une attention particulière à maintenir une part de notre production en <strong>France</strong>.</p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_h7wNCK": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_select": "primary",
+            "button_label": "Button label",
+            "button_link": "/",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VggdKj",
+        "text_q9EfLE",
+        "button_h7wNCK"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "left",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#fafafa",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "featured_collection_kdLbYi": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Nos favoris",
+        "disable_on_mobile": false,
+        "collection": "tous-nos-produits",
+        "product_list": [],
+        "products_to_show": 3,
+        "enable_stack_products": false,
+        "show_view_all": false,
+        "button_select": "primary",
+        "number_of_column_desktop": 3,
+        "spacing_desktop": "24",
+        "make_products_full_width": true,
+        "number_of_column_mobile": 2.2,
+        "text_alignment": "left",
+        "image_ratio": "square",
+        "show_video": false,
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_product_rating": true,
+        "enable_quick_add_button": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#fafafa",
+        "margin-top": 52,
+        "margin-bottom": 52
+      }
+    },
+    "collection_tabs_DdxieW": {
+      "type": "collection-tabs",
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 768px) {.wt-slider__container--featured.wt-slider__container--full {margin-left: 30px; margin-right: 30px; }}",
+        ".wt-slider__scrollbar .swiper-scrollbar-drag {background-color: #afafaf;}",
+        ".collection-tab-title-container {margin-bottom: 50px;}",
+        "@media (min-width: 768px) {.collection-tab-title {width: 200px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "disable_on_mobile": false,
+        "collection": "maquillage-teint",
+        "collection_1": "maquillage-yeux",
+        "collection_2": "maquillage-levres",
+        "collection_3": "accessoires",
+        "collection_4": "",
+        "products_to_show": 4,
+        "enable_stack_products": false,
+        "show_view_all": true,
+        "button_select": "primary",
+        "number_of_column_desktop": 4,
+        "spacing_desktop": "16",
+        "make_products_full_width": true,
+        "number_of_column_mobile": 2.1,
+        "text_alignment": "left",
+        "image_ratio": "square",
+        "show_video": false,
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_product_rating": true,
+        "enable_quick_add_button": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_mj63pG",
+    "separator_JnhRcY",
+    "rich_text_RRbR8c",
+    "image_with_text_w4qAPw",
+    "separator_EUw6Bh",
+    "rich_text_6erK4y",
+    "image_with_text_JrEQGk",
+    "separator_tiebgc",
+    "rich_text_wBMFc8",
+    "image_with_text_Tqgmag",
+    "rich_text_7Jhj7j",
+    "button_FNQArq",
+    "collection_list_3cq844",
+    "rich_text_gVtchT",
+    "featured_collection_kdLbYi",
+    "collection_tabs_DdxieW"
+  ]
+}

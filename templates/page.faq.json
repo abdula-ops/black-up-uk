@@ -1,0 +1,475 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "rich_text_ibT4Ng": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UwgdHD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shopping",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_UwgdHD"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 0
+      }
+    },
+    "collapsible_menu_wj6XQw": {
+      "type": "collapsible_menu",
+      "blocks": {
+        "collapsible_tab_7mUgqk": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Où puis-je acheter les produits black up ?",
+            "content": "<p>Les produits BLACK UP sont vendus dans plus 100 points de vente en France dont plusieurs Sephora, Nocibé, Marionnaud et autres partenaires revendeurs et sur le site<a href=\"https://www.blackup.com/\">www.blackup.com</a>. Pour trouver une boutique blacklUp, rendez-vous vite dans notre rubrique « <a href=\"/pages/trouver-un-point-de-vente\" title=\"Trouver un point de vente\">Trouver un point de vente </a>». </p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_tMGnTd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Acceptez-vous les commandes internationales ?",
+            "content": "<p>Nous livrons dans le monde entier sur notre boutique en ligne <a href=\"https://www.blackup.com/\">www.blackup.com</a>.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_9rm43U": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Livrez-vous les boîtes postales ?",
+            "content": "<p>Nous ne livrons malheureusement pas les boîtes postales. Merci de renseigner une adresse physique complète.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_LbnqFk": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Que se passe-t-il lorsqu'un des produits de ma commande est en rupture de stock ?",
+            "content": "<p>Votre commande sera livrée sans le produit concerné. Notre service client prendra ensuite contact avec vous afin de procéder à un remboursement de l’article manquant ou à un remplacement de produit. Vous ne serez pas facturé pour la livraison supplémentaire. Pour toute information complémentaire, veuillez contacter le service client à cette adresse : <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_iMbLHF": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Quels sont les modes de paiements acceptés sur le site black Up ?",
+            "content": "<p>Voici les modes de paiement actuellement acceptés sur notre site e-commerce <a href=\"http://www.blackup.com/\">www.blackup.com</a>: Carte Bleue, Visa, Mastercard, AMEX, Apple Pay, Shop pay et PayPal. Toute commande peut faire l’objet d’un contrôle et d’une validation par notre service client.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_ECC4WH": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Comment suivre ma commande ?",
+            "content": "<p>Une fois votre commande payée, vous recevrez un e-mail de confirmation, de préparation, puis un email de livraison comprenant un lien de suivi vous permettant d’être informé de l’envoi de votre commande. Nous livrons avec Colissimo. Ce lien de suivi renverra donc directement vers leur service.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_jHikTW": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Quelle est votre politique de retour ?",
+            "content": "<p>Dans l'éventualité où vous recevrez un produit défectueux, nous nous engageons à vous l'échanger. Il vous suffit alors de nous le renvoyer avec sa facture dans les 3 semaines suivant la réception du colis. Pour les autres cas, les produits devront être retournés dans leur conditionnement et leur emballage d'origine, non ouverts, et permettant une re-commercialisation en l’état neuf, en suivant la procédure décrite dans les Conditions Générales de Ventes en ligne.</p><p>Tout colis devra être retourné à l’adresse suivante :</p><p><em>CREATION BEAUTE - SERVICE CLIENT</em></p><p><em>10 RUE SINGER</em></p><p><em>75016 PARIS FRANCE</em></p><p>Tout risque lié au retour des produits est à la charge du Client. blacklUp recommande à ses clients de souscrire à une option de suivi de colis afin d’éviter tout désagrément en cas de perte ou de vol des produits lors du transport de retour. </p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_7mUgqk",
+        "collapsible_tab_tMGnTd",
+        "collapsible_tab_9rm43U",
+        "collapsible_tab_LbnqFk",
+        "collapsible_tab_iMbLHF",
+        "collapsible_tab_ECC4WH",
+        "collapsible_tab_jHikTW"
+      ],
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "compact-size-enabled": false,
+        "margin-top": 0,
+        "margin-bottom": 12
+      }
+    },
+    "rich_text_afVNUt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cWqCWq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Produit",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_cWqCWq"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 0
+      }
+    },
+    "collapsible_menu_cRCCRT": {
+      "type": "collapsible_menu",
+      "blocks": {
+        "collapsible_tab_KryXeb": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Où et comment puis-je apprendre à utiliser vos produits ?",
+            "content": "<p>Malheureusement, notre marque ne propose pas de cours de maquillage, et de leçons particulières à ses clients. Vous pouvez retrouver tous nos conseils d’application directement dans nos fiches produits, sur notre chaîne Youtube, ou en vous rendant en point de vente pour profiter des conseils de notre équipe de Makeup Artist.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_TfrMjm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Pourquoi mon produit favori n'est-il plus en vente ?",
+            "content": "<p>Il arrive parfois que nous retirions des produits de la vente pour faire place à de nouveaux. Il est possible que ces derniers soient remis en vente lors de ventes privilèges ou de soldes. Si ce n’est pas le cas nous vous invitons à découvrir les nouveaux produits de la gamme.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_PR7VgG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "J'ai une question à propos de la formule d'un produit. À qui dois-je m'adresser ?",
+            "content": "<p>Vous pouvez retrouver toute la composition de nos produits sur nos emballages ou dans nos fiches produits. Si vous souhaitez plus de détails, ou avez une question précise, n’hésitez pas à contacter notre service client qui transmettra votre demande au service concerné : <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_KryXeb",
+        "collapsible_tab_TfrMjm",
+        "collapsible_tab_PR7VgG"
+      ],
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "compact-size-enabled": false,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "rich_text_CiwYhT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jAWzWL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mon compte",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_jAWzWL"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 0
+      }
+    },
+    "collapsible_menu_Denq37": {
+      "type": "collapsible_menu",
+      "blocks": {
+        "collapsible_tab_DX34kM": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Qui peut accéder aux informations que j'ai fourni à Black Up ?",
+            "content": "<p>Toutes les informations nominatives que vous nous communiquez sont strictement confidentielles. Elles sont destinées à vous faire gagner du temps au moment de passer votre commande, ainsi qu'à entretenir votre compte. Les informations personnelles et notamment les adresses e-mail, ne font l'objet d'aucune location, vente, échange ou partage avec d'autres prestataires.</p><p>Conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, le traitement des informations nominatives collectées sur le site a fait l'objet d'une déclaration auprès de la Commission Nationale de l'Informatique et des Libertés. Vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant. Pour exercer ce droit, vous devez adresser un courrier postal au service clients de black|Up, 16 avenue Pierre 1er de Serbie 75116 Paris, en indiquant nom, prénom, adresse et, le cas échéant, numéro de client.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_Ct6TQP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Comment puis-je accéder à mes informations ?",
+            "content": "<p>Connectez-vous à votre compte en cliquant sur \"Connexion\" en haut à droite de la page puis entrez votre email et votre mot de passe dans la fenêtre qui apparaîtra en pop-up. Dans \"Mon Compte\", en haut à droite de la page, vous aurez accès à votre compte/informations personnelles. Pour toute information complémentaire, veuillez contacter le service clients.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_Dyqk6K": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Que dois-je faire si j'ai oublié mon mot de passe ?",
+            "content": "<p>Cliquez sur le bouton \"Connexion\" en haut à droite de la page puis cliquez sur \"Mot de passe oublié ? ». Vous pourrez ensuite entrer à nouveau votre adresse email et commencer la procédure pour récupérer votre mot de passe. Pour toute information complémentaire, veuillez contacter le service clients.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_tXEi34": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Puis-je modifier les paramètres de mon compte ?",
+            "content": "<p>Vous pouvez modifier les paramètres de votre compte et vos informations personnelles à tout moment.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_gwgWbD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Comment supprimer mon compte ?",
+            "content": "<p>Pour supprimer votre compte, veuillez contacter notre service clients : <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_DX34kM",
+        "collapsible_tab_Ct6TQP",
+        "collapsible_tab_Dyqk6K",
+        "collapsible_tab_tXEi34",
+        "collapsible_tab_gwgWbD"
+      ],
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "compact-size-enabled": false,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "rich_text_bhYTpf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NXetFy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Carrières",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_NXetFy"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 0
+      }
+    },
+    "collapsible_menu_GGEfPr": {
+      "type": "collapsible_menu",
+      "blocks": {
+        "collapsible_tab_AaQxTj": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Comment postuler chez Black Up ?",
+            "content": "<p>Contactez notre service client qui transmettra votre candidature au service concerné : <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_AaQxTj"
+      ],
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "compact-size-enabled": false,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "rich_text_eTzb3w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_e6RCgk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Makeup Artists",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_e6RCgk"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 0
+      }
+    },
+    "collapsible_menu_WMg4YB": {
+      "type": "collapsible_menu",
+      "blocks": {
+        "collapsible_tab_UFqtJ6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Existe-t-il un programme de fidélité dédié aux pros, et si oui, comment puis-je en profiter ?",
+            "content": "<p>Nous ne proposons pas encore de réduction professionnels. Ce projet est actuellement à l'étude pour voir s’il peut être développé sur notre site Internet. N'hésitez pas à vous inscrire à notre newsletter pour être au courant en avant-première de nos nouvelles offres.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_UFqtJ6"
+      ],
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "compact-size-enabled": false,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "rich_text_Ln8MzY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_R8ErKt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Presse et partenariats",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_R8ErKt"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 0
+      }
+    },
+    "collapsible_menu_Dw7KJx": {
+      "type": "collapsible_menu",
+      "blocks": {
+        "collapsible_tab_FbjFr3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Qui dois-je contacter pour toute demande hors client (partenariats, presse, blog et influenceurs) ?",
+            "content": "<p>Si vous êtes journalistes ou influenceurs, n’hésitez pas à nous contacter à l’adresse mail<a href=\"mailto:presse@blackup.com\">presse@blackup.com</a>. Pour toutes autres demandes de partenariats, n’hésitez pas à écrire directement à notre service client qui transmettra votre demande au service concerné :<a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_z6nqxV": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Standard",
+            "content": "<p>Vous pouvez joindre notre service client du lundi au jeudi de 10h à 17h et le vendredi jusqu'à 16h au numéro suivant: 01 49 96 47 90</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "collapsible_tab_T9jdzz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Comment être informé des dernières nouvelles à propos de Black Up (corporate, lancement de produits, interviews, événements…) ?",
+            "content": "<p>Pour ne rien manquer de nos dernières actualités, offres, événement, inscrivez-vous à notre Newsletter.</p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_FbjFr3",
+        "collapsible_tab_z6nqxV",
+        "collapsible_tab_T9jdzz"
+      ],
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "compact-size-enabled": false,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_ibT4Ng",
+    "collapsible_menu_wj6XQw",
+    "rich_text_afVNUt",
+    "collapsible_menu_cRCCRT",
+    "rich_text_CiwYhT",
+    "collapsible_menu_Denq37",
+    "rich_text_bhYTpf",
+    "collapsible_menu_GGEfPr",
+    "rich_text_eTzb3w",
+    "collapsible_menu_WMg4YB",
+    "rich_text_Ln8MzY",
+    "collapsible_menu_Dw7KJx"
+  ]
+}

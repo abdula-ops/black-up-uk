@@ -1,0 +1,114 @@
+@media (min-width: 1200px){
+  .wt-drawer{ transform: translateY(-100%); transition: transform 0.8s ease-in-out; transition:opacity .6s cubic-bezier(.12,.67,.53,1),transform .8s cubic-bezier(.12,.67,.53,1); width: 100%; max-width: 100%; z-index:-1;}
+  .menu-open .wt-drawer{z-index:100;}
+  .menu-drawer-overlay, .wt-drawer__title { display: none; }
+  mega-menu-section .wt-page-nav-mega { display: flex; flex-wrap: wrap; justify-content:space-between; height:100vh; padding:0;}
+  mega-menu-section .wt-page-nav-mega ul { width: 50%; position: relative;  }
+  mega-menu-section .wt-page-nav-mega ul li img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .mega-menu-image-list{ display: flex; flex-wrap: wrap; position: relative; overflow: hidden;}
+  .mega-menu-image-list li { display: flex; flex-wrap: wrap; transform: translate( 100%, 0%); transition: transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out; position: absolute; top: 0px; width: 100%; height: 100%; }
+  .wt-page-nav-mega__link svg { transform: translate( -140%, 0%); opacity: 0;  margin-left: 30px; transition: transform 0.5s ease, opacity 0.5s ease; }
+  .wt-page-nav-mega__link:hover svg { transform: translate(0%, 0%); opacity: 1; }
+  .wt-page-nav-mega__link__text--underline:hover{background-size:100% 1px;}
+  .mega-menu-image-list li.slider_initial {animation: slideRightToLeft 0.8s ease-in-out forwards;}
+  .mega-menu-image-list li.active-slider {animation: slideRightToLeft 0.8s ease-in-out forwards;}
+  .mega-menu-image-list li.active-slider-previous {animation: slideleftToright 0.8s ease-in-out forwards; }
+
+  #header{z-index:999;}
+  .wt-drawer--nav.wt-drawer--mobile-nav .wt-drawer__title{display:none;}
+  .wt-page-nav-mega__link:hover .wt-page-nav-mega__link__text--underline{background-size:100% 1px;}
+  .wt-page-nav-mega__item{margin:0 calc(var(--gap, 8px) * 4); margin-left: 35px; }
+  .wt-page-nav-mega__link{padding:calc(var(--gap, 8px) * 1) 0; font-size:16px; font-weight:700;}
+  .wt-page-nav-mega__sublist__link{font-size:16px; text-transform:uppercase;}
+  mega-menu-section .wt-page-nav-mega ul .wt-page-nav-mega__sublist{width:100%;}
+  .wt-page-nav-mega__item:not(:last-child):after{left:calc(var(--gap, 8px) * 0); right:calc(var(--gap, 8px) * 0);}
+  #header .disclosure__list-wrapper{z-index:101;}
+  .menu-open .wt-drawer{transform: translate(0);}
+  .wt-page-nav-mega__list, .mega-menu-image-list{opacity:0; visibility:hidden;}
+  .menu-open .wt-page-nav-mega__list{animation:slideUp 0.5s ease-in-out 0.5s forwards;}
+  .menu-open .mega-menu-image-list{animation:slideInRight 0.5s ease-in-out 0.5s forwards;}
+
+.wt-page-nav-mega__sublist__link { padding-left: 10px; padding-top: 0px; }
+mega-menu-section .wt-page-nav-mega { height: 100%;}
+mega-menu-section ul.mega-menu-image-list { height: 80vh; position: sticky; top: 0px; position: sticky; top: 0px; max-height: 799px; }
+.submenu-opened > .wt-page-nav-mega__sublist, .submenu-opened + .wt-page-nav-mega__sublist__wrapper > .wt-page-nav-mega__sublist { padding-bottom: 0px; margin-bottom: 0px;}
+
+.wt-page-nav-mega__item { padding: 0px;  }
+.wt-page-nav-mega__link { padding: 2px 0; }
+/* .wt-page-nav-mega__item[data-title="Nouveautés"], .wt-page-nav-mega__item[data-title="New in"] { margin-top: 30px; margin-bottom: 15px; } */
+.wt-page-nav-mega__list .wt-page-nav-mega__item:first-child{ margin-top: 30px; }
+  
+  .wt-page-nav-mega__item[data-title="Teint"] span,   .wt-page-nav-mega__item[data-title="Complexion"] span, 
+  .wt-page-nav-mega__item[data-title="Yeux"] span, .wt-page-nav-mega__item[data-title="Eyes"] span,
+  .wt-page-nav-mega__item[data-title="Lèvres"] span,  .wt-page-nav-mega__item[data-title="Lips"] span,
+  .wt-page-nav-mega__item[data-title="Accessoires"] span , .wt-page-nav-mega__item[data-title="Accessories"] span { font-weight: normal; margin-left: 15px; }
+  .wt-page-nav-mega__item[data-title="Capillaire"], .wt-page-nav-mega__item[data-title="Pro Haircare"]{ margin-bottom: 15px; margin-top: 3px; }
+  .wt-page-nav-mega__item[data-title="Parfum"], .wt-page-nav-mega__item[data-title="Fragrance"] { margin-top: 8px; }
+  .wt-page-nav-mega__item[data-title="Makeup"] ,   .wt-page-nav-mega__item[data-title="Maquillage"] { margin-bottom: 4px; }
+  .wt-page-nav-mega__item[data-title="Meilleures offres"] span,  .wt-page-nav-mega__item[data-title="Best sellers"] { margin-bottom: 15px; margin-top: 3px; },  
+  mega-menu-section .wt-page-nav-mega ul li img { aspect-ratio: 1 / 1; width: 100%; object-fit: cover; display: block;}
+ .wt-page-nav-mega__link { padding: 5px 0; }
+ .wt-drawer__content { height: 80vh; max-height: 800px; }
+  /* .wt-drawer { background: transparent; } */
+  
+   @keyframes slideUpText {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideRightToLeft {
+    from {
+      transform: translate(100%, 0%);
+    }
+    to {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  @keyframes slideleftToright {
+    from {
+      transform: translate(0%, 0%);
+    }
+    to {
+      transform: translate(-100%, 0%);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(80px);
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+}
+
+
+
+@media (max-width: 1199px){
+  .mega-menu-image-list{display:none;}
+}

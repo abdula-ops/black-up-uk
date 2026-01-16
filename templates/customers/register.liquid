@@ -1,0 +1,127 @@
+{{ 'customers.css' | asset_url | stylesheet_tag }}
+
+<div class="wt-customer">
+  <div class="wt-customer__form--container">
+    <h2 class="hero__title">
+      {{ 'customer.register.title' | t }}
+    </h2>
+    {%- form 'create_customer', novalidate: 'novalidate' -%}
+      {% if form.errors %}
+        <div class="form__error-field">
+          {{ form.errors | default_errors }}
+        </div>
+      {% endif %}
+
+      <!-- Prénom -->
+      <label class="form__field form__field--email wt-customer__form--input-first" for="RegisterForm-FirstName">
+        <input
+          type="text"
+          name="customer[first_name]"
+          id="RegisterForm-FirstName"
+          class="form__field__input"
+          {% if form.first_name %} value="{{ form.first_name }}"{% endif %}
+          autocomplete="given-name"
+          placeholder=" "
+        >
+        <span class="form__field__label">{{ 'customer.register.first_name' | t }}</span>
+      </label>
+
+      <!-- Nom -->
+      <label class="form__field form__field--email" for="RegisterForm-LastName">
+        <input
+          type="text"
+          name="customer[last_name]"
+          id="RegisterForm-LastName"
+          class="form__field__input"
+          {% if form.last_name %} value="{{ form.last_name }}"{% endif %}
+          autocomplete="family-name"
+          placeholder=" "
+        >
+        <span class="form__field__label">{{ 'customer.register.last_name' | t }}</span>
+      </label>
+
+      <!-- Email -->
+      <label class="form__field form__field--email" for="RegisterForm-email">
+        <input
+          type="email"
+          name="customer[email]"
+          id="RegisterForm-email"
+          class="{%- if form.errors contains 'email' -%} form__field__input form__field__input--error {% else %} form__field__input {% endif %}"
+          {% if form.email %} value="{{ form.email }}"{% endif %}
+          spellcheck="false"
+          autocapitalize="off"
+          autocomplete="email"
+          aria-required="true"
+          {% if form.errors contains 'email' %}
+            aria-invalid="true"
+            aria-describedby="RegisterForm-email-error"
+          {% endif %}
+          placeholder=" "
+        >
+        <span class="form__field__label">{{ 'customer.login_page.email' | t }}</span>
+        {%- if form.errors contains 'email' -%}
+          <span id="RegisterForm-email-error" class="form__message">
+            {{ form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email }}.
+          </span>
+        {%- endif -%}
+      </label>
+
+      <!-- Mot de passe -->
+      <label class="form__field form__field--email" for="RegisterForm-password">
+        <input
+          type="password"
+          name="customer[password]"
+          id="RegisterForm-password"
+          class="{%- if form.errors contains 'password' -%} form__field__input form__field__input--error {% else %} form__field__input {% endif %}"
+          aria-required="true"
+          {% if form.errors contains 'password' %}
+            aria-invalid="true"
+            aria-describedby="RegisterForm-password-error"
+          {% endif %}
+          placeholder=" "
+        >
+        <span class="form__field__label">{{ 'customer.login_page.password' | t }}</span>
+      </label>
+      {%- if form.errors contains 'password' -%}
+        <span id="RegisterForm-password-error" class="form__message">
+          {{ form.errors.translated_fields.password | capitalize }}
+          {{ form.errors.messages.password }}.
+        </span>
+      {%- endif -%}
+
+      <!-- Date d'anniversaire (note "Birthday") -->
+      <label class="form__field form__field--email" for="RegisterForm-Birthday">
+        <input
+          type="date"
+          name="customer[note][Birthday]"
+          id="RegisterForm-Birthday"
+          class="form__field__input"
+          placeholder=" "
+        >
+        <span class="form__field__label">{{ 'customer.register.birthdate' | t }}</span>
+      </label>
+
+      <!-- Case à cocher Marketing -->
+      <div class="form__checkbox" style="display:flex; align-items:center; margin-bottom:1rem;">
+        <input
+          type="checkbox"
+          id="RegisterForm-Marketing"
+          name="customer[accepts_marketing]"
+          value="true"
+          style="margin:0 0.5rem 0 0;"
+        >
+        <label for="RegisterForm-Marketing" style="margin:0; font-size:14px;">
+          {{ 'customer.register.marketing_accept' | t }}
+        </label>
+      </div>
+
+      <button
+        aria-label="{{ 'customer.register.submit' | t }}"
+        class="form__send__button hero__button--primary wt-customer__create-account"
+      >
+        {{ 'customer.register.submit' | t }}
+      </button>
+    {%- endform -%}
+  </div>
+</div>

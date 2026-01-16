@@ -1,0 +1,45 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "transparent",
+        "color-bg-overlay": "transparent",
+        "color-overlay-opacity": 100,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "1741860966d162bc5c": {
+      "type": "apps",
+      "blocks": {
+        "progus_store_locator_app_block_xWLDtk": {
+          "type": "shopify://apps/progus-store-locator/blocks/app-block/d7896016-8cc9-45e0-860e-ba85ba3d5be4",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "progus_store_locator_app_block_xWLDtk"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1741860966d162bc5c"
+  ]
+}

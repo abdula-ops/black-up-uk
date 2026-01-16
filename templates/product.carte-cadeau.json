@@ -1,0 +1,426 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "main-breadcrumbs",
+      "settings": {
+        "full-width-enabled": false,
+        "text_color": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 12,
+        "margin-bottom": 12
+      }
+    },
+    "main": {
+      "type": "gift-product",
+      "blocks": {
+        "wishlist_plus_wishlist_pdp_button_M8iJx8": {
+          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {
+            "swym_atw_button_icon": "heart",
+            "swym_atw_icon_thickness": 1.7,
+            "swym_atw_display_btn_text": false,
+            "swym_button_position": "product_title_right",
+            "swym_atw_button_vertical_offset": 0,
+            "swym_atw_full_width": true,
+            "swym_atw_button_alignment": "center",
+            "swym_add_to_wishlist_color": "#ffffff",
+            "swym_added_to_wishlist_color": "#ffffff",
+            "swym_button_text_color": "#000000",
+            "swym_atw_border_color": "#000000",
+            "swym_atw_border_thickness": 0,
+            "swym_atw_button_border_radius": 0,
+            "swym_enable_hover_customization": true,
+            "swym_hover_add_to_wishlist_color": "#000000",
+            "swym_hover_added_to_wishlist_color": "#222222",
+            "swym_hover_button_text_color": "#ffffff",
+            "swym_hover_atw_border_color": "#000000",
+            "swym_hover_atw_border_thickness": 0,
+            "swym_hover_atw_button_border_radius": 0,
+            "swym_custom_css": ""
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "brand": "",
+            "size_text": 210,
+            "size_text_mobile": 200
+          }
+        },
+        "judge_me_reviews_preview_badge_YM4bzk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": false,
+            "size_text": 130,
+            "size_text_mobile": 120
+          }
+        },
+        "separator_RrKQ4A": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {
+            "show-separator-line": false,
+            "color-background": "#ffffff",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_swatch_names": "Montant",
+            "variant_picture_swatch_names": "Montant",
+            "dropdown_swatch_names": "Montant",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "c1ba8695-94d2-40ad-ac06-93ec3b8cf38e": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": false,
+            "color-background": "#ffffff",
+            "margin-top": 8,
+            "margin-bottom": 16
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "show_qty_selector": true
+          }
+        },
+        "inventory_ihfkD3": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "a05fcf3e-8e1a-4f1f-8d97-2055eb17138d": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": true,
+            "color-background": "#dedede",
+            "margin-top": 0,
+            "margin-bottom": 0
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_open": true,
+            "icon": "none"
+          }
+        },
+        "collapsible_tab_Q7UFgL": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Composition",
+            "content": "<p>{{ product.metafields.custom.composants | metafield_tag }}</p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "separator_U3FUkp": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {
+            "show-separator-line": true,
+            "color-background": "#dedede",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "collapsible_tab_tBn3zd": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Comment utiliser ce produit",
+            "content": "<p>{{ product.metafields.custom.utilisation.value }}</p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "upsell_6JYWHc": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "heading": "black|Up recommande",
+            "product_upsell": [
+              "anti-cernes-haute-couvrance-chc02",
+              "anti-cernes-haute-couvrance-chc04",
+              "anti-cernes-haute-couvrance-chc03"
+            ],
+            "button_select": "link"
+          }
+        },
+        "separator_gDwzxi": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {
+            "show-separator-line": true,
+            "color-background": "#dedede",
+            "margin-top": 0,
+            "margin-bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "wishlist_plus_wishlist_pdp_button_M8iJx8",
+        "title",
+        "judge_me_reviews_preview_badge_YM4bzk",
+        "price",
+        "separator_RrKQ4A",
+        "variant_picker",
+        "c1ba8695-94d2-40ad-ac06-93ec3b8cf38e",
+        "buy_buttons",
+        "inventory_ihfkD3",
+        "a05fcf3e-8e1a-4f1f-8d97-2055eb17138d",
+        "description",
+        "collapsible_tab_Q7UFgL",
+        "separator_U3FUkp",
+        "collapsible_tab_tBn3zd",
+        "upsell_6JYWHc",
+        "separator_gDwzxi"
+      ],
+      "custom_css": [
+        ".product__tax.caption.rte {display: none;}"
+      ],
+      "settings": {
+        "full-width-enabled": true,
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-vertical",
+        "desktop-image-ratio": "square",
+        "enable_video_looping": true,
+        "enable-image-zoom": false,
+        "mobile-image": "normal",
+        "margin-top": 12,
+        "margin-bottom": 12
+      }
+    },
+    "1738939742ce7b4258": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_zLCNTA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cTNxeb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_3YAmER": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make annuncements, or welcome customers to your store.</p>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cTNxeb",
+        "text_3YAmER"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 40,
+        "margin-bottom": 40
+      }
+    },
+    "ec5a6457-3cb6-4605-94df-ac6400f950f1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Complétez votre maquillage",
+        "disable_on_mobile": true,
+        "collection": "best-sellers",
+        "product_list": [],
+        "products_to_show": 4,
+        "enable_stack_products": false,
+        "show_view_all": false,
+        "button_select": "primary",
+        "number_of_column_desktop": 4,
+        "spacing_desktop": "24",
+        "make_products_full_width": true,
+        "number_of_column_mobile": 2.1,
+        "text_alignment": "left",
+        "image_ratio": "square",
+        "show_video": false,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_product_rating": true,
+        "enable_quick_add_button": true,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#fafafa",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "separator_X4ajGr": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": false,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 52,
+        "margin-bottom": 20
+      }
+    },
+    "rich_text_FpMFtf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8rjBeR": {
+          "type": "heading",
+          "settings": {
+            "heading": "NOS COLLECTIONS",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_QCDi7L": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Des formules précises, conçues pour sublimer les peaux mates à foncées.</h3>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8rjBeR",
+        "text_QCDi7L"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "collection_list_rKBEpx": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_nE7jQz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maquillage-teint",
+            "text_collection": "Teint"
+          }
+        },
+        "featured_collection_WjLnGL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maquillage-yeux",
+            "text_collection": "Yeux"
+          }
+        },
+        "featured_collection_tADHkM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "maquillage-levres",
+            "text_collection": "Lèvres"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_nE7jQz",
+        "featured_collection_WjLnGL",
+        "featured_collection_tADHkM"
+      ],
+      "settings": {
+        "heading": "",
+        "enable_swipe": true,
+        "disable_images": false,
+        "number_of_column_desktop": 3,
+        "number_of_column_mobile": 1.5,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "newsletter_pEcrBa": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_mLFMeW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Soyez la plus belle rejoignez-nous",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "paragraph_d8VNPK": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Restez informé et profitez de nos offres exceptionnelles</p>",
+            "text_disable_on_mobile": false
+          }
+        },
+        "email_form_gTPAyG": {
+          "type": "email_form",
+          "settings": {
+            "button_select": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mLFMeW",
+        "paragraph_d8VNPK",
+        "email_form_gTPAyG"
+      ],
+      "disabled": true,
+      "settings": {
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 60,
+        "margin-bottom": 60
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main",
+    "1738939742ce7b4258",
+    "rich_text_zLCNTA",
+    "ec5a6457-3cb6-4605-94df-ac6400f950f1",
+    "separator_X4ajGr",
+    "rich_text_FpMFtf",
+    "collection_list_rKBEpx",
+    "newsletter_pEcrBa"
+  ]
+}

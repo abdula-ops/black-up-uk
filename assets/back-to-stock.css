@@ -1,0 +1,6 @@
+.notify_success{display:none; color:green; font-size:15px; margin-top:5px;}
+.notify_failure{display:none; color:red; font-size:15px; margin-top:5px;} 
+.mailalert-container  #emails { border: 1px solid var(--color-input-border); margin-bottom: 20px; width: 100% }
+#MailNotify.button { width: 100%; }
+.hide-alert { display: none; }
+.show-alert { display: block; }

@@ -1,0 +1,178 @@
+<!-- Custom color related product meta -->
+{% assign variation_color = 'False' %}
+{% assign selected_variant = product.selected_or_first_available_variant %}
+
+{%- for option in product.options_with_values -%}
+  {% assign option_name = option.name | downcase %}
+  {%- if option_name == 'couleur' or option_name == 'color' -%}
+    {% assign variation_color = 'True' %}
+    {% assign color_variant_count = option.values | size %}
+
+    {% if variation_color == 'True' and color_variant_count > 1 %}
+      <div class="swatch-color-selector card_relatedcolor" id="variant_product">
+        <div class="swatch-container">
+          
+          {% assign remaining_count = color_variant_count | minus: 6 %}
+          
+          {% if remaining_count > 0 %}
+            <div class="color_swatch_more">
+              <div class="remaining_count">
+                <a href="{{ product.url }}">+{{ remaining_count }}</a>
+              </div>
+            </div>
+          {% endif %}
+
+          <ul class="color_swatch">
+            {% for value in option.values limit:6 %}
+              {% assign color_hex = '' %}
+              {% assign is_selected = false %}
+              {% assign variant_url = product.url %}
+              {% assign variant_image = '' %}
+      
+              {%- for variant in product.variants -%}
+                {% if variant.options contains value %}
+                  {% assign color_hex = variant.metafields.custom.color_hex %}
+                  {% assign variant_url = variant.url %}
+                  {% assign variant_image = variant.image | image_url: width: 750 %}
+                  
+                  {% if variant.id == selected_variant.id %}
+                    {% assign is_selected = true %}
+                  {% endif %}
+                  
+                  {% break %}
+                {% endif %}
+              {%- endfor -%}
+      
+              <li>
+                {% if is_selected %}
+                  <div class="active_picker" data-image-url="{{ variant_image }}">
+                    <a href="{{ variant_url }}">
+                      <span class="main-image" style="{% if color_hex != null %}background-color:{{ color_hex }}{% endif %}"
+                        data-image-url="{{ variant_image }}">
+                      </span>
+                    </a>
+                  </div>
+                {% else %}
+                  <div class="picker" data-image-url="{{ variant_image }}">
+                    <a href="{{ variant_url }}">
+                      <span class="hover_style" style="{% if color_hex != null %}background-color:{{ color_hex }}{% endif %}"
+                        data-image-url="{{ variant_image }}">
+                      </span>
+                    </a>
+                  </div>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  {%- endif -%}
+{% endfor %}
+
+
+{% # Condition - To show the linked variants by script only when variant count is equal to 1 %}
+{% if variation_color == 'True' and color_variant_count == 1 %}
+  {%- assign color_swatch_pipe_splits = product.metafields.custom.color_swatch_details.value | split: '|' -%}
+  {% assign swatch_size = color_swatch_pipe_splits.size %}
+  {% if swatch_size == 0 %}
+    {% assign swatch_size = 1 %}
+  {% endif %}
+  <div class="swatch-color-selector card_relatedcolor" id="linked_product">
+    <div class="swatch-container">
+      {% if swatch_size > 6 %}
+         <div class="color_swatch_more">
+            <div class="remaining_count"><a href="{{ product.url }}">+{{ swatch_size | minus: 6 }}</a></div>
+         </div>
+      {% endif %}
+      <ul class="color_swatch">
+        {% if product.metafields.custom.color_swatch_details.value %}
+          {% assign active_product_id = product.id | append: '-sas' %}
+          {%- assign color_swatch_pipe_splits = product.metafields.custom.color_swatch_details.value | split: '|' -%}
+          {% if color_swatch_pipe_splits.size > 1 %}
+            {% for color_swatch_pipe_split in color_swatch_pipe_splits %}
+              {% if forloop.index0 <= 5 %}
+                {% assign color_swatch_semicolon_splits = color_swatch_pipe_split | split: ';' %}
+                {% assign color_swatch_product_id = color_swatch_semicolon_splits[0] | append: '-sas' %}
+                {% assign color_swatch_product_color_handle = color_swatch_semicolon_splits[2] %}
+                {% assign color_swatch_product_color_code = color_swatch_semicolon_splits[1] %}
+                {% assign color_swatch_product_image_url = color_swatch_semicolon_splits[3] %}
+                
+                <li>
+                  {% if color_swatch_product_id == active_product_id %}
+                    <div class="active_picker" data-image-url="{{ color_swatch_product_image_url }}">
+                      <a href="{{ shop.url }}{% if localization.language.iso_code == 'en' %}/en{% endif %}/products/{{ color_swatch_product_color_handle }}">
+                        <span class="main-image"
+                          style="{% if color_swatch_product_color_code != "Not Available" %}background-color:{{ color_swatch_product_color_code }}{% endif %}"
+                          data-image-url="{{ color_swatch_product_image_url }}">
+                        </span>
+                      </a>
+                    </div>
+                  {% else %}
+                    <div class="picker">
+                      <a href="{{ shop.url }}{% if localization.language.iso_code == 'en' %}/en{% endif %}/products/{{ color_swatch_product_color_handle }}">
+                        <span
+                          style="{% if color_swatch_product_color_code != "Not Available" %}background-color:{{ color_swatch_product_color_code }}{% endif %}"
+                          class="hover_style"
+                          data-image-url="{{ color_swatch_product_image_url }}">
+                        </span>
+                      </a>
+                    </div>
+                  {% endif %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% # Note:- Added condition to display for single color group products %}
+            <li>
+              <div data-image-url="//blackup-prod.myshopify.com/cdn/shop/{{ product.images[0] }}" class="active_picker" single_swatch >
+                <a href="{{ product.url }}">
+                  <span
+                    style="{% if product.metafields.custom.couleur_hex.value != "NULL" %}background-color:{{ product.metafields.custom.couleur_hex.value }}{% endif %}  "
+                    data-image-url="//blackup-prod.myshopify.com/cdn/shop/{{ product.images[0] }}">
+                  </span>
+                </a>
+              </div>
+            </li>
+          {% endif %}
+        {% else %}
+          {% # Note:- Added condition to display for empty color_swatch_details metafield products %}
+          <li>
+            <div class="active_picker" empty_swatch_detail data-image-url="//blackup-prod.myshopify.com/cdn/shop/{{ product.images[0] }}">
+              <a href="{{ product.url }}">
+                <span
+                  style="{% if product.metafields.custom.couleur_hex.value != "NULL" %}background-color:{{ product.metafields.custom.couleur_hex.value }}{% endif %}"
+                  data-image-url="//blackup-prod.myshopify.com/cdn/shop/{{ product.images[0] }}">
+                </span>
+              </a>
+            </div>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+{% endif %}
+<!-- END Custom color related product meta -->
+
+
+<script>
+document.querySelectorAll('.card__container').forEach(function(productCard) {
+  productCard.querySelectorAll('.color_swatch li').forEach(function(item) {
+    item.addEventListener('mouseover', function() {
+      var imageUrl = item.querySelector('span').getAttribute('data-image-url');
+      console.log(imageUrl);
+      var mainProductImage = productCard.querySelector('.card__img:not(.card__img--hover)');
+      mainProductImage.setAttribute('src', imageUrl);
+      mainProductImage.setAttribute('srcset', imageUrl);
+    });
+    
+    item.addEventListener('mouseout', function() {
+      var mainProductImage = productCard.querySelector('.card__img:not(.card__img--hover)');
+      var getMainImage = mainProductImage.getAttribute('data-src');
+      mainProductImage.setAttribute('src', getMainImage);
+      mainProductImage.setAttribute('srcset', getMainImage);
+    });
+
+  });
+});
+</script>

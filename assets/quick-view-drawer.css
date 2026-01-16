@@ -1,0 +1,55 @@
+/* varaint css */
+.wt-product__options { display:  flex; align-items: center; gap: 20px;  }
+.wt-product__options variant-options { width: 100%; }
+.color-feature { min-width: 91px; min-height: 91px; }
+.wt-product__options .color-feature img { max-width: 100px; height: auto; }
+.wt-product__option__dropdown  { width: 100%; justify-content: left; border-radius: 8px; border: 1px solid #000; padding: 8px 20px;  }
+.wt-product__option__dropdown:hover  { background: inherit; color: inherit; }
+.wt-product__option__dropdown .selected-color { width: 36px; height: 36px; opacity: 0.98; }
+variant-dropdown { padding-bottom: 20px; float: left; width: 100%; }
+.wt-product__option__dropdown .svg-icon { position: absolute; right: 20px; } 
+.f-button__list  input.active_picker + label { border-color: var(--color-input-border-active); }
+.color-feature-container{ display: flex; align-items: center; gap: 10px; }
+.recipient-form .icon-checkmark { top: inherit; }
+body > div.wt__quick-buy > div > div > div.wt-product.wt-product--carousel-vertical > section > div > p:nth-child(6) > strong { font-weight: 400; }
+#price-quick-template--17998466089127__main > div > div > div.price__regular > span.price-item.price-item--regular.wt-product__price__final.wt-product__price__final { font-size: 20px; font-weight: bold; }
+body > div.wt__quick-buy > div > div > div.wt-product.wt-product--carousel-vertical > section > div > p:nth-child(7) > strong { font-weight: 400; }
+body > div.wt__quick-buy > div > div > div.wt-product.wt-product--carousel-vertical > section > div > div.wt-product__details > div.product-info > h1 { font-weight: 600; }
+/* Meta attrbes design */
+.metaAttr { display: flex; gap: 10px; font-size: 14px; font-size: 12px; letter-spacing: 1.2px;}
+.metaAttr p  { border: 1px solid #000000; padding: 4px 15px; border-radius: 20px; margin-bottom: 15px; text-transform: uppercase; margin-top: 10px; }
+.short-description p,
+.meta-contenance p { font-size: 14px; font-family: Lexend Giga !important; }
+.meta-contenance p { margin: 10px 0px; }
+
+.wt__quick-buy .color-feature, 
+.wt__quick-buy .metaAttr,
+.wt__quick-buy .short-description,
+.wt__quick-buy .meta-contenance,
+.wt__quick-buy .product__tax.caption { display: none; }
+.wt__quick-buy--wrapper .wt-product--carousel-vertical  .shopify-app-block, 
+.wt__quick-buy--wrapper  .mailalert-container,
+.wt__quick-buy--wrapper .custom-badges-section{ display: none; }
+.wt__quick-buy--wrapper .wt-product__info .wt-product__add-to-cart_form.main-product__buy-buttons--container { margin-top: 0px !important; }
+.wt__quick-buy--wrapper .product-image { text-align: center; }
+.wt__quick-buy--wrapper .quantity-counter { display: none; }
+.wt__quick-buy .js-add-to-cart span { font-size: 10px;}
+.wt__quick-buy .wt-product__option .f-button__list__item { max-width: 40px; }
+.wt__quick-buy .description_courte { margin-top: 15px; }
+.wt__quick-buy nav { background: #fff; border-bottom: 1px solid var(--color-border); justify-content: space-between; }
+.wt__quick-buy .wt__quick-buy--wrapper { padding: 70px  20px; }
+ body .wt__quick-buy  .price__sale.visible { flex-direction: row-reverse; justify-content: flex-end; gap: 4px; }
+.wt__quick-buy .wt__quick-buy__view-all-container{ margin-left: 20px; }
+@media (min-width: 2240px) {
+  .wt__quick-buy .wt__quick-buy__view-all-container{ margin-left: 0px; }
+}
+
+.wt__quick-buy .wt-product__name a,
+.wt-cart__list  .wt-cart__item .wt-cart__item__link{ font-family: 'Lexend Giga' !important; }
+
+@media (max-width: 767px) {
+  .wt__quick-buy .wt__quick-buy--wrapper {padding: 20px 20px 70px 20px; }
+  .wt__quick-buy *  { text-align: center; }
+  .wt__quick-buy .wt__quick-buy__view-all-container { text-align: center; justify-content: center; margin-left: 0px }
+  .wt__quick-buy .wt-product__option .f-button__list  { justify-content: center; }
+}

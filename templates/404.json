@@ -1,0 +1,34 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {
+        "heading": "Oups!",
+        "font_size_mobile": 200,
+        "font_size_desktop": 260,
+        "subtext": "Nous ne trouvons pas ce que vous cherchez ici.\nCliquez ci-dessous pour retourner à la page d'accueil.",
+        "link-text": "Retour à l'accueil",
+        "button_select": "secondary",
+        "button_disable_on_mobile": false,
+        "button_link": "https://blackup-prod.myshopify.com/",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 0,
+        "margin-top": 76,
+        "margin-bottom": 72
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

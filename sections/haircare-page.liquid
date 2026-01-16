@@ -1,0 +1,254 @@
+{% assign background_rgb = section.settings['color-bg-overlay'] | color_to_rgb %}
+{% assign text_rgb = section.settings['color-body-text'] | color_to_rgb %}
+{{ 'haircare.css' | asset_url | stylesheet_tag }} 
+{{ 'haircare.js' | asset_url | script_tag }}
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+<style>
+  section[id="shopify-section-{{ section.id }}"]{
+      {% if section.settings.full-width-enabled %}
+        --border-radius: 0;
+      {% endif %}
+
+      {% if background_rgb != 'rgba(0, 0, 0, 0.0)' %}
+        --color-overlay-rgb: {{ section.settings.color-bg-overlay | color_to_rgb | remove: 'rgb(' | remove: ')' }};
+        --color-overlay-opacity: {{ section.settings['color-overlay-opacity'] | divided_by: 100.0 }};
+      {% endif %}
+
+      {% if text_rgb != 'rgba(0, 0, 0, 0.0)' %}
+        --color-custom-text: {{ section.settings.color-body-text }};
+      {% endif %}
+
+      {% if section.settings.margin-top %}
+          --section-gap-top: {{ section.settings.margin-top }}px;
+      {% endif %}
+
+      {% if section.settings.margin-bottom %}
+          --section-gap-bottom: {{ section.settings.margin-bottom }}px;
+      {% endif %}
+
+      --font-headline-scale-desk: {{ section.settings.size_heading | divided_by: 100.0 }};
+
+      --font-headline-scale: {{ section.settings.size_heading_mobile | divided_by: 100.0 }};
+
+  }
+</style>
+
+<div
+  data-section-id="{{ section.id }}"
+  class="wt-page {% if section.settings.compact-size-enabled == true %}  wt-page--compact{% endif %} custom_group_page">
+  <div class="content-container"> 
+    <div class="index-container" id="index-container">
+      <h1 class="wt-page__title">
+        {{ page.title | escape }}
+      </h1>
+      <a href="#" class="hf-begin">  {{ 'sections.hair.start' | t }}</a>
+    </div>
+    <div class="rte wt-page__wrapper">
+      {{ page.content }}
+    </div>
+    <form class="form-step" style="display: none;">
+      <input type="hidden" name="result" value="">
+    </form>
+    <form class="form-step" style="display: none;">
+      <input type="hidden" id="mainProductGroup" name="mainProductResult" value="">
+    </form>
+    <div class="step1 step" id="step1">
+        <div class="h1"> {{ 'sections.hair.step1' | t }} </div>
+        <div class="h2"> {{ 'sections.hair.type' | t }} </div>
+        <div class="choices row">
+          <a class="hf-choice choice1 img"  data-class="choice1" href="#" data-type="family" data-key="family0" data-text="Cheveux Crépus">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/family0.jpg?v=1743660725" width="277" height="340">
+          <span class="name">{{ 'sections.hair.frizzy_hair' | t }}</span>
+          </a>
+          <a class="hf-choice choice2 img" data-class="choice2" href="#" data-type="family" data-key="family1" data-text="Cheveux Bouclés / Frisés">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/family1.jpg?v=1743660725" width="277" height="340">
+          <span class="name">{{ 'sections.hair.curly_hair' | t }}</span>
+          </a>
+          <a class="hf-choice choice3 img" data-class="choice3" href="#" data-type="family" data-key="family2" data-text="Cheveux Défrisés">
+            <img src="https://cdn.shopify.com/s/files/1/0674/5014/2887/files/family2.jpg?v=1743660724" width="277" height="340">
+          <span class="name">{{ 'sections.hair.straigtened_hair' | t }}</span>
+          </a>
+        </div>
+        <div class="back back-to-step0">
+          {{ 'sections.hair.backstep0' | t }}
+        </div>
+    </div>
+    <div class="step2 step" id="step2">
+        <div class="h1"> {{ 'sections.hair.step2' | t }} </div>
+        <div class="h2"> {{ 'sections.hair.action' | t }} </div>
+        <div class="choices-text row">
+           <div class="choice-btn-container choice1">
+              <span class="hf-choice-txt" data-type="cleaning" data-option="option1"> {{ 'sections.hair.cleanse' | t }}</span>
+              <span class="hf-choice-txt" data-type="feeding" data-option="option2"> {{ 'sections.hair.nourish' | t }}</span>
+              <span class="hf-choice-txt" data-type="hairstyling" data-option="option3"> {{ 'sections.hair.style' | t }}</span>
+              <span class="hf-choice-txt" data-type="process" data-option="option4"> {{ 'sections.hair.treat' | t }}</span>
+              <span class="hf-choice-txt" data-type="routine" data-option="option5"> {{ 'sections.hair.routine' | t }}</span>
+           </div>
+        </div>
+        <div class="back back-to-step1">
+          {{ 'sections.hair.backstep1' | t }}
+        </div>
+    </div>
+    <div class="step3 step" id="step3">
+        <div class="h1"> {{ 'sections.hair.step3' | t }} </div>
+        <div class="h2 recommended_products_heading hidden"> {{ 'sections.trouver.recommended' | t }} </div>
+        <div id="routine-process-list"></div>
+        <div class="h2"> {{ 'sections.hair.needs' | t }} </div>
+      
+        <div class="choices-text row">
+           <div class="choice-btn-container option1">
+              <span data-texture ="soins" class="texture" > {{ 'sections.hair.care' | t }}</span>
+              <span data-texture ="shampoing" class="texture" > {{ 'sections.hair.shampoo' | t }}</span>
+           </div>
+           <div class="choice-btn-container option2">
+              <span data-texture ="masque" class="texture"> {{ 'sections.hair.mask' | t }}</span>
+              <span data-texture ="crème" class="texture"> {{ 'sections.hair.cream' | t }}</span>
+           </div>
+           <div class="choice-btn-container option3">
+              <span data-texture ="fixer" class="texture"> {{ 'sections.hair.fix' | t }}</span>
+              <span data-texture ="définir" class="texture"> {{ 'sections.hair.define' | t }}</span>
+           </div>
+        </div>
+      <div class="back back-to-step2">
+      {{ 'sections.hair.backstep2' | t }}
+      </div>
+    </div>
+    <div class="step4 step" id="step4">
+      <div class="h1"> {{ 'sections.hair.step4' | t }} </div>
+      <div class="h2"> {{ 'sections.trouver.recommended' | t }} </div>
+      <div id="final-product-list"></div>
+      
+      <div class="back-container">
+         <div class="back back-to-step3">
+            {{ 'sections.hair.backstep3' | t }}
+         </div>
+         <div class="back back-to-home">
+            {{ 'sections.trouver.startover' | t }}
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+window.productCombinations = [
+  { combo: ["family0","cleaning","soins"], productIds: ["8443838660775", "8443838595239"] },
+  { combo: ["family0","cleaning","shampoing"], productIds: ["8443838562471","8443838628007"] },
+  { combo: ["family0","feeding","masque"], productIds: ["8443838693543"] },
+  { combo: ["family0","feeding","crème"], productIds: ["8443838726311"] },
+  { combo: ["family0","hairstyling","fixer"], productIds: ["8443838955687"] },
+  { combo: ["family0","hairstyling","définir"], productIds: ["8443838791847"] },
+  { combo: ["family0","process"], productIds: ["8443838988455", "8443839021223"] },
+  { combo: ["family0","routine"], productIds: ["8443838595239", "8443838562471", "8443838693543", "8443838726311", "8443838791847"] },
+  { combo: ["family1","cleaning","soins"], productIds: ["8443838595239", "8443838660775"] },
+  { combo: ["family1","cleaning","shampoing"], productIds: ["8443838562471","8443838628007"] },
+  { combo: ["family1","feeding","masque"], productIds: ["8443838693543"] },
+  { combo: ["family1","feeding","crème"], productIds: ["8443838726311"] },
+  { combo: ["family1","hairstyling","fixer"], productIds: ["8443838955687"] },
+  { combo: ["family1","hairstyling","définir"], productIds: ["8443838791847"] },
+  { combo: ["family1","process"], productIds: ["8443838988455", "8443839021223"] },
+  { combo: ["family1","routine"], productIds: ["8443838595239", "8443838562471", "8443838693543", "8443838726311", "8443838791847"] },
+  { combo: ["family2","cleaning","soins"], productIds: ["8443838660775", "8443838595239"] },
+  { combo: ["family2","cleaning","shampoing"], productIds: ["8443838562471","8443838628007"] },
+  { combo: ["family2","feeding","masque"], productIds: ["8443838693543"] },
+  { combo: ["family2","feeding","crème"], productIds: ["8443838726311"] },
+  { combo: ["family2","hairstyling","fixer"], productIds: ["8443838955687"] },
+  { combo: ["family2","hairstyling","définir"], productIds: ["8443838922919"] },
+  { combo: ["family2","process"], productIds: ["8443838988455", "8443839021223"] },
+  { combo: ["family2","routine"], productIds: ["8443838595239", "8443838562471", "8443838693543", "8443838726311", "8443838922919"] }
+];
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.page.main_name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "compact-size-enabled",
+      "label": "Use compact size for big screens",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "size_heading",
+      "min": 50,
+      "max": 500,
+      "step": 10,
+      "default": 140,
+      "label": "t:sections.settings.settings.size-heading.label",
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "size_heading_mobile",
+      "min": 80,
+      "max": 300,
+      "step": 10,
+      "default": 100,
+      "label": "t:sections.settings.settings.size-heading-mobile.label",
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.colors",
+      "info": "t:sections.global.colors-info"
+    },
+    {
+      "type": "color",
+      "id": "color-body-text",
+      "default": "transparent",
+      "label": "t:sections.settings.settings.text-color.label"
+    },
+    {
+      "type": "color",
+      "id": "color-bg-overlay",
+      "default": "transparent",
+      "label": "t:sections.settings.settings.background-color.label"
+    },
+    {
+      "type": "range",
+      "id": "color-overlay-opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100,
+      "label": "t:sections.settings.settings.background-opacity.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.section_spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin-top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 40,
+      "unit": "px",
+      "label": "t:sections.settings.settings.distance-top.label"
+    },
+    {
+      "type": "range",
+      "id": "margin-bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 0,
+      "unit": "px",
+      "label": "t:sections.settings.settings.distance-bottom.label",
+      "info": "t:sections.settings.settings.distance-bottom.info"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}

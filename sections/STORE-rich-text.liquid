@@ -1,0 +1,415 @@
+{% assign background_rgb = section.settings.background_color | color_to_rgb %}
+{% assign text_rgb = section.settings['color-body-text'] | color_to_rgb %}
+
+<style>
+      [data-section-id="{{ section.id }}"]
+      {
+          {% if background_rgb != 'rgba(0, 0, 0, 0.0)' %}
+          --color-custom-background: {{ section.settings.background_color }};
+          {% endif %}
+
+          {% if section.settings.margin-top %}
+              --section-gap-top: {{ section.settings.margin-top }}px;
+          {% endif %}
+
+          {% if section.settings.margin-bottom %}
+              --section-gap-bottom: {{ section.settings.margin-bottom }}px;
+          {% endif %}
+
+          {% if text_rgb != 'rgba(0, 0, 0, 0.0)' %}
+            --color-custom-text: {{ section.settings.color-body-text }};
+          {% endif %}
+      }
+
+  {%- for block in section.blocks -%}
+      [data-block-id="{{ block.id }}"]
+      {
+            --font-headline-scale-desk: {{ block.settings.size_heading | divided_by: 100.0 }};
+
+            --font-headline-scale: {{ block.settings.size_heading_mobile | divided_by: 100.0 }};
+
+      }
+  {%- endfor -%}
+
+  /* Styles pour "Lire la suite" */
+  .rich-text-content-wrapper {
+    position: relative;
+  }
+
+  .rich-text-content {
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .rich-text-content.collapsed {
+    max-height: 4.5em; /* Environ 3 lignes */
+    line-height: 1.5em;
+  }
+
+  .rich-text-content.collapsed::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3em;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none;
+  }
+
+  /* Pour les fonds colorés */
+  {% if background_rgb != 'rgba(0, 0, 0, 0.0)' %}
+  .rich-text-content.collapsed::after {
+    {% assign r = background_rgb | split: '(' | last | split: ',' | first %}
+    {% assign g = background_rgb | split: ',' | slice: 1, 1 | first %}
+    {% assign b = background_rgb | split: ',' | slice: 2, 1 | first %}
+    background: linear-gradient(to bottom, 
+      rgba({{ r }}, {{ g }}, {{ b }}, 0) 0%, 
+      rgba({{ r }}, {{ g }}, {{ b }}, 0.8) 50%, 
+      rgba({{ r }}, {{ g }}, {{ b }}, 1) 100%);
+  }
+  {% endif %}
+
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: none;
+    color: var(--color-custom-text, inherit);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+    transition: opacity 0.2s ease;
+  }
+
+  .read-more-btn:hover {
+    opacity: 0.7;
+  }
+
+  .read-more-btn.hidden {
+    display: none;
+  }
+</style>
+
+<div
+  data-section-id="{{ section.id }}"
+  class="{% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %} rich-text"
+>
+  <div class="hero__wrapper">
+    {% assign classname = '' %}
+    {% if section.settings.section_width == 'short' %}
+      {% assign classname = 'rich-text--short' %}
+    {% endif %}
+
+    <div class="hero {{ classname }}" style="text-align: {{ section.settings.desktop_text_horizontal_position }};">
+      <div class="hero__text-content">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+              {% unless block.settings.disable_on_mobile and settings.disabled_animations_on_mobile %}
+                <h2 data-block-id="{{ block.id }}" class="hero__headline">
+                  {{ block.settings.heading }}
+                </h2>
+              {% endunless %}
+            
+            {%- when 'text' -%}
+              {% unless block.settings.disable_on_mobile and settings.disabled_animations_on_mobile %}
+                <div class="rich-text-content-wrapper">
+                  <div class="rich-text-content collapsed" id="rich-text-{{ section.id }}">
+                    {{ block.settings.text }}
+                  </div>
+                  {% if section.settings.show_read_more %}
+                    <button class="read-more-btn" onclick="toggleReadMore('{{ section.id }}')">
+                      {{ section.settings.read_more_text }}
+                    </button>
+                  {% endif %}
+                </div>
+              {% endunless %}
+            
+            {%- when 'button' -%}
+              {% unless block.settings.disable_on_mobile and settings.disabled_animations_on_mobile %}
+                <div class="hero__button">
+                  <a href="{{ block.settings.button_link }}" class="button button--{{ block.settings.button_select }}">
+                    {{ block.settings.button_label }}
+                  </a>
+                </div>
+              {% endunless %}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleReadMore(sectionId) {
+    const content = document.getElementById('rich-text-' + sectionId);
+    const button = content.parentElement.querySelector('.read-more-btn');
+    
+    if (content.classList.contains('collapsed')) {
+      content.classList.remove('collapsed');
+      content.style.maxHeight = content.scrollHeight + 'px';
+      button.textContent = '{{ section.settings.read_less_text }}';
+    } else {
+      content.classList.add('collapsed');
+      content.style.maxHeight = '4.5em';
+      button.textContent = '{{ section.settings.read_more_text }}';
+    }
+  }
+
+  // Vérifier si le texte dépasse 3 lignes au chargement
+  document.addEventListener('DOMContentLoaded', function() {
+    const content = document.getElementById('rich-text-{{ section.id }}');
+    if (content) {
+      const wrapper = content.parentElement;
+      const button = wrapper.querySelector('.read-more-btn');
+      
+      // Temporairement enlever la classe collapsed pour mesurer la hauteur réelle
+      content.classList.remove('collapsed');
+      const fullHeight = content.scrollHeight;
+      content.classList.add('collapsed');
+      const collapsedHeight = content.scrollHeight;
+      
+      // Si le contenu ne dépasse pas 3 lignes, cacher le bouton
+      if (fullHeight <= collapsedHeight + 10) {
+        content.classList.remove('collapsed');
+        if (button) button.classList.add('hidden');
+      }
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Rich text - Custom",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "options": [
+        {
+          "value": "regular",
+          "label": "t:sections.rich-text.settings.section_width.regular.label"
+        },
+        {
+          "value": "short",
+          "label": "t:sections.rich-text.settings.section_width.short.label"
+        }
+      ],
+      "default": "regular",
+      "label": "t:sections.rich-text.settings.section_width.label"
+    },
+    {
+      "type": "select",
+      "id": "desktop_text_horizontal_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.rich-text.settings.desktop_text_horizontal_position.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.rich-text.settings.desktop_text_horizontal_position.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.rich-text.settings.desktop_text_horizontal_position.right.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.rich-text.settings.desktop_text_horizontal_position.label"
+    },
+    {
+      "type": "header",
+      "content": "Paramètres \"Lire la suite\""
+    },
+    {
+      "type": "checkbox",
+      "id": "show_read_more",
+      "label": "Afficher le bouton \"Lire la suite\"",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "read_more_text",
+      "label": "Texte du bouton \"Lire la suite\"",
+      "default": "Lire la suite"
+    },
+    {
+      "type": "text",
+      "id": "read_less_text",
+      "label": "Texte du bouton \"Réduire\"",
+      "default": "Réduire"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.colors",
+      "info": "t:sections.global.colors-info"
+    },
+    {
+      "type": "color",
+      "id": "color-body-text",
+      "default": "transparent",
+      "label": "t:sections.settings.settings.text-color.label"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "default": "transparent",
+      "label": "t:sections.settings.settings.background-color.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.section_spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin-top",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 4,
+      "default": 20,
+      "label": "t:sections.settings.settings.distance-top.label"
+    },
+    {
+      "type": "range",
+      "id": "margin-bottom",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 4,
+      "default": 20,
+      "label": "t:sections.settings.settings.distance-bottom.label",
+      "info": "t:sections.settings.settings.distance-bottom.info"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.rich-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "heading",
+          "default": "Talk about your brand",
+          "label": "t:sections.settings.settings.heading.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "disable_on_mobile",
+          "label": "t:sections.global.disable_on_mobile",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "size_heading",
+          "min": 50,
+          "max": 500,
+          "step": 10,
+          "default": 100,
+          "label": "t:sections.settings.settings.size-heading.label",
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "size_heading_mobile",
+          "min": 80,
+          "max": 300,
+          "step": 10,
+          "default": 100,
+          "label": "t:sections.settings.settings.size-heading-mobile.label",
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.rich-text.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make annuncements, or welcome customers to your store.</p>",
+          "label": "t:sections.settings.settings.text.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "disable_on_mobile",
+          "label": "t:sections.global.disable_on_mobile",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.image-banner.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "button_select",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.settings.settings.button_select.primary.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.settings.settings.button_select.secondary.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.settings.settings.button_select.link.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.settings.settings.button_select.default.label"
+        },
+        {
+          "id": "button_label",
+          "type": "text",
+          "default": "Button label",
+          "label": "t:sections.settings.settings.button_label.label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.settings.settings.link.label",
+          "default": "/"
+        },
+        {
+          "type": "checkbox",
+          "id": "disable_on_mobile",
+          "label": "t:sections.global.disable_on_mobile",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rich text - Custom",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}

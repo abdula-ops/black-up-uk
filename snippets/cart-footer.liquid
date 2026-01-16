@@ -1,0 +1,85 @@
+{% style %}
+  .wt-cart__subtotal__value.display-grid { display: grid !important;}
+  .wt-cart__subtotal__label { gap: 8px; }
+{% endstyle %}
+<div class="wt-cart__footer__body">
+  <div class="wt-cart__subtotal">
+    <div class="wt-cart__subtotal__label">
+     
+     
+    {% #Added by ocs for compared total variant  %}
+    {% assign compare_total = 0 %}
+    {% assign actual_total = 0 %}
+    {% for item in cart.items %}
+      {% assign quantity = item.quantity %}
+      {% assign compare_price = item.variant.compare_at_price %}
+      {% assign actual_price = item.variant.price %}
+    
+      {% if compare_price and compare_price > actual_price %}
+        {% assign compare_line_total = compare_price | times: quantity %}
+      {% else %}
+        {% assign compare_line_total = actual_price | times: quantity %}
+      {% endif %}
+    
+      {% assign actual_line_total = actual_price | times: quantity %}
+    
+      {% assign compare_total = compare_total | plus: compare_line_total %}
+      {% assign actual_total = actual_total | plus: actual_line_total %}
+    {% endfor %}
+    {% assign savings = compare_total | minus: cart.total_price %}
+    <span class="text {% if savings <= 0 %} hide {% endif %}" style="{% if savings <= 0 %} display: none; {% else %} display: inline; {% endif %}">{{ 'sections.cart.comparedtotal' | t }} </span>
+     <span class="text">{{ 'sections.cart.subtotal' | t }} </span>
+      
+    </div>
+    <div class="wt-cart__subtotal__value {% if savings <= 0 %}{% else %}display-grid{% endif %}" >
+      <span {% if savings <= 0 %} class="hide" {% endif %} style="text-decoration: line-through; color: #888;  {% if savings <= 0 %} display: none; {% else %} display: inline; {% endif %} ">
+      {{ compare_total | money_with_currency }}
+      </span>
+      {{ cart.total_price | money_with_currency }}
+    </div>
+    <div class="wt-cart__subtotal__loader" style="display: none;">
+      <span class="loader-spinner"></span>
+    </div>
+  </div>
+  {%- if cart.cart_level_discount_applications.size > 0 -%}
+    <div>
+      <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+        {%- for discount in cart.cart_level_discount_applications -%}
+          <li>
+            {%- render 'icon-discount' -%}
+            {{ discount.title }}
+            (-{{ discount.total_allocated_amount | money_with_currency }})
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {%- endif -%}
+
+  <button
+    aria-label="{{ 'sections.cart.checkout' | t }}"
+    type="submit"
+    id="CartDrawer-Checkout"
+    class="btn-checkout wt-cart__cta"
+    name="checkout"
+    form="CartDrawer-Form"
+    {% if cart == empty %}
+      disabled
+    {% endif %}
+    tabindex="-1"
+  >
+    {{ 'sections.cart.checkout' | t }}
+  </button>
+ 
+  {% if settings.show_view_cart %}
+    <div class="wt-featured-collection__button-container wt-button__container">
+      <button
+        aria-label="{{ 'aria-label.featured-collection' | t }}"
+        class="wt-cart__show-cart hero__button--link"
+        onclick='location.href="{{ routes.cart_url }}"'
+        tabindex="-1"
+      >
+        <span>{{ 'sections.cart.view_cart' | t }}</span>
+      </button>
+    </div>
+  {% endif %}
+</div>
