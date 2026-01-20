@@ -1,1 +1,917 @@
-{"sections": {"slideshow_UEReBY": {"type": "slideshow", "blocks": {"slide_EMBnWP": {"type": "slide", "settings": {"subheading": "", "subheading_disable_on_mobile": false, "heading": "", "heading_disable_on_mobile": false, "size_heading": 100, "size_heading_mobile": 100, "text": "", "text_disable_on_mobile": false, "button_select": "primary", "button_label": "SHOP", "button_disable_on_mobile": false, "button_link": "shopify://collections/soldes", "second_button_select": "primary", "second_button_label": "", "button_disable_on_mobile_second": false, "second_button_link": "", "color-body-text": "rgba(0,0,0,0)", "color-overlay": "rgba(0,0,0,0)", "color-overlay-opacity": 0, "desktop_image": "shopify://shop_images/SOLDES_D_HIVER-FR-V2.png", "desktop_text_vertical_position": "center", "desktop_text_horizontal_position": "center", "mobile_image": "shopify://shop_images/FR-M-SOLDES.jpg", "mobile_text_vertical_position": "center", "mobile_text_horizontal_position": "center", "out-background-color": "rgba(0,0,0,0)", "out-text-color": "rgba(0,0,0,0)"}}, "slide_XMDL97": {"type": "slide", "disabled": true, "settings": {"subheading": "", "subheading_disable_on_mobile": false, "heading": "", "heading_disable_on_mobile": false, "size_heading": 100, "size_heading_mobile": 100, "text": "", "text_disable_on_mobile": false, "button_select": "primary", "button_label": "SHOP", "button_disable_on_mobile": false, "button_link": "shopify://products/eau-de-parfum-nairobi-eau-de-parfum-rose-des-sables", "second_button_select": "primary", "second_button_label": "", "button_disable_on_mobile_second": false, "second_button_link": "", "color-body-text": "rgba(0,0,0,0)", "color-overlay": "rgba(0,0,0,0)", "color-overlay-opacity": 0, "desktop_image": "shopify://shop_images/BANNER_HP_2_FR_DESKTOP.jpg", "desktop_text_vertical_position": "center", "desktop_text_horizontal_position": "center", "mobile_image": "shopify://shop_images/BANNER_HP_2_FR_MOBILE.jpg", "mobile_text_vertical_position": "center", "mobile_text_horizontal_position": "center", "out-background-color": "rgba(0,0,0,0)", "out-text-color": "rgba(0,0,0,0)"}}, "slide_W6w7bF": {"type": "slide", "disabled": true, "settings": {"subheading": "", "subheading_disable_on_mobile": false, "heading": "", "heading_disable_on_mobile": false, "size_heading": 100, "size_heading_mobile": 100, "text": "", "text_disable_on_mobile": false, "button_select": "primary", "button_label": "SHOP", "button_disable_on_mobile": false, "button_link": "shopify://collections/meilleures-offres", "second_button_select": "primary", "second_button_label": "", "button_disable_on_mobile_second": false, "second_button_link": "", "color-body-text": "rgba(0,0,0,0)", "color-overlay": "rgba(0,0,0,0)", "color-overlay-opacity": 0, "desktop_image": "shopify://shop_images/BANNER_2-DESKTOP-FR.jpg", "desktop_text_vertical_position": "center", "desktop_text_horizontal_position": "center", "mobile_image": "shopify://shop_images/BANNER_2-MOBILE-FR.jpg", "mobile_text_vertical_position": "center", "mobile_text_horizontal_position": "center", "out-background-color": "rgba(0,0,0,0)", "out-text-color": "rgba(0,0,0,0)"}}}, "block_order": ["slide_EMBnWP", "slide_XMDL97", "slide_W6w7bF"], "custom_css": ["h2 {color: #ffffff !important;}", ".hero__overlay {position: absolute; width: 414px; left: 0px; right: 0px; margin: auto; padding: 0px; bottom: 40px; height: fit-content; top: inherit;}", ".hero__overlay__content {width: 100%;}"], "name": "t:sections.slideshow.settings.presets.name", "settings": {"heading": "", "full-width-enabled": true, "auto-rotate": false, "slide_height": "adapt_to_first_image", "desktop_fixed_height": 320, "mobile_fixed_height": 460, "heading_color": "rgba(0,0,0,0)", "text_color": "rgba(0,0,0,0)", "background_color": "rgba(0,0,0,0)", "out_hero_mobile": false, "margin-top": 0, "margin-bottom": 0}}, "custom_liquid_atpUWc": {"type": "custom-liquid", "disabled": true, "name": "Banner - Mobile", "settings": {"custom_liquid": "<!-- Section image mobile uniquement -->\n{% comment %} Détection de la langue {% endcomment %}\n{% if request.locale.iso_code == 'en' or request.path contains '/en/' %}\n  {% assign is_english = true %}\n  {% assign image_url = 'https://cdn.shopify.com/s/files/1/0674/5014/2887/files/MOBILE_EN.jpg?v=1752011158' %}\n  {% assign link_url = 'https://www.blackup.com/en/collections/sales' %}\n  {% assign cta_text = 'SHOP NOW' %}\n{% else %}\n  {% assign is_english = false %}\n  {% assign image_url = 'https://cdn.shopify.com/s/files/1/0674/5014/2887/files/MOBILE_FR.jpg?v=1752011158' %}\n  {% assign link_url = 'https://www.blackup.com/collections/soldes' %}\n  {% assign cta_text = 'JE SHOPPE' %}\n{% endif %}\n<div class=\"mobile-promo-banner\">\n  <a href=\"{{ link_url }}\" class=\"mobile-promo-link\">\n    <img \n      src=\"{{ image_url }}\"\n      alt=\"{% if is_english %}Sales Promotion{% else %}Promotion Soldes{% endif %}\"\n      class=\"mobile-promo-image\"\n      loading=\"lazy\"\n    />\n    <div class=\"mobile-cta-button\">\n      {{ cta_text }}\n    </div>\n  </a>\n</div>\n<style>\n  .mobile-promo-banner {\n    display: none; /* Caché par défaut */\n    width: 100%;\n    margin: 0;\n    padding: 0;\n  }\n  \n  .mobile-promo-link {\n    display: block;\n    width: 100%;\n    text-decoration: none;\n    position: relative; /* Pour positionner le bouton CTA */\n  }\n  \n  .mobile-promo-image {\n    width: 100%;\n    height: auto;\n    display: block;\n    border: none;\n  }\n  \n  .mobile-cta-button {\n    position: absolute;\n    bottom: 20px; /* Distance du bas de l'image */\n    left: 50%;\n    transform: translateX(-50%); /* Centrage horizontal */\n    background-color: #000;\n    color: #fff;\n    padding: 12px 24px;\n    border-radius: 25px;\n    font-size: 14px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);\n  }\n  \n  .mobile-cta-button:hover {\n    background-color: #333;\n    transform: translateX(-50%) translateY(-2px);\n    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);\n  }\n  \n  /* Affichage uniquement sur mobile (écrans <= 768px) */\n  @media screen and (max-width: 768px) {\n    .mobile-promo-banner {\n      display: block;\n    }\n  }\n  \n  /* Pour les très petits écrans (optionnel) */\n  @media screen and (max-width: 480px) {\n    .mobile-promo-banner {\n      display: block;\n    }\n  }\n</style>"}}, "features_banner_rnAYGJ": {"type": "features-banner", "blocks": {"image_knKEhC": {"type": "image", "settings": {"desktop_image": "shopify://shop_images/PLUS.svg", "select_icon": "bag", "heading": "Livraison rapide\nDans toute l'Europe", "text": ""}}, "image_4xqij4": {"type": "image", "settings": {"desktop_image": "shopify://shop_images/CARTE.svg", "select_icon": "plus", "heading": "Livraison offerte \ndès 65€", "text": ""}}, "image_izam6t": {"type": "image", "settings": {"desktop_image": "shopify://shop_images/INFO.svg", "select_icon": "check", "heading": "Paiements sécurisés\nCB, Paypal, 3* sans frais", "text": ""}}, "image_MwWBCP": {"type": "image", "disabled": true, "settings": {"desktop_image": "shopify://shop_images/LIVRAISON_c4f44f22-2384-445f-8404-838a80e63cd0.svg", "select_icon": "user", "heading": "Un service client \nà l'écoute 24/24", "text": ""}}}, "block_order": ["image_knKEhC", "image_4xqij4", "image_izam6t", "image_MwWBCP"], "disabled": true, "custom_css": [".wt-keys__image {width: 4.5rem; height: 4.5rem;}"], "settings": {"heading": "", "size_heading": 30, "size_heading_mobile": 50, "icon_layout": "center", "color_body_icon": "#ffffff", "color_body_text": "#ffffff", "background_color": "#000000", "icon_layout_mobile": "grid", "margin-top": 12, "margin-bottom": 0}}, "featured_collection_98txhK": {"type": "featured-collection", "disabled": true, "settings": {"title": "NOS BEST SELLERS", "disable_on_mobile": false, "collection": "tous-nos-produits", "product_list": ["base-matifiante-8h", "blackup-x-shy-m-fard-a-paupieres-liquide-shymle02", "brillant-a-levres-ngloss03", "crayon-khol-waterproof-ks08", "fond-de-teint-creme-haute-couvrance-hc05", "fond-de-teint-creme-poudre-fcnat04", "fond-de-teint-fini-mat-fnat10", "serum-relaxed", "ombres-a-paupieres-oap-12"], "products_to_show": 14, "enable_stack_products": false, "show_view_all": true, "button_select": "primary", "number_of_column_desktop": 3, "spacing_desktop": "16", "make_products_full_width": true, "number_of_column_mobile": 1.9, "text_alignment": "left", "image_ratio": "square", "show_video": true, "show_secondary_image": true, "show_vendor": false, "show_product_rating": true, "enable_quick_add_button": false, "color-body-text": "rgba(0,0,0,0)", "background_color": "rgba(0,0,0,0)", "margin-top": 20, "margin-bottom": 20}}, "collection_tabs_cta_xrUWAx": {"type": "collection-tabs-cta", "custom_css": ["[data-section-id=\"template--19260995174567__collection_tabs_cta_xrUWAx\"] .collection-tab-cta .collection-tab-title {font-family: \"Lexend Giga\" !important; font-weight: 600; font-size: 14px;}"], "name": "Collection Tab + CTA", "settings": {"title": "NOS CATÉGORIES", "disable_on_mobile": false, "collection": "nouveautes", "collection_1": "maquillage-teint", "collection_2": "maquillage-yeux", "collection_3": "maquillage-levres", "collection_4": "accessoires", "products_to_show": 6, "enable_stack_products": false, "show_view_all": true, "button_select": "primary", "number_of_column_desktop": 4, "spacing_desktop": "16", "make_products_full_width": true, "number_of_column_mobile": 1.3, "text_alignment": "left", "image_ratio": "square", "show_video": false, "show_secondary_image": true, "show_vendor": false, "show_product_rating": true, "enable_quick_add_button": true, "color-body-text": "rgba(0,0,0,0)", "background_color": "rgba(0,0,0,0)", "margin-top": 20, "margin-bottom": 20}}, "collection_tabs_zxQhaC": {"type": "collection-tabs", "disabled": true, "custom_css": ["@media (min-width: 768px) {.wt-slider__container--featured.wt-slider__container--full {margin-left: 30px; margin-right: 30px; }}", ".wt-slider__scrollbar .swiper-scrollbar-drag {background-color: #afafaf;}", ".collection-tab-title-container {margin-bottom: 50px;}"], "settings": {"title": "NOS CATEGORIES", "disable_on_mobile": false, "collection": "best-sellers", "collection_1": "nouveautes", "collection_2": "maquillage-teint", "collection_3": "maquillage-yeux", "collection_4": "maquillage-levres", "products_to_show": 6, "enable_stack_products": false, "show_view_all": true, "button_select": "primary", "number_of_column_desktop": 4, "spacing_desktop": "16", "make_products_full_width": true, "number_of_column_mobile": 1.3, "text_alignment": "left", "image_ratio": "square", "show_video": false, "show_secondary_image": true, "show_vendor": false, "show_product_rating": true, "enable_quick_add_button": true, "color-body-text": "rgba(0,0,0,0)", "background_color": "rgba(0,0,0,0)", "margin-top": 48, "margin-bottom": 88}}, "custom_multicolumn_f6qLic": {"type": "custom-multicolumn", "blocks": {"column_mQd46g": {"type": "column", "settings": {"heading": "", "heading_disable_on_mobile": false, "text": "", "text2": "", "text3": "", "text_disable_on_mobile": false, "button_select": "primary", "button_label": "", "button_disable_on_mobile": false, "button_link": "", "button_link_in_new_window": false, "desktop_image": "shopify://shop_images/LEFT-2-1_c950d1ff-149b-4bf2-a4f8-7c161afbe00d.png"}}, "column_MFhEtF": {"type": "column", "settings": {"heading": "", "heading_disable_on_mobile": false, "text": "<p><strong>Invitation au voyage.</strong></p><p> Bergamote, gingembre, cassis en tête ; cœur tubéreuse–jasmin. Le sillage chauffe : santal et cèdre, long sur peau.</p>", "text2": "<p>EAU DE PARFUM</p>", "text3": "<p>NAIROBI</p>", "text_disable_on_mobile": false, "button_select": "primary", "button_label": "DÉCOUVRIR", "button_disable_on_mobile": false, "button_link": "shopify://collections/le-parfum", "button_link_in_new_window": false}}, "column_iUjp3g": {"type": "column", "settings": {"heading": "", "heading_disable_on_mobile": false, "text": "", "text2": "", "text3": "", "text_disable_on_mobile": false, "button_select": "primary", "button_label": "", "button_disable_on_mobile": false, "button_link": "", "button_link_in_new_window": false, "desktop_image": "shopify://shop_images/LEFT-2_f1b9ffd4-2c3d-451c-a44a-0e9f5cae2b16.png"}}}, "block_order": ["column_mQd46g", "column_MFhEtF", "column_iUjp3g"], "custom_css": ["@media screen and (min-width: 768px) {[data-swiper]:not(.swiper-initialized) .wt-multicol__list {flex-wrap: nowrap; margin-left: 50px; margin-right: 50px; }}", ".hero__text {max-width: 40ch; padding-bottom: 10px;}", "strong {font-family: \"Work Sans\"; letter-spacing: 0.1px;}"], "settings": {"heading": "", "swipe_on_mobile": false, "full-width-enabled": true, "image_ratio": "adapt", "column_alignment": "left", "size_heading": 100, "size_heading_mobile": 100, "color-body-text": "rgba(0,0,0,0)", "background_color": "rgba(0,0,0,0)", "margin-top": 96, "margin-bottom": 28}}, "rich_text_N3gmTh": {"type": "rich-text", "blocks": {"heading_GWcdiP": {"type": "heading", "settings": {"heading": "THIS IS BLACK UP.", "disable_on_mobile": false, "size_heading": 100, "size_heading_mobile": 100}}}, "block_order": ["heading_GWcdiP"], "settings": {"section_width": "regular", "desktop_text_horizontal_position": "center", "color-body-text": "rgba(0,0,0,0)", "background_color": "#ffffff", "margin-top": 12, "margin-bottom": 12}}, "shoppable_video_PWWPiV": {"type": "shoppable-video", "blocks": {"product_4F9efb": {"type": "product", "settings": {"start_second": 1, "featured_product": "fond-de-teint-creme-poudre-fcnat"}}, "product_BrP8dh": {"type": "product", "settings": {"start_second": 2, "featured_product": "crayon-khol-waterproof-ks00"}}, "product_9WHJPz": {"type": "product", "settings": {"start_second": 4, "featured_product": "mascara-revoluption"}}, "product_khmtMF": {"type": "product", "settings": {"start_second": 50, "featured_product": "duo-blush-et-enlumineur-waxduo-05"}}, "product_hh6zhr": {"type": "product", "settings": {"start_second": 50, "featured_product": "rouge-exception-rouge-a-levres-brillant-lip11s"}}, "product_LYxePj": {"type": "product", "disabled": true, "settings": {"start_second": 50, "featured_product": "rouge-exception-rouge-a-levres-brillant-lip07s"}}}, "block_order": ["product_4F9efb", "product_BrP8dh", "product_9WHJPz", "product_khmtMF", "product_hh6zhr", "product_LYxePj"], "custom_css": ["@media (min-width: 768px) {.shoppable-video__container {position: relative; margin-left: 50px; margin-right: 50px; border-radius: 12px; overflow: hidden; box-sizing: border-box; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }}"], "settings": {"heading": "", "full-width-enabled": true, "quick-add-enabled": true, "rewind-enabled": false, "hide-brand-name": true, "desktop_fixed_height": 700, "mobile_fixed_height": 480, "enable_full_screen_mode": false, "color-body-heading": "rgba(0,0,0,0)", "color-overlay": "rgba(0,0,0,0)", "color-overlay-opacity": 100, "color-body-text": "#cf4a4a", "margin-top": 0, "margin-bottom": 0}}, "video_section_GrjQXG": {"type": "video-section", "blocks": {"heading_LxNWC3": {"type": "heading", "settings": {"heading": "BEAUTE PUISSANTE. \nAUTHENTIQUE. INVINCIBLE.", "disable_on_mobile": false, "size_heading": 120, "size_heading_mobile": 100}}, "text_aChhnh": {"type": "text", "settings": {"text": "<p>Chez black Up, la beauté dépasse la couleur : elle incarne la présence, l’éclat et l’identité. Nos formules, riches en pigments, sont pensées pour révéler chaque nuance des peaux foncées, sans jamais masquer. Ici, la beauté ne suit pas les règles. Elle les crée. Chaque produit rend hommage à l’aura, à la confiance et à l’individualité des femmes noires.</p>", "disable_on_mobile": false}}, "button_FmEKQJ": {"type": "button", "settings": {"button_select": "primary", "button_label": "découvrir la marque", "button_link": "shopify://pages/la-marque", "button_link_in_new_window": false, "disable_on_mobile": false}}}, "block_order": ["heading_LxNWC3", "text_aChhnh", "button_FmEKQJ"], "disabled": true, "custom_css": ["[data-section-id=\"template--17998465892519__video_section_GrjQXG\"] {margin-left: 10px; margin-right: 10px;}", "@media (min-width: 768px) {[data-section-id=\"template--17998465892519__video_section_GrjQXG\"] {margin-left: 25px; margin-right: 25px; }}", ".wt-section__wrapper--full .wt-video {border-radius: 12px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);}", ".heading-last-word-highlight {color: #dc392e;}", "@media (min-width: 768px) {.hero__overlay {padding: calc(var(--gap, 8px) * 10); }}"], "settings": {"heading": "", "full-width-enabled": true, "slide_height": "fixed_height", "desktop_fixed_height": 640, "mobile_fixed_height": 460, "video_url": "", "layout_mobile": "video", "layout": "video_first", "color-heading-text": "rgba(0,0,0,0)", "section-color-overlay": "rgba(0,0,0,0)", "section-color-overlay-opacity": 0, "color-body-text": "rgba(0,0,0,0)", "color-overlay": "rgba(0,0,0,0)", "color-overlay-opacity": 0, "desktop_image": "shopify://shop_images/CARRE-BLANC.jpg", "desktop_text_vertical_position": "center", "desktop_text_horizontal_position": "center", "mobile_text_vertical_position": "center", "mobile_text_horizontal_position": "center", "margin-top": 80, "margin-bottom": 60}}, "image_with_text_eTjVPF": {"type": "image-with-text", "blocks": {"subheading_wqfFRQ": {"type": "subheading", "disabled": true, "settings": {"subheading": "BEAUTE PUISSANTE. AUTHENTIQUE. INVINCIBLE.", "subheading_disable_on_mobile": true}}, "heading_mdEpVF": {"type": "heading", "settings": {"heading": "BEAUTE PUISSANTE.  AUTHENTIQUE. INVINCIBLE.", "disable_on_mobile": false, "size_heading": 100, "size_heading_mobile": 100}}, "text_tyzAqJ": {"type": "text", "settings": {"text": "<p>Chez black Up, la beauté dépasse la couleur : elle incarne la présence, l’éclat et l’identité. Nos formules, riches en pigments, sont pensées pour révéler chaque nuance des peaux foncées, sans jamais masquer. Ici, la beauté ne suit pas les règles. Elle les crée. Chaque produit rend hommage à l’aura, à la confiance et à l’individualité des femmes.</p><p>Nos produits ne sont pas testés sur les animaux. Fabriqués en Europe et nous portons une attention particulière à maintenir une part de notre production en France.</p>", "text_style": "body", "disable_on_mobile": false}}, "button_FA3m4i": {"type": "button", "settings": {"button_select": "primary", "button_label": "découvrir la marque", "button_link": "shopify://pages/la-marque", "disable_on_mobile": false}}}, "block_order": ["subheading_wqfFRQ", "heading_mdEpVF", "text_tyzAqJ", "button_FA3m4i"], "custom_css": [".heading-last-word-highlight {color: #dc392e;}", ".hero__wrapper--full .hero__overlay__content {margin: 0 auto; padding: 0 20px;}", "@media (min-width: 1024px) {img {margin-top: 80px; } [data-section-id=\"template--17998465892519__image_with_text_eTjVPF\"] {border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); margin: 40px; } .hero__wrapper--full .hero__overlay__content {padding: 0 40px; }}", "[data-section-id=\"template--17998465892519__image_with_text_eTjVPF\"] {--border-radius: 12px;}", ".hero__button {margin-top: calc(var(--gap, 8px) * 5);}"], "settings": {"title": "", "layout": "image_first", "desktop-percentage-image-width": 50, "full-width-enabled": true, "slide_height": "adapt_to_first_image", "desktop_fixed_height": 600, "mobile_fixed_height": 460, "section-color-body-text": "rgba(0,0,0,0)", "section-color-overlay": "#ffffff", "section-color-overlay-opacity": 100, "color-body-text": "rgba(0,0,0,0)", "color-overlay": "rgba(0,0,0,0)", "color-overlay-opacity": 100, "desktop_image": "shopify://shop_images/IMG-SANS-VIDEO.jpg", "desktop_text_vertical_position": "center", "desktop_text_horizontal_position": "center", "mobile_text_horizontal_position": "center", "margin-top": 0, "margin-bottom": 0}}, "image_banner_qAqmU6": {"type": "image-banner", "blocks": {"heading_pqB93z": {"type": "heading", "settings": {"heading": "PENSÉ POUR CHAQUE NUANCE DE PEAUX FONCÉES ET BIEN PLUS ENCORE.", "disable_on_mobile": false, "size_heading": 120, "size_heading_mobile": 100}}}, "block_order": ["heading_pqB93z"], "disabled": true, "custom_css": ["[data-section-id=\"template--17998465892519__image_banner_qAqmU6\"] {--border-radius: 13px; --section-height: 460px; --section-height-desk: 700px; margin: 0px 50px 0px 50px;}", "@media screen and (max-width: 749px) {[data-section-id=\"template--17998465892519__image_banner_qAqmU6\"] {margin-left: 20px; margin-right: 20px; }}"], "settings": {"heading": "", "full-width-enabled": true, "slide_height": "fixed_height", "desktop_fixed_height": 700, "mobile_fixed_height": 460, "desktop_image": "shopify://shop_images/BU-IMG.jpg", "desktop_text_vertical_position": "center", "desktop_text_horizontal_position": "center", "mobile_text_vertical_position": "center", "mobile_text_horizontal_position": "center", "color-heading": "rgba(0,0,0,0)", "section-color-overlay": "rgba(0,0,0,0)", "section-color-overlay-opacity": 100, "color-body-text": "#ffffff", "text-container-color": "rgba(0,0,0,0)", "color-overlay-opacity": 100, "margin-top": 60, "margin-bottom": 60}}, "rich_text_77kLU7": {"type": "rich-text", "blocks": {"heading_EbVGcp": {"type": "heading", "settings": {"heading": "THIS IS HOW WE DO MAKEUP.", "disable_on_mobile": false, "size_heading": 100, "size_heading_mobile": 100}}}, "block_order": ["heading_EbVGcp"], "settings": {"section_width": "regular", "desktop_text_horizontal_position": "center", "color-body-text": "rgba(0,0,0,0)", "background_color": "rgba(0,0,0,0)", "margin-top": 40, "margin-bottom": 0}}, "video_reels_kb4KdA": {"type": "video-reels", "blocks": {"product_CAAJBg": {"type": "product", "settings": {"featured_product": "brillant-a-levres-ngloss01"}}, "product_wrYgbH": {"type": "product", "settings": {"featured_product": "palette-fards-a-paupieres-et-blush"}}, "product_rgd8WL": {"type": "product", "settings": {"featured_product": "cc-cream-multi-action-cc"}}, "product_Q3Dhwd": {"type": "product", "settings": {"featured_product": "two-way-cake-tw"}}, "product_4zdjEq": {"type": "product", "settings": {"featured_product": "m-eye-love-mascara-waterproof-volume-et-courbe"}}}, "block_order": ["product_CAAJBg", "product_wrYgbH", "product_rgd8WL", "product_Q3Dhwd", "product_4zdjEq"], "custom_css": ["@media (min-width: 768px) {.wt-slider__container {box-sizing: border-box; margin-left: 50px; margin-right: 50px; border-radius: 13px; overflow: hidden; }}"], "settings": {"heading": "", "quick-add-enabled": true, "hide-brand-name": true, "video_button": true, "color-body-text": "rgba(0,0,0,0)", "background_color": "#ffffff", "margin-top": 12, "margin-bottom": 72}}, "image_with_text_iWUUY3": {"type": "image-with-text", "blocks": {"subheading_F6pY3j": {"type": "subheading", "settings": {"subheading": "TROUVEZ VOTRE TEINTE. PAS D'ERREUR JUSTE LE MATCH PARFAIT.", "subheading_disable_on_mobile": false}}, "heading_Kq63iE": {"type": "heading", "settings": {"heading": "Le guide expert pour révéler votre carnation avec black Up", "disable_on_mobile": false, "size_heading": 100, "size_heading_mobile": 80}}, "button_88zWaA": {"type": "button", "settings": {"button_select": "primary", "button_label": "JE TROUVE MA TEINTE", "button_link": "shopify://pages/trouver-son-fond-de-teint", "disable_on_mobile": false}}}, "block_order": ["subheading_F6pY3j", "heading_Kq63iE", "button_88zWaA"], "custom_css": [".hero__title span.heading-last-word-highlight,.block__title span.heading-last-word-highlight {color: #c1423c;}", ".section-image-with-text {border-radius: 13px; overflow: hidden; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);}", "@media (min-width: 750px) {.hero__wrapper--full .hero--grid .hero__overlay__content {margin-right: calc(var(--gap, 8px) * 20); margin-left: 0; } .section-image-with-text {margin-left: 50px; margin-right: 50px; }}", ".hero__overlay {background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);}", "@media (max-width: 767px) {}"], "settings": {"title": "", "layout": "image_first", "desktop-percentage-image-width": 50, "full-width-enabled": true, "slide_height": "adapt_to_first_image", "desktop_fixed_height": 320, "mobile_fixed_height": 460, "section-color-body-text": "rgba(0,0,0,0)", "section-color-overlay": "rgba(0,0,0,0)", "section-color-overlay-opacity": 100, "color-body-text": "rgba(0,0,0,0)", "color-overlay": "rgba(0,0,0,0)", "color-overlay-opacity": 100, "desktop_image": "shopify://shop_images/Teint-V2.jpg", "desktop_text_vertical_position": "center", "desktop_text_horizontal_position": "left", "mobile_image": "shopify://shop_images/trouver_votre_teint_mobile.jpg", "mobile_text_horizontal_position": "left", "margin-top": 0, "margin-bottom": 0}}, "separator_38gTMr": {"type": "separator", "settings": {"heading": "", "show-separator-line": false, "full-width-line": false, "color-background": "#000000", "margin-top": 60, "margin-bottom": 20}}, "custom_liquid_JwewMA": {"type": "custom-liquid", "custom_css": [], "settings": {"custom_liquid": "<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-c9dfd965-9d08-472c-a2f2-4c2446c7f7ac\" data-elfsight-app-lazy></div>"}}, "separator_bUJ7xE": {"type": "separator", "settings": {"heading": "", "show-separator-line": false, "full-width-line": false, "color-background": "#000000", "margin-top": 60, "margin-bottom": 20}}, "rich_text_NEKwBK": {"type": "rich-text", "blocks": {"heading_VeUiwm": {"type": "heading", "settings": {"heading": "CONÇU AVEC EXIGENCE.", "disable_on_mobile": false, "size_heading": 100, "size_heading_mobile": 100}}, "text_hFKBcp": {"type": "text", "settings": {"text": "<p>Nos produits ne sont pas testés sur les animaux. Ils sont fabriqués en Europe, et nous portons une attention particulière à maintenir une partie de notre production en France.</p>", "disable_on_mobile": false}}}, "block_order": ["heading_VeUiwm", "text_hFKBcp"], "custom_css": ["[data-section-id=\"template--17998465892519__rich_text_NEKwBK\"] {--color-custom-background: #fff; /* Conservé au cas où */ background: linear-gradient( 180deg, #f4f5f7 0%, #eff1f4 17.23%, #eff0f2 31.38%, #ebecee 47.54%, #e7e7e9 68.32%, #e3e3e5 86.51%, #dedede 100% )"], "settings": {"section_width": "regular", "desktop_text_horizontal_position": "center", "color-body-text": "rgba(0,0,0,0)", "background_color": "#f0f0f0", "margin-top": 20, "margin-bottom": 20}}, "separator_RGfbQc": {"type": "separator", "settings": {"heading": "", "show-separator-line": false, "full-width-line": false, "color-background": "#000000", "margin-top": 60, "margin-bottom": 20}}}, "order": ["slideshow_UEReBY", "custom_liquid_atpUWc", "features_banner_rnAYGJ", "featured_collection_98txhK", "collection_tabs_cta_xrUWAx", "collection_tabs_zxQhaC", "custom_multicolumn_f6qLic", "rich_text_N3gmTh", "shoppable_video_PWWPiV", "video_section_GrjQXG", "image_with_text_eTjVPF", "image_banner_qAqmU6", "rich_text_77kLU7", "video_reels_kb4KdA", "image_with_text_iWUUY3", "separator_38gTMr", "custom_liquid_JwewMA", "separator_bUJ7xE", "rich_text_NEKwBK", "separator_RGfbQc"]}
+{
+  "sections": {
+    "slideshow_UEReBY": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_EMBnWP": {
+          "type": "slide",
+          "settings": {
+            "subheading": "",
+            "subheading_disable_on_mobile": false,
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "SHOP",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://collections/soldes",
+            "second_button_select": "primary",
+            "second_button_label": "",
+            "button_disable_on_mobile_second": false,
+            "second_button_link": "",
+            "color-body-text": "rgba(0,0,0,0)",
+            "color-overlay": "rgba(0,0,0,0)",
+            "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/SOLDES_D_HIVER-FR-V2.png",
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_image": "shopify://shop_images/FR-M-SOLDES.jpg",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center",
+            "out-background-color": "rgba(0,0,0,0)",
+            "out-text-color": "rgba(0,0,0,0)"
+          }
+        },
+        "slide_XMDL97": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "subheading_disable_on_mobile": false,
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "SHOP",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://products/eau-de-parfum-nairobi-eau-de-parfum-rose-des-sables",
+            "second_button_select": "primary",
+            "second_button_label": "",
+            "button_disable_on_mobile_second": false,
+            "second_button_link": "",
+            "color-body-text": "rgba(0,0,0,0)",
+            "color-overlay": "rgba(0,0,0,0)",
+            "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/BANNER_HP_2_FR_DESKTOP.jpg",
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_image": "shopify://shop_images/BANNER_HP_2_FR_MOBILE.jpg",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center",
+            "out-background-color": "rgba(0,0,0,0)",
+            "out-text-color": "rgba(0,0,0,0)"
+          }
+        },
+        "slide_W6w7bF": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "subheading_disable_on_mobile": false,
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "SHOP",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://collections/meilleures-offres",
+            "second_button_select": "primary",
+            "second_button_label": "",
+            "button_disable_on_mobile_second": false,
+            "second_button_link": "",
+            "color-body-text": "rgba(0,0,0,0)",
+            "color-overlay": "rgba(0,0,0,0)",
+            "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/BANNER_2-DESKTOP-FR.jpg",
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_image": "shopify://shop_images/BANNER_2-MOBILE-FR.jpg",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center",
+            "out-background-color": "rgba(0,0,0,0)",
+            "out-text-color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "slide_EMBnWP",
+        "slide_XMDL97",
+        "slide_W6w7bF"
+      ],
+      "custom_css": [
+        "h2 {color: #ffffff !important;}",
+        ".hero__overlay {position: absolute; width: 414px; left: 0px; right: 0px; margin: auto; padding: 0px; bottom: 40px; height: fit-content; top: inherit;}",
+        ".hero__overlay__content {width: 100%;}"
+      ],
+      "name": "t:sections.slideshow.settings.presets.name",
+      "settings": {
+        "heading": "",
+        "full-width-enabled": true,
+        "auto-rotate": false,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "heading_color": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "out_hero_mobile": false,
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "custom_liquid_atpUWc": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Banner - Mobile",
+      "settings": {
+        "custom_liquid": "<!-- Section image mobile uniquement -->\n{% comment %} Détection de la langue {% endcomment %}\n{% if request.locale.iso_code == 'en' or request.path contains '/en/' %}\n  {% assign is_english = true %}\n  {% assign image_url = 'https://cdn.shopify.com/s/files/1/0674/5014/2887/files/MOBILE_EN.jpg?v=1752011158' %}\n  {% assign link_url = 'https://www.blackup.com/en/collections/sales' %}\n  {% assign cta_text = 'SHOP NOW' %}\n{% else %}\n  {% assign is_english = false %}\n  {% assign image_url = 'https://cdn.shopify.com/s/files/1/0674/5014/2887/files/MOBILE_FR.jpg?v=1752011158' %}\n  {% assign link_url = 'https://www.blackup.com/collections/soldes' %}\n  {% assign cta_text = 'JE SHOPPE' %}\n{% endif %}\n<div class=\"mobile-promo-banner\">\n  <a href=\"{{ link_url }}\" class=\"mobile-promo-link\">\n    <img \n      src=\"{{ image_url }}\"\n      alt=\"{% if is_english %}Sales Promotion{% else %}Promotion Soldes{% endif %}\"\n      class=\"mobile-promo-image\"\n      loading=\"lazy\"\n    />\n    <div class=\"mobile-cta-button\">\n      {{ cta_text }}\n    </div>\n  </a>\n</div>\n<style>\n  .mobile-promo-banner {\n    display: none; /* Caché par défaut */\n    width: 100%;\n    margin: 0;\n    padding: 0;\n  }\n  \n  .mobile-promo-link {\n    display: block;\n    width: 100%;\n    text-decoration: none;\n    position: relative; /* Pour positionner le bouton CTA */\n  }\n  \n  .mobile-promo-image {\n    width: 100%;\n    height: auto;\n    display: block;\n    border: none;\n  }\n  \n  .mobile-cta-button {\n    position: absolute;\n    bottom: 20px; /* Distance du bas de l'image */\n    left: 50%;\n    transform: translateX(-50%); /* Centrage horizontal */\n    background-color: #000;\n    color: #fff;\n    padding: 12px 24px;\n    border-radius: 25px;\n    font-size: 14px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);\n  }\n  \n  .mobile-cta-button:hover {\n    background-color: #333;\n    transform: translateX(-50%) translateY(-2px);\n    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);\n  }\n  \n  /* Affichage uniquement sur mobile (écrans <= 768px) */\n  @media screen and (max-width: 768px) {\n    .mobile-promo-banner {\n      display: block;\n    }\n  }\n  \n  /* Pour les très petits écrans (optionnel) */\n  @media screen and (max-width: 480px) {\n    .mobile-promo-banner {\n      display: block;\n    }\n  }\n</style>"
+      }
+    },
+    "features_banner_rnAYGJ": {
+      "type": "features-banner",
+      "blocks": {
+        "image_knKEhC": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/PLUS.svg",
+            "select_icon": "bag",
+            "heading": "Livraison rapide\nDans toute l'Europe",
+            "text": ""
+          }
+        },
+        "image_4xqij4": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/CARTE.svg",
+            "select_icon": "plus",
+            "heading": "Livraison offerte \ndès 65€",
+            "text": ""
+          }
+        },
+        "image_izam6t": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/INFO.svg",
+            "select_icon": "check",
+            "heading": "Paiements sécurisés\nCB, Paypal, 3* sans frais",
+            "text": ""
+          }
+        },
+        "image_MwWBCP": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "desktop_image": "shopify://shop_images/LIVRAISON_c4f44f22-2384-445f-8404-838a80e63cd0.svg",
+            "select_icon": "user",
+            "heading": "Un service client \nà l'écoute 24/24",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_knKEhC",
+        "image_4xqij4",
+        "image_izam6t",
+        "image_MwWBCP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".wt-keys__image {width: 4.5rem; height: 4.5rem;}"
+      ],
+      "settings": {
+        "heading": "",
+        "size_heading": 30,
+        "size_heading_mobile": 50,
+        "icon_layout": "center",
+        "color_body_icon": "#ffffff",
+        "color_body_text": "#ffffff",
+        "background_color": "#000000",
+        "icon_layout_mobile": "grid",
+        "margin-top": 12,
+        "margin-bottom": 0
+      }
+    },
+    "featured_collection_98txhK": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "NOS BEST SELLERS",
+        "disable_on_mobile": false,
+        "collection": "tous-nos-produits",
+        "product_list": [
+          "base-matifiante-8h",
+          "blackup-x-shy-m-fard-a-paupieres-liquide-shymle02",
+          "brillant-a-levres-ngloss03",
+          "crayon-khol-waterproof-ks08",
+          "fond-de-teint-creme-haute-couvrance-hc05",
+          "fond-de-teint-creme-poudre-fcnat04",
+          "fond-de-teint-fini-mat-fnat10",
+          "serum-relaxed",
+          "ombres-a-paupieres-oap-12"
+        ],
+        "products_to_show": 14,
+        "enable_stack_products": false,
+        "show_view_all": true,
+        "button_select": "primary",
+        "number_of_column_desktop": 3,
+        "spacing_desktop": "16",
+        "make_products_full_width": true,
+        "number_of_column_mobile": 1.9,
+        "text_alignment": "left",
+        "image_ratio": "square",
+        "show_video": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_product_rating": true,
+        "enable_quick_add_button": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "collection_tabs_cta_xrUWAx": {
+      "type": "collection-tabs-cta",
+      "custom_css": [
+        "[data-section-id=\"template--19260995174567__collection_tabs_cta_xrUWAx\"] .collection-tab-cta .collection-tab-title {font-family: \"Lexend Giga\" !important; font-weight: 600; font-size: 14px;}"
+      ],
+      "name": "Collection Tab + CTA",
+      "settings": {
+        "title": "NOS CATÉGORIES",
+        "disable_on_mobile": false,
+        "collection": "nouveautes",
+        "collection_1": "maquillage-teint",
+        "collection_2": "maquillage-yeux",
+        "collection_3": "maquillage-levres",
+        "collection_4": "accessoires",
+        "products_to_show": 6,
+        "enable_stack_products": false,
+        "show_view_all": true,
+        "button_select": "primary",
+        "number_of_column_desktop": 4,
+        "spacing_desktop": "16",
+        "make_products_full_width": true,
+        "number_of_column_mobile": 1.3,
+        "text_alignment": "left",
+        "image_ratio": "square",
+        "show_video": false,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_product_rating": true,
+        "enable_quick_add_button": true,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "collection_tabs_zxQhaC": {
+      "type": "collection-tabs",
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 768px) {.wt-slider__container--featured.wt-slider__container--full {margin-left: 30px; margin-right: 30px; }}",
+        ".wt-slider__scrollbar .swiper-scrollbar-drag {background-color: #afafaf;}",
+        ".collection-tab-title-container {margin-bottom: 50px;}"
+      ],
+      "settings": {
+        "title": "NOS CATEGORIES",
+        "disable_on_mobile": false,
+        "collection": "best-sellers",
+        "collection_1": "nouveautes",
+        "collection_2": "maquillage-teint",
+        "collection_3": "maquillage-yeux",
+        "collection_4": "maquillage-levres",
+        "products_to_show": 6,
+        "enable_stack_products": false,
+        "show_view_all": true,
+        "button_select": "primary",
+        "number_of_column_desktop": 4,
+        "spacing_desktop": "16",
+        "make_products_full_width": true,
+        "number_of_column_mobile": 1.3,
+        "text_alignment": "left",
+        "image_ratio": "square",
+        "show_video": false,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_product_rating": true,
+        "enable_quick_add_button": true,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 48,
+        "margin-bottom": 88
+      }
+    },
+    "custom_multicolumn_f6qLic": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_mQd46g": {
+          "type": "column",
+          "settings": {
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "text": "",
+            "text2": "",
+            "text3": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/LEFT-2-1_c950d1ff-149b-4bf2-a4f8-7c161afbe00d.png"
+          }
+        },
+        "column_MFhEtF": {
+          "type": "column",
+          "settings": {
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "text": "<p><strong>Invitation au voyage.</strong></p><p> Bergamote, gingembre, cassis en tête ; cœur tubéreuse–jasmin. Le sillage chauffe : santal et cèdre, long sur peau.</p>",
+            "text2": "<p>EAU DE PARFUM</p>",
+            "text3": "<p>NAIROBI</p>",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "DÉCOUVRIR",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://collections/le-parfum",
+            "button_link_in_new_window": false
+          }
+        },
+        "column_iUjp3g": {
+          "type": "column",
+          "settings": {
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "text": "",
+            "text2": "",
+            "text3": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/LEFT-2_f1b9ffd4-2c3d-451c-a44a-0e9f5cae2b16.png"
+          }
+        }
+      },
+      "block_order": [
+        "column_mQd46g",
+        "column_MFhEtF",
+        "column_iUjp3g"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {[data-swiper]:not(.swiper-initialized) .wt-multicol__list {flex-wrap: nowrap; margin-left: 50px; margin-right: 50px; }}",
+        ".hero__text {max-width: 40ch; padding-bottom: 10px;}",
+        "strong {font-family: \"Work Sans\"; letter-spacing: 0.1px;}"
+      ],
+      "settings": {
+        "heading": "",
+        "swipe_on_mobile": false,
+        "full-width-enabled": true,
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "size_heading": 100,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 96,
+        "margin-bottom": 28
+      }
+    },
+    "rich_text_N3gmTh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GWcdiP": {
+          "type": "heading",
+          "settings": {
+            "heading": "THIS IS BLACK UP.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_GWcdiP"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#ffffff",
+        "margin-top": 12,
+        "margin-bottom": 12
+      }
+    },
+    "shoppable_video_PWWPiV": {
+      "type": "shoppable-video",
+      "blocks": {
+        "product_4F9efb": {
+          "type": "product",
+          "settings": {
+            "start_second": 1,
+            "featured_product": "fond-de-teint-creme-poudre-fcnat"
+          }
+        },
+        "product_BrP8dh": {
+          "type": "product",
+          "settings": {
+            "start_second": 2,
+            "featured_product": "crayon-khol-waterproof-ks00"
+          }
+        },
+        "product_9WHJPz": {
+          "type": "product",
+          "settings": {
+            "start_second": 4,
+            "featured_product": "mascara-revoluption"
+          }
+        },
+        "product_khmtMF": {
+          "type": "product",
+          "settings": {
+            "start_second": 50,
+            "featured_product": "duo-blush-et-enlumineur-waxduo-05"
+          }
+        },
+        "product_hh6zhr": {
+          "type": "product",
+          "settings": {
+            "start_second": 50,
+            "featured_product": "rouge-exception-rouge-a-levres-brillant-lip11s"
+          }
+        },
+        "product_LYxePj": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "start_second": 50,
+            "featured_product": "rouge-exception-rouge-a-levres-brillant-lip07s"
+          }
+        }
+      },
+      "block_order": [
+        "product_4F9efb",
+        "product_BrP8dh",
+        "product_9WHJPz",
+        "product_khmtMF",
+        "product_hh6zhr",
+        "product_LYxePj"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.shoppable-video__container {position: relative; margin-left: 50px; margin-right: 50px; border-radius: 12px; overflow: hidden; box-sizing: border-box; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }}"
+      ],
+      "settings": {
+        "heading": "",
+        "full-width-enabled": true,
+        "quick-add-enabled": true,
+        "rewind-enabled": false,
+        "hide-brand-name": true,
+        "desktop_fixed_height": 700,
+        "mobile_fixed_height": 480,
+        "enable_full_screen_mode": false,
+        "color-body-heading": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "color-body-text": "#cf4a4a",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "video_section_GrjQXG": {
+      "type": "video-section",
+      "blocks": {
+        "heading_LxNWC3": {
+          "type": "heading",
+          "settings": {
+            "heading": "BEAUTE PUISSANTE. \nAUTHENTIQUE. INVINCIBLE.",
+            "disable_on_mobile": false,
+            "size_heading": 120,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_aChhnh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chez black Up, la beauté dépasse la couleur : elle incarne la présence, l’éclat et l’identité. Nos formules, riches en pigments, sont pensées pour révéler chaque nuance des peaux foncées, sans jamais masquer. Ici, la beauté ne suit pas les règles. Elle les crée. Chaque produit rend hommage à l’aura, à la confiance et à l’individualité des femmes noires.</p>",
+            "disable_on_mobile": false
+          }
+        },
+        "button_FmEKQJ": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "découvrir la marque",
+            "button_link": "shopify://pages/la-marque",
+            "button_link_in_new_window": false,
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LxNWC3",
+        "text_aChhnh",
+        "button_FmEKQJ"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "[data-section-id=\"template--17998465892519__video_section_GrjQXG\"] {margin-left: 10px; margin-right: 10px;}",
+        "@media (min-width: 768px) {[data-section-id=\"template--17998465892519__video_section_GrjQXG\"] {margin-left: 25px; margin-right: 25px; }}",
+        ".wt-section__wrapper--full .wt-video {border-radius: 12px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);}",
+        ".heading-last-word-highlight {color: #dc392e;}",
+        "@media (min-width: 768px) {.hero__overlay {padding: calc(var(--gap, 8px) * 10); }}"
+      ],
+      "settings": {
+        "heading": "",
+        "full-width-enabled": true,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 640,
+        "mobile_fixed_height": 460,
+        "video_url": "",
+        "layout_mobile": "video",
+        "layout": "video_first",
+        "color-heading-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 0,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 0,
+        "desktop_image": "shopify://shop_images/CARRE-BLANC.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 80,
+        "margin-bottom": 60
+      }
+    },
+    "image_with_text_eTjVPF": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_wqfFRQ": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "BEAUTE PUISSANTE. AUTHENTIQUE. INVINCIBLE.",
+            "subheading_disable_on_mobile": true
+          }
+        },
+        "heading_mdEpVF": {
+          "type": "heading",
+          "settings": {
+            "heading": "BEAUTE PUISSANTE.  AUTHENTIQUE. INVINCIBLE.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_tyzAqJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chez black Up, la beauté dépasse la couleur : elle incarne la présence, l’éclat et l’identité. Nos formules, riches en pigments, sont pensées pour révéler chaque nuance des peaux foncées, sans jamais masquer. Ici, la beauté ne suit pas les règles. Elle les crée. Chaque produit rend hommage à l’aura, à la confiance et à l’individualité des femmes.</p><p>Nos produits ne sont pas testés sur les animaux. Fabriqués en Europe et nous portons une attention particulière à maintenir une part de notre production en France.</p>",
+            "text_style": "body",
+            "disable_on_mobile": false
+          }
+        },
+        "button_FA3m4i": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "découvrir la marque",
+            "button_link": "shopify://pages/la-marque",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_wqfFRQ",
+        "heading_mdEpVF",
+        "text_tyzAqJ",
+        "button_FA3m4i"
+      ],
+      "custom_css": [
+        ".heading-last-word-highlight {color: #dc392e;}",
+        ".hero__wrapper--full .hero__overlay__content {margin: 0 auto; padding: 0 20px;}",
+        "@media (min-width: 1024px) {img {margin-top: 80px; } [data-section-id=\"template--17998465892519__image_with_text_eTjVPF\"] {border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); margin: 40px; } .hero__wrapper--full .hero__overlay__content {padding: 0 40px; }}",
+        "[data-section-id=\"template--17998465892519__image_with_text_eTjVPF\"] {--border-radius: 12px;}",
+        ".hero__button {margin-top: calc(var(--gap, 8px) * 5);}"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 600,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "#ffffff",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/IMG-SANS-VIDEO.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "image_banner_qAqmU6": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pqB93z": {
+          "type": "heading",
+          "settings": {
+            "heading": "PENSÉ POUR CHAQUE NUANCE DE PEAUX FONCÉES ET BIEN PLUS ENCORE.",
+            "disable_on_mobile": false,
+            "size_heading": 120,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_pqB93z"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "[data-section-id=\"template--17998465892519__image_banner_qAqmU6\"] {--border-radius: 13px; --section-height: 460px; --section-height-desk: 700px; margin: 0px 50px 0px 50px;}",
+        "@media screen and (max-width: 749px) {[data-section-id=\"template--17998465892519__image_banner_qAqmU6\"] {margin-left: 20px; margin-right: 20px; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "full-width-enabled": true,
+        "slide_height": "fixed_height",
+        "desktop_fixed_height": 700,
+        "mobile_fixed_height": 460,
+        "desktop_image": "shopify://shop_images/BU-IMG.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "center",
+        "mobile_text_horizontal_position": "center",
+        "color-heading": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "#ffffff",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 60,
+        "margin-bottom": 60
+      }
+    },
+    "rich_text_77kLU7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EbVGcp": {
+          "type": "heading",
+          "settings": {
+            "heading": "THIS IS HOW WE DO MAKEUP.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_EbVGcp"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "video_reels_kb4KdA": {
+      "type": "video-reels",
+      "blocks": {
+        "product_CAAJBg": {
+          "type": "product",
+          "settings": {
+            "featured_product": "brillant-a-levres-ngloss01"
+          }
+        },
+        "product_wrYgbH": {
+          "type": "product",
+          "settings": {
+            "featured_product": "palette-fards-a-paupieres-et-blush"
+          }
+        },
+        "product_rgd8WL": {
+          "type": "product",
+          "settings": {
+            "featured_product": "cc-cream-multi-action-cc"
+          }
+        },
+        "product_Q3Dhwd": {
+          "type": "product",
+          "settings": {
+            "featured_product": "two-way-cake-tw"
+          }
+        },
+        "product_4zdjEq": {
+          "type": "product",
+          "settings": {
+            "featured_product": "m-eye-love-mascara-waterproof-volume-et-courbe"
+          }
+        }
+      },
+      "block_order": [
+        "product_CAAJBg",
+        "product_wrYgbH",
+        "product_rgd8WL",
+        "product_Q3Dhwd",
+        "product_4zdjEq"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.wt-slider__container {box-sizing: border-box; margin-left: 50px; margin-right: 50px; border-radius: 13px; overflow: hidden; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "quick-add-enabled": true,
+        "hide-brand-name": true,
+        "video_button": true,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#ffffff",
+        "margin-top": 12,
+        "margin-bottom": 72
+      }
+    },
+    "image_with_text_iWUUY3": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_F6pY3j": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "TROUVEZ VOTRE TEINTE. PAS D'ERREUR JUSTE LE MATCH PARFAIT.",
+            "subheading_disable_on_mobile": false
+          }
+        },
+        "heading_Kq63iE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Le guide expert pour révéler votre carnation avec black Up",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 80
+          }
+        },
+        "button_88zWaA": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "JE TROUVE MA TEINTE",
+            "button_link": "shopify://pages/trouver-son-fond-de-teint",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_F6pY3j",
+        "heading_Kq63iE",
+        "button_88zWaA"
+      ],
+      "custom_css": [
+        ".hero__title span.heading-last-word-highlight,.block__title span.heading-last-word-highlight {color: #c1423c;}",
+        ".section-image-with-text {border-radius: 13px; overflow: hidden; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);}",
+        "@media (min-width: 750px) {.hero__wrapper--full .hero--grid .hero__overlay__content {margin-right: calc(var(--gap, 8px) * 20); margin-left: 0; } .section-image-with-text {margin-left: 50px; margin-right: 50px; }}",
+        ".hero__overlay {background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);}",
+        "@media (max-width: 767px) {}"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "image_first",
+        "desktop-percentage-image-width": 50,
+        "full-width-enabled": true,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 460,
+        "section-color-body-text": "rgba(0,0,0,0)",
+        "section-color-overlay": "rgba(0,0,0,0)",
+        "section-color-overlay-opacity": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/Teint-V2.jpg",
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_image": "shopify://shop_images/trouver_votre_teint_mobile.jpg",
+        "mobile_text_horizontal_position": "left",
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "separator_38gTMr": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": false,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 60,
+        "margin-bottom": 20
+      }
+    },
+    "custom_liquid_JwewMA": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "settings": {
+        "custom_liquid": "<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-c9dfd965-9d08-472c-a2f2-4c2446c7f7ac\" data-elfsight-app-lazy></div>"
+      }
+    },
+    "separator_bUJ7xE": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": false,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 60,
+        "margin-bottom": 20
+      }
+    },
+    "rich_text_NEKwBK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VeUiwm": {
+          "type": "heading",
+          "settings": {
+            "heading": "CONÇU AVEC EXIGENCE.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_hFKBcp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nos produits ne sont pas testés sur les animaux. Ils sont fabriqués en Europe, et nous portons une attention particulière à maintenir une partie de notre production en France.</p>",
+            "disable_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VeUiwm",
+        "text_hFKBcp"
+      ],
+      "custom_css": [
+        "[data-section-id=\"template--17998465892519__rich_text_NEKwBK\"] {--color-custom-background: #fff; /* Conservé au cas où */ background: linear-gradient( 180deg, #f4f5f7 0%, #eff1f4 17.23%, #eff0f2 31.38%, #ebecee 47.54%, #e7e7e9 68.32%, #e3e3e5 86.51%, #dedede 100% )"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#f0f0f0",
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    },
+    "separator_RGfbQc": {
+      "type": "separator",
+      "settings": {
+        "heading": "",
+        "show-separator-line": false,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 60,
+        "margin-bottom": 20
+      }
+    }
+  },
+  "order": [
+    "slideshow_UEReBY",
+    "custom_liquid_atpUWc",
+    "features_banner_rnAYGJ",
+    "featured_collection_98txhK",
+    "collection_tabs_cta_xrUWAx",
+    "collection_tabs_zxQhaC",
+    "custom_multicolumn_f6qLic",
+    "rich_text_N3gmTh",
+    "shoppable_video_PWWPiV",
+    "video_section_GrjQXG",
+    "image_with_text_eTjVPF",
+    "image_banner_qAqmU6",
+    "rich_text_77kLU7",
+    "video_reels_kb4KdA",
+    "image_with_text_iWUUY3",
+    "separator_38gTMr",
+    "custom_liquid_JwewMA",
+    "separator_bUJ7xE",
+    "rich_text_NEKwBK",
+    "separator_RGfbQc"
+  ]
+}
