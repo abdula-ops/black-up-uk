@@ -46,7 +46,7 @@
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'swiper.css' | asset_url | stylesheet_tag: preload: true }}
 
-    {{ 'settings.css' | asset_url | stylesheet_tag }}
+    {{ 'settings.css.liquid' | asset_url | stylesheet_tag }}
     {{ 'critical.css' | asset_url | stylesheet_tag }}
 
     <script src="{{ 'variants.js' | asset_url }}" defer="defer"></script>
@@ -127,6 +127,11 @@
         background-color: {{ settings.custom-badge-4-background }};
         color: {{ settings.custom-badge-4-text }};
         }
+
+      {%- comment -%} Override headings font to Lexend Giga to match FR site {%- endcomment -%}
+      :root {
+        --font-headline: "Lexend Giga", sans-serif !important;
+      }
     </style>
 
     {%- unless settings.type_body_font.system? -%}
