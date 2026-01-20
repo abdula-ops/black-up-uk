@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow_UEReBY": {
@@ -25,10 +34,8 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/SOLDES_D_HIVER-FR-V2.png",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
-            "mobile_image": "shopify://shop_images/FR-M-SOLDES.jpg",
             "mobile_text_vertical_position": "center",
             "mobile_text_horizontal_position": "center",
             "out-background-color": "rgba(0,0,0,0)",
@@ -58,10 +65,8 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/BANNER_HP_2_FR_DESKTOP.jpg",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
-            "mobile_image": "shopify://shop_images/BANNER_HP_2_FR_MOBILE.jpg",
             "mobile_text_vertical_position": "center",
             "mobile_text_horizontal_position": "center",
             "out-background-color": "rgba(0,0,0,0)",
@@ -91,10 +96,8 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/BANNER_2-DESKTOP-FR.jpg",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
-            "mobile_image": "shopify://shop_images/BANNER_2-MOBILE-FR.jpg",
             "mobile_text_vertical_position": "center",
             "mobile_text_horizontal_position": "center",
             "out-background-color": "rgba(0,0,0,0)",
@@ -142,7 +145,6 @@
         "image_knKEhC": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/PLUS.svg",
             "select_icon": "bag",
             "heading": "Livraison rapide\nDans toute l'Europe",
             "text": ""
@@ -151,7 +153,6 @@
         "image_4xqij4": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/CARTE.svg",
             "select_icon": "plus",
             "heading": "Livraison offerte \ndès 65€",
             "text": ""
@@ -160,7 +161,6 @@
         "image_izam6t": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/INFO.svg",
             "select_icon": "check",
             "heading": "Paiements sécurisés\nCB, Paypal, 3* sans frais",
             "text": ""
@@ -170,7 +170,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "desktop_image": "shopify://shop_images/LIVRAISON_c4f44f22-2384-445f-8404-838a80e63cd0.svg",
             "select_icon": "user",
             "heading": "Un service client \nà l'écoute 24/24",
             "text": ""
@@ -249,10 +248,10 @@
         "title": "NOS CATÉGORIES",
         "disable_on_mobile": false,
         "collection": "nouveautes",
-        "collection_1": "maquillage-teint",
-        "collection_2": "maquillage-yeux",
-        "collection_3": "maquillage-levres",
-        "collection_4": "accessoires",
+        "collection_1": "back-to-school",
+        "collection_2": "les-yeux",
+        "collection_3": "les-levres",
+        "collection_4": "les-accessoires",
         "products_to_show": 6,
         "enable_stack_products": false,
         "show_view_all": true,
@@ -327,8 +326,7 @@
             "button_label": "",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/LEFT-2-1_c950d1ff-149b-4bf2-a4f8-7c161afbe00d.png"
+            "button_link_in_new_window": false
           }
         },
         "column_MFhEtF": {
@@ -360,8 +358,7 @@
             "button_label": "",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/LEFT-2_f1b9ffd4-2c3d-451c-a44a-0e9f5cae2b16.png"
+            "button_link_in_new_window": false
           }
         }
       },
@@ -547,7 +544,6 @@
         "color-body-text": "rgba(0,0,0,0)",
         "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 0,
-        "desktop_image": "shopify://shop_images/CARRE-BLANC.jpg",
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "center",
         "mobile_text_vertical_position": "center",
@@ -621,7 +617,6 @@
         "color-body-text": "rgba(0,0,0,0)",
         "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
-        "desktop_image": "shopify://shop_images/IMG-SANS-VIDEO.jpg",
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "center",
         "mobile_text_horizontal_position": "center",
@@ -656,7 +651,6 @@
         "slide_height": "fixed_height",
         "desktop_fixed_height": 700,
         "mobile_fixed_height": 460,
-        "desktop_image": "shopify://shop_images/BU-IMG.jpg",
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "center",
         "mobile_text_vertical_position": "center",
@@ -806,10 +800,8 @@
         "color-body-text": "rgba(0,0,0,0)",
         "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
-        "desktop_image": "shopify://shop_images/Teint-V2.jpg",
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "left",
-        "mobile_image": "shopify://shop_images/trouver_votre_teint_mobile.jpg",
         "mobile_text_horizontal_position": "left",
         "margin-top": 0,
         "margin-bottom": 0
