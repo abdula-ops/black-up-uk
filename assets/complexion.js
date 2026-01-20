@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function () {
             store_language = "";
             addtocart_text = "ajouter au panier";
           }else if(langHtml.getAttribute("lang") == "en"){
-            store_language = "en/";
+            store_language = "";
             addtocart_text = "Add to Cart";
           }
          
@@ -498,7 +498,7 @@ document.addEventListener('DOMContentLoaded', function () {
             store_language = "";
             addtocart_text = "ajouter au panier";
           }else if(langHtml.getAttribute("lang") == "en"){
-            store_language = "en/";
+            store_language = "";
             addtocart_text = "Add to Cart";
           }
           var relatedproductlist = '<div class="custom_group_product_list related_product_list">';

@@ -7,7 +7,6 @@
 <script src="{{ 'magiczoom.js' | asset_url }}" async="async"></script>
 <script src="{{ 'variant-feature-icons.js' | asset_url }}" async="async"></script>
 
-
 <style>
   [data-section-id="{{ section.id }}"]
   {
@@ -110,7 +109,6 @@
        -moz-appearance: none;
             appearance: none;
   }
-  
 </style>
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -119,8 +117,6 @@
 <script src="{{ 'drawer-select.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'model_element.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'variant-dropdown.js' | asset_url }}" defer="defer"></script>
-
-
 
 {% assign is_even = product.media.size | modulo: 2 %}
 {% if is_even == 0 %}
@@ -189,9 +185,9 @@
       {% endif %}
 
       <script data-configuration type="text/json">
-                    {
-                      "sliderEnabledBreakpoint": "1200",
-                      "desktopLayout": "{{ desktop_layout }}"
+        {
+          "sliderEnabledBreakpoint": "1200",
+          "desktopLayout": "{{ desktop_layout }}"
         }
       </script>
 
@@ -201,25 +197,34 @@
           {% assign custom-badge-2-input = settings['custom-badge-2-input'] | downcase %}
           {% assign custom-badge-3-input = settings['custom-badge-3-input'] | downcase %}
           {% assign custom-badge-4-input = settings['custom-badge-4-input'] | downcase %}
-          
-           {% #Added by ocs for low stocks %}
+
+          {% # Added by ocs for low stocks %}
           {% for variant in product.variants %}
-            <input type="hidden" class="low_stock_fields" data-variant-id="{{ variant.id }}" data-variant-count="{{ variant.inventory_quantity }}" 
-              >
+            <input
+              type="hidden"
+              class="low_stock_fields"
+              data-variant-id="{{ variant.id }}"
+              data-variant-count="{{ variant.inventory_quantity }}"
+            >
           {% endfor %}
-       
-         {% assign low_stock = false %}
-         {% for collection in product.collections %}
-            {% if collection.handle contains "maquillage-teint" or collection.handle contains "complexion-makeup" %}
+
+          {% assign low_stock = false %}
+          {% for collection in product.collections %}
+            {% if collection.handle contains 'maquillage-teint' or collection.handle contains 'complexion-makeup' %}
               {% assign low_stock = true %}
               {% break %}
             {% endif %}
           {% endfor %}
-          {% if product.first_available_variant.inventory_management   %}
-            <div class="card__badges--item low-stocks-display  {% if product.selected_or_first_available_variant.inventory_quantity < 13 %} show {% endif %}" style="{% if low_stock  %} display: none !important; {% endif %}" data-custom-badge="low-stock">
+          {% if product.first_available_variant.inventory_management %}
+            <div
+              class="card__badges--item low-stocks-display  {% if product.selected_or_first_available_variant.inventory_quantity < 13 %} show {% endif %}"
+              style="{% if low_stock  %} display: none !important; {% endif %}"
+              data-custom-badge="low-stock"
+            >
               {{ 'products.product.inventory_low_stock' | t }}
             </div>
-        `{% endif %}
+            `
+          {%- endif %}
 
           {% for tag in product.tags %}
             {% assign downcase_tag = tag | downcase %}
@@ -286,33 +291,35 @@
                   >
                 {%- endif %}
                 {% comment %}
-                 <a
-                    href="{{ featured_media.preview_image | image_url: width: 1500 }}"
-                   class="MagicZoom"  data-options ="hint: false; zoomOn: hover;  transitionEffect: false; zoomMode: magnifier;cssClass: mz-square white-bg expand-thumbnails-bottom; zoomDistance: 100; expandZoomOn: click">
-                {% endcomment %}  
+                  <a
+                     href="{{ featured_media.preview_image | image_url: width: 1500 }}"
+                    class="MagicZoom"  data-options ="hint: false; zoomOn: hover;  transitionEffect: false; zoomMode: magnifier;cssClass: mz-square white-bg expand-thumbnails-bottom; zoomDistance: 100; expandZoomOn: click">
+                {% endcomment %}
                 <a
-                    href="{{ featured_media.preview_image | image_url: width: 1500 }}"
-                   class="MagicZoom"  data-options ="zoomOn: hover; zoomPosition: right; zoomHeight:40%; zoomWidth:40%; zoomDistance: 200; expandZoomOn: click; hint: false; zoomMode: magnifier; variableZoom: true; cssClass: mz-square white-bg;">
-                <img
-                  srcset="
-                    {%- if featured_media.preview_image.width >= 500 -%}{{ featured_media.preview_image | image_url: width: 500 }} 500w,{%- endif -%}
-                    {%- if featured_media.preview_image.width >= 750 -%}{{ featured_media.preview_image | image_url: width: 750 }} 750w,{%- endif -%}
-                    {%- if featured_media.preview_image.width >= 1000 -%}{{ featured_media.preview_image | image_url: width: 1000 }} 1000w,{%- endif -%}
-                    {%- if featured_media.preview_image.width >= 1200 -%}{{ featured_media.preview_image | image_url: width: 1200 }} 1200w,{%- endif -%}
-                    {%- if featured_media.preview_image.width >= 1680 -%}{{ featured_media.preview_image | image_url: width: 1680 }} 1680w,{%- endif -%}
-                    {%- if featured_media.preview_image.width >= 2048 -%}{{ featured_media.preview_image | image_url: width: 2048 }} 2048w,{%- endif -%}
-                    {%- if featured_media.preview_image.width >= 4096 -%}{{ featured_media.preview_image | image_url: width: 4096 }} 4096w{%- endif -%}
-                  "
-                  sizes="100vw"
-                  src="{{ featured_media.preview_image | image_url: width: 500 }}"
-                  alt="{{ featured_media.preview_image.alt | default: product.title | escape }}"
-                  width="1100"
-                  height="{{ 1100 | divided_by: featured_media.preview_image.aspect_ratio | ceil }}"
-                  data-media-id="{{ featured_media.id }}"
-                  class="wt-product__img {% if section.settings.enable-image-zoom %} wt-product__img--zoom-cursor {% endif %}"
+                  href="{{ featured_media.preview_image | image_url: width: 1500 }}"
+                  class="MagicZoom"
+                  data-options="zoomOn: hover; zoomPosition: right; zoomHeight:40%; zoomWidth:40%; zoomDistance: 200; expandZoomOn: click; hint: false; zoomMode: magnifier; variableZoom: true; cssClass: mz-square white-bg;"
                 >
-                 </a>
-                    
+                  <img
+                    srcset="
+                      {%- if featured_media.preview_image.width >= 500 -%}{{ featured_media.preview_image | image_url: width: 500 }} 500w,{%- endif -%}
+                      {%- if featured_media.preview_image.width >= 750 -%}{{ featured_media.preview_image | image_url: width: 750 }} 750w,{%- endif -%}
+                      {%- if featured_media.preview_image.width >= 1000 -%}{{ featured_media.preview_image | image_url: width: 1000 }} 1000w,{%- endif -%}
+                      {%- if featured_media.preview_image.width >= 1200 -%}{{ featured_media.preview_image | image_url: width: 1200 }} 1200w,{%- endif -%}
+                      {%- if featured_media.preview_image.width >= 1680 -%}{{ featured_media.preview_image | image_url: width: 1680 }} 1680w,{%- endif -%}
+                      {%- if featured_media.preview_image.width >= 2048 -%}{{ featured_media.preview_image | image_url: width: 2048 }} 2048w,{%- endif -%}
+                      {%- if featured_media.preview_image.width >= 4096 -%}{{ featured_media.preview_image | image_url: width: 4096 }} 4096w{%- endif -%}
+                    "
+                    sizes="100vw"
+                    src="{{ featured_media.preview_image | image_url: width: 500 }}"
+                    alt="{{ featured_media.preview_image.alt | default: product.title | escape }}"
+                    width="1100"
+                    height="{{ 1100 | divided_by: featured_media.preview_image.aspect_ratio | ceil }}"
+                    data-media-id="{{ featured_media.id }}"
+                    class="wt-product__img {% if section.settings.enable-image-zoom %} wt-product__img--zoom-cursor {% endif %}"
+                  >
+                </a>
+
                 {% if section.settings['enable-image-zoom'] %}</a>{% endif %}
               {%- endif -%}
             </li>
@@ -337,32 +344,33 @@
                       tabindex="0"
                     >
                   {% endif %}
-                
 
                   <a
                     href="{{ media | image_url: width: 1500 }}"
-                   class="MagicZoom"  data-options ="zoomOn: hover; zoomPosition: right; zoomHeight:40%; zoomWidth:40%;  zoomDistance: 200; expandZoomOn: click; hint: false; zoomMode: magnifier; variableZoom: true; cssClass: mz-square white-bg;">
-                  <img
-                    srcset="
-                      {%- if media.preview_image.width >= 500 -%}{{ media.preview_image | image_url: width: 500 }} 500w,{%- endif -%}
-                      {%- if media.preview_image.width >= 750 -%}{{ media.preview_image | image_url: width: 750 }} 750w,{%- endif -%}
-                      {%- if media.preview_image.width >= 1000 -%}{{ media.preview_image | image_url: width: 1000 }} 1000w,{%- endif -%}
-                      {%- if media.preview_image.width >= 1200 -%}{{ media.preview_image | image_url: width: 1200 }} 1200w,{%- endif -%}
-                      {%- if media.preview_image.width >= 1680 -%}{{ media.preview_image | image_url: width: 1680 }} 1680w,{%- endif -%}
-                      {%- if media.preview_image.width >= 2048 -%}{{ media.preview_image | image_url: width: 2048 }} 2048w,{%- endif -%}
-                      {%- if media.preview_image.width >= 4096 -%}{{ media.preview_image | image_url: width: 4096 }} 4096w{%- endif -%}
-                    "
-                    sizes="100vw"
-                    src="{{ media.preview_image | image_url: width: 600 }}"
-                    alt="{{ media.preview_image.alt | default: product.title | escape }}"
-                    width="1100"
-                    height="{{ 1100 | divided_by: media.preview_image.aspect_ratio | ceil }}"
-                    data-media-id="{{ media.id }}"
-                    class="wt-product__img  {% if section.settings.enable-image-zoom %} wt-product__img--zoom-cursor {% endif %}"
-                    {% if forloop.index > 1 %}
-                      loading="lazy"
-                    {% endif %}
+                    class="MagicZoom"
+                    data-options="zoomOn: hover; zoomPosition: right; zoomHeight:40%; zoomWidth:40%;  zoomDistance: 200; expandZoomOn: click; hint: false; zoomMode: magnifier; variableZoom: true; cssClass: mz-square white-bg;"
                   >
+                    <img
+                      srcset="
+                        {%- if media.preview_image.width >= 500 -%}{{ media.preview_image | image_url: width: 500 }} 500w,{%- endif -%}
+                        {%- if media.preview_image.width >= 750 -%}{{ media.preview_image | image_url: width: 750 }} 750w,{%- endif -%}
+                        {%- if media.preview_image.width >= 1000 -%}{{ media.preview_image | image_url: width: 1000 }} 1000w,{%- endif -%}
+                        {%- if media.preview_image.width >= 1200 -%}{{ media.preview_image | image_url: width: 1200 }} 1200w,{%- endif -%}
+                        {%- if media.preview_image.width >= 1680 -%}{{ media.preview_image | image_url: width: 1680 }} 1680w,{%- endif -%}
+                        {%- if media.preview_image.width >= 2048 -%}{{ media.preview_image | image_url: width: 2048 }} 2048w,{%- endif -%}
+                        {%- if media.preview_image.width >= 4096 -%}{{ media.preview_image | image_url: width: 4096 }} 4096w{%- endif -%}
+                      "
+                      sizes="100vw"
+                      src="{{ media.preview_image | image_url: width: 600 }}"
+                      alt="{{ media.preview_image.alt | default: product.title | escape }}"
+                      width="1100"
+                      height="{{ 1100 | divided_by: media.preview_image.aspect_ratio | ceil }}"
+                      data-media-id="{{ media.id }}"
+                      class="wt-product__img  {% if section.settings.enable-image-zoom %} wt-product__img--zoom-cursor {% endif %}"
+                      {% if forloop.index > 1 %}
+                        loading="lazy"
+                      {% endif %}
+                    >
                   </a>
                   {% if section.settings['enable-image-zoom'] %}</a>{% endif %}
                 {%- endif -%}
@@ -689,31 +697,31 @@
       </div>
     </gallery-section>
 
-    {% #Added by ocs private sale  %}
-     {%- if settings.enable_private_sales -%}
-      {%-assign discount_price_found = false -%}
-      {%-unless customer-%}
-      {%- for variant in product.variants -%}
-        {%-if variant.compare_at_price > variant.price -%}
-          {%- assign discount_price_found = true -%}
-        {%- endif-%}
-       {%-endfor-%}
-     {%-endunless-%}
-    {%- endif -%} 
+    {% # Added by ocs private sale %}
+    {%- if settings.enable_private_sales -%}
+      {%- assign discount_price_found = false -%}
+      {%- unless customer -%}
+        {%- for variant in product.variants -%}
+          {%- if variant.compare_at_price > variant.price -%}
+            {%- assign discount_price_found = true -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endunless -%}
+    {%- endif -%}
 
-  {% if template == "product.bundle" %}
-        <script>
-        document.addEventListener("DOMContentLoaded", function () {
+    {% if template == 'product.bundle' %}
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
           function updateButtonText() {
-            const button = document.querySelector(".gfbFrequentBoughtAddToCartButton");
+            const button = document.querySelector('.gfbFrequentBoughtAddToCartButton');
             if (button) {
-              const lang = document.documentElement.lang || "en";
-              if (lang.startsWith("fr")) {
-                button.textContent = "Ajouter au panier";
+              const lang = document.documentElement.lang || 'en';
+              if (lang.startsWith('fr')) {
+                button.textContent = 'Ajouter au panier';
               } else {
-                button.textContent = "Add to cart";
+                button.textContent = 'Add to cart';
               }
-              return true; 
+              return true;
             }
             return false;
           }
@@ -725,14 +733,16 @@
             }
           }, 300);
         });
-        </script>
-  {% else %}
+      </script>
+    {% else %}
       {% style %}
-      .gfbPageWrapper { display: none; }
+        .gfbPageWrapper {
+          display: none;
+        }
       {% endstyle %}
-  {% endif %}
-  {% #Added by ocs private sale  %}
-   
+    {% endif %}
+    {% # Added by ocs private sale %}
+
     <section class="wt-product__main rte {% if discount_price_found %} private_sale_product {% endif %}">
       <div class="wt-product__info">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
@@ -1069,7 +1079,6 @@
                   {% endif %}
 
                   {%- unless product.has_only_default_variant -%}
-                    
                     <variant-options
                       class="no-js-hidden"
                       data-section="{{ section.id }}"
@@ -1094,8 +1103,10 @@
                         {% # Condition added by OCS - To show the default variants only when variant count is more than 1 %}
                         {% if variation_color == 'True' and color_variant_count > 1 %}
                           <div class="js wt-product__option {{ option_name }} - {{ color_variant_count }}">
-                           
-                            <div style="display: none;" class="wt-product__option__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
+                            <div
+                              style="display: none;"
+                              class="wt-product__option__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
+                            >
                               <span class="label">{{ option.name }}: </span> <strong class="value"></strong>
                             </div>
 
@@ -1125,83 +1136,81 @@
                             {% endif %}
 
                             <!-- Added by OCS - Drop down option -->
-                          <div class="drawer__list-overlay hidden"></div>
-                          <variant-dropdown>
+                            <div class="drawer__list-overlay hidden"></div>
+                            <variant-dropdown>
                               {% assign selected_product = product.selected_or_first_available_variant.metafields.custom.color_hex %}
                               <button
-                                  aria-label="{{ 'aria-label.main-product-select-option' | t }}"
-                                  class="wt-product__option__dropdown {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
-                                >
-                                 <p class="selected-color" style="background: {{ selected_product }}" data-color="{{ selected_product }}"></p>
-                                  
-                                  <span class="label" style="order:1; font-weight:bold;"> 
-                                    {% if option.selected_value == value %}
-                                       {{ option.selected_value }}
-                                    {% endif %}  
-                                  </span>
-                                  <span>
-                                     {{ option.name }}:
-                                  </span>
-                                  {% render 'icons', id: 'arrow-down' %}
+                                aria-label="{{ 'aria-label.main-product-select-option' | t }}"
+                                class="wt-product__option__dropdown {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
+                              >
+                                <p
+                                  class="selected-color"
+                                  style="background: {{ selected_product }}"
+                                  data-color="{{ selected_product }}"
+                                ></p>
+
+                                <span class="label" style="order:1; font-weight:bold;">
+                                  {% if option.selected_value == value %}
+                                    {{ option.selected_value }}
+                                  {% endif %}
+                                </span>
+                                <span> {{ option.name }}: </span>
+                                {% render 'icons', id: 'arrow-down' %}
                               </button>
                               <div class="wt-product__option__body wt-product__option__body--drawer">
-                        
                                 <div class="drawer__list-nav">
                                   <div class="drawer__list-nav__title">{{ option.name }}:</div>
                                   <button class="drawer__list-nav__close" aria-label="{{ 'accessibility.close' | t }}">
                                     {% render 'icons', id: 'close', icon_class: 'wt-options__close' %}
                                   </button>
                                 </div>
-            
-                              <div class="drawer__content">
-                                <fieldset class="js product-form__input drawer">
-                                  <ul class="drawer__list swiper-wrapper wt-slider__wrapper {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
-                                    {%- for value in option.values -%}
-                                      {% assign color_hex = '' %}
-                                      {%- for variant in product.variants -%}
-                                        {% if variant.options contains value %}
-                                          {% assign color_hex = variant.metafields.custom.color_hex %}
-                                          {% break %}
-                                        {% endif %}
-                                      {%- endfor -%}
-                                      <li
-                                        class="drawer__list__item swiper-slide wt-slider__slide"
-                                      >
-                                        <input
-                                          type="radio"
-                                          tabindex="-1"
-                                          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                                          name="{{ option.name }}"
-                                          value="{{ value | escape }}"
-                                          form="{{ product_form_id }}"
-                                          {% if option.selected_value == value %}
-                                            checked
+
+                                <div class="drawer__content">
+                                  <fieldset class="js product-form__input drawer">
+                                    <ul class="drawer__list swiper-wrapper wt-slider__wrapper {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
+                                      {%- for value in option.values -%}
+                                        {% assign color_hex = '' %}
+                                        {%- for variant in product.variants -%}
+                                          {% if variant.options contains value %}
+                                            {% assign color_hex = variant.metafields.custom.color_hex %}
+                                            {% break %}
                                           {% endif %}
-                                        >                                   
-                                            <label
-                                              tabindex="0"
-                                              class="drawer__list__link"
-                                              for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                                            >
+                                        {%- endfor -%}
+                                        <li
+                                          class="drawer__list__item swiper-slide wt-slider__slide"
+                                        >
+                                          <input
+                                            type="radio"
+                                            tabindex="-1"
+                                            id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                            name="{{ option.name }}"
+                                            value="{{ value | escape }}"
+                                            form="{{ product_form_id }}"
+                                            {% if option.selected_value == value %}
+                                              checked
+                                            {% endif %}
+                                          >
+                                          <label
+                                            tabindex="0"
+                                            class="drawer__list__link"
+                                            for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                          >
                                             {% comment %}
-                                             <span
-                                                  style="background-color:{{ color_hex }}"
-                                                  title="{{ value }}"
-                                                ></span>
-                                           {% endcomment %}
-                                              <span data-color="{{ color_hex }}">{{ value }}</span>
-                                            </label>
-                                            
-                                      </li>
-                                    {%- endfor -%}
-                                  </ul>
-                                </fieldset>
+                                              <span
+                                                   style="background-color:{{ color_hex }}"
+                                                   title="{{ value }}"
+                                                 ></span>
+                                            {% endcomment %}
+                                            <span data-color="{{ color_hex }}">{{ value }}</span>
+                                          </label>
+                                        </li>
+                                      {%- endfor -%}
+                                    </ul>
+                                  </fieldset>
+                                </div>
                               </div>
-                            </div>
-                                
-                          </variant-dropdown>
-                        <!-- end Drop down option end  -->
-                            
+                            </variant-dropdown>
+                            <!-- end Drop down option end -->
 
                             {% if options_body_class == 'drawer' %}
                               <div class="drawer__list-overlay hidden"></div>
@@ -1230,10 +1239,8 @@
                               {% endif %}
                               <div class="{% if options_body_class == 'drawer' %}drawer__content{% else %}swiper-container{% endif %}">
                                 <fieldset class="js product-form__input color-feature-container">
-                                {% assign selected_product = product.selected_or_first_available_variant.metafields.custom.color_hex %}
-                                <div class="color-feature" style="background: {{ selected_product }};">
-                                        
-                                </div>
+                                  {% assign selected_product = product.selected_or_first_available_variant.metafields.custom.color_hex %}
+                                  <div class="color-feature" style="background: {{ selected_product }};"></div>
                                   <ul class="{{ options_container_class }}__list swiper-wrapper wt-slider__wrapper {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
                                     {%- for value in option.values -%}
                                       {% assign color_hex = '' %}
@@ -1317,17 +1324,12 @@
                             {% if options_body_class == 'drawer' %}
                               </variant-dropdown>
                             {% endif %}
-
-                          
-                          
                           </div>
                         {% endif %}
 
-                         
-
                         <!-- Added by OCS - Custom color related product meta -->
                         {% # Condition - To show the linked variants by script only when variant count is equal to 1 %}
-                        
+
                         {% if variation_color == 'True' and color_variant_count == 1 %}
                           <div class="swatch-color-selector relatedcolor">
                             <div class="swatch-container">
@@ -1358,7 +1360,7 @@
                                         {% if color_swatch_product_id == active_product_id %}
                                           <div class="active_picker">
                                             <a
-                                              href="{{ shop.url }}{% if localization.language.iso_code == 'en' %}/en{% endif %}/products/{{ color_swatch_product_color_handle }}"
+                                              href="{{ shop.url }}/products/{{ color_swatch_product_color_handle }}"
                                               title="{{ color_swatch_product_color_name }}"
                                             >
                                               <span
@@ -1369,7 +1371,7 @@
                                         {% else %}
                                           <div class="picker">
                                             <a
-                                              href="{{ shop.url }}{% if localization.language.iso_code == 'en' %}/en{% endif %}/products/{{ color_swatch_product_color_handle }}"
+                                              href="{{ shop.url }}/products/{{ color_swatch_product_color_handle }}"
                                               title="{{ color_swatch_product_color_name }}"
                                             >
                                               <span
@@ -1513,11 +1515,16 @@
               {% endif %}
 
             {%- when 'buy_buttons' -%}
-              <a class="private-sale-button button w-full btn" href="{{ routes.account_login_url }}" style="margin: 20px 0px; border: 0px; background: transparent;" > 
-                    <button class="button--full-width button--secondary" style="border-radius: 8px;">
-                    <span  style=" width: 100%; text-align: center; justify-content: center; height: 100%; display: flex; align-items: center;">
-                    {{ settings.private_sale_label }} &nbsp; {{ settings.private_sale_label_link }}</span>
-                    </button>
+              <a
+                class="private-sale-button button w-full btn"
+                href="{{ routes.account_login_url }}"
+                style="margin: 20px 0px; border: 0px; background: transparent;"
+              >
+                <button class="button--full-width button--secondary" style="border-radius: 8px;">
+                  <span style=" width: 100%; text-align: center; justify-content: center; height: 100%; display: flex; align-items: center;">
+                    {{ settings.private_sale_label }} &nbsp; {{ settings.private_sale_label_link -}}
+                  </span>
+                </button>
               </a>
 
               <div
@@ -1529,10 +1536,6 @@
                   {% assign gift_card_recipient_feature_active = true %}
                 {% endif %}
 
-
-               
-
-                
                 <product-form
                   class="wt-product__add-to-cart"
                   data-hide-errors="{{ gift_card_recipient_feature_active }}"
@@ -1551,7 +1554,7 @@
                     </svg>
                     <span class="product-form__error-message"></span>
                   </div>
-                  
+
                   {%- form 'product',
                     product,
                     id: product_form_id,
@@ -1559,11 +1562,6 @@
                     novalidate: 'novalidate',
                     data-type: 'add-to-cart-form'
                   -%}
-
-               
-
-
-                    
                     {% if block.settings.show_gift_card_recipient and product.gift_card? %}
                       {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
                     {% endif %}
@@ -1618,36 +1616,73 @@
                   <div class="product-form__error-message-wrapper">
                     <p class="product-form__error-message"></p>
                   </div>
-                   
                 </product-form>
               </div>
 
               {% # Added by OCS - TO display notify me email form %}
               <div class="mailalert-container {% if product.selected_or_first_available_variant.available %}hide-alert {% else %}show-alert{% endif %}">
-                  <form class="mailalert" id="mailalert"> 
-                    <input type="hidden" name="p-name" id="p-name" value="{{ product.title }}">
-                    <input type="hidden" name="p-url" id="p-url" value="{{ shop.url }}{{ product.url }}">
-                    <input type="hidden" name="p-id" id="p-id" value="{{ product.id }}">
-                    <input type="hidden" name="product-price" id="product-price" value="{{ product.price | money }}">
-                    <input type="hidden" name="product-image" id="product-image" value="{{ product.selected_or_first_available_variant | img_url: '400x400' }}">
-                    <input type="hidden" name="p-color" id="p-color" value="{{product.selected_or_first_available_variant.option1 }}">
-                    <input type="hidden" name="variant-sku" id="variant-sku" value="{{ product.selected_or_first_available_variant.sku }}">
-                    <input type="hidden" name="variant-id" id="variant-id" value="{{ product.selected_or_first_available_variant.id }}">
-                    <input type="hidden" name="store-language" id="store-language" value="{{ request.locale.iso_code }}">
-                    <input type="hidden" id="customerid" name="customerid" value="{% if customer %}{{ customer.id }}{% else %}Guest{% endif %}">
-                    <input type="hidden" id="customername" name="customername" value="{% if customer %}{{ customer.name }}{% else %}Guest{% endif %}">
-                    {% if customer %}
-                      <input type="hidden" id="emails" name="emails" value="{{ customer.email | escape }}">
-                    {% else %}
-                      <input type="email" id="emails" name="emails" class="w-100" value="" placeholder="{{ 'products.product.notify_placeholder' | t }}" required>
-                    {% endif %}
-                  </form>
-                  <button type="submit" name="email" id="MailNotify" class="button outline w-100">
-                    <span>{{ 'products.product.notify_email' | t }}</span>
-                  </button>
-                  <div class ="notify_success">{{ 'products.product.notify_success' | t }}</div>
-                  <div class ="notify_failure">{{ 'products.product.notify_failure' | t }}</div>
-              </div> 
+                <form class="mailalert" id="mailalert">
+                  <input type="hidden" name="p-name" id="p-name" value="{{ product.title }}">
+                  <input type="hidden" name="p-url" id="p-url" value="{{ shop.url }}{{ product.url }}">
+                  <input type="hidden" name="p-id" id="p-id" value="{{ product.id }}">
+                  <input type="hidden" name="product-price" id="product-price" value="{{ product.price | money }}">
+                  <input
+                    type="hidden"
+                    name="product-image"
+                    id="product-image"
+                    value="{{ product.selected_or_first_available_variant | img_url: '400x400' }}"
+                  >
+                  <input
+                    type="hidden"
+                    name="p-color"
+                    id="p-color"
+                    value="{{product.selected_or_first_available_variant.option1 }}"
+                  >
+                  <input
+                    type="hidden"
+                    name="variant-sku"
+                    id="variant-sku"
+                    value="{{ product.selected_or_first_available_variant.sku }}"
+                  >
+                  <input
+                    type="hidden"
+                    name="variant-id"
+                    id="variant-id"
+                    value="{{ product.selected_or_first_available_variant.id }}"
+                  >
+                  <input type="hidden" name="store-language" id="store-language" value="{{ request.locale.iso_code }}">
+                  <input
+                    type="hidden"
+                    id="customerid"
+                    name="customerid"
+                    value="{% if customer %}{{ customer.id }}{% else %}Guest{% endif %}"
+                  >
+                  <input
+                    type="hidden"
+                    id="customername"
+                    name="customername"
+                    value="{% if customer %}{{ customer.name }}{% else %}Guest{% endif %}"
+                  >
+                  {% if customer %}
+                    <input type="hidden" id="emails" name="emails" value="{{ customer.email | escape }}">
+                  {% else %}
+                    <input
+                      type="email"
+                      id="emails"
+                      name="emails"
+                      class="w-100"
+                      value=""
+                      placeholder="{{ 'products.product.notify_placeholder' | t }}"
+                      required
+                    >
+                  {% endif %}
+                </form>
+                <button type="submit" name="email" id="MailNotify" class="button outline w-100">
+                  <span>{{ 'products.product.notify_email' | t }}</span>
+                </button>
+                <div class="notify_success">{{ 'products.product.notify_success' | t }}</div>
+                <div class="notify_failure">{{ 'products.product.notify_failure' | t }}</div>
+              </div>
 
             {%- when 'pickup-availability' -%}
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
