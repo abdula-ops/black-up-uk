@@ -19,7 +19,7 @@
         "link-text": "Retour à l'accueil",
         "button_select": "secondary",
         "button_disable_on_mobile": false,
-        "button_link": "https://blackup-prod.myshopify.com/",
+        "button_link": "https://blackup-prod-uk.myshopify.com/",
         "color-body-text": "rgba(0,0,0,0)",
         "background_color": "rgba(0,0,0,0)",
         "color-overlay-opacity": 0,
