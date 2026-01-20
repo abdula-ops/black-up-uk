@@ -34,3 +34,16 @@ yarn-error.log*
 *.tmp
 *.temp
 .cache/
+llm.txt
+*.md
+
+# Migration CSV files (exported from FR store)
+migration/*.csv
+!migration/.gitkeep
+*.xlsx
+*.py
+*.csv
+*.txt
+/migration
+/temp_files
+/temp_migration_media

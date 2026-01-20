@@ -1,0 +1,20 @@
+{
+  "name": "blackup-uk-migration",
+  "version": "1.0.0",
+  "description": "Product migration tools for Black Up UK store",
+  "main": "analyze-products.js",
+  "scripts": {
+    "fix": "node fix-csv-for-new-store.js",
+    "verify": "node verify-clean-csv.js"
+  },
+  "keywords": [
+    "shopify",
+    "migration",
+    "product-export"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
