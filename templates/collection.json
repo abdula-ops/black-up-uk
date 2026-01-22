@@ -167,7 +167,7 @@
         "featured_collection_9EU7LY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-teint",
+            "collection": "complexion-makeup",
             "text_collection": "Teint"
           }
         },
@@ -181,7 +181,7 @@
         "featured_collection_QarFWU": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-levres",
+            "collection": "lip-makeup",
             "text_collection": "Lèvres"
           }
         }

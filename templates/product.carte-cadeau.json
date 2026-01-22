@@ -22,32 +22,6 @@
     "main": {
       "type": "gift-product",
       "blocks": {
-        "wishlist_plus_wishlist_pdp_button_M8iJx8": {
-          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-          "settings": {
-            "swym_atw_button_icon": "heart",
-            "swym_atw_icon_thickness": 1.7,
-            "swym_atw_display_btn_text": false,
-            "swym_button_position": "product_title_right",
-            "swym_atw_button_vertical_offset": 0,
-            "swym_atw_full_width": true,
-            "swym_atw_button_alignment": "center",
-            "swym_add_to_wishlist_color": "#ffffff",
-            "swym_added_to_wishlist_color": "#ffffff",
-            "swym_button_text_color": "#000000",
-            "swym_atw_border_color": "#000000",
-            "swym_atw_border_thickness": 0,
-            "swym_atw_button_border_radius": 0,
-            "swym_enable_hover_customization": true,
-            "swym_hover_add_to_wishlist_color": "#000000",
-            "swym_hover_added_to_wishlist_color": "#222222",
-            "swym_hover_button_text_color": "#ffffff",
-            "swym_hover_atw_border_color": "#000000",
-            "swym_hover_atw_border_thickness": 0,
-            "swym_hover_atw_button_border_radius": 0,
-            "swym_custom_css": ""
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -55,11 +29,6 @@
             "size_text": 210,
             "size_text_mobile": 200
           }
-        },
-        "judge_me_reviews_preview_badge_YM4bzk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
         },
         "price": {
           "type": "price",
@@ -185,9 +154,7 @@
         }
       },
       "block_order": [
-        "wishlist_plus_wishlist_pdp_button_M8iJx8",
         "title",
-        "judge_me_reviews_preview_badge_YM4bzk",
         "price",
         "separator_RrKQ4A",
         "variant_picker",
@@ -262,7 +229,7 @@
       "settings": {
         "title": "Complétez votre maquillage",
         "disable_on_mobile": true,
-        "collection": "best-sellers",
+        "collection": "bestsellers",
         "product_list": [],
         "products_to_show": 4,
         "enable_stack_products": false,
@@ -336,7 +303,7 @@
         "featured_collection_nE7jQz": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-teint",
+            "collection": "complexion-makeup",
             "text_collection": "Teint"
           }
         },
@@ -350,7 +317,7 @@
         "featured_collection_tADHkM": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-levres",
+            "collection": "lip-makeup",
             "text_collection": "Lèvres"
           }
         }

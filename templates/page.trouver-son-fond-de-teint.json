@@ -28,7 +28,7 @@
       "settings": {
         "title": "Featured collection",
         "disable_on_mobile": false,
-        "collection": "tous-nos-produits",
+        "collection": "all-our-products",
         "product_list": [],
         "products_to_show": 4,
         "enable_stack_products": false,

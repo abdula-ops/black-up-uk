@@ -378,7 +378,7 @@
         "button_select": "primary",
         "button_horizontal_position": "center",
         "button_label": "TOUS NOS PRODUITS",
-        "button_link": "shopify://collections/tous-nos-produits",
+        "button_link": "shopify://collections/all-our-products",
         "margin-top": 40,
         "margin-bottom": 40,
         "background_color": "rgba(0,0,0,0)"
@@ -390,7 +390,7 @@
         "featured_collection_HQdLzh": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-teint",
+            "collection": "complexion-makeup",
             "text_collection": "Teint"
           }
         },
@@ -404,7 +404,7 @@
         "featured_collection_CFeDRY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-levres",
+            "collection": "lip-makeup",
             "text_collection": "Lèvres"
           }
         }
@@ -477,7 +477,7 @@
       "settings": {
         "title": "Nos favoris",
         "disable_on_mobile": false,
-        "collection": "tous-nos-produits",
+        "collection": "all-our-products",
         "product_list": [],
         "products_to_show": 3,
         "enable_stack_products": false,
@@ -512,9 +512,9 @@
       "settings": {
         "title": "",
         "disable_on_mobile": false,
-        "collection": "maquillage-teint",
+        "collection": "complexion-makeup",
         "collection_1": "maquillage-yeux",
-        "collection_2": "maquillage-levres",
+        "collection_2": "lip-makeup",
         "collection_3": "accessories",
         "collection_4": "",
         "products_to_show": 4,

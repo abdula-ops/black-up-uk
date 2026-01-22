@@ -172,7 +172,7 @@
         "column_Tdh6Cc": {
           "type": "column",
           "settings": {
-            "collection": "maquillage",
+            "collection": "makeup",
             "heading": "",
             "color-body-text": "rgba(0,0,0,0)",
             "background_color": "rgba(0,0,0,0)"
@@ -254,7 +254,7 @@
         "featured_collection_FUY8UN": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-teint",
+            "collection": "complexion-makeup",
             "text_collection": "Teint"
           }
         },
@@ -268,7 +268,7 @@
         "featured_collection_GpMpYL": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-levres",
+            "collection": "lip-makeup",
             "text_collection": "Lèvres"
           }
         }

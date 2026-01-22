@@ -207,7 +207,7 @@
       "settings": {
         "title": "NOS BEST SELLERS",
         "disable_on_mobile": false,
-        "collection": "tous-nos-produits",
+        "collection": "all-our-products",
         "product_list": [
           "base-matifiante-8h",
           "blackup-x-shy-m-fard-a-paupieres-liquide-shymle02",
@@ -250,7 +250,7 @@
         "title": "NOS CATÉGORIES",
         "disable_on_mobile": false,
         "collection": "nouveautes",
-        "collection_1": "maquillage-teint",
+        "collection_1": "complexion-makeup",
         "collection_2": "les-yeux",
         "collection_3": "les-levres",
         "collection_4": "les-accessoires",
@@ -286,11 +286,11 @@
       "settings": {
         "title": "NOS CATEGORIES",
         "disable_on_mobile": false,
-        "collection": "best-sellers",
+        "collection": "bestsellers",
         "collection_1": "nouveautes",
-        "collection_2": "maquillage-teint",
+        "collection_2": "complexion-makeup",
         "collection_3": "maquillage-yeux",
-        "collection_4": "maquillage-levres",
+        "collection_4": "lip-makeup",
         "products_to_show": 6,
         "enable_stack_products": false,
         "show_view_all": true,
@@ -343,7 +343,7 @@
             "button_select": "primary",
             "button_label": "DÉCOUVRIR",
             "button_disable_on_mobile": false,
-            "button_link": "shopify://collections/le-parfum",
+            "button_link": "shopify://collections/the-perfume",
             "button_link_in_new_window": false
           }
         },
