@@ -104,9 +104,9 @@
             "promotion_position": 1,
             "promotion_width": "1",
             "image": "",
-            "title": "BRILLANT A LÈVRES NGLOSS",
+            "title": "LIP GLOSS NGLOSS",
             "text": "",
-            "link_label": "JE DÉCOUVRE",
+            "link_label": "DISCOVER",
             "link": "shopify://products/lip-gloss-ngloss01",
             "use_text_button": false,
             "block_link": "shopify://products/lip-gloss-ngloss01",
@@ -123,9 +123,9 @@
             "promotion_position": 10,
             "promotion_width": "2",
             "image": "",
-            "title": "DUO BLUSH ET ENLUMINEUR",
+            "title": "DUO BLUSH AND HIGHLIGHTER",
             "text": "",
-            "link_label": "JE DÉCOUVRE",
+            "link_label": "DISCOVER",
             "link": "shopify://products/duo-blush-and-highlighter-waxduo-02",
             "use_text_button": false,
             "block_link": "shopify://products/duo-blush-and-highlighter-waxduo-02",
@@ -336,8 +336,8 @@
           "type": "image",
           "settings": {
             "select_icon": "check",
-            "heading": "Paiement sécurisé",
-            "text": "<p>CB, Paypal, Paiement en plusieurs fois</p>"
+            "heading": "Secure payment",
+            "text": "<p>CB, Paypal, Payment in installments</p>"
           }
         },
         "image_qgFzka": {

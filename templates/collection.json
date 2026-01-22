@@ -88,7 +88,7 @@
             "image": "shopify://shop_images/HORIZONTAL_1.jpg",
             "title": "Duo Blush Et Enlumineur",
             "text": "",
-            "link_label": "JE DÉCOUVRE",
+            "link_label": "DISCOVER",
             "link": "shopify://products/duo-blush-and-highlighter-waxduo-05",
             "use_text_button": false,
             "block_link": "shopify://products/duo-blush-and-highlighter-waxduo-05",
@@ -288,8 +288,8 @@
           "type": "image",
           "settings": {
             "select_icon": "check",
-            "heading": "Paiement sécurisé",
-            "text": "<p>CB, Paypal, Paiement en plusieurs fois</p>"
+            "heading": "Secure payment",
+            "text": "<p>CB, Paypal, Payment in installments</p>"
           }
         },
         "image_qgFzka": {
