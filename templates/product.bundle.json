@@ -83,16 +83,6 @@
             "size_text_mobile": 120
           }
         },
-        "klarna_on_site_messaging_app_block_RUNpi8": {
-          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
-          "settings": {
-            "data_key": "credit-promotion-badge",
-            "theme": "custom",
-            "topPadding": "5",
-            "bottomPadding": "0",
-            "messagePrefix": "Or"
-          }
-        },
         "separator_q3g3nk": {
           "type": "separator",
           "settings": {
@@ -120,10 +110,6 @@
             "margin-bottom": 8
           }
         },
-        "judge_me_reviews_preview_badge_YM4bzk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "separator_XFK9W4": {
           "type": "separator",
           "settings": {
@@ -137,33 +123,6 @@
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{% if product.metafields.custom.description_courte_fp != blank %}\n <p class=\"description_courte\" style=\"font-size: 15px;\n  font-family: Lexend Giga !important;\"> {{product.metafields.custom.description_courte_fp}} </p>\n {% endif %}\n\n{% comment  %}\n {% if product.metafields.custom.contenance != blank %}\n \t<div class=\"meta-contenance\">\n \t<p class=\"contenance\"> {{ product.metafields.custom.contenance }} </p>\n \t</div>\n {% endif %}\n{% endcomment %}"
-          }
-        },
-        "wishlist_plus_wishlist_pdp_button_f9myAa": {
-          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-          "disabled": true,
-          "settings": {
-            "swym_atw_button_icon": "heart",
-            "swym_atw_icon_thickness": 1.7,
-            "swym_atw_display_btn_text": false,
-            "swym_button_position": "product_title_right",
-            "swym_atw_button_vertical_offset": 0,
-            "swym_atw_full_width": false,
-            "swym_atw_button_alignment": "right",
-            "swym_add_to_wishlist_color": "#ffffff",
-            "swym_added_to_wishlist_color": "#ffffff",
-            "swym_button_text_color": "#000000",
-            "swym_atw_border_color": "#000000",
-            "swym_atw_border_thickness": 0,
-            "swym_atw_button_border_radius": 0,
-            "swym_enable_hover_customization": true,
-            "swym_hover_add_to_wishlist_color": "#ffffff",
-            "swym_hover_added_to_wishlist_color": "#ffffff",
-            "swym_hover_button_text_color": "#000000",
-            "swym_hover_atw_border_color": "#000000",
-            "swym_hover_atw_border_thickness": 0,
-            "swym_hover_atw_button_border_radius": 0,
-            "swym_custom_css": ""
           }
         },
         "inventory_ihfkD3": {
@@ -267,33 +226,6 @@
             "product_list_limit": 5,
             "image-ratio": "original"
           }
-        },
-        "wishlist_plus_wishlist_pdp_button_JtMUBU": {
-          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-          "disabled": true,
-          "settings": {
-            "swym_atw_button_icon": "heart",
-            "swym_atw_icon_thickness": 1.7,
-            "swym_atw_display_btn_text": true,
-            "swym_button_position": "default",
-            "swym_atw_button_vertical_offset": 0,
-            "swym_atw_full_width": true,
-            "swym_atw_button_alignment": "center",
-            "swym_add_to_wishlist_color": "#000000",
-            "swym_added_to_wishlist_color": "#222222",
-            "swym_button_text_color": "#ffffff",
-            "swym_atw_border_color": "#000000",
-            "swym_atw_border_thickness": 0,
-            "swym_atw_button_border_radius": 0,
-            "swym_enable_hover_customization": false,
-            "swym_hover_add_to_wishlist_color": "#000000",
-            "swym_hover_added_to_wishlist_color": "#222222",
-            "swym_hover_button_text_color": "#ffffff",
-            "swym_hover_atw_border_color": "#000000",
-            "swym_hover_atw_border_thickness": 0,
-            "swym_hover_atw_button_border_radius": 0,
-            "swym_custom_css": ""
-          }
         }
       },
       "block_order": [
@@ -305,14 +237,11 @@
         "90ea3cd3-aa22-44f6-b6de-365eb7f85b9c",
         "custom_liquid_jrHKJW",
         "price",
-        "klarna_on_site_messaging_app_block_RUNpi8",
         "separator_q3g3nk",
         "text_aXX8tU",
         "separator_MHa3eW",
-        "judge_me_reviews_preview_badge_YM4bzk",
         "separator_XFK9W4",
         "custom_liquid_pGMgH6",
-        "wishlist_plus_wishlist_pdp_button_f9myAa",
         "inventory_ihfkD3",
         "variant_picker",
         "c1ba8695-94d2-40ad-ac06-93ec3b8cf38e",
@@ -324,8 +253,7 @@
         "collapsible_tab_Q7UFgL",
         "collapsible_tab_tBn3zd",
         "separator_8MTDKi",
-        "complementary_MUXRqm",
-        "wishlist_plus_wishlist_pdp_button_JtMUBU"
+        "complementary_MUXRqm"
       ],
       "custom_css": [
         ".product__tax.caption.rte {display: none;}"
@@ -402,7 +330,7 @@
       "settings": {
         "title": "COMPLÉTEZ VOTRE MAQUILLAGE",
         "disable_on_mobile": true,
-        "collection": "crayons-a-levres",
+        "collection": "lip-pencils",
         "product_list": [],
         "products_to_show": 4,
         "enable_stack_products": false,
@@ -427,18 +355,6 @@
     },
     "1738939742ce7b4258": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_rmPYtr": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_rmPYtr"
-      ],
       "settings": {
         "include_margins": true
       }

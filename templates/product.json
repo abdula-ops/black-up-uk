@@ -331,7 +331,7 @@
       "settings": {
         "title": "COMPLÉTEZ VOTRE MAQUILLAGE",
         "disable_on_mobile": true,
-        "collection": "crayons-a-levres",
+        "collection": "lip-pencils",
         "product_list": [],
         "products_to_show": 4,
         "enable_stack_products": false,
