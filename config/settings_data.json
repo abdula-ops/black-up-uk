@@ -81,7 +81,7 @@
     "enable_cross_sells": true,
     "heading_cross_sells": "Vous aimerez aussi",
     "product_limit_cross_sells": 9,
-    "collection_cross_sells": "all",
+    "collection_cross_sells": "face-powders-1",
     "product_list_cross_sells": [],
     "enable_free_shipping_bar": true,
     "free_shipping_bar_amount": "0",
@@ -212,126 +212,7 @@
         "settings": {}
       }
     },
-    "content_for_index": [],
-    "blocks": {
-      "12424619676349770391": {
-        "type": "shopify://apps/lably/blocks/app-embeds/6c1584f0-c71d-4a5f-8025-affd32e7e34d",
-        "disabled": false,
-        "settings": {}
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "8765772171712610185": {
-        "type": "shopify://apps/t-lab-ai-language-translate/blocks/language_switcher/b5b83690-efd4-434d-8c6a-a5cef4019faf",
-        "disabled": true,
-        "settings": {
-          "enable_language_switcher": false,
-          "enable_country_region_switcher": true,
-          "use_currency_for_region": false,
-          "switcher_position": "custom",
-          "show_flags": true,
-          "switcher_appearance": "language-name",
-          "invert_switcher_icon_colors": false,
-          "dropdown_appearance": "language-name",
-          "use_modal_dialog": false,
-          "language_country_mapping": "",
-          "countries_filter": "",
-          "custom_css": "",
-          "header_switcher_reference_element": "",
-          "header_switcher_relative_position": "before",
-          "mobile_menu_switcher_reference_element": "",
-          "mobile_switcher_relative_position": "in-element-prepend",
-          "header_switcher_border_width": 0,
-          "switcher_viewport_position": "top-right",
-          "custom_position_spacing": "55,170,20,20",
-          "custom_switcher_font_size": "14px",
-          "custom_switcher_border_width": 1,
-          "custom_switcher_text_color": "#5c5c5c",
-          "custom_switcher_background_color": "#ffffff",
-          "custom_switcher_border_color": "#000000"
-        }
-      },
-      "6052823664294247695": {
-        "type": "shopify://apps/qikify-form-builder/blocks/app-embed/753fa0d7-50d4-480a-b094-cff26e632c36",
-        "disabled": false,
-        "settings": {}
-      },
-      "15119538188275799212": {
-        "type": "shopify://apps/fontify/blocks/app-embed/334490e2-2153-4a2e-a452-e90bdeffa3cc",
-        "disabled": false,
-        "settings": {}
-      },
-      "10274264662263595587": {
-        "type": "shopify://apps/wishlist-plus/blocks/wishlist-collections-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": false,
-        "settings": {
-          "swym_collections_icon_type": "heart",
-          "swym_collections_position": "top-right",
-          "swym_collections_vertical_offset": 0,
-          "swym_collections_horizontal_offset": 0,
-          "swym_collections_button_size": 25,
-          "swym_collections_icon_color": "#000000",
-          "swym_collections_product_link_selector": "-",
-          "swym_collections_product_tile_selector": "-",
-          "enable_variant_selector": false,
-          "swym_add_to_wishlist_title_color": "#333",
-          "swym_variant_selector_font_size_1": 14,
-          "swym_variant_selector_popup_bg_color": "#fff",
-          "swym_variant_selector_section_heading_color": "#000",
-          "swym_variant_selector_section_heading_font_size_2": 12,
-          "swym_variant_selector_choose_create_text": "Choisir ou créer une nouvelle Wishlist",
-          "swym_variant_selector_wishlist_btn_bg_color": "#292929",
-          "swym_variant_selector_wishlist_btn_color": "#fff",
-          "swym_variant_selector_product_detail_font_color": "#fff",
-          "swym_variant_selector_create_list_placeholder_text": "Entrez le nom de la wishlist",
-          "swym_variant_selector_create_list_title": "Nommez votre Wishlist"
-        }
-      },
-      "5946647744298494267": {
-        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": false,
-        "settings": {
-          "storefront_layout_enabled": true,
-          "storefront_layout_primary_bg_color": "#000000",
-          "storefront_layout_primary_text_color": "#ffffff",
-          "storefront_layout_secondary_bg_color": "#f4f8fe",
-          "storefront_layout_secondary_text_color": "#333333",
-          "storefront_layout_ui_border_radius": 25,
-          "storefront_layout_notification_position": "left",
-          "storefront_layout_action_popup_position": "left",
-          "storefront_layout_drawer_position": "left",
-          "storefront_layout_as_section_page": "swym-wishlist"
-        }
-      },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "14400299622900873742": {
-        "type": "shopify://apps/loyoly/blocks/international/f8398f67-b476-4b74-89b8-cb199b7011c9",
-        "disabled": false,
-        "settings": {}
-      },
-      "13549935337288218858": {
-        "type": "shopify://apps/labeler/blocks/app-embed/38a5b8ec-f58a-4fa4-8faa-69ddd0f10a60",
-        "disabled": false,
-        "settings": {}
-      },
-      "14652898158514659544": {
-        "type": "shopify://apps/fly-bundles-quantity-breaks/blocks/app-embed/26807bdc-c2ed-4a25-afb2-06e6b1ebf843",
-        "disabled": false,
-        "settings": {}
-      },
-      "8218531531362863771": {
-        "type": "shopify://apps/kite-discount-free-gift/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    "content_for_index": []
   },
   "presets": {
     "Beauty": {

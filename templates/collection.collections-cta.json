@@ -89,7 +89,7 @@
             "link_label": "",
             "link": "",
             "use_text_button": false,
-            "block_link": "shopify://collections/soldes",
+            "block_link": "shopify://collections/sales",
             "content_position": "middle-center",
             "text_alignment": "center",
             "overlay_color": "#000000",

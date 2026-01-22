@@ -72,7 +72,7 @@
             "link_label": "",
             "link": "shopify://products/hc-chc",
             "use_text_button": false,
-            "block_link": "shopify://collections/soldes",
+            "block_link": "shopify://collections/sales",
             "content_position": "bottom-left",
             "text_alignment": "right",
             "overlay_color": "#000000",

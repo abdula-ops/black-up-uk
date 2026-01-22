@@ -1,1 +1,159 @@
-{"type": "header", "name": "Header Group", "sections": {"announcement-bar": {"type": "announcement-bar", "blocks": {"announcement_DKVb4L": {"type": "announcement", "disabled": true, "settings": {"text": "FRAIS DE PORT OFFERTS DÈS 65€", "link": ""}}, "announcement_hAyzjh": {"type": "announcement", "settings": {"text": "Soldes : -30% dès 2 articles, -40% dès 3 articles et -50% dès 4 articles", "link": "shopify://collections/soldes"}}, "announcement_gYRTgd": {"type": "announcement", "disabled": true, "settings": {"text": "LIVRAISON RAPIDE DANS TOUTE L'EUROPE", "link": ""}}}, "block_order": ["announcement_DKVb4L", "announcement_hAyzjh", "announcement_gYRTgd"], "custom_css": [".wt-announcement {--time: 500s;}"], "settings": {"marquee": true, "animation_speed": "150", "checkbox_close_announcement": false, "color-body-text": "#ffffff", "background_color": "#dc392e"}}, "header": {"type": "page-header", "custom_css": [".wt-header--fashion .wt-header__nav-teaser__link {max-width: 356px; margin-right: 10px;}"], "settings": {"layout": "option_3", "sticky_header": true, "show_line_separator": true, "show_shadow": true, "logo": "shopify://shop_images/NOIR-BU.png", "large_screen_logo_width": 170, "mobile_screen_logo_width": 90, "menu": "hamburger-menu", "teaser_menu": "front-menu", "mobile_footer_menu": "", "transparent_logo": "shopify://shop_images/Logo-full-white.svg", "transparent_header_color": "rgba(0,0,0,0)", "drawer_title": "", "typing_search": "Trouver un produit", "suggestions_title": "blush", "suggestions_menu": "", "default_menu_image": "shopify://shop_images/NOUVEAUTES.jpg", "french_submenu_images": "Cyber Monday:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/REWARD.jpg?v=1759147602\nLast Chance:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/1.NOUVEAUTES_84bdb352-0b9f-462c-af8c-3e1bc33c4cf1.jpg?v=1746526039\nNouveautés:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/NOUVEAUTES.jpg?v=1759147602\nMaquillage:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/2.MAQUILLAGE_4dff2332-59c3-4ebf-862f-b832d7e72edb.jpg?v=1746526093\nMakeup:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/2.MAQUILLAGE_4dff2332-59c3-4ebf-862f-b832d7e72edb.jpg?v=1746526093\nTeint:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/3.TEINT_ec4bd914-b9d8-4b2b-a47f-f096eb1565db.jpg?v=1746535610\nYeux:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/4.YEUX_6064e9c8-2efb-4a91-88cd-f0747e958b66.jpg?v=1746535609\nLèvres:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/5.LEVRES.png?v=1746535609\nAccessoires:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/6.ACCESSOIRES.jpg?v=1746535609\nParfum:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/PARFUM.jpg?v=1759147602\nCapillaire:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/CAPILLAIRE.jpg?v=1746535609\nBest sellers:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/BEST_SELLERS.jpg?v=1746535609\nSets:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/Sets.jpg?v=1757582429\nMeilleures offres:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/9.DERNIERE_CHANCE_cc0852b0-ca8c-464e-8666-089b3bcd4c19.jpg?v=1746535609\nCarte cadeau:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/CARTE_CADEAU.png?v=1746535609\nRewards:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/REWARD.jpg?v=1759147602\nParrainage:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/1.NOUVEAUTES_84bdb352-0b9f-462c-af8c-3e1bc33c4cf1.jpg?v=1746526039\nTrouver un point de vente:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/BU-VENTE.jpg?v=1759756940", "english_submenu_images": "Cyber Monday:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/REWARD.jpg?v=1759147602\nLast chance:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/1.NOUVEAUTES_84bdb352-0b9f-462c-af8c-3e1bc33c4cf1.jpg?v=1746526039\nNew in:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/NOUVEAUTES.jpg?v=1759147602\nMakeup:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/2.MAQUILLAGE_4dff2332-59c3-4ebf-862f-b832d7e72edb.jpg?v=1746526093\nComplexion:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/3.TEINT_ec4bd914-b9d8-4b2b-a47f-f096eb1565db.jpg?v=1746535610\nEyes:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/4.YEUX_6064e9c8-2efb-4a91-88cd-f0747e958b66.jpg?v=1746535609\nLips:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/5.LEVRES.png?v=1746535609\nAccessories:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/6.ACCESSORIES.jpg?v=1750861576\nFragrance:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/PARFUM.jpg?v=1759147602\nPro Haircare:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/CAPILLAIRE.jpg?v=1746535609\nBest sellers:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/BEST_SELLERS.jpg?v=1746535609\nSets:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/SETS-EN.jpg?v=1757585178\nLast chance:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/9.DERNIERE_CHANCE_cc0852b0-ca8c-464e-8666-089b3bcd4c19.jpg?v=1746535609\nGift card:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/CARTE_CADEAU.png?v=1746535609\nRewards:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/REWARD.jpg?v=1759147602\nREFERRAL:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/1.NOUVEAUTES_84bdb352-0b9f-462c-af8c-3e1bc33c4cf1.jpg?v=1746526039\nFIND A POINT OF SALE:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/BU-VENTE.jpg?v=1759756940"}}, "page_header_image_banner_CJKkUX": {"type": "page-header-image-banner", "blocks": {"subheading_zjrrPc": {"type": "subheading", "disabled": true, "settings": {"subheading": "black|Up", "subheading_disable_on_mobile": false}}, "heading_H3Upzb": {"type": "heading", "disabled": true, "settings": {"heading": "BRISEZ LES RÈGLES", "disable_on_mobile": false, "size_heading": 160, "size_heading_mobile": 100}}, "text_jFw9dY": {"type": "text", "settings": {"text": "", "disable_on_mobile": false}}, "button_Dd4Yfa": {"type": "button", "settings": {"button_select": "primary", "button_label": "JE SHOPPE", "disable_on_mobile": false, "button_link": "shopify://collections/nouveautes", "second_button_select": "secondary", "second_button_label": "Button label", "second_disable_on_mobile": false, "second_button_link": ""}}}, "block_order": ["subheading_zjrrPc", "heading_H3Upzb", "text_jFw9dY", "button_Dd4Yfa"], "disabled": true, "custom_css": ["h2 {color: #ffffff !important;}", "div {height: 100%; object-fit: cover;}", ".hero__overlay {position: absolute; width: 414px; left: 0px; right: 0px; margin: auto; padding: 0px; bottom: 40px; height: fit-content; top: inherit;}", ".hero__overlay__content {width: 100%;}"], "settings": {"slide_height": "adapt_to_first_image", "desktop_fixed_height": 1000, "mobile_fixed_height": 700, "video_url": "", "desktop_text_vertical_position": "bottom", "desktop_text_horizontal_position": "center", "mobile_text_vertical_position": "bottom", "mobile_text_horizontal_position": "center", "color-body-text": "#ffffff", "text-container-color": "rgba(0,0,0,0)", "color-overlay-opacity": 100}}}, "order": ["announcement-bar", "header", "page_header_image_banner_CJKkUX"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_DKVb4L": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "FRAIS DE PORT OFFERTS DÈS 65€",
+            "link": ""
+          }
+        },
+        "announcement_hAyzjh": {
+          "type": "announcement",
+          "settings": {
+            "text": "Soldes : -30% dès 2 articles, -40% dès 3 articles et -50% dès 4 articles",
+            "link": "shopify://collections/sales"
+          }
+        },
+        "announcement_gYRTgd": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "LIVRAISON RAPIDE DANS TOUTE L'EUROPE",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_DKVb4L",
+        "announcement_hAyzjh",
+        "announcement_gYRTgd"
+      ],
+      "custom_css": [
+        ".wt-announcement {--time: 500s;}"
+      ],
+      "settings": {
+        "marquee": true,
+        "animation_speed": "150",
+        "checkbox_close_announcement": false,
+        "color-body-text": "#ffffff",
+        "background_color": "#dc392e"
+      }
+    },
+    "header": {
+      "type": "page-header",
+      "custom_css": [
+        ".wt-header--fashion .wt-header__nav-teaser__link {max-width: 356px; margin-right: 10px;}"
+      ],
+      "settings": {
+        "layout": "option_3",
+        "sticky_header": true,
+        "show_line_separator": true,
+        "show_shadow": true,
+        "logo": "shopify://shop_images/NOIR-BU.png",
+        "large_screen_logo_width": 170,
+        "mobile_screen_logo_width": 90,
+        "menu": "hamburger-menu",
+        "teaser_menu": "front-menu",
+        "mobile_footer_menu": "",
+        "transparent_logo": "shopify://shop_images/Logo-full-white.svg",
+        "transparent_header_color": "rgba(0,0,0,0)",
+        "drawer_title": "",
+        "typing_search": "Trouver un produit",
+        "suggestions_title": "blush",
+        "suggestions_menu": "",
+        "default_menu_image": "shopify://shop_images/NOUVEAUTES.jpg",
+        "french_submenu_images": "Cyber Monday:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/REWARD.jpg?v=1759147602\nLast Chance:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/1.NOUVEAUTES_84bdb352-0b9f-462c-af8c-3e1bc33c4cf1.jpg?v=1746526039\nNouveautés:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/NOUVEAUTES.jpg?v=1759147602\nMaquillage:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/2.MAQUILLAGE_4dff2332-59c3-4ebf-862f-b832d7e72edb.jpg?v=1746526093\nMakeup:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/2.MAQUILLAGE_4dff2332-59c3-4ebf-862f-b832d7e72edb.jpg?v=1746526093\nTeint:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/3.TEINT_ec4bd914-b9d8-4b2b-a47f-f096eb1565db.jpg?v=1746535610\nYeux:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/4.YEUX_6064e9c8-2efb-4a91-88cd-f0747e958b66.jpg?v=1746535609\nLèvres:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/5.LEVRES.png?v=1746535609\nAccessoires:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/6.ACCESSOIRES.jpg?v=1746535609\nParfum:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/PARFUM.jpg?v=1759147602\nCapillaire:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/CAPILLAIRE.jpg?v=1746535609\nBest sellers:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/BEST_SELLERS.jpg?v=1746535609\nSets:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/Sets.jpg?v=1757582429\nMeilleures offres:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/9.DERNIERE_CHANCE_cc0852b0-ca8c-464e-8666-089b3bcd4c19.jpg?v=1746535609\nCarte cadeau:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/CARTE_CADEAU.png?v=1746535609\nRewards:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/REWARD.jpg?v=1759147602\nParrainage:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/1.NOUVEAUTES_84bdb352-0b9f-462c-af8c-3e1bc33c4cf1.jpg?v=1746526039\nTrouver un point de vente:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/BU-VENTE.jpg?v=1759756940",
+        "english_submenu_images": "Cyber Monday:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/REWARD.jpg?v=1759147602\nLast chance:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/1.NOUVEAUTES_84bdb352-0b9f-462c-af8c-3e1bc33c4cf1.jpg?v=1746526039\nNew in:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/NOUVEAUTES.jpg?v=1759147602\nMakeup:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/2.MAQUILLAGE_4dff2332-59c3-4ebf-862f-b832d7e72edb.jpg?v=1746526093\nComplexion:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/3.TEINT_ec4bd914-b9d8-4b2b-a47f-f096eb1565db.jpg?v=1746535610\nEyes:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/4.YEUX_6064e9c8-2efb-4a91-88cd-f0747e958b66.jpg?v=1746535609\nLips:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/5.LEVRES.png?v=1746535609\nAccessories:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/6.ACCESSORIES.jpg?v=1750861576\nFragrance:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/PARFUM.jpg?v=1759147602\nPro Haircare:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/CAPILLAIRE.jpg?v=1746535609\nBest sellers:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/BEST_SELLERS.jpg?v=1746535609\nSets:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/SETS-EN.jpg?v=1757585178\nLast chance:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/9.DERNIERE_CHANCE_cc0852b0-ca8c-464e-8666-089b3bcd4c19.jpg?v=1746535609\nGift card:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/CARTE_CADEAU.png?v=1746535609\nRewards:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/REWARD.jpg?v=1759147602\nREFERRAL:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/1.NOUVEAUTES_84bdb352-0b9f-462c-af8c-3e1bc33c4cf1.jpg?v=1746526039\nFIND A POINT OF SALE:https://cdn.shopify.com/s/files/1/0674/5014/2887/files/BU-VENTE.jpg?v=1759756940"
+      }
+    },
+    "page_header_image_banner_CJKkUX": {
+      "type": "page-header-image-banner",
+      "blocks": {
+        "subheading_zjrrPc": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "black|Up",
+            "subheading_disable_on_mobile": false
+          }
+        },
+        "heading_H3Upzb": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "BRISEZ LES RÈGLES",
+            "disable_on_mobile": false,
+            "size_heading": 160,
+            "size_heading_mobile": 100
+          }
+        },
+        "text_jFw9dY": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "disable_on_mobile": false
+          }
+        },
+        "button_Dd4Yfa": {
+          "type": "button",
+          "settings": {
+            "button_select": "primary",
+            "button_label": "JE SHOPPE",
+            "disable_on_mobile": false,
+            "button_link": "shopify://collections/new",
+            "second_button_select": "secondary",
+            "second_button_label": "Button label",
+            "second_disable_on_mobile": false,
+            "second_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zjrrPc",
+        "heading_H3Upzb",
+        "text_jFw9dY",
+        "button_Dd4Yfa"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {color: #ffffff !important;}",
+        "div {height: 100%; object-fit: cover;}",
+        ".hero__overlay {position: absolute; width: 414px; left: 0px; right: 0px; margin: auto; padding: 0px; bottom: 40px; height: fit-content; top: inherit;}",
+        ".hero__overlay__content {width: 100%;}"
+      ],
+      "settings": {
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 1000,
+        "mobile_fixed_height": 700,
+        "video_url": "",
+        "desktop_text_vertical_position": "bottom",
+        "desktop_text_horizontal_position": "center",
+        "mobile_text_vertical_position": "bottom",
+        "mobile_text_horizontal_position": "center",
+        "color-body-text": "#ffffff",
+        "text-container-color": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "page_header_image_banner_CJKkUX"
+  ]
+}
