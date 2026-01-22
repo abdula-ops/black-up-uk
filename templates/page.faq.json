@@ -171,7 +171,7 @@
         "collapsible_tab_TfrMjm": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Pourquoi mon produit favori n'est-il plus en vente ?",
+            "heading": "Why is my favorite product no longer for sale?",
             "content": "<p>Il arrive parfois que nous retirions des produits de la vente pour faire place à de nouveaux. Il est possible que ces derniers soient remis en vente lors de ventes privilèges ou de soldes. Si ce n’est pas le cas nous vous invitons à découvrir les nouveaux produits de la gamme.</p>",
             "page": "",
             "icon": "check_mark"
@@ -180,7 +180,7 @@
         "collapsible_tab_PR7VgG": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "J'ai une question à propos de la formule d'un produit. À qui dois-je m'adresser ?",
+            "heading": "I have a question about a product formula. Who should I contact?",
             "content": "<p>Vous pouvez retrouver toute la composition de nos produits sur nos emballages ou dans nos fiches produits. Si vous souhaitez plus de détails, ou avez une question précise, n’hésitez pas à contacter notre service client qui transmettra votre demande au service concerné : <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
             "page": "",
             "icon": "check_mark"
@@ -206,7 +206,7 @@
         "heading_jAWzWL": {
           "type": "heading",
           "settings": {
-            "heading": "Mon compte",
+            "heading": "My account",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -231,7 +231,7 @@
         "collapsible_tab_DX34kM": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Qui peut accéder aux informations que j'ai fourni à Black Up ?",
+            "heading": "Who can access the information I provided to Black Up?",
             "content": "<p>Toutes les informations nominatives que vous nous communiquez sont strictement confidentielles. Elles sont destinées à vous faire gagner du temps au moment de passer votre commande, ainsi qu'à entretenir votre compte. Les informations personnelles et notamment les adresses e-mail, ne font l'objet d'aucune location, vente, échange ou partage avec d'autres prestataires.</p><p>Conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, le traitement des informations nominatives collectées sur le site a fait l'objet d'une déclaration auprès de la Commission Nationale de l'Informatique et des Libertés. Vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant. Pour exercer ce droit, vous devez adresser un courrier postal au service clients de black|Up, 16 avenue Pierre 1er de Serbie 75116 Paris, en indiquant nom, prénom, adresse et, le cas échéant, numéro de client.</p>",
             "page": "",
             "icon": "check_mark"
@@ -240,8 +240,8 @@
         "collapsible_tab_Ct6TQP": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Comment puis-je accéder à mes informations ?",
-            "content": "<p>Connectez-vous à votre compte en cliquant sur \"Connexion\" en haut à droite de la page puis entrez votre email et votre mot de passe dans la fenêtre qui apparaîtra en pop-up. Dans \"Mon Compte\", en haut à droite de la page, vous aurez accès à votre compte/informations personnelles. Pour toute information complémentaire, veuillez contacter le service clients.</p>",
+            "heading": "How can I access my information?",
+            "content": "<p>Log in to your account by clicking \"Login\" at the top right of the page, then enter your email and password in the pop-up window. In \"My Account\", at the top right of the page, you will have access to your account/personal information. For any additional information, please contact customer service.</p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -249,7 +249,7 @@
         "collapsible_tab_Dyqk6K": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Que dois-je faire si j'ai oublié mon mot de passe ?",
+            "heading": "What should I do if I forgot my password?",
             "content": "<p>Cliquez sur le bouton \"Connexion\" en haut à droite de la page puis cliquez sur \"Mot de passe oublié ? ». Vous pourrez ensuite entrer à nouveau votre adresse email et commencer la procédure pour récupérer votre mot de passe. Pour toute information complémentaire, veuillez contacter le service clients.</p>",
             "page": "",
             "icon": "check_mark"
@@ -258,7 +258,7 @@
         "collapsible_tab_tXEi34": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Puis-je modifier les paramètres de mon compte ?",
+            "heading": "Can I modify my account settings?",
             "content": "<p>Vous pouvez modifier les paramètres de votre compte et vos informations personnelles à tout moment.</p>",
             "page": "",
             "icon": "check_mark"
@@ -267,7 +267,7 @@
         "collapsible_tab_gwgWbD": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Comment supprimer mon compte ?",
+            "heading": "How to delete my account?",
             "content": "<p>Pour supprimer votre compte, veuillez contacter notre service clients : <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
             "page": "",
             "icon": "check_mark"
@@ -295,7 +295,7 @@
         "heading_NXetFy": {
           "type": "heading",
           "settings": {
-            "heading": "Carrières",
+            "heading": "Careers",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100

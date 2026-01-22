@@ -123,7 +123,7 @@
           "type": "collapsible_tab",
           "disabled": true,
           "settings": {
-            "heading": "Comment utiliser ce produit",
+            "heading": "How to use this product",
             "content": "<p>{{ product.metafields.custom.utilisation.value }}</p>",
             "page": "",
             "icon": "none"
@@ -227,7 +227,7 @@
     "ec5a6457-3cb6-4605-94df-ac6400f950f1": {
       "type": "featured-collection",
       "settings": {
-        "title": "Complétez votre maquillage",
+        "title": "Complete your makeup",
         "disable_on_mobile": true,
         "collection": "bestsellers",
         "product_list": [],
@@ -269,7 +269,7 @@
         "heading_8rjBeR": {
           "type": "heading",
           "settings": {
-            "heading": "NOS COLLECTIONS",
+            "heading": "OUR COLLECTIONS",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -278,7 +278,7 @@
         "text_QCDi7L": {
           "type": "text",
           "settings": {
-            "text": "<h3>Des formules précises, conçues pour sublimer les peaux mates à foncées.</h3>",
+            "text": "<h3>Precise formulas, designed to enhance matte to dark skin tones.</h3>",
             "disable_on_mobile": false
           }
         }
@@ -304,21 +304,21 @@
           "type": "featured_collection",
           "settings": {
             "collection": "complexion-makeup",
-            "text_collection": "Teint"
+            "text_collection": "Complexion"
           }
         },
         "featured_collection_WjLnGL": {
           "type": "featured_collection",
           "settings": {
             "collection": "maquillage-yeux",
-            "text_collection": "Yeux"
+            "text_collection": "Eyes"
           }
         },
         "featured_collection_tADHkM": {
           "type": "featured_collection",
           "settings": {
             "collection": "lip-makeup",
-            "text_collection": "Lèvres"
+            "text_collection": "Lips"
           }
         }
       },
@@ -345,7 +345,7 @@
         "heading_mLFMeW": {
           "type": "heading",
           "settings": {
-            "heading": "Soyez la plus belle rejoignez-nous",
+            "heading": "Be the most beautiful, join us",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100

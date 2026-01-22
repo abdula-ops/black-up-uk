@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
           var langHtml = document.querySelector("html"); 
           if(langHtml.getAttribute("lang") == "fr") {
             store_language = "";
-            addtocart_text = "ajouter au panier";
+            addtocart_text = "add to cart";
           }else if(langHtml.getAttribute("lang") == "en"){
             store_language = "";
             addtocart_text = "Add to Cart";
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function () {
           var productlist = '<div class="custom_group_product_list">';
             response.data.products.nodes.forEach(function(product) {
               productlist += '<div class="collection__grid__item scroll-trigger animate--slide-in disabled-on-mobile" style="--animation-order: 1;"><div class="card__container"><div class="card__picture-container">';
-              productlist += '<a href="/' + store_language + 'products/' + product.handle + '" class="card card--left" tabindex="0" aria-label="Ouvrir la page du produit">';
+              productlist += '<a href="/' + store_language + 'products/' + product.handle + '" class="card card--left" tabindex="0" aria-label="Open product page">';
               productlist += '<picture class="card__picture" data-uri="' + product.handle + '"><div class="card__loader hidden"></div>';
               product.media.nodes.forEach(function(image, keys) {
                 if(keys ==0){
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 productlist += '<span><s class="price-item price-item--regular price-item--lower wt-product__price__compare "></s></span>';
               }
               productlist += '</div></div></div></div></div></a></div>';
-              productlist += '<div class="card__quick-add-container"><quick-add data-product-handle="' + product.handle + '"><button aria-label="ajouter au panier" class="button--full-width hero__button--secondary" type="button" name="commit" data-product-url="/' + store_language + 'products/' + product.handle + '" tabindex="0"><span>'+ addtocart_text +'</span></button></quick-add></div>';
+              productlist += '<div class="card__quick-add-container"><quick-add data-product-handle="' + product.handle + '"><button aria-label="add to cart" class="button--full-width hero__button--secondary" type="button" name="commit" data-product-url="/' + store_language + 'products/' + product.handle + '" tabindex="0"><span>'+ addtocart_text +'</span></button></quick-add></div>';
               productlist += '</div></div>';
             });
           productlist += '</div>';

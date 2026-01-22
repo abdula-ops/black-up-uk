@@ -134,7 +134,7 @@
         "heading_mT9W4G": {
           "type": "heading",
           "settings": {
-            "heading": "NOS COLLECTIONS",
+            "heading": "OUR COLLECTIONS",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -143,7 +143,7 @@
         "text_hYxTmT": {
           "type": "text",
           "settings": {
-            "text": "<p>Des formules précises, conçues pour sublimer les peaux mates à foncées.</p>",
+            "text": "<p>Precise formulas, designed to enhance matte to dark skin tones.</p>",
             "disable_on_mobile": false
           }
         }
@@ -168,21 +168,21 @@
           "type": "featured_collection",
           "settings": {
             "collection": "complexion-makeup",
-            "text_collection": "Teint"
+            "text_collection": "Complexion"
           }
         },
         "featured_collection_QeDdHf": {
           "type": "featured_collection",
           "settings": {
             "collection": "maquillage-yeux",
-            "text_collection": "Yeux"
+            "text_collection": "Eyes"
           }
         },
         "featured_collection_QarFWU": {
           "type": "featured_collection",
           "settings": {
             "collection": "lip-makeup",
-            "text_collection": "Lèvres"
+            "text_collection": "Lips"
           }
         }
       },
@@ -272,16 +272,16 @@
           "type": "image",
           "settings": {
             "select_icon": "bag",
-            "heading": "Livraison rapide",
-            "text": "<p>Dans toute l'Europe</p>"
+            "heading": "Fast delivery",
+            "text": "<p>Throughout Europe</p>"
           }
         },
         "image_gcNmVy": {
           "type": "image",
           "settings": {
             "select_icon": "plus",
-            "heading": "Frais de port offerts",
-            "text": "<p>Dès 65€ d'achat</p>"
+            "heading": "Free shipping",
+            "text": "<p>From €65 purchase</p>"
           }
         },
         "image_yX8NnD": {
@@ -296,8 +296,8 @@
           "type": "image",
           "settings": {
             "select_icon": "user",
-            "heading": "Service client 24/24",
-            "text": "<p>Une équipe de spécialiste en maquillage</p>"
+            "heading": "Customer service 24/7",
+            "text": "<p>A team of makeup specialists</p>"
           }
         }
       },
@@ -327,7 +327,7 @@
         "heading_a9LR3K": {
           "type": "heading",
           "settings": {
-            "heading": "Soyez la plus belle rejoignez-nous",
+            "heading": "Be the most beautiful, join us",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -336,7 +336,7 @@
         "paragraph_D6ggC7": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Soyez la première à découvrir nos nouvelles collections et offres exclusives.</p>",
+            "paragraph": "<p>Be the first to discover our new collections and exclusive offers.</p>",
             "text_disable_on_mobile": false
           }
         },

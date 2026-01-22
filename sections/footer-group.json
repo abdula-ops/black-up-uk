@@ -1,1 +1,95 @@
-{"type":"footer","name":"Footer Group","sections":{"17575169198120128a":{"type":"apps","blocks":{"judge_me_reviews_all_reviews_text_L67k7f":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["judge_me_reviews_all_reviews_text_L67k7f"],"custom_css":["{background: #f0f0f0; width: 100%; padding: 20px 0; \/* 10px en haut et en bas *\/}"],"settings":{"include_margins":true}},"footer":{"type":"page-footer","blocks":{"text_wKd6DL":{"type":"text","disabled":true,"settings":{"heading_text":"","text":""}},"menu_g8gLjt":{"type":"menu","settings":{"heading_links":"À PROPOS","links":"footer"}},"menu_GzMLqf":{"type":"menu","settings":{"heading_links":"CONDITIONS LÉGALES","links":"footer-menu-droit"}},"text_gYY8aY":{"type":"text","settings":{"heading_text":"","text":""}},"newsletter_XPPXfB":{"type":"newsletter","settings":{"heading_newsletter":"","text_newsletter":"<p>Inscrivez-vous à notre newsletter et bénéficiez de -10% sur votre première commande<\/p>","button_type":"secondary"}}},"block_order":["text_wKd6DL","menu_g8gLjt","menu_GzMLqf","text_gYY8aY","newsletter_XPPXfB"],"custom_css":["@media (min-width: 1024px) {.wt-collapse:not(.wt-collapse--always) .wt-collapse__target {font-size: 15px; line-height: 18px; }}",".wt-footer__aside-list {gap: calc(var(--gap, 8px) * 0.3);}","@media (min-width: 1024px) {.wt-footer__block--newsletter .wt-footer__aside-block:last-child {bottom: -150px; margin-left: 150px; }}"],"settings":{"show-social-media-icons":true,"show-language-selector":false,"show-country_region_selector":false,"enable_follow_on_shop":false,"show-payments-icons":true,"show-copyright":true,"text":"© 2025 black|Up","big-logo":"shopify:\/\/shop_images\/NOIR-BU.png","big-logo-width":40,"margin-top":20,"margin-bottom":20}}},"order":["17575169198120128a","footer"]}
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "17575169198120128a": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_text_L67k7f": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_text_L67k7f"
+      ],
+      "custom_css": [
+        "{background: #f0f0f0; width: 100%; padding: 20px 0; /* 10px en haut et en bas */}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "footer": {
+      "type": "page-footer",
+      "blocks": {
+        "text_wKd6DL": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading_text": "",
+            "text": ""
+          }
+        },
+        "menu_g8gLjt": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "ABOUT",
+            "links": "footer"
+          }
+        },
+        "menu_GzMLqf": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "LEGAL TERMS",
+            "links": "footer-menu-droit"
+          }
+        },
+        "text_gYY8aY": {
+          "type": "text",
+          "settings": {
+            "heading_text": "",
+            "text": ""
+          }
+        },
+        "newsletter_XPPXfB": {
+          "type": "newsletter",
+          "settings": {
+            "heading_newsletter": "",
+            "text_newsletter": "<p>Subscribe to our newsletter and get -10% off your first order</p>",
+            "button_type": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "text_wKd6DL",
+        "menu_g8gLjt",
+        "menu_GzMLqf",
+        "text_gYY8aY",
+        "newsletter_XPPXfB"
+      ],
+      "custom_css": [
+        "@media (min-width: 1024px) {.wt-collapse:not(.wt-collapse--always) .wt-collapse__target {font-size: 15px; line-height: 18px; }}",
+        ".wt-footer__aside-list {gap: calc(var(--gap, 8px) * 0.3);}",
+        "@media (min-width: 1024px) {.wt-footer__block--newsletter .wt-footer__aside-block:last-child {bottom: -150px; margin-left: 150px; }}"
+      ],
+      "settings": {
+        "show-social-media-icons": true,
+        "show-language-selector": false,
+        "show-country_region_selector": false,
+        "enable_follow_on_shop": false,
+        "show-payments-icons": true,
+        "show-copyright": true,
+        "text": "© 2025 black|Up",
+        "big-logo": "shopify://shop_images/NOIR-BU.png",
+        "big-logo-width": 40,
+        "margin-top": 20,
+        "margin-bottom": 20
+      }
+    }
+  },
+  "order": [
+    "17575169198120128a",
+    "footer"
+  ]
+}

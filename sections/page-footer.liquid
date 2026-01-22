@@ -53,7 +53,7 @@
                 {%- endfor -%}
                 
               </ul>
-              {% if block.settings.heading_links == "À PROPOS" or block.settings.heading_links == "ABOUT" %}
+              {% if block.settings.heading_links == "ABOUT" or block.settings.heading_links == "ABOUT" %}
               <div class="contact-us">
                  <div class="wt-footer__title" style="padding-bottom: 0px;" > 
                   <div> {{'sections.footer.contactus' | t -}} </div>
@@ -68,7 +68,7 @@
               </div> 
              {% endif %}
             </collapsible-section>
-            {% if block.settings.heading_links == "LEGAL CONDITIONS" or block.settings.heading_links == "CONDITIONS LÉGALES" %}
+            {% if block.settings.heading_links == "LEGAL CONDITIONS" or block.settings.heading_links == "LEGAL TERMS" %}
               {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
                 <div class="footer__follow-on-shop">
                   {{ shop | login_button: action: 'follow' }}
@@ -307,7 +307,7 @@
               data-mobile-only
               {% endcomment %}
             >
-            {% if block.settings.heading_links == "À PROPOS" or block.settings.heading_links == "ABOUT" %}
+            {% if block.settings.heading_links == "ABOUT" or block.settings.heading_links == "ABOUT" %}
                <div class="contact-us">
                  <div class="wt-footer__title" > 
                   <div> {{'sections.footer.contactus' | t -}} </div>
@@ -352,7 +352,7 @@
                 {%- endfor -%}
               </ul>
             </collapsible-section>
-            {% if block.settings.heading_links == "LEGAL CONDITIONS" or block.settings.heading_links == "CONDITIONS LÉGALES" %}
+            {% if block.settings.heading_links == "LEGAL CONDITIONS" or block.settings.heading_links == "LEGAL TERMS" %}
               {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
                 <div class="footer__follow-on-shop">
                   {{ shop | login_button: action: 'follow' }}

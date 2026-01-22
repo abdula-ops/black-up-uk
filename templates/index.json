@@ -138,7 +138,7 @@
       "disabled": true,
       "name": "Banner - Mobile",
       "settings": {
-        "custom_liquid": "<!-- Section image mobile uniquement -->\n{% comment %} Détection de la langue {% endcomment %}\n{% if request.locale.iso_code == 'en' or request.path contains '/en/' %}\n  {% assign is_english = true %}\n  {% assign image_url = 'https://cdn.shopify.com/s/files/1/0674/5014/2887/files/MOBILE_EN.jpg?v=1752011158' %}\n  {% assign link_url = 'https://www.blackup.com/collections/sales' %}\n  {% assign cta_text = 'SHOP NOW' %}\n{% else %}\n  {% assign is_english = false %}\n  {% assign image_url = 'https://cdn.shopify.com/s/files/1/0674/5014/2887/files/MOBILE_FR.jpg?v=1752011158' %}\n  {% assign link_url = 'https://www.blackup.com/collections/soldes' %}\n  {% assign cta_text = 'JE SHOPPE' %}\n{% endif %}\n<div class=\"mobile-promo-banner\">\n  <a href=\"{{ link_url }}\" class=\"mobile-promo-link\">\n    <img \n      src=\"{{ image_url }}\"\n      alt=\"{% if is_english %}Sales Promotion{% else %}Promotion Soldes{% endif %}\"\n      class=\"mobile-promo-image\"\n      loading=\"lazy\"\n    />\n    <div class=\"mobile-cta-button\">\n      {{ cta_text }}\n    </div>\n  </a>\n</div>\n<style>\n  .mobile-promo-banner {\n    display: none; /* Caché par défaut */\n    width: 100%;\n    margin: 0;\n    padding: 0;\n  }\n  \n  .mobile-promo-link {\n    display: block;\n    width: 100%;\n    text-decoration: none;\n    position: relative; /* Pour positionner le bouton CTA */\n  }\n  \n  .mobile-promo-image {\n    width: 100%;\n    height: auto;\n    display: block;\n    border: none;\n  }\n  \n  .mobile-cta-button {\n    position: absolute;\n    bottom: 20px; /* Distance du bas de l'image */\n    left: 50%;\n    transform: translateX(-50%); /* Centrage horizontal */\n    background-color: #000;\n    color: #fff;\n    padding: 12px 24px;\n    border-radius: 25px;\n    font-size: 14px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);\n  }\n  \n  .mobile-cta-button:hover {\n    background-color: #333;\n    transform: translateX(-50%) translateY(-2px);\n    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);\n  }\n  \n  /* Affichage uniquement sur mobile (écrans <= 768px) */\n  @media screen and (max-width: 768px) {\n    .mobile-promo-banner {\n      display: block;\n    }\n  }\n  \n  /* Pour les très petits écrans (optionnel) */\n  @media screen and (max-width: 480px) {\n    .mobile-promo-banner {\n      display: block;\n    }\n  }\n</style>"
+        "custom_liquid": "<!-- Section image mobile uniquement -->\n{% comment %} Détection de la langue {% endcomment %}\n{% if request.locale.iso_code == 'en' or request.path contains '/en/' %}\n  {% assign is_english = true %}\n  {% assign image_url = 'https://cdn.shopify.com/s/files/1/0674/5014/2887/files/MOBILE_EN.jpg?v=1752011158' %}\n  {% assign link_url = 'https://www.blackup.com/collections/sales' %}\n  {% assign cta_text = 'SHOP NOW' %}\n{% else %}\n  {% assign is_english = false %}\n  {% assign image_url = 'https://cdn.shopify.com/s/files/1/0674/5014/2887/files/MOBILE_FR.jpg?v=1752011158' %}\n  {% assign link_url = 'https://www.blackup.com/collections/soldes' %}\n  {% assign cta_text = 'SHOP NOW' %}\n{% endif %}\n<div class=\"mobile-promo-banner\">\n  <a href=\"{{ link_url }}\" class=\"mobile-promo-link\">\n    <img \n      src=\"{{ image_url }}\"\n      alt=\"{% if is_english %}Sales Promotion{% else %}Promotion Soldes{% endif %}\"\n      class=\"mobile-promo-image\"\n      loading=\"lazy\"\n    />\n    <div class=\"mobile-cta-button\">\n      {{ cta_text }}\n    </div>\n  </a>\n</div>\n<style>\n  .mobile-promo-banner {\n    display: none; \n    width: 100%;\n    margin: 0;\n    padding: 0;\n  }\n  \n  .mobile-promo-link {\n    display: block;\n    width: 100%;\n    text-decoration: none;\n    position: relative; \n  }\n  \n  .mobile-promo-image {\n    width: 100%;\n    height: auto;\n    display: block;\n    border: none;\n  }\n  \n  .mobile-cta-button {\n    position: absolute;\n    bottom: 20px; \n    left: 50%;\n    transform: translateX(-50%); \n    background-color: #000;\n    color: #fff;\n    padding: 12px 24px;\n    border-radius: 25px;\n    font-size: 14px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);\n  }\n  \n  .mobile-cta-button:hover {\n    background-color: #333;\n    transform: translateX(-50%) translateY(-2px);\n    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);\n  }\n  \n  \n  @media screen and (max-width: 768px) {\n    .mobile-promo-banner {\n      display: block;\n    }\n  }\n  \n  \n  @media screen and (max-width: 480px) {\n    .mobile-promo-banner {\n      display: block;\n    }\n  }\n</style>"
       }
     },
     "features_banner_rnAYGJ": {
@@ -148,7 +148,7 @@
           "type": "image",
           "settings": {
             "select_icon": "bag",
-            "heading": "Livraison rapide\nDans toute l'Europe",
+            "heading": "Fast delivery\nThroughout Europe",
             "text": ""
           }
         },
@@ -156,7 +156,7 @@
           "type": "image",
           "settings": {
             "select_icon": "plus",
-            "heading": "Livraison offerte \ndès 65€",
+            "heading": "Free shipping\nfrom €65",
             "text": ""
           }
         },
@@ -164,7 +164,7 @@
           "type": "image",
           "settings": {
             "select_icon": "check",
-            "heading": "Paiements sécurisés\nCB, Paypal, 3* sans frais",
+            "heading": "Secure payments\nCB, Paypal, 3* sans frais",
             "text": ""
           }
         },
@@ -173,7 +173,7 @@
           "disabled": true,
           "settings": {
             "select_icon": "user",
-            "heading": "Un service client \nà l'écoute 24/24",
+            "heading": "Customer service\navailable 24/7",
             "text": ""
           }
         }
@@ -205,7 +205,7 @@
       "type": "featured-collection",
       "disabled": true,
       "settings": {
-        "title": "NOS BEST SELLERS",
+        "title": "OUR BEST SELLERS",
         "disable_on_mobile": false,
         "collection": "all-our-products",
         "product_list": [
@@ -247,7 +247,7 @@
       ],
       "name": "Collection Tab + CTA",
       "settings": {
-        "title": "NOS CATÉGORIES",
+        "title": "OUR CATEGORIES",
         "disable_on_mobile": false,
         "collection": "new",
         "collection_1": "complexion-makeup",
@@ -284,7 +284,7 @@
         ".collection-tab-title-container {margin-bottom: 50px;}"
       ],
       "settings": {
-        "title": "NOS CATEGORIES",
+        "title": "OUR CATEGORIES",
         "disable_on_mobile": false,
         "collection": "bestsellers",
         "collection_1": "new",
@@ -341,7 +341,7 @@
             "text3": "<p>NAIROBI</p>",
             "text_disable_on_mobile": false,
             "button_select": "primary",
-            "button_label": "DÉCOUVRIR",
+            "button_label": "DISCOVER",
             "button_disable_on_mobile": false,
             "button_link": "shopify://collections/the-perfume",
             "button_link_in_new_window": false
@@ -511,7 +511,7 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "découvrir la marque",
+            "button_label": "discover the brand",
             "button_link": "shopify://pages/la-marque",
             "button_link_in_new_window": false,
             "disable_on_mobile": false
@@ -586,7 +586,7 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "découvrir la marque",
+            "button_label": "discover the brand",
             "button_link": "shopify://pages/la-marque",
             "disable_on_mobile": false
           }
@@ -632,7 +632,7 @@
         "heading_pqB93z": {
           "type": "heading",
           "settings": {
-            "heading": "PENSÉ POUR CHAQUE NUANCE DE PEAUX FONCÉES ET BIEN PLUS ENCORE.",
+            "heading": "DESIGNED FOR EVERY SHADE OF DARK SKIN AND SO MUCH MORE.",
             "disable_on_mobile": false,
             "size_heading": 120,
             "size_heading_mobile": 100
@@ -753,14 +753,14 @@
         "subheading_F6pY3j": {
           "type": "subheading",
           "settings": {
-            "subheading": "TROUVEZ VOTRE TEINTE. PAS D'ERREUR JUSTE LE MATCH PARFAIT.",
+            "subheading": "FIND YOUR SHADE. NO MISTAKES, JUST THE PERFECT MATCH.",
             "subheading_disable_on_mobile": false
           }
         },
         "heading_Kq63iE": {
           "type": "heading",
           "settings": {
-            "heading": "Le guide expert pour révéler votre carnation avec black Up",
+            "heading": "The expert guide to reveal your skin tone with black Up",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 80
@@ -770,7 +770,7 @@
           "type": "button",
           "settings": {
             "button_select": "primary",
-            "button_label": "JE TROUVE MA TEINTE",
+            "button_label": "FIND MY SHADE",
             "button_link": "shopify://pages/trouver-son-fond-de-teint",
             "disable_on_mobile": false
           }
@@ -844,7 +844,7 @@
         "heading_VeUiwm": {
           "type": "heading",
           "settings": {
-            "heading": "CONÇU AVEC EXIGENCE.",
+            "heading": "DESIGNED WITH EXCELLENCE.",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -853,7 +853,7 @@
         "text_hFKBcp": {
           "type": "text",
           "settings": {
-            "text": "<p>Nos produits ne sont pas testés sur les animaux. Ils sont fabriqués en Europe, et nous portons une attention particulière à maintenir une partie de notre production en France.</p>",
+            "text": "<p>Our products are not tested on animals. They are manufactured in Europe, and we pay special attention to maintaining part of our production in France.</p>",
             "disable_on_mobile": false
           }
         }
@@ -863,7 +863,7 @@
         "text_hFKBcp"
       ],
       "custom_css": [
-        "[data-section-id=\"template--17998465892519__rich_text_NEKwBK\"] {--color-custom-background: #fff; /* Conservé au cas où */ background: linear-gradient( 180deg, #f4f5f7 0%, #eff1f4 17.23%, #eff0f2 31.38%, #ebecee 47.54%, #e7e7e9 68.32%, #e3e3e5 86.51%, #dedede 100% )"
+        "[data-section-id=\"template--17998465892519__rich_text_NEKwBK\"] {--color-custom-background: #fff;  background: linear-gradient( 180deg, #f4f5f7 0%, #eff1f4 17.23%, #eff0f2 31.38%, #ebecee 47.54%, #e7e7e9 68.32%, #e3e3e5 86.51%, #dedede 100% )"
       ],
       "settings": {
         "section_width": "regular",
