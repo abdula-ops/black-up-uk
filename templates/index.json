@@ -211,7 +211,7 @@
         "product_list": [
           "mattifying-base-8h",
           "blackup-x-shy-m-liquid-eyeshadow-shymle02",
-          "brillant-a-levres-ngloss03",
+          "lip-gloss-ngloss03",
           "waterproof-smoky-kohl-pencil-ks08",
           "fond-de-teint-creme-haute-couvrance-hc05",
           "fond-de-teint-creme-poudre-fcnat04",
@@ -441,7 +441,7 @@
           "type": "product",
           "settings": {
             "start_second": 50,
-            "featured_product": "duo-blush-et-enlumineur-waxduo-05"
+            "featured_product": "duo-blush-and-highlighter-waxduo-05"
           }
         },
         "product_hh6zhr": {
@@ -698,7 +698,7 @@
         "product_CAAJBg": {
           "type": "product",
           "settings": {
-            "featured_product": "brillant-a-levres-ngloss01"
+            "featured_product": "lip-gloss-ngloss01"
           }
         },
         "product_wrYgbH": {
