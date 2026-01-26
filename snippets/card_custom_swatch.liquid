@@ -4,7 +4,7 @@
 
 {%- for option in product.options_with_values -%}
   {% assign option_name = option.name | downcase %}
-  {%- if option_name == 'couleur' or option_name == 'color' -%}
+  {%- if option_name == 'color' -%}
     {% assign variation_color = 'True' %}
     {% assign color_variant_count = option.values | size %}
 
@@ -141,7 +141,7 @@
               >
                 <a href="{{ product.url }}">
                   <span
-                    style="{% if product.metafields.custom.couleur_hex.value != "NULL" %}background-color:{{ product.metafields.custom.couleur_hex.value }}{% endif %}  "
+                    style="{% if product.metafields.custom.color_hex.value != "NULL" %}background-color:{{ product.metafields.custom.color_hex.value }}{% endif %}  "
                     data-image-url="//blackup-prod.myshopify.com/cdn/shop/{{ product.images[0] }}"
                   >
                   </span>
@@ -159,7 +159,7 @@
             >
               <a href="{{ product.url }}">
                 <span
-                  style="{% if product.metafields.custom.couleur_hex.value != "NULL" %}background-color:{{ product.metafields.custom.couleur_hex.value }}{% endif %}"
+                  style="{% if product.metafields.custom.color_hex.value != "NULL" %}background-color:{{ product.metafields.custom.color_hex.value }}{% endif %}"
                   data-image-url="//blackup-prod.myshopify.com/cdn/shop/{{ product.images[0] }}"
                 >
                 </span>

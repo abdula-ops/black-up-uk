@@ -1091,7 +1091,7 @@
                       {%- for option in product.options_with_values -%}
                         {% # Condition check done by OCS - For custom color swatch module %}
                         {% assign option_name = option.name | downcase %}
-                        {%- if option_name == 'couleur' or option_name == 'color' -%}
+                        {%- if option_name == 'color' -%}
                           {% assign variation_color = 'True' %}
                           {% assign color_variant_count = option.values | size %}
                           {% assign color_index = forloop.index0 %}
@@ -1388,7 +1388,7 @@
                                       <div class="active_picker">
                                         <a href="{{ product.url }}" title="{{ color_value }}">
                                           <span
-                                            style="{% if product.metafields.custom.couleur_hex.value != "NULL" %}background-color:{{ product.metafields.custom.couleur_hex.value }}{% endif %}"
+                                            style="{% if product.metafields.custom.color_hex.value != "NULL" %}background-color:{{ product.metafields.custom.color_hex.value }}{% endif %}"
                                           ></span>
                                         </a>
                                       </div>
