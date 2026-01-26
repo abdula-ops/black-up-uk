@@ -209,7 +209,7 @@
         "disable_on_mobile": false,
         "collection": "all-our-products",
         "product_list": [
-          "mattifying-base-8h",
+          "matifying-primer-8h",
           "blackup-x-shy-m-liquid-eyeshadow-shymle02",
           "lip-gloss-ngloss03",
           "waterproof-smoky-kohl-pencil-ks08",
@@ -420,21 +420,21 @@
           "type": "product",
           "settings": {
             "start_second": 1,
-            "featured_product": "cream-powder-foundation-fcnat"
+            "featured_product": "cream-to-powder-foundation-n02"
           }
         },
         "product_BrP8dh": {
           "type": "product",
           "settings": {
             "start_second": 2,
-            "featured_product": "waterproof-smoky-kohl-pencil-ks00"
+            "featured_product": "no-transfer-waterproof-kohl-n00m"
           }
         },
         "product_9WHJPz": {
           "type": "product",
           "settings": {
             "start_second": 4,
-            "featured_product": "revoluption-mascara"
+            "featured_product": "revolutionnary-ultra-volume-length-curl-mascara"
           }
         },
         "product_khmtMF": {
@@ -710,7 +710,7 @@
         "product_rgd8WL": {
           "type": "product",
           "settings": {
-            "featured_product": "cc-cream-multi-action-cc"
+            "featured_product": "cc-cream-n02"
           }
         },
         "product_Q3Dhwd": {
@@ -722,7 +722,7 @@
         "product_4zdjEq": {
           "type": "product",
           "settings": {
-            "featured_product": "meye-love-waterproof-volume-and-curve-mascara"
+            "featured_product": "meye-love-waterproof-mascara-volume-and-curl"
           }
         }
       },
