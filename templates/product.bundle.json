@@ -194,7 +194,7 @@
         "collapsible_tab_Q7UFgL": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Composition",
+            "heading": "Ingredients",
             "content": "<p>{{ product.metafields.custom.composants | metafield_tag }}</p>",
             "page": "",
             "icon": "none"
