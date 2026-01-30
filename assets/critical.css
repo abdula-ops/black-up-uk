@@ -42,12 +42,12 @@ body {
   margin: 0;
 }
 
-*:not(p):not(.fa):not(.fab):not(.far):not(.fas):not(.lni):not([class*="icon-"]):not([class*="iccl-"]):not(i):not(.jdgm-star):not(.r--stars-icon) {
-    font-family: 'Lexend Giga', sans-serif !important;
+*:not(p):not(.fa):not(.fab):not(.far):not(.fas):not(.lni):not([class*=icon-]):not([class*=iccl-]):not(i):not(.jdgm-star):not(.r--stars-icon) {
+    font-family: Lexend Giga, sans-serif !important;
 }
 
-p * {
-    font-family: 'Work Sans', sans-serif !important;
+p, a, h6, p strong, .hero__button--primary.hero__button.hero span, .hero__button.hero__button--primary span, .wt-dot__title, .metafield-multi_line_text_field {
+    font-family: 'Work Sans' !important;
 }
 
 /**
