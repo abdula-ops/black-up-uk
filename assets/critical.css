@@ -42,7 +42,7 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, *:not(.fa):not([class*="pe-"]):not(.lni):not(i[class*="iccl-"]):not(i[class*="la"]):not(i[class*="fa"]):not(.jdgm-star):not(.r--stars-icon) {
+h1, h2, h3, h4, h5 {
     font-family: 'Lexend Giga';
 }
 
