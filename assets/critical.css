@@ -46,6 +46,10 @@ body {
     font-family: 'Lexend Giga', sans-serif !important;
 }
 
+p * {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
