@@ -42,8 +42,8 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, *:not(p):not(.fa):not([class*="pe-"]):not(.lni):not(i[class*="iccl-"]):not(i[class*="la"]):not(i[class*="fa"]):not(.jdgm-star):not(.r--stars-icon) {
-    font-family: 'Lexend Giga';
+*:not(p):not(.fa):not(.fab):not(.far):not(.fas):not(.lni):not([class*="icon-"]):not([class*="iccl-"]):not(i):not(.jdgm-star):not(.r--stars-icon) {
+    font-family: 'Lexend Giga', sans-serif !important;
 }
 
 /**
