@@ -42,6 +42,11 @@ body {
   margin: 0;
 }
 
+:root {
+  --font-heading-family: 'Lexend Giga', sans-serif;
+  --font-body-family: 'Lexend Giga', sans-serif;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
