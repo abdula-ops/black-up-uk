@@ -45,6 +45,7 @@ body {
 :root {
   --font-heading-family: 'Lexend Giga', sans-serif;
   --font-body-family: 'Lexend Giga', sans-serif;
+  --font-base: 'Lexend Giga', sans-serif !important;
 }
 
 /**
