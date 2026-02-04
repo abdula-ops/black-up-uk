@@ -12,8 +12,12 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "size_heading": 140,
+        "compact-size-enabled": false,
+        "size_heading": 50,
         "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
         "margin-top": 40,
         "margin-bottom": 0
       }
