@@ -512,3 +512,17 @@
       border: 1px solid #e0e0e0 !important;
   }
 }
+
+/* Judge.me review stars – use theme icomoon font so stars show (not squares) */
+.jdgm-star,
+.jdgm-rev__stars .jdgm-star {
+  font-family: 'icomoon' !important;
+  font-style: normal !important;
+}
+.jdgm-star::before {
+  content: "\e9d7";
+}
+.jdgm-star.jdgm-star--on::before,
+.jdgm-star.jdgm--on::before {
+  content: "\e9d9";
+}
