@@ -21,9 +21,17 @@
         "margin-top": 40,
         "margin-bottom": 0
       }
+    },
+    "custom_liquid_e8eAHW": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<iframe src=\"//sl-widget.proguscommerce.com/main?shop=blackup-prod.myshopify.com&amp;lang=en&amp;tags=\" title=\"Progus Store Locator\" allow=\"geolocation\" frameborder=\"0\" allowfullscreen=\"\" width=\"100%\" height=\"500px\" style=\"height: 543px;\"></iframe>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_e8eAHW"
   ]
 }
