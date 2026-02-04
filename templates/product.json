@@ -583,10 +583,10 @@
         "margin-bottom": 0
       }
     },
-    "177021200674e71afd": {
+    "177021216359705a74": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_FAQEFC": {
+        "judge_me_reviews_review_widget_k8JwX6": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
@@ -597,7 +597,7 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_FAQEFC"
+        "judge_me_reviews_review_widget_k8JwX6"
       ],
       "settings": {
         "include_margins": true
@@ -617,6 +617,6 @@
     "collection_list_rKBEpx",
     "newsletter_pEcrBa",
     "features_banner_w68awh",
-    "177021200674e71afd"
+    "177021216359705a74"
   ]
 }
