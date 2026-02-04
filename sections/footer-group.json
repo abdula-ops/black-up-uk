@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer Group",
@@ -5,13 +14,13 @@
     "17575169198120128a": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_all_reviews_text_L67k7f": {
+        "judge_me_reviews_all_reviews_text_pxUVUG": {
           "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
       "block_order": [
-        "judge_me_reviews_all_reviews_text_L67k7f"
+        "judge_me_reviews_all_reviews_text_pxUVUG"
       ],
       "custom_css": [
         "{background: #f0f0f0; width: 100%; padding: 20px 0; /* 10px en haut et en bas */}"
