@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, *:not(.fa):not([class*="pe-"]):not(.lni):not(i[class*="iccl-
     font-family: Lexend Giga, sans-serif;
 }
 
-.jm-star-rating__font-icon[data-v-0e382752] {
+.jdgm-widget-revamp *, .jdgm-cards-carousel *, .jdgm-testimonials-carousel * {
   font-family: JudgemeStar, monospace !important;
 }
 
