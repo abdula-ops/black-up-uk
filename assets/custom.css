@@ -1,5 +1,9 @@
 /* Fix pour le widget Kite Discount (Free Gift) dans le cart drawer */
 
+.wt-drawer.GBP mega-menu-section li.wt-page-nav-mega__item:last-child {
+  display: block !important;
+}
+
 /* Conteneur principal des options */
 .wt-cart__drawer .gfgFreeGiftOptionsContainerDiv,
 .cart-drawer .gfgFreeGiftOptionsContainerDiv {
