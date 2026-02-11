@@ -25,12 +25,18 @@
     "1758816439e43d2602": {
       "type": "apps",
       "blocks": {
+        "loyoly_section_referral_PXUJeJ": {
+          "type": "shopify://apps/loyoly/blocks/section-referral/f8398f67-b476-4b74-89b8-cb199b7011c9",
+          "disabled": true,
+          "settings": {}
+        },
         "loyoly_referral_hnzjXJ": {
           "type": "shopify://apps/loyoly/blocks/referral/f8398f67-b476-4b74-89b8-cb199b7011c9",
           "settings": {}
         }
       },
       "block_order": [
+        "loyoly_section_referral_PXUJeJ",
         "loyoly_referral_hnzjXJ"
       ],
       "settings": {
