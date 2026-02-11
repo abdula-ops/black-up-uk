@@ -42,8 +42,8 @@ body {
   margin: 0;
 }
 
-*:not(p):not(.fa):not(.fab):not(.far):not(.fas):not(.lni):not([class*=icon-]):not([class*=iccl-]):not(i):not(.jdgm-star):not(.r--stars-icon) {
-    font-family: Lexend Giga, sans-serif !important;
+h1, h2, h3, h4, h5, *:not(.fa):not([class*="pe-"]):not(.lni):not(i[class*="iccl-"]):not(i[class*="la"]):not(i[class*="fa"]):not(.jdgm-star):not(.r--stars-icon) {
+    font-family: Lexend Giga, sans-serif;
 }
 
 p, a, h6, p strong, .hero__button--primary.hero__button.hero span, .hero__button.hero__button--primary span, .wt-dot__title, .metafield-multi_line_text_field {
