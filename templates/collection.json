@@ -62,6 +62,7 @@
       "blocks": {
         "promotion_DVAjEj": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "promotion_collection": "{{ collection }}",
             "promotion_position": 1,
