@@ -232,7 +232,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Who can access the information I provided to Black Up?",
-            "content": "<p>Toutes les informations nominatives que vous nous communiquez sont strictement confidentielles. Elles sont destinées à vous faire gagner du temps au moment de passer votre commande, ainsi qu'à entretenir votre compte. Les informations personnelles et notamment les adresses e-mail, ne font l'objet d'aucune location, vente, échange ou partage avec d'autres prestataires.</p><p>Conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, le traitement des informations nominatives collectées sur le site a fait l'objet d'une déclaration auprès de la Commission Nationale de l'Informatique et des Libertés. Vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant. Pour exercer ce droit, vous devez adresser un courrier postal au service clients de black|Up, 16 avenue Pierre 1er de Serbie 75116 Paris, en indiquant nom, prénom, adresse et, le cas échéant, numéro de client.</p>",
+            "content": "<p>All personal information you provide is strictly confidential. It is used to save you time when placing your order and to maintain your account. Personal information, including email addresses, will not be rented, sold, exchanged, or shared with any other service providers.</p><p>In accordance with French Law No. 78-17 of 6 January 1978 on Data Processing, Data Files and Individual Liberties, the processing of personal information collected on this website has been declared to the French Data Protection Authority (CNIL). You have the right to access, modify, rectify, and delete your personal data. To exercise this right, please send a letter to the black|Up customer service department at 16 avenue Pierre 1er de Serbie, 75116 Paris, France, indicating your full name, address, and, if applicable, your customer number.</p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -241,7 +241,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "How can I access my information?",
-            "content": "<p>Log in to your account by clicking \"Login\" at the top right of the page, then enter your email and password in the pop-up window. In \"My Account\", at the top right of the page, you will have access to your account/personal information. For any additional information, please contact customer service.</p>",
+            "content": "<p>Log in to your account by clicking \"Login\" in the top right corner of the page, then enter your email address and password in the pop-up window. In \"My Account,\" also in the top right corner of the page, you will find your account and personal information. For further information, please contact customer service.</p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -250,7 +250,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "What should I do if I forgot my password?",
-            "content": "<p>Cliquez sur le bouton \"Connexion\" en haut à droite de la page puis cliquez sur \"Mot de passe oublié ? ». Vous pourrez ensuite entrer à nouveau votre adresse email et commencer la procédure pour récupérer votre mot de passe. Pour toute information complémentaire, veuillez contacter le service clients.</p>",
+            "content": "<p>Click the \"Login\" button in the top right corner of the page, then click \"Forgot your password?\". You can then re-enter your email address and begin the password recovery process. For further information, please contact customer support.</p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -258,8 +258,8 @@
         "collapsible_tab_tXEi34": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Can I modify my account settings?",
-            "content": "<p>Vous pouvez modifier les paramètres de votre compte et vos informations personnelles à tout moment.</p>",
+            "heading": "Can I change my account settings?",
+            "content": "<p>You can change your account settings and personal information at any time.</p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -267,8 +267,8 @@
         "collapsible_tab_gwgWbD": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "How to delete my account?",
-            "content": "<p>Pour supprimer votre compte, veuillez contacter notre service clients : <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "heading": "How do I delete my account?",
+            "content": "<p>To delete your account, please contact our customer service department: <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
             "page": "",
             "icon": "check_mark"
           }
