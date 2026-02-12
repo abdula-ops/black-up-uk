@@ -59,6 +59,7 @@ p, a, h6, p strong, .hero__button--primary.hero__button.hero span, .hero__button
  */
 main {
   display: block;
+  margin-bottom: calc(var(--gap, 8px) * 5);
 }
 
 /**
