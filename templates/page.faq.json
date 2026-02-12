@@ -320,7 +320,7 @@
         "collapsible_tab_AaQxTj": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "How to apply to Black Up ?",
+            "heading": "How to apply to Black Up?",
             "content": "<p>Contact our customer service department, who will forward your application to the relevant department: <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
             "page": "",
             "icon": "check_mark"
@@ -369,8 +369,8 @@
         "collapsible_tab_UFqtJ6": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Existe-t-il un programme de fidélité dédié aux pros, et si oui, comment puis-je en profiter ?",
-            "content": "<p>Nous ne proposons pas encore de réduction professionnels. Ce projet est actuellement à l'étude pour voir s’il peut être développé sur notre site Internet. N'hésitez pas à vous inscrire à notre newsletter pour être au courant en avant-première de nos nouvelles offres.</p>",
+            "heading": "Is there a loyalty program specifically for professionals, and if so, how can I benefit from it?",
+            "content": "<p>We don't yet offer a professional discount. This is currently under review to see if it can be developed on our website. Feel free to subscribe to our newsletter to be the first to know about our new offers.</p>",
             "page": "",
             "icon": "check_mark"
           }
