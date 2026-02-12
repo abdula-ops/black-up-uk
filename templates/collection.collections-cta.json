@@ -79,12 +79,11 @@
       "blocks": {
         "promotion_jqFVmm": {
           "type": "promotion",
-          "disabled": true,
           "settings": {
             "promotion_collection": "",
             "promotion_position": 1,
             "promotion_width": "1",
-            "image": "shopify://shop_images/FR-M-SOLDES.jpg",
+            "image": "shopify://shop_images/IMAGE-G.jpg",
             "title": "",
             "text": "",
             "link_label": "",
