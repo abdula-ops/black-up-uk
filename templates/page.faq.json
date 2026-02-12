@@ -344,7 +344,7 @@
         "heading_e6RCgk": {
           "type": "heading",
           "settings": {
-            "heading": "Makeup Artists",
+            "heading": "Press and partnerships",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -418,8 +418,8 @@
         "collapsible_tab_FbjFr3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Qui dois-je contacter pour toute demande hors client (partenariats, presse, blog et influenceurs) ?",
-            "content": "<p>Si vous êtes journalistes ou influenceurs, n’hésitez pas à nous contacter à l’adresse mail<a href=\"mailto:presse@blackup.com\">presse@blackup.com</a>. Pour toutes autres demandes de partenariats, n’hésitez pas à écrire directement à notre service client qui transmettra votre demande au service concerné :<a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "heading": "Who should I contact for any non-client-related requests (partnerships, press, blog and influencers)?",
+            "content": "<p>If you are a journalist or influencer, please contact us at <a href=\"mailto:presse@blackup.com\">presse@blackup.com</a> . For all other partnership inquiries, please write directly to our customer service department, who will forward your request to the relevant department: <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -428,7 +428,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Standard",
-            "content": "<p>Vous pouvez joindre notre service client du lundi au jeudi de 10h à 17h et le vendredi jusqu'à 16h au numéro suivant: 01 49 96 47 90</p>",
+            "content": "<p>You can contact our customer service department Monday to Thursday from 10am to 5pm and on Friday until 4pm at the following number: 01 49 96 47 90</p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -436,8 +436,8 @@
         "collapsible_tab_T9jdzz": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Comment être informé des dernières nouvelles à propos de Black Up (corporate, lancement de produits, interviews, événements…) ?",
-            "content": "<p>Pour ne rien manquer de nos dernières actualités, offres, événement, inscrivez-vous à notre Newsletter.</p>",
+            "heading": "How can I stay informed about the latest news regarding Black Up (corporate, product launches, interviews, events…)?",
+            "content": "<p>To stay up-to-date with our latest news, offers, and events, subscribe to our newsletter.</p>",
             "page": "",
             "icon": "check_mark"
           }
