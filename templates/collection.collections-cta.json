@@ -121,6 +121,7 @@
             "promotion_collection": "{{ collection }}",
             "promotion_position": 10,
             "promotion_width": "2",
+            "image": "shopify://shop_images/IMG-D.jpg",
             "title": "DUO BLUSH AND HIGHLIGHTER",
             "text": "",
             "link_label": "DISCOVER",
