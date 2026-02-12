@@ -771,7 +771,7 @@
           "settings": {
             "button_select": "primary",
             "button_label": "I FIND MY SHADE",
-            "button_link": "shopify://pages/trouver-son-fond-de-teint",
+            "button_link": "shopify://pages/foundation-finder",
             "disable_on_mobile": false
           }
         }
