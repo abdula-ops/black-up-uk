@@ -249,7 +249,7 @@
         "collapsible_tab_Dyqk6K": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "What should I do if I forgot my password?",
+            "heading": "What should I do if I've forgotten my password?",
             "content": "<p>Click the \"Login\" button in the top right corner of the page, then click \"Forgot your password?\". You can then re-enter your email address and begin the password recovery process. For further information, please contact customer support.</p>",
             "page": "",
             "icon": "check_mark"
