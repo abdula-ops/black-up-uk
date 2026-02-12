@@ -528,5 +528,5 @@
 }
 .jdgm-star.jdgm-star--on::before,
 .jdgm-star.jdgm--on::before {
-  content: "\e9d9";
+  content: "\e9d9" !important;
 }
