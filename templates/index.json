@@ -336,7 +336,7 @@
           "settings": {
             "heading": "",
             "heading_disable_on_mobile": false,
-            "text": "<p><strong>Invitation au voyage.</strong></p><p> Bergamote, gingembre, cassis en tête ; cœur tubéreuse–jasmin. Le sillage chauffe : santal et cèdre, long sur peau.</p>",
+            "text": "<p><strong>Invitation to travel.</strong></p><p>Bergamot, ginger, blackcurrant at the top; tuberose-jasmine at the heart. The base warms: sandalwood and cedar, long on the skin.</p>",
             "text2": "<p>EAU DE PARFUM</p>",
             "text3": "<p>NAIROBI</p>",
             "text_disable_on_mobile": false,
@@ -863,7 +863,7 @@
         "text_hFKBcp"
       ],
       "custom_css": [
-        "[data-section-id=\"template--17998465892519__rich_text_NEKwBK\"] {--color-custom-background: #fff;  background: linear-gradient( 180deg, #f4f5f7 0%, #eff1f4 17.23%, #eff0f2 31.38%, #ebecee 47.54%, #e7e7e9 68.32%, #e3e3e5 86.51%, #dedede 100% )"
+        "[data-section-id=\"template--17998465892519__rich_text_NEKwBK\"] {--color-custom-background: #fff; background: linear-gradient( 180deg, #f4f5f7 0%, #eff1f4 17.23%, #eff0f2 31.38%, #ebecee 47.54%, #e7e7e9 68.32%, #e3e3e5 86.51%, #dedede 100% )"
       ],
       "settings": {
         "section_width": "regular",
