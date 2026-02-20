@@ -479,6 +479,7 @@
         "quick-add-enabled": true,
         "rewind-enabled": false,
         "hide-brand-name": true,
+        "video_hosted": "shopify://files/videos/255c3033322b47b5843db755f970ffc1.SD-480p-0.9Mbps-60714117.mp4",
         "desktop_fixed_height": 700,
         "mobile_fixed_height": 480,
         "enable_full_screen_mode": false,
