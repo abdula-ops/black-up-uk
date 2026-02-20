@@ -27,7 +27,7 @@
     left: 5%;
     color: white;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 38px;
     z-index: 2;
   }
 
@@ -96,7 +96,7 @@
             >
               {% assign default_collection_title = 'sections.collection_list.default_title' | t %}
               {% liquid
-                assign img = nil
+                assign img = null
                 assign title = block.settings.text_collection
                 assign block_url = '#'
 
@@ -105,10 +105,10 @@
                 endif
 
                 if block.settings.collection != blank
-                  if img == nil and block.settings.collection.featured_image != blank
+                  if img == null and block.settings.collection.featured_image != blank
                     assign img = block.settings.collection.featured_image
                   endif
-                  if img == nil and block.settings.collection.products.size > 0 and block.settings.collection.products[0].featured_image != blank
+                  if img == null and block.settings.collection.products.size > 0 and block.settings.collection.products[0].featured_image != blank
                     assign img = block.settings.collection.products[0].featured_image
                   endif
                   if title == blank
@@ -123,17 +123,22 @@
               %}
 
               {% if section.settings.disable_images %}
-                {% render 'button',
-                  url: block_url,
-                  title: title,
-                  default_title: default_collection_title
-                %}
+                {% render 'button', url: block_url, title: title, default_title: default_collection_title %}
               {% else %}
                 <a href="{{ block_url }}" class="card" style="position: relative; display: block;">
                   {% if img != blank %}
-                    <img src="{{ img | img_url: '800x' }}" alt="{{ title | escape }}" style="width: 100%; height: auto;">
+                    <img
+                      src="{{ img | img_url: '800x' }}"
+                      alt="{{ title | escape }}"
+                      style="width: 100%; height: auto;"
+                    >
                   {% else %}
-                    <div class="card__placeholder" style="aspect-ratio: 4/3; background: var(--color-background, #f5f5f5); display: flex; align-items: center; justify-content: center; color: var(--color-body-text, #666);">{{ 'sections.collection_list.no_image' | t | default: 'No image' }}</div>
+                    <div
+                      class="card__placeholder"
+                      style="aspect-ratio: 4/3; background: var(--color-background, #f5f5f5); display: flex; align-items: center; justify-content: center; color: var(--color-body-text, #666);"
+                    >
+                      {{ 'sections.collection_list.no_image' | t | default: 'No image' }}
+                    </div>
                   {% endif %}
                   <div class="card__content-overlay">{{ title }}</div>
                 </a>
