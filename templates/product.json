@@ -450,6 +450,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "complexion-makeup",
+            "image_collection": "shopify://shop_images/TEINT_800x_ac1d067c-9ec0-4760-b638-0059d13f8191.jpg",
             "text_collection": "Complexion"
           }
         },
@@ -457,6 +458,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "maquillage-yeux",
+            "image_collection": "shopify://shop_images/YEUX_800x_497dd490-774a-46ea-b51d-93871f4e9ad1.webp",
             "text_collection": "Eyes"
           }
         },
@@ -464,6 +466,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "lip-makeup",
+            "image_collection": "shopify://shop_images/LEVRES_800x_253cec03-4705-4e6f-b67e-a86caafcecf5.webp",
             "text_collection": "Lips"
           }
         }
