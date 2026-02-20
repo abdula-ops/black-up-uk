@@ -449,7 +449,7 @@
         "featured_collection_nE7jQz": {
           "type": "featured_collection",
           "settings": {
-            "collection": "complexion-makeup",
+            "collection": "teint",
             "image_collection": "shopify://shop_images/TEINT_800x_ac1d067c-9ec0-4760-b638-0059d13f8191.jpg",
             "text_collection": "Complexion"
           }
@@ -457,7 +457,7 @@
         "featured_collection_WjLnGL": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-yeux",
+            "collection": "les-yeux",
             "image_collection": "shopify://shop_images/YEUX_800x_497dd490-774a-46ea-b51d-93871f4e9ad1.webp",
             "text_collection": "Eyes"
           }
