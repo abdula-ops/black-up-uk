@@ -816,7 +816,8 @@
               "label": "Collection"
             },
             "image_collection": {
-              "label": "Image"
+              "label": "Image",
+              "info": "Overrides the collection image when set. Use this if the collection has no image or after migrating stores."
             },
             "text_collection": {
               "label": "Custom title"

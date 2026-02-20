@@ -405,7 +405,8 @@
     },
     "collection_list": {
       "view_all": "View all",
-      "default_title": "Your collection's name"
+      "default_title": "Your collection's name",
+      "no_image": "No image"
     },
     "collection_tabs": {
       "view_all_products": "VIEW ALL PRODUCTS"

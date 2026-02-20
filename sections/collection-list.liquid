@@ -96,30 +96,45 @@
             >
               {% assign default_collection_title = 'sections.collection_list.default_title' | t %}
               {% liquid
+                assign img = nil
+                assign title = block.settings.text_collection
+                assign block_url = '#'
+
                 if block.settings.image_collection != blank
                   assign img = block.settings.image_collection
-                elsif block.settings.collection.featured_image
-                  assign img = block.settings.collection.featured_image
-                else
-                  assign img = block.settings.collection.products[0].featured_image
                 endif
 
-                if block.settings.text_collection != blank
-                  assign title = block.settings.text_collection
-                else
-                  assign title = block.settings.collection.title
+                if block.settings.collection != blank
+                  if img == nil and block.settings.collection.featured_image != blank
+                    assign img = block.settings.collection.featured_image
+                  endif
+                  if img == nil and block.settings.collection.products.size > 0 and block.settings.collection.products[0].featured_image != blank
+                    assign img = block.settings.collection.products[0].featured_image
+                  endif
+                  if title == blank
+                    assign title = block.settings.collection.title
+                  endif
+                  assign block_url = block.settings.collection.url
+                endif
+
+                if title == blank
+                  assign title = default_collection_title
                 endif
               %}
 
               {% if section.settings.disable_images %}
                 {% render 'button',
-                  url: block.settings.collection.url,
+                  url: block_url,
                   title: title,
                   default_title: default_collection_title
                 %}
               {% else %}
-                <a href="{{ block.settings.collection.url }}" class="card" style="position: relative; display: block;">
-                  <img src="{{ img | img_url: '800x' }}" alt="{{ title | escape }}" style="width: 100%; height: auto;">
+                <a href="{{ block_url }}" class="card" style="position: relative; display: block;">
+                  {% if img != blank %}
+                    <img src="{{ img | img_url: '800x' }}" alt="{{ title | escape }}" style="width: 100%; height: auto;">
+                  {% else %}
+                    <div class="card__placeholder" style="aspect-ratio: 4/3; background: var(--color-background, #f5f5f5); display: flex; align-items: center; justify-content: center; color: var(--color-body-text, #666);">{{ 'sections.collection_list.no_image' | t | default: 'No image' }}</div>
+                  {% endif %}
                   <div class="card__content-overlay">{{ title }}</div>
                 </a>
               {% endif %}
@@ -269,7 +284,8 @@
         {
           "type": "image_picker",
           "id": "image_collection",
-          "label": "t:sections.settings.settings.image.label"
+          "label": "t:sections.settings.settings.image.label",
+          "info": "t:sections.collection-list.blocks.featured_collection.settings.image_collection.info"
         },
         {
           "type": "text",
