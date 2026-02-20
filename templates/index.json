@@ -702,30 +702,35 @@
         "product_CAAJBg": {
           "type": "product",
           "settings": {
+            "video_hosted": "shopify://files/videos/1e9324eea55f48958f87bad177b43c37.HD-1080p-2.5Mbps-60579220.mp4",
             "featured_product": "gloss-n01"
           }
         },
         "product_wrYgbH": {
           "type": "product",
           "settings": {
-            "featured_product": "palette-fards-a-paupieres-et-blush"
+            "video_hosted": "shopify://files/videos/436ea185ffa044ec84a09affe5135bb6.HD-1080p-3.3Mbps-61530680.mp4",
+            "featured_product": "eyeshadows-palette-9"
           }
         },
         "product_rgd8WL": {
           "type": "product",
           "settings": {
+            "video_hosted": "shopify://files/videos/c222e00477ae43399d2c04c040bfdcb9.HD-1080p-2.5Mbps-61531880.mp4",
             "featured_product": "cc-cream"
           }
         },
         "product_Q3Dhwd": {
           "type": "product",
           "settings": {
+            "video_hosted": "shopify://files/videos/0a168b1afe2347d8a37436247c1421b0.HD-1080p-2.5Mbps-61530828.mp4",
             "featured_product": "two-way-cake"
           }
         },
         "product_4zdjEq": {
           "type": "product",
           "settings": {
+            "video_hosted": "shopify://files/videos/03ad4a0f89d04c41905e5f2108e1c5e2.HD-1080p-2.5Mbps-60579435.mp4",
             "featured_product": "m-eye-love-waterproof-mascara"
           }
         }
@@ -806,6 +811,7 @@
         "color-body-text": "rgba(0,0,0,0)",
         "color-overlay": "rgba(0,0,0,0)",
         "color-overlay-opacity": 100,
+        "desktop_image": "shopify://shop_images/Teint-V2.webp",
         "desktop_text_vertical_position": "center",
         "desktop_text_horizontal_position": "left",
         "mobile_text_horizontal_position": "left",
