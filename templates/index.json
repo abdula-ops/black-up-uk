@@ -328,7 +328,8 @@
             "button_label": "",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/LEFT-2-1_c950d1ff-149b-4bf2-a4f8-7c161afbe00d.webp"
           }
         },
         "column_MFhEtF": {
@@ -360,7 +361,8 @@
             "button_label": "",
             "button_disable_on_mobile": false,
             "button_link": "",
-            "button_link_in_new_window": false
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/LEFT-2_f1b9ffd4-2c3d-451c-a44a-0e9f5cae2b16.webp"
           }
         }
       },
