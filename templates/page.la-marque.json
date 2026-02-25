@@ -292,7 +292,7 @@
         "heading_UiHaDG": {
           "type": "heading",
           "settings": {
-            "heading": "Innovation sans compromis. Beauté qui ne s’efface jamais.",
+            "heading": "Innovation without compromise. Beauty that never fades.",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -301,7 +301,7 @@
         "text_T3wYJp": {
           "type": "text",
           "settings": {
-            "text": "<p>Née à Paris, black Up allie un héritage culturel fort à une expertise cosmétique de pointe. Depuis nos débuts, nous répondons aux besoins spécifiques des peaux foncées avec des formules pensées pour célébrer, jamais pour compromettre.</p><p>Des pigments puissants à la tenue irréprochable, chaque création reflète une vision exigeante : honorer le passé, répondre aux exigences d’aujourd’hui, et faire rayonner la beauté noire demain.</p>",
+            "text": "<p>Born in Paris, Black Up combines a rich cultural heritage with cutting-edge cosmetic expertise. From the very beginning, we’ve addressed the specific needs of dark skin with formulas designed to celebrate, never compromise.</p><p>From intense pigments to flawless wear, every creation reflects a demanding vision: honoring the past, meeting today’s standards, and making Black beauty shine tomorrow.</p>",
             "text_style": "body",
             "disable_on_mobile": false
           }
@@ -390,21 +390,21 @@
         "featured_collection_HQdLzh": {
           "type": "featured_collection",
           "settings": {
-            "collection": "complexion-makeup",
+            "collection": "teint",
             "text_collection": "Complexion"
           }
         },
         "featured_collection_zAaR4r": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-yeux",
+            "collection": "les-yeux",
             "text_collection": "Eyes"
           }
         },
         "featured_collection_CFeDRY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lip-makeup",
+            "collection": "les-levres",
             "text_collection": "Lips"
           }
         }
