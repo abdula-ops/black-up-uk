@@ -169,21 +169,22 @@
         "featured_collection_9EU7LY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "complexion-makeup",
+            "collection": "teint",
+            "image_collection": "shopify://shop_images/TEINT_800x_ac1d067c-9ec0-4760-b638-0059d13f8191.jpg",
             "text_collection": "Complexion"
           }
         },
         "featured_collection_QeDdHf": {
           "type": "featured_collection",
           "settings": {
-            "collection": "maquillage-yeux",
+            "collection": "les-yeux",
             "text_collection": "Eyes"
           }
         },
         "featured_collection_QarFWU": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lip-makeup",
+            "collection": "les-levres",
             "text_collection": "Lips"
           }
         }
