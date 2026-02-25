@@ -29,7 +29,7 @@
         "heading_UBXNcG": {
           "type": "heading",
           "settings": {
-            "heading": "LA MARQUE",
+            "heading": "THE BRAND",
             "disable_on_mobile": false,
             "size_heading": 190,
             "size_heading_mobile": 100
@@ -108,7 +108,7 @@
         "heading_7t4qya": {
           "type": "heading",
           "settings": {
-            "heading": "Parce que chaque peau mérite l'excellence.",
+            "heading": "Because every skin deserves excellence.",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -117,7 +117,7 @@
         "text_yPaz7q": {
           "type": "text",
           "settings": {
-            "text": "<p>black Up est la première marque française de maquillage dédiée aux carnations mattes à foncées . Pensée avec des makeup artists, notre approche teint-first garantit des teintes invisibles, des pigments puissants et couvrance parfaite. Nos formules vont au-delà de la performance : fonds de teint 100 % vegan, formules cruelty-free, fabrication européenne, avec une sélection de produits made in France. Une beauté sans compromis. Parce que la peau noire mérite l’excellence.</p>",
+            "text": "<p>Black Up is the first French makeup brand dedicated to medium-to-deep skin tones. Developed with makeup artists, our complexion-first approach ensures invisible shades, intense pigments, and flawless coverage. Our formulas go beyond performance: 100% vegan foundations, cruelty-free formulas, European manufacturing, with a selection of products made in France. Beauty without compromise. Because Black skin deserves excellence.</p>",
             "text_style": "body",
             "disable_on_mobile": false
           }
@@ -200,7 +200,7 @@
         "heading_cVfbTk": {
           "type": "heading",
           "settings": {
-            "heading": "POWERFUL BEAUTY. AUTHENTIC. INVINCIBLE.",
+            "heading": "Powerful beauty. Authentic. Determined. Invincible.",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
@@ -209,7 +209,7 @@
         "text_ikhWJM": {
           "type": "text",
           "settings": {
-            "text": "<p>At black Up, beauty goes beyond color: it embodies presence, radiance, and identity. Our pigment-rich formulas are designed to reveal every nuance of dark skin, without ever masking.</p><p>Here, beauty doesn't follow the rules. It creates them. Each product pays homage to the aura, confidence, and individuality of Black women.</p>",
+            "text": "<p>At Black Up, beauty goes beyond color: it embodies presence, radiance, and identity. Our pigment-rich formulas are designed to reveal every shade of dark skin without ever masking it.</p><p>Here, beauty doesn’t follow rules—it creates them. Every product celebrates the aura, confidence, and individuality of Black women.</p>",
             "text_style": "body",
             "disable_on_mobile": false
           }
