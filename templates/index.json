@@ -47,7 +47,6 @@
         },
         "slide_XMDL97": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "subheading": "",
             "subheading_disable_on_mobile": false,
