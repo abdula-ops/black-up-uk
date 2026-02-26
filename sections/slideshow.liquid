@@ -115,6 +115,11 @@
 {% endif %}
 
 <div data-section-id="{{ section.id }}" class="wt-slider--wrapper">
+  {% comment %} Preload first slide poster for LCP when slide uses video (Shopify best practice) {% endcomment %}
+  {% assign first_block = section.blocks[0] %}
+  {% if first_block.settings.desktop_video != blank and first_block.settings.desktop_image != blank %}
+    <link rel="preload" as="image" href="{{ first_block.settings.desktop_image | image_url: width: 1500 }}" fetchpriority="high">
+  {% endif %}
   {% render 'headline', title: section.settings.heading %}
 
   <!-- Slider main container -->
@@ -196,6 +201,10 @@
               mobile_text_vertical_position: block.settings.mobile_text_vertical_position,
               desktop_image: block.settings.desktop_image,
               mobile_image: block.settings.mobile_image,
+              video: block.settings.desktop_video,
+              mobile_video: block.settings.mobile_video,
+              poster_desktop: block.settings.desktop_image,
+              poster_mobile: block.settings.mobile_image,
               heading: block.settings.heading,
               text: block.settings.text,
               button_label: block.settings.button_label,
@@ -212,7 +221,11 @@
               subheading: block.settings.subheading,
               subheading_disable_on_mobile: block.settings.subheading_disable_on_mobile,
               placeholder: 'hero-apparel-3',
-              section_link: block.settings.button_link %}
+              section_link: block.settings.button_link,
+              autoplay: true,
+              video_controls: false,
+              play_pause_button: true,
+              priority_poster: forloop.first %}
               
             {% if block.settings.button_link != blank %}
               </a>
@@ -534,9 +547,16 @@
           "content": "t:sections.global.desktop_version"
         },
         {
+          "type": "video",
+          "id": "desktop_video",
+          "label": "t:sections.slideshow.blocks.slide.desktop_video.label",
+          "info": "t:sections.slideshow.blocks.slide.desktop_video.info"
+        },
+        {
           "type": "image_picker",
           "id": "desktop_image",
-          "label": "t:sections.settings.settings.image.label"
+          "label": "t:sections.settings.settings.image.label",
+          "info": "t:sections.slideshow.blocks.slide.poster_info"
         },
         {
           "type": "select",
@@ -565,9 +585,16 @@
           "content": "t:sections.global.mobile_version"
         },
         {
+          "type": "video",
+          "id": "mobile_video",
+          "label": "t:sections.slideshow.blocks.slide.mobile_video.label",
+          "info": "t:sections.slideshow.blocks.slide.mobile_video.info"
+        },
+        {
           "type": "image_picker",
           "id": "mobile_image",
-          "label": "t:sections.settings.settings.image.label"
+          "label": "t:sections.settings.settings.image.label",
+          "info": "t:sections.slideshow.blocks.slide.poster_info"
         },
         {
           "type": "select",

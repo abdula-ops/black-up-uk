@@ -3480,6 +3480,19 @@
     },
     "slideshow": {
       "name": "Slideshow",
+      "blocks": {
+        "slide": {
+          "desktop_video": {
+            "label": "Video (desktop)",
+            "info": "Shopify-hosted video. Use MP4 for best compatibility. Poster image above is used for fast loading (LCP)."
+          },
+          "mobile_video": {
+            "label": "Video (mobile)",
+            "info": "Optional. Falls back to desktop video if empty."
+          },
+          "poster_info": "Required when using video: used as poster for fast first paint (PageSpeed)."
+        }
+      },
       "settings": {
         "slide": {
           "name": "Slide",
