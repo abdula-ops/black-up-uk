@@ -45,6 +45,28 @@
     {% endif %}
   }
 
+  /* Hero with video: keep overlay full width and button horizontal (same as image slides) */
+  [data-section-id="{{ section.id }}"] .hero--video-background .hero__overlay__content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  [data-section-id="{{ section.id }}"] .hero--video-background .hero__button {
+    white-space: nowrap;
+  }
+
+  /* Fixed height for all slides so video and image slides switch correctly */
+  [data-section-id="{{ section.id }}"] .wt-slider__container--hero [data-swiper-slide],
+  [data-section-id="{{ section.id }}"] .wt-slider__container--hero .swiper-slide {
+    height: var(--section-height, auto);
+  }
+  @media (min-width: 900px) {
+    [data-section-id="{{ section.id }}"] .wt-slider__container--hero [data-swiper-slide],
+    [data-section-id="{{ section.id }}"] .wt-slider__container--hero .swiper-slide {
+      height: var(--section-height-desk, auto);
+    }
+  }
+
   /* Style pour rendre toute la slide cliquable */
   .wt-slideshow__link-wrapper {
     display: block;
@@ -136,8 +158,8 @@
           "enableOnMedia": "(min-width: 0px)"
           {% if section.blocks.size > 1 %}
             ,"navigation": {
-              "nextEl": ".swiper-button-next",
-              "prevEl": ".swiper-button-prev"
+              "nextEl": "[data-section-id='{{ section.id }}'] .swiper-button-next",
+              "prevEl": "[data-section-id='{{ section.id }}'] .swiper-button-prev"
             }
           {% endif %}
         }
@@ -151,8 +173,8 @@
           {% if section.blocks.size > 1 %}
             ,"loop": true,
             "navigation": {
-              "nextEl": ".swiper-button-next",
-              "prevEl": ".swiper-button-prev"
+              "nextEl": "[data-section-id='{{ section.id }}'] .swiper-button-next",
+              "prevEl": "[data-section-id='{{ section.id }}'] .swiper-button-prev"
             }
           {% endif %}
           ,"lazy": true
