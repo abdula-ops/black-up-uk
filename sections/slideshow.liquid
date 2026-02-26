@@ -209,8 +209,8 @@
             data-block-id="{{ block.id }}"
             {{ block.shopify_attributes }}>
             
-            {% comment %} Wrapper de lien conditionnel pour rendre toute la slide cliquable {% endcomment %}
-            {% if block.settings.button_link != blank %}
+            {% comment %} Link wrapper only for image slides: hero with video outputs <script> first, which must not be inside <a> (invalid HTML, breaks structure) {% endcomment %}
+            {% if block.settings.button_link != blank and block.settings.desktop_video == blank %}
               <a href="{{ block.settings.button_link }}" class="wt-slideshow__link-wrapper">
             {% endif %}
             
@@ -249,7 +249,7 @@
               play_pause_button: true,
               priority_poster: forloop.first %}
               
-            {% if block.settings.button_link != blank %}
+            {% if block.settings.button_link != blank and block.settings.desktop_video == blank %}
               </a>
             {% endif %}
           </div>
