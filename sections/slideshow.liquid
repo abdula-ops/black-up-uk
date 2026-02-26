@@ -59,6 +59,7 @@
   [data-section-id="{{ section.id }}"] .wt-slider__container--hero [data-swiper-slide],
   [data-section-id="{{ section.id }}"] .wt-slider__container--hero .swiper-slide {
     height: var(--section-height, auto);
+    position: relative;
   }
   @media (min-width: 900px) {
     [data-section-id="{{ section.id }}"] .wt-slider__container--hero [data-swiper-slide],
@@ -75,6 +76,12 @@
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+  }
+  /* Video slides: full-height link as overlay (same as image slides, but script can't be inside <a>) */
+  .wt-slideshow__link-wrapper--overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
   }
 
   .wt-slideshow__link-wrapper:hover {
@@ -209,10 +216,7 @@
             data-block-id="{{ block.id }}"
             {{ block.shopify_attributes }}>
             
-            {% comment %} Link wrapper only for image slides: hero with video outputs <script> first, which must not be inside <a> (invalid HTML, breaks structure) {% endcomment %}
-            {% if block.settings.button_link != blank and block.settings.desktop_video == blank %}
-              <a href="{{ block.settings.button_link }}" class="wt-slideshow__link-wrapper">
-            {% endif %}
+            {% comment %} Do not wrap hero in <a>: hero always outputs <script> first (video-controls.js), which must not be inside <a> — breaks both image and video slides {% endcomment %}
             
             {% render 'hero',
               type: 'single',
@@ -249,8 +253,9 @@
               play_pause_button: true,
               priority_poster: forloop.first %}
               
-            {% if block.settings.button_link != blank and block.settings.desktop_video == blank %}
-              </a>
+            {% comment %} Full-height clickable link for all slides (image and video), after hero so <script> is never inside <a> {% endcomment %}
+            {% if block.settings.button_link != blank %}
+              <a href="{{ block.settings.button_link }}" class="wt-slideshow__link-wrapper wt-slideshow__link-wrapper--overlay" aria-label="{{ block.settings.button_label | default: 'View' | escape }}"></a>
             {% endif %}
           </div>
         {%- endfor -%}
