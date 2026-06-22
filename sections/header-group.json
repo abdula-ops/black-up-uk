@@ -56,6 +56,36 @@
     },
     "header": {
       "type": "page-header",
+      "blocks": {
+        "column_7k6TxU": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "promo_section_width": 4,
+            "heading_1": "",
+            "text_1": "",
+            "link_1": "",
+            "heading_2": "",
+            "text_2": "",
+            "link_2": "",
+            "heading_3": "",
+            "text_3": "",
+            "link_3": "",
+            "heading_4": "",
+            "text_4": "",
+            "link_4": "",
+            "heading_5": "",
+            "text_5": "",
+            "link_5": "",
+            "heading_6": "",
+            "text_6": "",
+            "link_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7k6TxU"
+      ],
       "custom_css": [
         ".wt-header--fashion .wt-header__nav-teaser__link {max-width: 356px; margin-right: 10px;}"
       ],
