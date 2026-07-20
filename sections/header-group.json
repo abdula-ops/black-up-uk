@@ -16,7 +16,6 @@
       "blocks": {
         "announcement_DKVb4L": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "FREE SHIPPING FROM £50",
             "link": ""
@@ -24,6 +23,7 @@
         },
         "announcement_hAyzjh": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Sale: -30% from 2 items, -40% from 3 items and -50% from 4 items",
             "link": "shopify://collections/sales"

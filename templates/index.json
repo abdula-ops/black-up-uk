@@ -12,39 +12,6 @@
     "slideshow_UEReBY": {
       "type": "slideshow",
       "blocks": {
-        "slide_EMBnWP": {
-          "type": "slide",
-          "settings": {
-            "subheading": "",
-            "subheading_disable_on_mobile": false,
-            "heading": "",
-            "heading_disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100,
-            "text": "",
-            "text_disable_on_mobile": false,
-            "button_select": "primary",
-            "button_label": "SHOP",
-            "button_disable_on_mobile": false,
-            "button_link": "shopify://collections/sales",
-            "second_button_select": "primary",
-            "second_button_label": "",
-            "button_disable_on_mobile_second": false,
-            "second_button_link": "",
-            "color-body-text": "rgba(0,0,0,0)",
-            "color-overlay": "rgba(0,0,0,0)",
-            "color-overlay-opacity": 0,
-            "desktop_video": "shopify://files/videos/255c3033322b47b5843db755f970ffc1.SD-480p-0.9Mbps-60714117.mp4",
-            "desktop_image": "shopify://shop_images/EN_DESKTOP_1.webp",
-            "desktop_text_vertical_position": "center",
-            "desktop_text_horizontal_position": "center",
-            "mobile_image": "shopify://shop_images/EN_MOBILE_1.webp",
-            "mobile_text_vertical_position": "center",
-            "mobile_text_horizontal_position": "center",
-            "out-background-color": "rgba(0,0,0,0)",
-            "out-text-color": "rgba(0,0,0,0)"
-          }
-        },
         "slide_XMDL97": {
           "type": "slide",
           "settings": {
@@ -67,7 +34,7 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/EN_DESKTOP_1.webp",
+            "desktop_image": "shopify://shop_images/Banner_1_EN_2x_079e254b-5ce8-4b3e-ac26-61eb2ec1ad0b_jpg.webp",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
             "mobile_text_vertical_position": "center",
@@ -109,7 +76,6 @@
         }
       },
       "block_order": [
-        "slide_EMBnWP",
         "slide_XMDL97",
         "slide_W6w7bF"
       ],
@@ -313,109 +279,6 @@
         "margin-bottom": 88
       }
     },
-    "custom_multicolumn_f6qLic": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_mQd46g": {
-          "type": "column",
-          "settings": {
-            "heading": "",
-            "heading_disable_on_mobile": false,
-            "text": "",
-            "text2": "",
-            "text3": "",
-            "text_disable_on_mobile": false,
-            "button_select": "primary",
-            "button_label": "",
-            "button_disable_on_mobile": false,
-            "button_link": "",
-            "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/LEFT-2-1_c950d1ff-149b-4bf2-a4f8-7c161afbe00d.webp"
-          }
-        },
-        "column_MFhEtF": {
-          "type": "column",
-          "settings": {
-            "heading": "",
-            "heading_disable_on_mobile": false,
-            "text": "<p><strong>Invitation to travel.</strong></p><p>Bergamot, ginger, blackcurrant at the top; tuberose-jasmine at the heart. The base warms: sandalwood and cedar, long on the skin.</p>",
-            "text2": "<p>EAU DE PARFUM</p>",
-            "text3": "<p>NAIROBI</p>",
-            "text_disable_on_mobile": false,
-            "button_select": "primary",
-            "button_label": "DISCOVER",
-            "button_disable_on_mobile": false,
-            "button_link": "shopify://collections/the-perfume",
-            "button_link_in_new_window": false
-          }
-        },
-        "column_iUjp3g": {
-          "type": "column",
-          "settings": {
-            "heading": "",
-            "heading_disable_on_mobile": false,
-            "text": "",
-            "text2": "",
-            "text3": "",
-            "text_disable_on_mobile": false,
-            "button_select": "primary",
-            "button_label": "",
-            "button_disable_on_mobile": false,
-            "button_link": "",
-            "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/LEFT-2_f1b9ffd4-2c3d-451c-a44a-0e9f5cae2b16.webp"
-          }
-        }
-      },
-      "block_order": [
-        "column_mQd46g",
-        "column_MFhEtF",
-        "column_iUjp3g"
-      ],
-      "custom_css": [
-        "@media screen and (min-width: 768px) {[data-swiper]:not(.swiper-initialized) .wt-multicol__list {flex-wrap: nowrap; margin-left: 50px; margin-right: 50px; }}",
-        ".hero__text {max-width: 40ch; padding-bottom: 10px;}",
-        "strong {font-family: \"Work Sans\"; letter-spacing: 0.1px;}"
-      ],
-      "settings": {
-        "heading": "",
-        "swipe_on_mobile": false,
-        "full-width-enabled": true,
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "size_heading": 100,
-        "size_heading_mobile": 100,
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
-        "margin-top": 96,
-        "margin-bottom": 28
-      }
-    },
-    "rich_text_N3gmTh": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_GWcdiP": {
-          "type": "heading",
-          "settings": {
-            "heading": "THIS IS BLACK UP.",
-            "disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100
-          }
-        }
-      },
-      "block_order": [
-        "heading_GWcdiP"
-      ],
-      "settings": {
-        "section_width": "regular",
-        "desktop_text_horizontal_position": "center",
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "#ffffff",
-        "margin-top": 12,
-        "margin-bottom": 12
-      }
-    },
     "shoppable_video_PWWPiV": {
       "type": "shoppable-video",
       "blocks": {
@@ -480,7 +343,7 @@
         "quick-add-enabled": true,
         "rewind-enabled": false,
         "hide-brand-name": true,
-        "video_hosted": "shopify://files/videos/255c3033322b47b5843db755f970ffc1.SD-480p-0.9Mbps-60714117.mp4",
+        "video_hosted": "shopify://files/videos/4902ab50c31249e6b8e5687a94c7a635.HD-1080p-7.2Mbps-89000742.mp4",
         "desktop_fixed_height": 700,
         "mobile_fixed_height": 480,
         "enable_full_screen_mode": false,
@@ -490,6 +353,206 @@
         "color-body-text": "#cf4a4a",
         "margin-top": 0,
         "margin-bottom": 0
+      }
+    },
+    "separator_W8dpxN": {
+      "type": "separator",
+      "name": "t:sections.separator.presets.name",
+      "settings": {
+        "heading": "",
+        "show-separator-line": false,
+        "full-width-line": false,
+        "color-background": "#000000",
+        "margin-top": 52,
+        "margin-bottom": 20
+      }
+    },
+    "custom_multicolumn_f6qLic": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_mQd46g": {
+          "type": "column",
+          "settings": {
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "text": "",
+            "text2": "",
+            "text3": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/DESKTOP_FOCUS_PRODUIT.webp"
+          }
+        },
+        "column_MFhEtF": {
+          "type": "column",
+          "settings": {
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "text": "<p><strong>The ultra-shiny gloss.</strong></p><p>Mirror-like shine powered by pearlescent pigments. A lightweight, never-sticky texture, available in three shimmering shades.</p>",
+            "text2": "<p>NEW</p>",
+            "text3": "<p>GLOWRY GLOSS</p>",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "DISCOVER",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://collections/the-perfume",
+            "button_link_in_new_window": false
+          }
+        },
+        "column_iUjp3g": {
+          "type": "column",
+          "settings": {
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "text": "",
+            "text2": "",
+            "text3": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "button_link_in_new_window": false,
+            "desktop_image": "shopify://shop_images/DESKTOP_FOCUS_PRODUIT_2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "column_mQd46g",
+        "column_MFhEtF",
+        "column_iUjp3g"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {[data-swiper]:not(.swiper-initialized) .wt-multicol__list {flex-wrap: nowrap; margin-left: 50px; margin-right: 50px; }}",
+        ".hero__text {max-width: 40ch; padding-bottom: 10px;}",
+        "strong {font-family: \"Work Sans\"; letter-spacing: 0.1px;}"
+      ],
+      "settings": {
+        "heading": "",
+        "swipe_on_mobile": false,
+        "full-width-enabled": true,
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "size_heading": 100,
+        "size_heading_mobile": 100,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 96,
+        "margin-bottom": 28
+      }
+    },
+    "rich_text_77kLU7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EbVGcp": {
+          "type": "heading",
+          "settings": {
+            "heading": "THIS IS HOW WE DO MAKEUP.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_EbVGcp"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
+    },
+    "video_reels_kb4KdA": {
+      "type": "video-reels",
+      "blocks": {
+        "product_CAAJBg": {
+          "type": "product",
+          "settings": {
+            "video_hosted": "shopify://files/videos/1e9324eea55f48958f87bad177b43c37.HD-1080p-2.5Mbps-60579220.mp4",
+            "featured_product": "gloss-n01"
+          }
+        },
+        "product_wrYgbH": {
+          "type": "product",
+          "settings": {
+            "video_hosted": "shopify://files/videos/436ea185ffa044ec84a09affe5135bb6.HD-1080p-3.3Mbps-61530680.mp4",
+            "featured_product": "eyeshadows-palette-9"
+          }
+        },
+        "product_rgd8WL": {
+          "type": "product",
+          "settings": {
+            "video_hosted": "shopify://files/videos/c222e00477ae43399d2c04c040bfdcb9.HD-1080p-2.5Mbps-61531880.mp4",
+            "featured_product": "cc-cream"
+          }
+        },
+        "product_Q3Dhwd": {
+          "type": "product",
+          "settings": {
+            "video_hosted": "shopify://files/videos/0a168b1afe2347d8a37436247c1421b0.HD-1080p-2.5Mbps-61530828.mp4",
+            "featured_product": "two-way-cake"
+          }
+        },
+        "product_4zdjEq": {
+          "type": "product",
+          "settings": {
+            "video_hosted": "shopify://files/videos/03ad4a0f89d04c41905e5f2108e1c5e2.HD-1080p-2.5Mbps-60579435.mp4",
+            "featured_product": "m-eye-love-waterproof-mascara"
+          }
+        }
+      },
+      "block_order": [
+        "product_CAAJBg",
+        "product_wrYgbH",
+        "product_rgd8WL",
+        "product_Q3Dhwd",
+        "product_4zdjEq"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.wt-slider__container {box-sizing: border-box; margin-left: 50px; margin-right: 50px; border-radius: 13px; overflow: hidden; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "quick-add-enabled": true,
+        "hide-brand-name": true,
+        "video_button": true,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#ffffff",
+        "margin-top": 12,
+        "margin-bottom": 72
+      }
+    },
+    "rich_text_N3gmTh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GWcdiP": {
+          "type": "heading",
+          "settings": {
+            "heading": "THIS IS BLACK UP.",
+            "disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_GWcdiP"
+      ],
+      "settings": {
+        "section_width": "regular",
+        "desktop_text_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#ffffff",
+        "margin-top": 12,
+        "margin-bottom": 12
       }
     },
     "video_section_GrjQXG": {
@@ -672,91 +735,6 @@
         "margin-bottom": 60
       }
     },
-    "rich_text_77kLU7": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_EbVGcp": {
-          "type": "heading",
-          "settings": {
-            "heading": "THIS IS HOW WE DO MAKEUP.",
-            "disable_on_mobile": false,
-            "size_heading": 100,
-            "size_heading_mobile": 100
-          }
-        }
-      },
-      "block_order": [
-        "heading_EbVGcp"
-      ],
-      "settings": {
-        "section_width": "regular",
-        "desktop_text_horizontal_position": "center",
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "rgba(0,0,0,0)",
-        "margin-top": 40,
-        "margin-bottom": 0
-      }
-    },
-    "video_reels_kb4KdA": {
-      "type": "video-reels",
-      "blocks": {
-        "product_CAAJBg": {
-          "type": "product",
-          "settings": {
-            "video_hosted": "shopify://files/videos/1e9324eea55f48958f87bad177b43c37.HD-1080p-2.5Mbps-60579220.mp4",
-            "featured_product": "gloss-n01"
-          }
-        },
-        "product_wrYgbH": {
-          "type": "product",
-          "settings": {
-            "video_hosted": "shopify://files/videos/436ea185ffa044ec84a09affe5135bb6.HD-1080p-3.3Mbps-61530680.mp4",
-            "featured_product": "eyeshadows-palette-9"
-          }
-        },
-        "product_rgd8WL": {
-          "type": "product",
-          "settings": {
-            "video_hosted": "shopify://files/videos/c222e00477ae43399d2c04c040bfdcb9.HD-1080p-2.5Mbps-61531880.mp4",
-            "featured_product": "cc-cream"
-          }
-        },
-        "product_Q3Dhwd": {
-          "type": "product",
-          "settings": {
-            "video_hosted": "shopify://files/videos/0a168b1afe2347d8a37436247c1421b0.HD-1080p-2.5Mbps-61530828.mp4",
-            "featured_product": "two-way-cake"
-          }
-        },
-        "product_4zdjEq": {
-          "type": "product",
-          "settings": {
-            "video_hosted": "shopify://files/videos/03ad4a0f89d04c41905e5f2108e1c5e2.HD-1080p-2.5Mbps-60579435.mp4",
-            "featured_product": "m-eye-love-waterproof-mascara"
-          }
-        }
-      },
-      "block_order": [
-        "product_CAAJBg",
-        "product_wrYgbH",
-        "product_rgd8WL",
-        "product_Q3Dhwd",
-        "product_4zdjEq"
-      ],
-      "custom_css": [
-        "@media (min-width: 768px) {.wt-slider__container {box-sizing: border-box; margin-left: 50px; margin-right: 50px; border-radius: 13px; overflow: hidden; }}"
-      ],
-      "settings": {
-        "heading": "",
-        "quick-add-enabled": true,
-        "hide-brand-name": true,
-        "video_button": true,
-        "color-body-text": "rgba(0,0,0,0)",
-        "background_color": "#ffffff",
-        "margin-top": 12,
-        "margin-bottom": 72
-      }
-    },
     "image_with_text_iWUUY3": {
       "type": "image-with-text",
       "blocks": {
@@ -904,14 +882,15 @@
     "featured_collection_98txhK",
     "collection_tabs_cta_xrUWAx",
     "collection_tabs_zxQhaC",
-    "custom_multicolumn_f6qLic",
-    "rich_text_N3gmTh",
     "shoppable_video_PWWPiV",
+    "separator_W8dpxN",
+    "custom_multicolumn_f6qLic",
+    "rich_text_77kLU7",
+    "video_reels_kb4KdA",
+    "rich_text_N3gmTh",
     "video_section_GrjQXG",
     "image_with_text_eTjVPF",
     "image_banner_qAqmU6",
-    "rich_text_77kLU7",
-    "video_reels_kb4KdA",
     "image_with_text_iWUUY3",
     "separator_38gTMr",
     "custom_liquid_JwewMA",
