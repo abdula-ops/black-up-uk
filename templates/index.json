@@ -383,7 +383,8 @@
             "button_disable_on_mobile": false,
             "button_link": "",
             "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/DESKTOP_FOCUS_PRODUIT_2.webp"
+            "desktop_image": "shopify://shop_images/DESKTOP_FOCUS_PRODUIT_2.webp",
+            "mobile_image": "shopify://shop_images/DESKTOP_FOCUS_PRODUIT.webp"
           }
         }
       },
