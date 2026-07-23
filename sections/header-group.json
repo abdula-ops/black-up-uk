@@ -21,6 +21,13 @@
             "link": ""
           }
         },
+        "announcement_gYRTgd": {
+          "type": "announcement",
+          "settings": {
+            "text": "2-3 DAYS UK SHIPPING",
+            "link": ""
+          }
+        },
         "announcement_hAyzjh": {
           "type": "announcement",
           "disabled": true,
@@ -28,19 +35,12 @@
             "text": "",
             "link": "shopify://collections/sales"
           }
-        },
-        "announcement_gYRTgd": {
-          "type": "announcement",
-          "settings": {
-            "text": "2-3 DAYS UK SHIPPING",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "announcement_DKVb4L",
-        "announcement_hAyzjh",
-        "announcement_gYRTgd"
+        "announcement_gYRTgd",
+        "announcement_hAyzjh"
       ],
       "custom_css": [
         ".wt-announcement {--time: 500s;}"
