@@ -25,15 +25,14 @@
           "type": "announcement",
           "disabled": true,
           "settings": {
-            "text": "Sale: -30% from 2 items, -40% from 3 items and -50% from 4 items",
+            "text": "",
             "link": "shopify://collections/sales"
           }
         },
         "announcement_gYRTgd": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "FAST DELIVERY THROUGHOUT EUROPE",
+            "text": "2-3 DAYS UK SHIPPING",
             "link": ""
           }
         }
@@ -51,7 +50,7 @@
         "animation_speed": "150",
         "checkbox_close_announcement": false,
         "color-body-text": "#ffffff",
-        "background_color": "#FC9BC2"
+        "background_color": "#fc9bc2"
       }
     },
     "header": {
