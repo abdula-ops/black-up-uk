@@ -474,11 +474,11 @@
     "video_reels_kb4KdA": {
       "type": "video-reels",
       "blocks": {
-        "product_7jerAh": {
+        "product_8FiG9V": {
           "type": "product",
           "settings": {
-            "video_hosted": "shopify://files/videos/3c951b1cb46f4ec68fe88c09ae2efe99.HD-1080p-7.2Mbps-89007102.mp4",
-            "featured_product": "glowry-gloss"
+            "video_hosted": "shopify://files/videos/520669f5c7ad46b3a310e99cacfb2c0a.HD-1080p-7.2Mbps-89008271.mp4",
+            "featured_product": "glowry-gloss-copy"
           }
         },
         "product_iagWHx": {
@@ -488,11 +488,11 @@
             "featured_product": "glowry-gloss-cocoa"
           }
         },
-        "product_8FiG9V": {
+        "product_7jerAh": {
           "type": "product",
           "settings": {
-            "video_hosted": "shopify://files/videos/520669f5c7ad46b3a310e99cacfb2c0a.HD-1080p-7.2Mbps-89008271.mp4",
-            "featured_product": "glowry-gloss-copy"
+            "video_hosted": "shopify://files/videos/3c951b1cb46f4ec68fe88c09ae2efe99.HD-1080p-7.2Mbps-89007102.mp4",
+            "featured_product": "glowry-gloss"
           }
         },
         "product_CAAJBg": {
@@ -532,9 +532,9 @@
         }
       },
       "block_order": [
-        "product_7jerAh",
-        "product_iagWHx",
         "product_8FiG9V",
+        "product_iagWHx",
+        "product_7jerAh",
         "product_CAAJBg",
         "product_wrYgbH",
         "product_rgd8WL",
