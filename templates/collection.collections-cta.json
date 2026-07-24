@@ -77,8 +77,28 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "promotion_awbUdb": {
+          "type": "promotion",
+          "settings": {
+            "promotion_collection": "",
+            "promotion_position": 1,
+            "promotion_width": "1",
+            "image": "shopify://shop_images/TILE_VERTICAL.webp",
+            "title": "new: glowry gloss",
+            "text": "Mirror-like shine. Never sticky.",
+            "link_label": "Shop now",
+            "link": "shopify://collections/glowry-gloss",
+            "use_text_button": false,
+            "block_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "center",
+            "overlay_color": "#730202",
+            "overlay_opacity": 0
+          }
+        },
         "promotion_jqFVmm": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "promotion_collection": "",
             "promotion_position": 1,
@@ -136,6 +156,7 @@
         }
       },
       "block_order": [
+        "promotion_awbUdb",
         "promotion_jqFVmm",
         "promotion_DVAjEj",
         "promotion_4gjBCR"
