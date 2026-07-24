@@ -60,6 +60,25 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "promotion_weQXKk": {
+          "type": "promotion",
+          "settings": {
+            "promotion_collection": "",
+            "promotion_position": 1,
+            "promotion_width": "1",
+            "image": "shopify://shop_images/TILE_VERTICAL.webp",
+            "title": "TOO GLOWRY TO GO UNNOTICED.",
+            "text": "Mirror-like shine. Never sticky.",
+            "link_label": "Shop now",
+            "link": "shopify://collections/glowry-gloss",
+            "use_text_button": false,
+            "block_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70
+          }
+        },
         "promotion_DVAjEj": {
           "type": "promotion",
           "disabled": true,
@@ -102,6 +121,7 @@
         }
       },
       "block_order": [
+        "promotion_weQXKk",
         "promotion_DVAjEj",
         "promotion_4gjBCR"
       ],
