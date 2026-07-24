@@ -12,6 +12,37 @@
     "slideshow_UEReBY": {
       "type": "slideshow",
       "blocks": {
+        "slide_KGiN6z": {
+          "type": "slide",
+          "settings": {
+            "subheading": "",
+            "subheading_disable_on_mobile": false,
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "second_button_select": "primary",
+            "second_button_label": "",
+            "button_disable_on_mobile_second": false,
+            "second_button_link": "",
+            "color-body-text": "rgba(0,0,0,0)",
+            "color-overlay": "rgba(0,0,0,0)",
+            "color-overlay-opacity": 0,
+            "desktop_video": "shopify://files/videos/blackUp Banners.mp4",
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center",
+            "out-background-color": "rgba(0,0,0,0)",
+            "out-text-color": "rgba(0,0,0,0)"
+          }
+        },
         "slide_XMDL97": {
           "type": "slide",
           "settings": {
@@ -77,6 +108,7 @@
         }
       },
       "block_order": [
+        "slide_KGiN6z",
         "slide_XMDL97",
         "slide_W6w7bF"
       ],
