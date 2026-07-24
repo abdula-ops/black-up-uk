@@ -24,7 +24,7 @@
         "announcement_gYRTgd": {
           "type": "announcement",
           "settings": {
-            "text": "2-3 DAYS UK SHIPPING",
+            "text": "NOW SHIPPING FROM UK! 2-3 DAYS DELIVERY",
             "link": ""
           }
         },
@@ -32,7 +32,7 @@
           "type": "announcement",
           "disabled": true,
           "settings": {
-            "text": "",
+            "text": "2-3 DAYS DELIVERY",
             "link": "shopify://collections/sales"
           }
         }
