@@ -73,10 +73,10 @@
             "link": "shopify://collections/glowry-gloss",
             "use_text_button": false,
             "block_link": "",
-            "content_position": "middle-center",
+            "content_position": "bottom-left",
             "text_alignment": "center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 70
+            "overlay_color": "#730202",
+            "overlay_opacity": 5
           }
         },
         "promotion_DVAjEj": {
