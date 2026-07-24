@@ -400,9 +400,9 @@
             "text": "<p><strong>The ultra-shiny gloss.</strong></p><p>Mirror-like shine powered by pearlescent pigments. A lightweight, never-sticky texture, available in three shimmering shades.</p>",
             "text2": "<p>NEW</p>",
             "text3": "<p>GLOWRY GLOSS</p>",
-            "text_disable_on_mobile": false,
+            "text_disable_on_mobile": true,
             "button_select": "primary",
-            "button_label": "",
+            "button_label": "shop now",
             "button_disable_on_mobile": false,
             "button_link": "shopify://collections/glowry-gloss",
             "button_link_in_new_window": false
