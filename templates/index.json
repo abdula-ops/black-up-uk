@@ -93,7 +93,7 @@
       "settings": {
         "heading": "",
         "full-width-enabled": true,
-        "auto-rotate": false,
+        "auto-rotate": true,
         "slide_height": "fixed_height",
         "desktop_fixed_height": 600,
         "mobile_fixed_height": 460,
