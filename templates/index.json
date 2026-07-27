@@ -15,6 +15,7 @@
         "slide_KGiN6z": {
           "type": "slide",
           "name": "UK Launch (Gloss)",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "subheading_disable_on_mobile": false,
@@ -47,7 +48,6 @@
         },
         "slide_XMDL97": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "subheading": "",
             "subheading_disable_on_mobile": false,
