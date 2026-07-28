@@ -41,28 +41,47 @@
 -%}
 <script src="{{ 'video-controls.js' | asset_url }}" defer="defer"></script>
 
-
-
-
 <div class=" hero hero--video-background {{ classname }} {%- if section.settings.video_type == 'yt' -%}hero__video__yt-wrapper{%- endif -%}">
   {% if video_url != blank or video %}
     {% if video %}
       {% if mobile_video != blank and mobile_video != video %}
         {% assign mobile_video_class = 'desktop-hidden' %}
-        <div class="wt-video__movie wt-video__movie--shopify-video wt-video__item {{ mobile_video_class }} {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if enable_full_screen_mode %}wt-video--fullscreen{% endif %}">
+        <div class="wt-video__movie wt-video__movie--shopify-video wt-video__item wt-video__item--bg {{ mobile_video_class }} {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if enable_full_screen_mode %}wt-video--fullscreen{% endif %}">
           {% if play_pause_button %}
             <video-controls>
               {% render 'play-pause-button', classname: mobile_video_class %}
           {% endif %}
           {% if poster_mobile_url != blank %}
-            {{ mobile_video | video_tag: autoplay: autoplay, loop: true, muted: true, controls: video_controls, poster: poster_mobile_url, class: mobile_video_class }}
+            {{
+              mobile_video
+              | video_tag:
+                autoplay: autoplay,
+                loop: true,
+                muted: true,
+                controls: video_controls,
+                poster: poster_mobile_url,
+                class: mobile_video_class
+            }}
           {% else %}
-            {{ mobile_video | video_tag: autoplay: autoplay, loop: true, muted: true, controls: video_controls, image_size: '600x', class: mobile_video_class }}
+            {{
+              mobile_video
+              | video_tag:
+                autoplay: autoplay,
+                loop: true,
+                muted: true,
+                controls: video_controls,
+                image_size: '600x',
+                class: mobile_video_class
+            }}
           {% endif %}
           {% if play_pause_button %}
             </video-controls>
           {% endif %}
-          <button aria-label="{{ 'aria-label.video-reels-toggle-sound' | t }}" class="wt-video__sound-toggle {{ mobile_video_class }}" data-sound="off">
+          <button
+            aria-label="{{ 'aria-label.video-reels-toggle-sound' | t }}"
+            class="wt-video__sound-toggle {{ mobile_video_class }}"
+            data-sound="off"
+          >
             <span class="icon-volume">{% render 'icons', id: 'volume' %}</span>
             <span class="icon-muted">{% render 'icons', id: 'volume-muted' %}</span>
           </button>
@@ -72,20 +91,42 @@
         {% assign video_class = 'mobile-visible' %}
       {% endif %}
 
-      <div class="wt-video__movie wt-video__movie--shopify-video wt-video__item {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %} {% if enable_full_screen_mode %}wt-video--fullscreen{% endif %} {{ video_class }}">
+      <div class="wt-video__movie wt-video__movie--shopify-video wt-video__item wt-video__item--bg {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %} {% if enable_full_screen_mode %}wt-video--fullscreen{% endif %} {{ video_class }}">
         {% if play_pause_button %}
           <video-controls>
             {% render 'play-pause-button', classname: video_class %}
         {% endif %}
         {% if poster_desktop_url != blank %}
-          {{ video | video_tag: autoplay: autoplay, loop: true, muted: true, controls: video_controls, poster: poster_desktop_url, class: video_class }}
+          {{
+            video
+            | video_tag:
+              autoplay: autoplay,
+              loop: true,
+              muted: true,
+              controls: video_controls,
+              poster: poster_desktop_url,
+              class: video_class
+          }}
         {% else %}
-          {{ video | video_tag: autoplay: autoplay, loop: true, muted: true, controls: video_controls, image_size: '600x', class: video_class }}
+          {{
+            video
+            | video_tag:
+              autoplay: autoplay,
+              loop: true,
+              muted: true,
+              controls: video_controls,
+              image_size: '600x',
+              class: video_class
+          }}
         {% endif %}
         {% if play_pause_button %}
           </video-controls>
         {% endif %}
-        <button aria-label="{{ 'aria-label.video-reels-toggle-sound' | t }}" class="wt-video__sound-toggle" data-sound="off">
+        <button
+          aria-label="{{ 'aria-label.video-reels-toggle-sound' | t }}"
+          class="wt-video__sound-toggle"
+          data-sound="off"
+        >
           <span class="icon-volume">{% render 'icons', id: 'volume' %}</span>
           <span class="icon-muted">{% render 'icons', id: 'volume-muted' %}</span>
         </button>
@@ -110,12 +151,13 @@
         ></iframe>
       {%- endif -%}
       <button
-          aria-label="{{ 'aria-label.video-reels-toggle-sound' | t }}"
-          class="wt-video__sound-toggle"
-          data-sound="off">
-           <span class="icon-volume">{% render 'icons', id: 'volume' %}</span>
-          <span class="icon-muted">{% render 'icons', id: 'volume-muted' %}</span>
-        </button>
+        aria-label="{{ 'aria-label.video-reels-toggle-sound' | t }}"
+        class="wt-video__sound-toggle"
+        data-sound="off"
+      >
+        <span class="icon-volume">{% render 'icons', id: 'volume' %}</span>
+        <span class="icon-muted">{% render 'icons', id: 'volume-muted' %}</span>
+      </button>
     {% endif %}
 
   {% elsif before_after %}
@@ -134,7 +176,13 @@
 
   {% if button_link and link_only_on_button %}
     {% assign overlay_tag = 'div' %}
-  {% elsif button_link and button_label == blank or button_link and button_disable_on_mobile or section_link and second_button_link == nil %}
+  {% elsif button_link
+    and button_label == blank
+    or button_link
+    and button_disable_on_mobile
+    or section_link
+    and second_button_link == null
+  %}
     {% assign overlay_tag = 'js-link' %}
   {% else %}
     {% assign overlay_tag = 'div' %}

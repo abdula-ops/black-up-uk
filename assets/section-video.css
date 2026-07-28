@@ -80,11 +80,13 @@
   object-fit: cover;
 }
 @media (max-width: 899px) {
+  .wt-video__movie.mobile-hidden,
   .wt-video__movie .mobile-hidden {
     display: none;
   }
 }
 @media (min-width: 900px) {
+  .wt-video__movie.desktop-hidden,
   .wt-video__movie .desktop-hidden {
     display: none;
   }
