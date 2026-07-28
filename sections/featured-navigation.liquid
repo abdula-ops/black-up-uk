@@ -46,6 +46,15 @@
     /* padding: 8px 15px; */
   }
   /* --- FIN DE LA NOUVELLE REGLE CSS --- */
+
+  /* --- Active pill: black background, white text --- */
+  [data-section-id="{{ section.id }}"] .secondary-navigation__link--active,
+  [data-section-id="{{ section.id }}"] .secondary-navigation__link--active:hover,
+  [data-section-id="{{ section.id }}"] .secondary-navigation__link--active:focus-visible {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+  }
 </style>
 
 <script src="{{ 'secondary-nav.js' | asset_url }}" defer="defer"></script>
@@ -64,7 +73,10 @@
             <a
               href="{{ link.url }}"
               aria-label="{{ link.title }}"
-              class="hero__button--primary hero__button--secondary secondary-navigation__link"
+              class="hero__button--primary hero__button--secondary secondary-navigation__link{% if link.current %} secondary-navigation__link--active{% endif %}"
+              {% if link.current %}
+                aria-current="page"
+              {% endif %}
             >
               {{ link.title }}
             </a>
