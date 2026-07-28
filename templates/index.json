@@ -310,6 +310,7 @@
         },
         "product_khmtMF": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "start_second": 50,
             "featured_product": "blush-and-highlighter-duo-05"
