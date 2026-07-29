@@ -3499,6 +3499,10 @@
           "auto-rotate": {
             "label": "Auto-rotate slides"
           },
+          "autoplay_delay": {
+            "label": "Slide duration",
+            "info": "How long each slide stays visible before switching. Only applies when Auto-rotate slides is enabled."
+          },
           "slide_height": {
             "adapt_to_first_image": {
               "label": "Adapt to image"

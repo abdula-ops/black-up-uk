@@ -3238,6 +3238,10 @@
           "auto-rotate": {
             "label": "Rotation automatique des diapositives"
           },
+          "autoplay_delay": {
+            "label": "Durée d'affichage de la diapositive",
+            "info": "Durée d'affichage de chaque diapositive avant le passage à la suivante. S'applique uniquement si la rotation automatique est activée."
+          },
           "slide_height": {
             "adapt_to_first_image": {
               "label": "Adapter à l'image"

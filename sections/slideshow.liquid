@@ -147,16 +147,24 @@
   {% comment %} Preload first slide poster for LCP when slide uses video (Shopify best practice) {% endcomment %}
   {% assign first_block = section.blocks[0] %}
   {% if first_block.settings.desktop_video != blank and first_block.settings.desktop_image != blank %}
-    <link rel="preload" as="image" href="{{ first_block.settings.desktop_image | image_url: width: 1500 }}" fetchpriority="high">
+    <link
+      rel="preload"
+      as="image"
+      href="{{ first_block.settings.desktop_image | image_url: width: 1500 }}"
+      fetchpriority="high"
+    >
   {% endif %}
   {% render 'headline', title: section.settings.heading %}
 
   <!-- Slider main container -->
   <slideshow-section
     data-section-id="{{ section.id }}"
-    class="{{ width_line }} wt-slider wt-slider--hero
+    class="
+      {{ width_line }} wt-slider wt-slider--hero
       {% if settings.animations %} scroll-trigger animate--slide-in {% endif %}
-      {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
+      {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}
+    "
+  >
     {% if request.design_mode %}
       <script data-swiper-configuration type="text/json">
         {
@@ -187,7 +195,7 @@
           ,"lazy": true
           {%- if section.settings.auto-rotate and section.blocks.size > 1 -%}
             ,"autoplay": {
-              "delay": 5000,
+              "delay": {{ section.settings.autoplay_delay | times: 1000 }},
               "pauseOnMouseEnter": true,
               "disableOnInteraction": false
             }
@@ -198,8 +206,11 @@
 
     <div
       data-swiper
-      class="wt-slider__container wt-slider__container--hero loading
-        {% if section.settings.full-width-enabled == true %}wt-slider__container--full {% endif %}">
+      class="
+        wt-slider__container wt-slider__container--hero loading
+        {% if section.settings.full-width-enabled == true %}wt-slider__container--full {% endif %}
+      "
+    >
       <!-- Additional required wrapper -->
       <div data-swiper-container class="loading">
         <!-- Slides -->
@@ -214,10 +225,10 @@
             class="swiper-lazy wt-slideshow__swiper-lazy"
             data-swiper-slide
             data-block-id="{{ block.id }}"
-            {{ block.shopify_attributes }}>
-            
+            {{ block.shopify_attributes }}
+          >
             {% comment %} Do not wrap hero in <a>: hero always outputs <script> first (video-controls.js), which must not be inside <a> — breaks both image and video slides {% endcomment %}
-            
+
             {% render 'hero',
               type: 'single',
               classname: customclass,
@@ -251,11 +262,16 @@
               autoplay: true,
               video_controls: false,
               play_pause_button: true,
-              priority_poster: forloop.first %}
-              
+              priority_poster: forloop.first
+            %}
+
             {% comment %} Full-height clickable link for all slides (image and video), after hero so <script> is never inside <a> {% endcomment %}
             {% if block.settings.button_link != blank %}
-              <a href="{{ block.settings.button_link }}" class="wt-slideshow__link-wrapper wt-slideshow__link-wrapper--overlay" aria-label="{{ block.settings.button_label | default: 'View' | escape }}"></a>
+              <a
+                href="{{ block.settings.button_link }}"
+                class="wt-slideshow__link-wrapper wt-slideshow__link-wrapper--overlay"
+                aria-label="{{ block.settings.button_label | default: 'View' | escape }}"
+              ></a>
             {% endif %}
           </div>
         {%- endfor -%}
@@ -272,9 +288,11 @@
         </div>
 
         <div
-          class="swiper-pagination wt-slider__pagination
-            {% if section.settings.auto-rotate %}swiper-pagination--autoplay{% endif %}">
-        </div>
+          class="
+            swiper-pagination wt-slider__pagination
+            {% if section.settings.auto-rotate %}swiper-pagination--autoplay{% endif %}
+          "
+        ></div>
       {% endif %}
     </div>
   </slideshow-section>
@@ -311,6 +329,17 @@
       "id": "auto-rotate",
       "label": "t:sections.slideshow.settings.slide.auto-rotate.label",
       "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_delay",
+      "min": 3,
+      "max": 20,
+      "step": 1,
+      "unit": "s",
+      "default": 5,
+      "label": "t:sections.slideshow.settings.slide.autoplay_delay.label",
+      "info": "t:sections.slideshow.settings.slide.autoplay_delay.info"
     },
     {
       "type": "header",
@@ -590,8 +619,14 @@
           "id": "desktop_text_vertical_position",
           "options": [
             { "value": "top", "label": "t:sections.slideshow.settings.slide.desktop_text_vertical_position.top.label" },
-            { "value": "center", "label": "t:sections.slideshow.settings.slide.desktop_text_vertical_position.center.label" },
-            { "value": "bottom", "label": "t:sections.slideshow.settings.slide.desktop_text_vertical_position.bottom.label" }
+            {
+              "value": "center",
+              "label": "t:sections.slideshow.settings.slide.desktop_text_vertical_position.center.label"
+            },
+            {
+              "value": "bottom",
+              "label": "t:sections.slideshow.settings.slide.desktop_text_vertical_position.bottom.label"
+            }
           ],
           "default": "center",
           "label": "t:sections.slideshow.settings.slide.desktop_text_vertical_position.default.label"
@@ -600,9 +635,18 @@
           "type": "select",
           "id": "desktop_text_horizontal_position",
           "options": [
-            { "value": "left", "label": "t:sections.slideshow.settings.slide.desktop_text_horizontal_position.left.label" },
-            { "value": "center", "label": "t:sections.slideshow.settings.slide.desktop_text_horizontal_position.center.label" },
-            { "value": "right", "label": "t:sections.slideshow.settings.slide.desktop_text_horizontal_position.right.label" }
+            {
+              "value": "left",
+              "label": "t:sections.slideshow.settings.slide.desktop_text_horizontal_position.left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.slideshow.settings.slide.desktop_text_horizontal_position.center.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.slideshow.settings.slide.desktop_text_horizontal_position.right.label"
+            }
           ],
           "default": "center",
           "label": "t:sections.slideshow.settings.slide.desktop_text_horizontal_position.default.label"
@@ -628,8 +672,14 @@
           "id": "mobile_text_vertical_position",
           "options": [
             { "value": "top", "label": "t:sections.slideshow.settings.slide.mobile_text_vertical_position.top.label" },
-            { "value": "center", "label": "t:sections.slideshow.settings.slide.mobile_text_vertical_position.center.label" },
-            { "value": "bottom", "label": "t:sections.slideshow.settings.slide.mobile_text_vertical_position.bottom.label" }
+            {
+              "value": "center",
+              "label": "t:sections.slideshow.settings.slide.mobile_text_vertical_position.center.label"
+            },
+            {
+              "value": "bottom",
+              "label": "t:sections.slideshow.settings.slide.mobile_text_vertical_position.bottom.label"
+            }
           ],
           "default": "center",
           "label": "t:sections.slideshow.settings.slide.mobile_text_vertical_position.default.label"
@@ -638,9 +688,18 @@
           "type": "select",
           "id": "mobile_text_horizontal_position",
           "options": [
-            { "value": "left", "label": "t:sections.slideshow.settings.slide.mobile_text_horizontal_position.left.label" },
-            { "value": "center", "label": "t:sections.slideshow.settings.slide.mobile_text_horizontal_position.center.label" },
-            { "value": "right", "label": "t:sections.slideshow.settings.slide.mobile_text_horizontal_position.right.label" }
+            {
+              "value": "left",
+              "label": "t:sections.slideshow.settings.slide.mobile_text_horizontal_position.left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.slideshow.settings.slide.mobile_text_horizontal_position.center.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.slideshow.settings.slide.mobile_text_horizontal_position.right.label"
+            }
           ],
           "default": "center",
           "label": "t:sections.slideshow.settings.slide.mobile_text_horizontal_position.default.label"
