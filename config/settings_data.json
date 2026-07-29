@@ -80,7 +80,7 @@
     "show_view_cart": true,
     "enable_cross_sells": true,
     "heading_cross_sells": "You might also like this",
-    "product_limit_cross_sells": 3,
+    "product_limit_cross_sells": 6,
     "collection_cross_sells": "bestsellers",
     "product_list_cross_sells": [],
     "enable_free_shipping_bar": true,
