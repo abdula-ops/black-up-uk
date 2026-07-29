@@ -79,15 +79,15 @@
     "cart_show_order_note": false,
     "show_view_cart": true,
     "enable_cross_sells": true,
-    "heading_cross_sells": "Vous aimerez aussi",
-    "product_limit_cross_sells": 9,
-    "collection_cross_sells": "face-powders-1",
+    "heading_cross_sells": "You might also like this",
+    "product_limit_cross_sells": 3,
+    "collection_cross_sells": "bestsellers",
     "product_list_cross_sells": [],
     "enable_free_shipping_bar": true,
-    "free_shipping_bar_amount": "0",
-    "free_shipping_bar_text": "-30 % dès 2 articles&nbsp; //&nbsp; -40 % dès 3 articles. //&nbsp; -50% dès 4 articles",
-    "free_shipping_bar_text_success": "-30 % dès 2 articles&nbsp; //&nbsp; -40 % dès 3 articles. //&nbsp; -50% dès 4 articles",
-    "currency_code_enabled": false,
+    "free_shipping_bar_amount": "50",
+    "free_shipping_bar_text": "FREE SHIPPING ON ORDERS OVER £50",
+    "free_shipping_bar_text_success": "FREE SHIPPING UNLOCKED!!",
+    "currency_code_enabled": true,
     "iconset": "option_1",
     "enable-bag-icon": false,
     "share_facebook": false,
@@ -239,20 +239,6 @@
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
-      },
-      "14400299622900873742": {
-        "type": "shopify://apps/loyoly/blocks/international/f8398f67-b476-4b74-89b8-cb199b7011c9",
-        "disabled": false,
-        "settings": {}
-      },
-      "8263934491506400522": {
-        "type": "shopify://apps/loyoly/blocks/widget/f8398f67-b476-4b74-89b8-cb199b7011c9",
-        "disabled": false,
-        "settings": {
-          "pages_excluded": "",
-          "pages_excluded_patterns": "",
-          "hide_launcher": false
-        }
       }
     }
   },
