@@ -85,48 +85,38 @@
           "type": "menu_hover_image",
           "settings": {
             "menu_item": "New In",
-            "image": "",
-            "image_fr": ""
+            "image": "shopify://shop_images/TILE_VERTICAL.webp",
+            "image_fr": "shopify://shop_images/Gloss_Banner_MOB_EN.png"
           }
         },
         "menu_hover_image_face": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "Face",
-            "image": "",
-            "image_fr": ""
+            "menu_item": "Face"
           }
         },
         "menu_hover_image_eye": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "Eye",
-            "image": "",
-            "image_fr": ""
+            "menu_item": "Eye"
           }
         },
         "menu_hover_image_lip": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "Lip",
-            "image": "",
-            "image_fr": ""
+            "menu_item": "Lip"
           }
         },
         "menu_hover_image_bestsellers": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "Best Sellers",
-            "image": "",
-            "image_fr": ""
+            "menu_item": "Best Sellers"
           }
         },
         "menu_hover_image_allproducts": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "All Products",
-            "image": "",
-            "image_fr": ""
+            "menu_item": "All Products"
           }
         }
       },
