@@ -36,8 +36,7 @@
     {%- if link.links != blank or promo_blocks -%}
       <li
         class="wt-page-nav-mega__item wt-page-nav-mega__item--parent wt-page-nav-mega__item{{ menu_class }}"
-        data-title
-        {{- link.title | escape -}}
+        data-title="{{ link.title | escape }}"
         data-slider="slider{{ forloop.index0 }}"
       >
         <a
@@ -162,8 +161,7 @@
     {%- else -%}
       <li
         class="wt-page-nav-mega__item"
-        data-title
-        {{- link.title | escape -}}
+        data-title="{{ link.title | escape }}"
         data-slider="slider{{ forloop.index0 }}"
       >
         <a
