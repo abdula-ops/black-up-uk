@@ -94,6 +94,7 @@
         "heading": "",
         "full-width-enabled": true,
         "auto-rotate": true,
+        "autoplay_delay": 5,
         "slide_height": "fixed_height",
         "desktop_fixed_height": 600,
         "mobile_fixed_height": 460,
@@ -666,7 +667,7 @@
         "heading_mdEpVF": {
           "type": "heading",
           "settings": {
-            "heading": "BEAUTE PUISSANTE.  AUTHENTIQUE. INVINCIBLE.",
+            "heading": "POWERFUL BEAUTY. AUTHENTIC. INVINCIBLE.",
             "disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100
