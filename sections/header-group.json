@@ -84,7 +84,7 @@
         "menu_hover_image_newin": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "New In",
+            "menu_item": "face",
             "image": "shopify://shop_images/TILE_VERTICAL.webp",
             "image_fr": "shopify://shop_images/Gloss_Banner_MOB_EN.png"
           }
@@ -92,31 +92,36 @@
         "menu_hover_image_face": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "Face"
+            "menu_item": "Face",
+            "image": "shopify://shop_images/HCCONCEALERINUSE2.png"
           }
         },
         "menu_hover_image_eye": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "Eye"
+            "menu_item": "Eye",
+            "image": "shopify://shop_images/M_EYELOVEEYELINERN_01.png"
           }
         },
         "menu_hover_image_lip": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "Lip"
+            "menu_item": "Lip",
+            "image": "shopify://shop_images/PACKSHOT_3.png"
           }
         },
         "menu_hover_image_bestsellers": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "Best Sellers"
+            "menu_item": "Best Sellers",
+            "image": "shopify://shop_images/BlushandHighlighterDuoWAXDUO-05.png"
           }
         },
         "menu_hover_image_allproducts": {
           "type": "menu_hover_image",
           "settings": {
-            "menu_item": "All Products"
+            "menu_item": "All Products",
+            "image": "shopify://shop_images/HCCONCEALERINUSE.png"
           }
         }
       },
