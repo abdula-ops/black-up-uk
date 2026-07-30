@@ -32,9 +32,14 @@
         {% endif %}
       {% endfor %}
     {% endif %}
-    
+
     {%- if link.links != blank or promo_blocks -%}
-      <li  class="wt-page-nav-mega__item wt-page-nav-mega__item--parent wt-page-nav-mega__item{{ menu_class }}"  data-title = "{{- link.title | escape -}}" data-slider="slider{{ forloop.index0 }}">
+      <li
+        class="wt-page-nav-mega__item wt-page-nav-mega__item--parent wt-page-nav-mega__item{{ menu_class }}"
+        data-title
+        {{- link.title | escape -}}
+        data-slider="slider{{ forloop.index0 }}"
+      >
         <a
           href="{{ link.url }}"
           tabindex="-1"
@@ -126,6 +131,8 @@
                               src="{{ mega_block.settings[key] | image_url: width: 800 }}"
                               alt="{{ mega_block.settings[key].alt | escape }}"
                               loading="lazy"
+                              width="{{ mega_block.settings[key].width }}"
+                              height="{{ mega_block.settings[key].height }}"
                             >
                             {% assign heading_key = 'heading_' | append: i %}
                             <span class="mega-menu__gallery__heading wt-page-nav-mega__decorated">
@@ -153,7 +160,12 @@
       </li>
 
     {%- else -%}
-      <li class="wt-page-nav-mega__item"  data-title = "{{- link.title | escape -}}"  data-slider="slider{{ forloop.index0 }}">
+      <li
+        class="wt-page-nav-mega__item"
+        data-title
+        {{- link.title | escape -}}
+        data-slider="slider{{ forloop.index0 }}"
+      >
         <a
           href="{{ link.url }}"
           data-menu-level="1"
@@ -172,49 +184,106 @@
   {%- endfor -%}
 </ul>
 
-{% # Added by OCS - Getting the image details matching with menu name %}
+{% # Getting the hover image matching each menu item from "Menu hover image" blocks %}
 <ul class="mega-menu-image-list">
   <li class="slider_initial active-slider">
-    <img src="{{ section.settings.default_menu_image | image_url: width: auto, height: auto }}">
+    <img
+      src="{{ section.settings.default_menu_image | image_url: width: 1200 }}"
+      alt=""
+      loading="lazy"
+      width="{{ section.settings.default_menu_image.width }}"
+      height="{{ section.settings.default_menu_image.height }}"
+    >
   </li>
   {%- for link in section.settings.menu.links -%}
-    {% if store_selected_language == 'fr' %}
-      {% assign submenu_image_container = section.settings.french_submenu_images %}
-    {% else %}
-      {% assign submenu_image_container = section.settings.english_submenu_images %}
-    {% endif %}
-    {% if submenu_image_container !=null %}
-      {% assign custom_menus = submenu_image_container | newline_to_br | split: '<br />' %}
-      {% assign menu_key_array = '' %}
-      {% assign menu_val_array = '' %}
-      
-      {% for submenus in custom_menus %}
-          {% assign menu_key = submenus | split: ':' | first | rstrip | lstrip %}
-          {% assign menu_value = submenus | split: ':' | last | rstrip | lstrip %}
-          {% assign menu_key_array = menu_key_array | append: ',' | append: menu_key %}
-          {% assign menu_val_array = menu_val_array | append: ',' | append: menu_value %}
-      {% endfor %}
-      
-      {% assign menu_key_array = menu_key_array | remove_first: ',' | strip_newlines | downcase | lstrip | split: ',' %}
-      {% assign menu_val_array = menu_val_array | remove_first: ',' | split: ',' %}
-      {% assign submenu_imageurl = "" %}
-      {% for menu_name in menu_key_array %}
-        
-        {% assign menu_title = link.title | downcase %}
-       
-        {% if menu_name == menu_title %}
-          <p class="match" style="display:none;" menu_json>{{ menu_name }}{{ menu_title }}</p>
-            {% assign submenu_imageurl = menu_val_array[forloop.index0] %}
-  
-         {% endif %}
-      {% endfor %}
-    {% else %}
-      {% continue %}
-    {% endif %}
+    {% assign link_handle = link.title | handle %}
+    {% assign hover_image = blank %}
+
+    {% for block in blocks %}
+      {% if block.type == 'menu_hover_image' %}
+        {% assign block_handle = block.settings.menu_item | handle %}
+        {% if block_handle == link_handle %}
+          {% if store_selected_language == 'fr' and block.settings.image_fr != blank %}
+            {% assign hover_image = block.settings.image_fr %}
+          {% elsif block.settings.image != blank %}
+            {% assign hover_image = block.settings.image %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign menu_image = hover_image | default: section.settings.default_menu_image %}
 
     <li class="slider{{ forloop.index0 }} active-slider-previous">
-      <img src="{{ submenu_imageurl }}">
+      {% if menu_image %}
+        <img
+          src="{{ menu_image | image_url: width: 1200 }}"
+          srcset="
+            {{ menu_image | image_url: width: 600 }} 600w,
+            {{ menu_image | image_url: width: 1200 }} 1200w,
+            {{ menu_image | image_url: width: 1800 }} 1800w
+          "
+          sizes="50vw"
+          alt="{{ link.title | escape }}"
+          loading="lazy"
+          width="{{ menu_image.width }}"
+          height="{{ menu_image.height }}"
+        >
+      {% endif %}
     </li>
-    
   {% endfor %}
 </ul>
+
+{% if request.design_mode %}
+  {% # Editor-only diagnostics - never shown to customers on the live storefront %}
+  {% assign menu_item_handles = '' %}
+  {% assign missing_image_items = '' %}
+  {% for link in section.settings.menu.links %}
+    {% assign link_handle = link.title | handle %}
+    {% assign menu_item_handles = menu_item_handles | append: link_handle | append: ',' %}
+    {% assign has_match = false %}
+    {% for block in blocks %}
+      {% if block.type == 'menu_hover_image' %}
+        {% assign block_handle = block.settings.menu_item | handle %}
+        {% if block_handle == link_handle and block.settings.image != blank %}
+          {% assign has_match = true %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% unless has_match %}
+      {% assign missing_image_items = missing_image_items | append: link.title | append: ', ' %}
+    {% endunless %}
+  {% endfor %}
+  {% assign missing_image_items = missing_image_items | strip_newlines %}
+
+  {% assign orphaned_block_names = '' %}
+  {% for block in blocks %}
+    {% if block.type == 'menu_hover_image' and block.settings.menu_item != blank %}
+      {% assign block_handle = block.settings.menu_item | handle %}
+      {% unless menu_item_handles contains block_handle %}
+        {% assign orphaned_block_names = orphaned_block_names | append: block.settings.menu_item | append: ', ' %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+
+  {% if missing_image_items != blank or orphaned_block_names != blank %}
+    <div
+      class="mega-menu-hover-image-warning"
+      style="position:sticky; bottom:0; z-index:9999; background:#fff3cd; color:#664d03; border-top:2px solid #ffca2c; padding:10px 16px; font-size:12px; line-height:1.5; font-family:sans-serif;"
+    >
+      <strong>⚠ Menu hover images (editor preview only, not visible to customers):</strong>
+      {% if missing_image_items != blank %}
+        <div>
+          No image set for: <strong>{{ missing_image_items | remove_last: ', ' }}</strong> — showing default image. Add
+          a "Menu hover image" block with this exact name.
+        </div>
+      {% endif %}
+      {% if orphaned_block_names != blank %}
+        <div>
+          These "Menu hover image" blocks don't match any current menu item (check spelling/renaming):
+          <strong>{{ orphaned_block_names | remove_last: ', ' }}</strong>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endif %}

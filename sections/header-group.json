@@ -80,10 +80,64 @@
             "text_6": "",
             "link_6": ""
           }
+        },
+        "menu_hover_image_newin": {
+          "type": "menu_hover_image",
+          "settings": {
+            "menu_item": "New In",
+            "image": "",
+            "image_fr": ""
+          }
+        },
+        "menu_hover_image_face": {
+          "type": "menu_hover_image",
+          "settings": {
+            "menu_item": "Face",
+            "image": "",
+            "image_fr": ""
+          }
+        },
+        "menu_hover_image_eye": {
+          "type": "menu_hover_image",
+          "settings": {
+            "menu_item": "Eye",
+            "image": "",
+            "image_fr": ""
+          }
+        },
+        "menu_hover_image_lip": {
+          "type": "menu_hover_image",
+          "settings": {
+            "menu_item": "Lip",
+            "image": "",
+            "image_fr": ""
+          }
+        },
+        "menu_hover_image_bestsellers": {
+          "type": "menu_hover_image",
+          "settings": {
+            "menu_item": "Best Sellers",
+            "image": "",
+            "image_fr": ""
+          }
+        },
+        "menu_hover_image_allproducts": {
+          "type": "menu_hover_image",
+          "settings": {
+            "menu_item": "All Products",
+            "image": "",
+            "image_fr": ""
+          }
         }
       },
       "block_order": [
-        "column_7k6TxU"
+        "column_7k6TxU",
+        "menu_hover_image_newin",
+        "menu_hover_image_face",
+        "menu_hover_image_eye",
+        "menu_hover_image_lip",
+        "menu_hover_image_bestsellers",
+        "menu_hover_image_allproducts"
       ],
       "custom_css": [
         ".wt-header--fashion .wt-header__nav-teaser__link {max-width: 356px; margin-right: 10px;}"
@@ -105,9 +159,7 @@
         "typing_search": "Find a product",
         "suggestions_title": "blush",
         "suggestions_menu": "",
-        "default_menu_image": "shopify://shop_images/GLOSS1.webp",
-        "french_submenu_images": "Glowry Gloss Texture:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/BLUSH.png?v=1784796423\nEyeLove:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/M_EYELOVEEYELINERN_01.png?v=1772472971\nGloss:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/GLOSS1.webp?v=1772203027\nEye Pencil Texture:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/NO_TRANSFER_WATERPROOF_KOHL_12.webp?v=1772129539\nBlush Highlighter:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/BlushandHighlighterDuoWAXDUO-05.png?v=1772111904\nConcealer:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/HCCONCEALERINUSE.png?v=1772034203",
-        "english_submenu_images": "Glowry Gloss Texture:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/BLUSH.png?v=1784796423\nEyeLove:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/M_EYELOVEEYELINERN_01.png?v=1772472971\nGloss:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/GLOSS1.webp?v=1772203027\nEye Pencil Texture:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/NO_TRANSFER_WATERPROOF_KOHL_12.webp?v=1772129539\nBlush Highlighter:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/BlushandHighlighterDuoWAXDUO-05.png?v=1772111904\nConcealer:https://cdn.shopify.com/s/files/1/1018/9904/3148/files/HCCONCEALERINUSE.png?v=1772034203"
+        "default_menu_image": "shopify://shop_images/GLOSS1.webp"
       }
     },
     "page_header_image_banner_CJKkUX": {

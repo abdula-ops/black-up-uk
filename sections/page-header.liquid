@@ -604,22 +604,43 @@
       "content": "Custom Desktop Menu Slider Settings"
     },
     {
+      "type": "paragraph",
+      "content": "Desktop menu default image is shown before a menu item is hovered, and used as a fallback for any menu item without its own hover image block below."
+    },
+    {
       "type": "image_picker",
       "id": "default_menu_image",
-      "label": "Desktop menu default image",
-    },
-    {
-      "type": "textarea",
-      "id": "french_submenu_images",
-      "label": "French Submenu Images"
-    },
-    {
-      "type": "textarea",
-      "id": "english_submenu_images",
-      "label": "English Submenu Images"
+      "label": "Desktop menu default image"
     }
   ],
   "blocks": [
+    {
+      "type": "menu_hover_image",
+      "name": "Menu hover image",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Add one of these blocks per top-level menu item (e.g. New In, Face, Eye, Lip, Best Sellers) to set the image shown when a customer hovers that item in the desktop menu."
+        },
+        {
+          "type": "text",
+          "id": "menu_item",
+          "label": "Menu item name",
+          "info": "Must match the top-level menu item exactly, e.g. \"New In\". Not case sensitive."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Hover image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_fr",
+          "label": "Hover image (French, optional)",
+          "info": "Only needed if this theme also runs the French store and you want a different image there. Leave blank to reuse the image above."
+        }
+      ]
+    },
     {
       "type": "column",
       "name": "t:sections.header.blocks.column.name",
