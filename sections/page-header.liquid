@@ -2,19 +2,18 @@
 <script src="{{ 'page-header.js' | asset_url }}" defer="defer"></script>
 
 {% comment %}
- Added by ocs script  and css
+  Added by ocs script  and css
 {% endcomment %}
- <script src="{{ 'parallexeffects.js' | asset_url }}" defer="defer"></script>
- {% style %}
-   /*.hero .hero__pic .hero__img { transition: transform 0.1s ease-out;  will-change: transform; }*/
-   picture.hero__pic img {
+<script src="{{ 'parallexeffects.js' | asset_url }}" defer="defer"></script>
+{% style %}
+  /*.hero .hero__pic .hero__img { transition: transform 0.1s ease-out;  will-change: transform; }*/
+  picture.hero__pic img {
     transition: transform 0.3s ease-out;
     will-change: transform;
   }
-
-  {% endstyle %}
+{% endstyle %}
 {% comment %}
- Added by ocs script  and css
+  Added by ocs script  and css
 {% endcomment %}
 
 {% assign transparent_header_rgb = section.settings.transparent_header_color | color_to_rgb %}
@@ -311,27 +310,18 @@
     </h1>
 
     <ul class="wt-header__panel wt-header__panel--no-labels">
-      <!-- Added by ocs language switcher  -->
+      <!-- Added by ocs language switcher -->
       <li>
         <localization-form>
-              {%- form 'localization', id: 'HeaderLangugaeForm', class: 'localization-form' -%}
-                <div class="no-js-hidden">
-                  {%- render 'header-language-localization'-%}
-                </div>
-              {%- endform -%}
+          {%- form 'localization', id: 'HeaderLangugaeForm', class: 'localization-form' -%}
+            <div class="no-js-hidden">
+              {%- render 'header-language-localization' -%}
+            </div>
+          {%- endform -%}
         </localization-form>
       </li>
-      <!-- Added by ocs language switcher-->
-      <!-- Added by ocs currency switcher-->
-      <li>
-         <localization-form>
-                {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
-                  {% render 'header-country-localization' %}
-                {%- endform -%}
-          </localization-form>
-      </li>
-      <!-- Added by ocs currency switcher-->
-      
+      <!-- Added by ocs language switcher -->
+
       <li class="wt-header__panel__item wt-header__panel__item--account">
         <a href="{{ routes.account_url }}" class="wt-header__panel__link wt-icon">
           {% render 'icons', id: 'user' %}
@@ -347,12 +337,12 @@
           <span class="wt-header__panel__label">Cart</span>
         </a>
       </li>
-      <!-- Added by ocs for wishlist  -->
+      <!-- Added by ocs for wishlist -->
       <li class="wt-header__panel__item wt-header__panel__item--wishlist">
-      <a href="#swym-wishlist" class="swym-wishlist">
-        <i aria-hidden="true" focusable="false" role="presentation" class="icon icon-swym-wishlist"></i>
-      </a>
-      </li>    
+        <a href="#swym-wishlist" class="swym-wishlist">
+          <i aria-hidden="true" focusable="false" role="presentation" class="icon icon-swym-wishlist"></i>
+        </a>
+      </li>
     </ul>
     {% if section.settings.show_line_separator %}
       <div class="wt-header__spacer"></div>
@@ -364,7 +354,7 @@
   {%- render 'cart-notification' -%}
 {%- endif -%}
 
-<drawer-nav  
+<drawer-nav
   class="wt-drawer {{ localization.country.currency.iso_code }} wt-drawer--nav  {% if settings.always_mobile_navigation or section.settings.layout == 'option_3' or section.settings.layout == 'option_4' %} wt-drawer--mobile-nav{% endif %}"
   id="wt-drawer-nav"
 >
@@ -394,62 +384,55 @@
 
       {% # Comment added by OCS - To hide the secondary menu %}
       {% comment %}
-      <aside class="wt-page-nav-mega__aside">
-        <ul class="wt-page-nav-mega__aside-list">
-          <li class="wt-page-nav-mega__aside-list__item">
-            {%- if shop.customer_accounts_enabled -%}
-              <a
-                href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-                class="wt-page-nav-mega__aside-list__link"
-                tabindex="-1"
-              >
-                {%- liquid
-                  if customer
-                    echo 'customer.account_fallback' | t
-                  else
-                    echo 'customer.log_in' | t
-                  endif
-                -%}
-              </a>
-            {%- endif -%}
-          </li>
-          {%- for link in section.settings.mobile_footer_menu.links -%}
+        <aside class="wt-page-nav-mega__aside">
+          <ul class="wt-page-nav-mega__aside-list">
             <li class="wt-page-nav-mega__aside-list__item">
-              <a
-                href="{% if link.url %}{{ link.url }}{% else %}#{% endif %}"
-                class="wt-page-nav-mega__aside-list__link"
-                tabindex="-1"
-              >
-                {{- link.title | escape -}}
-              </a>
+              {%- if shop.customer_accounts_enabled -%}
+                <a
+                  href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+                  class="wt-page-nav-mega__aside-list__link"
+                  tabindex="-1"
+                >
+                  {%- liquid
+                    if customer
+                      echo 'customer.account_fallback' | t
+                    else
+                      echo 'customer.log_in' | t
+                    endif
+                  -%}
+                </a>
+              {%- endif -%}
             </li>
-          {%- endfor -%}
-        </ul>
-      </aside>
+            {%- for link in section.settings.mobile_footer_menu.links -%}
+              <li class="wt-page-nav-mega__aside-list__item">
+                <a
+                  href="{% if link.url %}{{ link.url }}{% else %}#{% endif %}"
+                  class="wt-page-nav-mega__aside-list__link"
+                  tabindex="-1"
+                >
+                  {{- link.title | escape -}}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </aside>
       {% endcomment %}
     </mega-menu-section>
-      <div class="mobile-language-switcher">
-        <localization-form>
-                  {%- form 'localization', id: 'MobileHeaderLangugaeForm', class: 'localization-form' -%}
-                    <div class="no-js-hidden">
-                      {%- render 'header-language-localization'-%}
-                    </div>
-                  {%- endform -%}
-            </localization-form>
-           <localization-form>
-                    {%- form 'localization', id: 'MobileHeaderCountryForm', class: 'localization-form' -%}
-                      {% render 'header-country-localization' %}
-                    {%- endform -%}
-        </localization-form>
-      </div>
+    <div class="mobile-language-switcher">
+      <localization-form>
+        {%- form 'localization', id: 'MobileHeaderLangugaeForm', class: 'localization-form' -%}
+          <div class="no-js-hidden">
+            {%- render 'header-language-localization' -%}
+          </div>
+        {%- endform -%}
+      </localization-form>
+    </div>
   </div>
-  
 </drawer-nav>
 
 {% comment %}{% if section.settings.sticky_header %}{% endcomment %}
 {% comment %}<script src="{{ 'page-header-sticky.js' | asset_url }}" defer="defer"></script>{% endcomment %}
 {% comment %}{% endif %}{% endcomment %}
-
 
 {% schema %}
 {
