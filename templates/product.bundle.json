@@ -163,7 +163,7 @@
         "custom_liquid_iJbwXQ": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<section class=\"custom-badges-section\"><div class=\"badges-row\"><div class=\"badge-item\"><img src=\"https://cdn.shopify.com/s/files/1/0674/5014/2887/files/delivery_17d735f5-7acd-4ef5-a665-7c726c2bc006.svg?v=1746173001\" alt=\"Delivery\" class=\"badge-icon\"/><p>{% if request.locale.iso_code == 'fr' %}Fast delivery{% else %}Fast delivery{% endif %}</p></div><div class=\"badge-item\"><img src=\"https://cdn.shopify.com/s/files/1/0674/5014/2887/files/gift_499dbb11-d1e7-4409-a51d-d9cc21259a91_1.svg?v=1746613573\" alt=\"Free delivery\" class=\"badge-icon\"/><p>{% if request.locale.iso_code == 'fr' %}Free shipping from €65{% else %}Free shipping from €65{% endif %}</p></div><div class=\"badge-item\"><img src=\"https://cdn.shopify.com/s/files/1/0674/5014/2887/files/secure_9e0cfb91-fa8a-4570-932d-89f3b865f452.svg?v=1746173000\" alt=\"Secure payment\" class=\"badge-icon\"/><p>{% if request.locale.iso_code == 'fr' %}Secure payments{% else %}Secure payments{% endif %}</p></div></div></section><style>.custom-badges-section{text-align:center;margin:20px 0}.badges-row{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:20px}.badge-item{display:flex;flex-direction:column;align-items:center;flex:1}.badge-icon{width:24px;height:auto;margin-bottom:5px}p{font-size:13px;margin:0}</style>"
+            "custom_liquid": "<section class=\"custom-badges-section\"><div class=\"badges-row\"><div class=\"badge-item\"><img src=\"https://cdn.shopify.com/s/files/1/0674/5014/2887/files/delivery_17d735f5-7acd-4ef5-a665-7c726c2bc006.svg?v=1746173001\" alt=\"Delivery\" class=\"badge-icon\"/><p>{% if request.locale.iso_code == 'fr' %}Fast delivery{% else %}Fast delivery{% endif %}</p></div><div class=\"badge-item\"><img src=\"https://cdn.shopify.com/s/files/1/0674/5014/2887/files/gift_499dbb11-d1e7-4409-a51d-d9cc21259a91_1.svg?v=1746613573\" alt=\"Free delivery\" class=\"badge-icon\"/><p>{% if request.locale.iso_code == 'fr' %}Free shipping from £50{% else %}Free shipping from £50{% endif %}</p></div><div class=\"badge-item\"><img src=\"https://cdn.shopify.com/s/files/1/0674/5014/2887/files/secure_9e0cfb91-fa8a-4570-932d-89f3b865f452.svg?v=1746173000\" alt=\"Secure payment\" class=\"badge-icon\"/><p>{% if request.locale.iso_code == 'fr' %}Secure payments{% else %}Secure payments{% endif %}</p></div></div></section><style>.custom-badges-section{text-align:center;margin:20px 0}.badges-row{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:20px}.badge-item{display:flex;flex-direction:column;align-items:center;flex:1}.badge-icon{width:24px;height:auto;margin-bottom:5px}p{font-size:13px;margin:0}</style>"
           }
         },
         "separator_RrKQ4A": {
@@ -536,7 +536,7 @@
           "settings": {
             "desktop_image": "shopify://shop_images/gift.svg",
             "select_icon": "bag",
-            "heading": "Free shipping from €65",
+            "heading": "Free shipping from £50",
             "text": ""
           }
         },
