@@ -81,7 +81,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "What happens when one of the products in my order is out of stock?",
-            "content": "<p>Your order will be delivered without the missing item. Our customer service team will then contact you to arrange a refund for the missing item or a replacement. You will not be charged for the additional delivery. For further information, please contact customer service at <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "content": "<p>Your order will be delivered without the missing item. Our customer service team will then contact you to arrange a refund for the missing item or a replacement. You will not be charged for the additional delivery. For further information, please contact customer service at <a href=\"mailto:blackupUK@thebeautytank.co.uk\">blackupUK@thebeautytank.co.uk</a></p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -181,7 +181,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "I have a question about a product's formula. Who should I ask?",
-            "content": "<p>You can find the full ingredient list for our products on our packaging or in our product descriptions. If you would like more details, or have a specific question, please do not hesitate to contact our customer service department, which will forward your request to the relevant department: <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "content": "<p>You can find the full ingredient list for our products on our packaging or in our product descriptions. If you would like more details, or have a specific question, please do not hesitate to contact our customer service department, which will forward your request to the relevant department: <a href=\"mailto:blackupUK@thebeautytank.co.uk\">blackupUK@thebeautytank.co.uk</a></p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -268,7 +268,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "How do I delete my account?",
-            "content": "<p>To delete your account, please contact our customer service department: <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "content": "<p>To delete your account, please contact our customer service department: <a href=\"mailto:blackupUK@thebeautytank.co.uk\">blackupUK@thebeautytank.co.uk</a></p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -321,7 +321,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "How to apply to Black Up?",
-            "content": "<p>Contact our customer service department, who will forward your application to the relevant department: <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "content": "<p>Contact our customer service department, who will forward your application to the relevant department: <a href=\"mailto:blackupUK@thebeautytank.co.uk\">blackupUK@thebeautytank.co.uk</a></p>",
             "page": "",
             "icon": "check_mark"
           }
@@ -419,7 +419,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Who should I contact for any non-client-related requests (partnerships, press, blog and influencers)?",
-            "content": "<p>If you are a journalist or influencer, please contact us at <a href=\"mailto:presse@blackup.com\">presse@blackup.com</a> . For all other partnership inquiries, please write directly to our customer service department, who will forward your request to the relevant department: <a href=\"mailto:service-conso@blackup.com\">service-conso@blackup.com</a></p>",
+            "content": "<p>If you are a journalist or influencer, please contact us at <a href=\"mailto:blackupUK@thebeautytank.co.uk\">blackupUK@thebeautytank.co.uk</a> . For all other partnership inquiries, please write directly to our customer service department, who will forward your request to the relevant department: <a href=\"mailto:blackupUK@thebeautytank.co.uk\">blackupUK@thebeautytank.co.uk</a></p>",
             "page": "",
             "icon": "check_mark"
           }
