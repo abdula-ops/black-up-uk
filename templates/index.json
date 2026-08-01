@@ -319,6 +319,7 @@
         },
         "product_hh6zhr": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "start_second": 50,
             "featured_product": "rouge-exception-rouge-a-levres-brillant-lip11s"
