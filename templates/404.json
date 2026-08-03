@@ -12,14 +12,14 @@
     "main": {
       "type": "main-404",
       "settings": {
-        "heading": "Oups!",
+        "heading": "Oops!",
         "font_size_mobile": 200,
         "font_size_desktop": 260,
-        "subtext": "Nous ne trouvons pas ce que vous cherchez ici.\nCliquez ci-dessous pour retourner à la page d'accueil.",
-        "link-text": "Retour à l'accueil",
+        "subtext": "We can't find what you're looking for here.\nClick below to go back to the homepage.",
+        "link-text": "Back to homepage",
         "button_select": "secondary",
         "button_disable_on_mobile": false,
-        "button_link": "https://blackup-prod-uk.myshopify.com/",
+        "button_link": "/",
         "color-body-text": "rgba(0,0,0,0)",
         "background_color": "rgba(0,0,0,0)",
         "color-overlay-opacity": 0,
