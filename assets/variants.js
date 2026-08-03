@@ -19,7 +19,7 @@ if (!customElements.get("variant-options")) {
         });
       }
 
-      disconnectedCallback() {}
+      disconnectedCallback() { }
 
       initialize() {
         this.updateOptions();
@@ -54,28 +54,6 @@ if (!customElements.get("variant-options")) {
           MagicZoom.refresh();
         }
 
-        // Added by ocs for low stock
-        const variantCurrentId = this.currentVariant.id; // This should be a number
-        const inputEls = document.querySelectorAll('.low_stock_fields'); // All inputs
-        const productContentEl = document.querySelector('.low-stocks-display');
-        inputEls.forEach(inputEl => {
-          const inputVariantId = parseInt(inputEl.getAttribute('data-variant-id'));
-          //console.log("DOM Variant ID:", inputVariantId);
-          //console.log("Current Variant ID:", variantCurrentId);
-          if (inputVariantId === variantCurrentId) {
-            //console.log("Matched Variant ID ✅");
-            const variantCount = parseInt(inputEl.getAttribute('data-variant-count'));
-            //console.log('Variant Count:', variantCount);
-            if (variantCount <= 12) {
-              productContentEl.classList.add('show');
-            } else {
-              productContentEl.classList.remove('show');
-            }
-          }
-        });
-        
-        
-
         if (!this.currentVariant) {
           this.toggleAddButton(true, "", true);
           this.setUnavailable();
@@ -100,9 +78,9 @@ if (!customElements.get("variant-options")) {
       // Added by ocs - to pass the details for the notify me form
       updateQuantityVariant() {
         var quantity = this.currentVariant.available;
-        var sku = this.currentVariant.sku;                 
-        var color = this.currentVariant.option1;             
-        var variantId = this.currentVariant.id; 
+        var sku = this.currentVariant.sku;
+        var color = this.currentVariant.option1;
+        var variantId = this.currentVariant.id;
         var priceVariant = document.querySelector('.wt-product__info .wt-product__price__final');
         var priceText = (priceVariant.textContent || priceVariant.innerText).trim();
         var featureImage = document.querySelector('.wt-product__img');
@@ -113,29 +91,29 @@ if (!customElements.get("variant-options")) {
         var productColorInput = document.querySelector("#p-color");
         var productImage = document.querySelector("#product-image");
         var priceText = document.querySelector("#product-price");
-        
+
         if (priceText) {
-            productImage.value = priceText; 
+          productImage.value = priceText;
         }
         if (productImage) {
-            productImage.value = imageSrc; 
+          productImage.value = imageSrc;
         }
         if (variantSkuInput) {
-            variantSkuInput.value = sku; 
+          variantSkuInput.value = sku;
         }
         if (variantIdInput) {
-            variantIdInput.value = variantId;  
+          variantIdInput.value = variantId;
         }
         if (productColorInput) {
-            productColorInput.value = color;   
+          productColorInput.value = color;
         }
         if (quantity == false) {
           mailAlertContainer.classList.add('show-alert');
           mailAlertContainer.classList.remove('hide-alert');
-        }else{
+        } else {
           mailAlertContainer.classList.remove('show-alert');
           mailAlertContainer.classList.add('hide-alert');
-        }          
+        }
       }
       //Added by ocs 
 
@@ -310,10 +288,9 @@ if (!customElements.get("variant-options")) {
           : this.dataset.section;
 
         fetch(
-          `${this.dataset.url}?variant=${requestedVariantId}&section_id=${
-            this.dataset.originalSection
-              ? this.dataset.originalSection
-              : this.dataset.section
+          `${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection
+            ? this.dataset.originalSection
+            : this.dataset.section
           }`,
         )
           .then((response) => {

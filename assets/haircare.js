@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function () {
         dataType: 'json',
         contentType: 'application/json',
         headers: {
-          'X-Shopify-Storefront-Access-Token': '7bc36bd9f13fd0fd347aff9f165713ff'
+          'X-Shopify-Storefront-Access-Token': '0a1ac59c46eb1379c7a827b5a9531d15'
         },
         data: JSON.stringify({
           query: `
