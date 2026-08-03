@@ -127,6 +127,7 @@
         },
         "inventory_ihfkD3": {
           "type": "inventory",
+          "disabled": true,
           "settings": {
             "inventory_threshold": 10,
             "show_inventory_quantity": false
