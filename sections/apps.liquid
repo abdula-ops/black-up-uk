@@ -1,6 +1,14 @@
 {{ 'section-apps.css' | asset_url | stylesheet_tag }}
 
-<div class="{% if section.settings.include_margins %}{% else %}wt-apps__wrapper--compact {% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %} wt-apps__wrapper">
+<div
+  {% if section.settings.anchor_id != blank %}
+    id="{{ section.settings.anchor_id }}"
+  {% endif %}
+  class="{% if section.settings.include_margins %}{% else %}wt-apps__wrapper--compact {% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %} wt-apps__wrapper"
+  {% if section.settings.anchor_id != blank %}
+    style="scroll-margin-top: 120px;"
+  {% endif %}
+>
   {%- for block in section.blocks -%}
     {% render block %}
   {%- endfor -%}
@@ -17,6 +25,12 @@
       "id": "include_margins",
       "default": true,
       "label": "t:sections.apps.settings.include_margins.label"
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "info": "Optional HTML id for in-page links (e.g. product-reviews)."
     }
   ],
   "blocks": [

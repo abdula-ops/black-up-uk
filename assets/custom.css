@@ -530,3 +530,15 @@
 .jdgm-star.jdgm--on::before {
   content: "\e9d9" !important;
 }
+
+/* PDP: Judge.me preview badge under title, click scrolls to reviews */
+.wt-product__info .jdgm-preview-badge,
+.wt-product__info .jdgm-prev-badge {
+  cursor: pointer;
+  margin: 4px 0 12px;
+  display: inline-block;
+}
+
+#product-reviews {
+  scroll-margin-top: 120px;
+}

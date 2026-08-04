@@ -278,3 +278,51 @@ if (!customElements.get("gallery-fashion")) {
     },
   );
 }
+
+function initJudgeMePreviewScroll() {
+  const getReviewsTarget = () =>
+    document.getElementById("judgeme_product_reviews") ||
+    document.getElementById("product-reviews") ||
+    document.querySelector(".wt-apps .jdgm-review-widget");
+
+  const scrollToReviews = (event) => {
+    const target = getReviewsTarget();
+    if (!target) return;
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const bindPreviewBadges = (root = document) => {
+    root
+      .querySelectorAll(".wt-product__info .jdgm-preview-badge, .wt-product__info .jdgm-prev-badge")
+      .forEach((badge) => {
+        if (badge.dataset.reviewsScrollBound) return;
+
+        badge.dataset.reviewsScrollBound = "true";
+        badge.style.cursor = "pointer";
+        badge.setAttribute("role", "link");
+        badge.setAttribute("tabindex", "0");
+        badge.addEventListener("click", scrollToReviews);
+        badge.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            scrollToReviews(event);
+          }
+        });
+      });
+  };
+
+  bindPreviewBadges();
+
+  const productInfo = document.querySelector(".wt-product__info");
+  if (!productInfo) return;
+
+  const observer = new MutationObserver(() => bindPreviewBadges());
+  observer.observe(productInfo, { childList: true, subtree: true });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initJudgeMePreviewScroll);
+} else {
+  initJudgeMePreviewScroll();
+}
