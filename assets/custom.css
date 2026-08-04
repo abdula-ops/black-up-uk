@@ -517,18 +517,17 @@
   }
 }
 
-/* Judge.me review stars – use theme icomoon font so stars show (not squares) */
+/* Judge.me review stars – use the app icon font (do not override content glyphs) */
 .jdgm-star,
-.jdgm-rev__stars .jdgm-star {
-  font-family: 'icomoon' !important;
+.jdgm-rev__stars .jdgm-star,
+.jdgm-star::before,
+.jdgm-rev__stars .jdgm-star::before {
+  font-family: JudgemeStar !important;
   font-style: normal !important;
-}
-.jdgm-star::before {
-  content: "\e9d7";
-}
-.jdgm-star.jdgm-star--on::before,
-.jdgm-star.jdgm--on::before {
-  content: "\e9d9" !important;
+  font-weight: normal !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* PDP: Judge.me preview badge under title, click scrolls to reviews */
