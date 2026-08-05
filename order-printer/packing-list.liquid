@@ -1,0 +1,82 @@
+<style>
+  h1 {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+  .meta {
+    margin-bottom: 16px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f5f5f5;
+  }
+  .qty {
+    text-align: center;
+    width: 60px;
+  }
+  .sku,
+  .ean {
+    font-family: monospace;
+    white-space: nowrap;
+  }
+  .sku,
+  .ean,
+  .qty,
+  th.sku,
+  th.ean,
+  th.qty {
+    font-size: 14px;
+    font-weight: bold;
+  }
+</style>
+
+<h1>Packing list</h1>
+
+<div class="meta">
+  <div><strong>Order:</strong> {{ order.name | remove: '#' }}</div>
+  <div><strong>Date:</strong> {{ order.created_at | date: '%d/%m/%Y' }}</div>
+  {% if order.shipping_address %}
+    <div>
+      <strong>Ship to:</strong>
+      {{ order.shipping_address.name }}
+      {% if order.shipping_address.company %}, {{ order.shipping_address.company }}{% endif %}
+      — {{ order.shipping_address.address1 }}
+      {% if order.shipping_address.address2 %}, {{ order.shipping_address.address2 }}{% endif %}
+      , {{ order.shipping_address.zip }}
+      {{ order.shipping_address.city }} , {{ order.shipping_address.country }}
+    </div>
+  {% endif %}
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Variant</th>
+      <th class="sku">SKU</th>
+      <th class="ean">EAN</th>
+      <th class="qty">Qty</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for line_item in line_items %}
+      <tr>
+        <td>{{ line_item.product.title }}</td>
+        <td>{{ line_item.variant.title }}</td>
+        <td class="sku">{{ line_item.sku }}</td>
+        <td class="ean">{{ line_item.variant.barcode | append: '' | split: '.' | first }}</td>
+        <td class="qty">{{ line_item.quantity }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

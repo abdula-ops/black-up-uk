@@ -541,3 +541,77 @@
 #product-reviews {
   scroll-margin-top: 120px;
 }
+
+/* ========================================
+   PDP mobile gallery + buy buttons (Sinéad)
+   ======================================== */
+@media screen and (max-width: 899px) {
+  .wt-product__gallery [data-gallery] .swiper-slide {
+    aspect-ratio: 1 / 1;
+    height: auto !important;
+  }
+
+  .wt-product__gallery [data-gallery] .swiper-slide .MagicZoom,
+  .wt-product__gallery [data-gallery] .swiper-slide .MagicZoom figure,
+  .wt-product__gallery [data-gallery] .swiper-slide .MagicZoom img,
+  .wt-product__gallery [data-gallery] .wt-product__img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+  }
+
+  .wt-product__gallery [data-gallery] .swiper {
+    touch-action: pan-x;
+  }
+
+  .mz-zoom-window,
+  .mz-lens,
+  .mz-hint {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper {
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper .counter,
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper quantity-counter {
+    flex: 0 0 auto !important;
+    order: 1 !important;
+  }
+
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper .js-add-to-cart,
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper .product-form__submit {
+    flex: 1 1 12rem !important;
+    min-width: 0 !important;
+    order: 2 !important;
+  }
+
+  #swym-embed-pdp-btn-wrapper {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    order: 3 !important;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper {
+    flex-direction: column !important;
+  }
+
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper .counter,
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper quantity-counter,
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper .js-add-to-cart,
+  .main-product__buy-buttons--container .wt-product__add-to-cart_form--wrapper .product-form__submit,
+  #swym-embed-pdp-btn-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+}
