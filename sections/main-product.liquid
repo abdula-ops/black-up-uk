@@ -4,7 +4,6 @@
 {{ 'back-to-stock.js' | asset_url | script_tag }}
 {{ 'back-to-stock.css' | asset_url | stylesheet_tag }}
 {{ 'magiczoom.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'magiczoom.js' | asset_url }}" async="async"></script>
 <script src="{{ 'variant-feature-icons.js' | asset_url }}" async="async"></script>
 
 <style>
@@ -668,6 +667,17 @@
         </script>
       </div>
     </gallery-section>
+
+    <script>
+      (function () {
+        if (!window.matchMedia('(max-width: 899px)').matches) return;
+        document.querySelectorAll('.wt-product__gallery a.MagicZoom').forEach(function (link) {
+          link.classList.remove('MagicZoom');
+          link.classList.add('pdp-gallery__link');
+          link.removeAttribute('data-options');
+        });
+      })();
+    </script>
 
     {% # Added by ocs private sale %}
     {%- if settings.enable_private_sales -%}
@@ -1978,6 +1988,7 @@
   }
 </script>
 
+<script src="{{ 'magiczoom.js' | asset_url }}" defer="defer"></script>
 <script type="module" src="{{ 'gallery.js' | asset_url }}" defer="defer"></script>
 <script type="module" src="{{ 'pdp.js' | asset_url }}" defer="defer"></script>
 

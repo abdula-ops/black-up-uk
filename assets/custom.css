@@ -552,14 +552,22 @@
   }
 
   .wt-product__gallery [data-gallery] .swiper-slide .MagicZoom,
+  .wt-product__gallery [data-gallery] .swiper-slide .pdp-gallery__link,
   .wt-product__gallery [data-gallery] .swiper-slide .MagicZoom figure,
+  .wt-product__gallery [data-gallery] .swiper-slide .pdp-gallery__link figure,
   .wt-product__gallery [data-gallery] .swiper-slide .MagicZoom img,
+  .wt-product__gallery [data-gallery] .swiper-slide .pdp-gallery__link img,
   .wt-product__gallery [data-gallery] .wt-product__img {
     display: block;
     width: 100% !important;
     height: 100% !important;
     aspect-ratio: 1 / 1 !important;
     object-fit: cover !important;
+  }
+
+  .wt-product__gallery [data-gallery] .swiper-slide .pdp-gallery__link {
+    pointer-events: none;
+    cursor: default;
   }
 
   .wt-product__gallery [data-gallery] .swiper {

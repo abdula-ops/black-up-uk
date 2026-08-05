@@ -285,7 +285,7 @@
   window.addEventListener('load', function() {
   var _learnq = window._learnq || [];
   function addedToCart() {
-   fetch(${window.location.origin}/cart.js)
+   fetch(`${window.location.origin}/cart.js`)
    .then(res => res.clone().json().then(data => {
     var cart = {
       total_price: data.total_price/100,
@@ -307,8 +307,7 @@
     ns.fetch = function() {
       const response = fetch.apply(this, arguments);
       response.then(res => {
-        if (${window.location.origin}/cart/add.js
-          .includes(res.url) && res.url !== '') {
+        if (res.url.includes('/cart/add.js') && res.url !== '') {
               addedToCart()
         }
       });

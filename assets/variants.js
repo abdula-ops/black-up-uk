@@ -51,7 +51,13 @@ if (!customElements.get("variant-options")) {
         this.updateVariantStatuses();
         this.updateQuantityVariant();
         if (document.body.classList.contains('template-product-carte-cadeau')) {
-          MagicZoom.refresh();
+          if (typeof MagicZoom !== 'undefined' && typeof MagicZoom.refresh === 'function') {
+            try {
+              MagicZoom.refresh();
+            } catch (error) {
+              // MagicZoom may not be initialized on mobile gallery.
+            }
+          }
         }
 
         if (!this.currentVariant) {
