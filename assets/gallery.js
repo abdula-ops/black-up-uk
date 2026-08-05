@@ -255,6 +255,9 @@ if (!customElements.get("gallery-section")) {
           let autoHeightEnabled = useAlwaysAutoHeight
             ? true
             : window.innerWidth <= 900;
+          if (this.gallery_configuration.autoHeight === false) {
+            autoHeightEnabled = false;
+          }
           if (thumbsSwiper)
             this.gallery_configuration = {
               ...this.gallery_configuration,
@@ -433,7 +436,7 @@ if (!customElements.get("gallery-section")) {
           );
           // Show slide if #all tag is present
           if (altHashtags.includes("all")) return true;
-          
+
           if (altHashtags.length === 0) {
             return false;
           }

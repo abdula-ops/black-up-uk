@@ -546,11 +546,38 @@
    PDP mobile gallery + buy buttons (Sinéad)
    ======================================== */
 @media screen and (max-width: 899px) {
-  .wt-product__gallery [data-gallery] .swiper-slide {
-    aspect-ratio: 1 / 1;
-    height: auto !important;
+  .wt-product__gallery {
+    overflow: hidden;
+    border-radius: var(--border-radius, 14px);
   }
 
+  .wt-product__gallery [data-gallery] {
+    overflow: hidden !important;
+    border-radius: var(--border-radius, 14px);
+  }
+
+  .wt-product__gallery [data-gallery] .swiper {
+    aspect-ratio: 1 / 1;
+    height: auto !important;
+    overflow: hidden;
+    border-radius: inherit;
+  }
+
+  .wt-product__gallery [data-gallery] .swiper-wrapper {
+    height: 100% !important;
+  }
+
+  .wt-product__gallery [data-gallery] .swiper-slide,
+  .wt-product__gallery [data-gallery] .wt-slider__slide {
+    --slide-ratio: 1 !important;
+    aspect-ratio: 1 / 1 !important;
+    height: 100% !important;
+    border-radius: var(--border-radius, 14px);
+    overflow: hidden;
+  }
+
+  .wt-product__gallery [data-gallery] .swiper-slide > a,
+  .wt-product__gallery [data-gallery] .wt-slider__slide > a,
   .wt-product__gallery [data-gallery] .swiper-slide .MagicZoom,
   .wt-product__gallery [data-gallery] .swiper-slide .pdp-gallery__link,
   .wt-product__gallery [data-gallery] .swiper-slide .MagicZoom figure,
@@ -563,6 +590,8 @@
     height: 100% !important;
     aspect-ratio: 1 / 1 !important;
     object-fit: cover !important;
+    border-radius: inherit;
+    overflow: hidden;
   }
 
   .wt-product__gallery [data-gallery] .swiper-slide .pdp-gallery__link {
