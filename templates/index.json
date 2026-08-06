@@ -14,6 +14,7 @@
       "blocks": {
         "slide_YqywkV": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "subheading": "Tell your story",
             "subheading_disable_on_mobile": false,
@@ -34,10 +35,10 @@
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
-            "desktop_image": "shopify://shop_images/FREE_SHIPPING_LAUNCH_BANNER_DT.png",
+            "desktop_image": "shopify://shop_images/FREE_SHIPPING_LAUNCH_BANNER_DT_2b04e3a0-5cb0-422a-a14c-0eb868d08e8e.png",
             "desktop_text_vertical_position": "center",
             "desktop_text_horizontal_position": "center",
-            "mobile_image": "shopify://shop_images/FREE_SHIPPING_LAUNCH_BANNER_MOB.png",
+            "mobile_image": "shopify://shop_images/FREE_SHIPPING_LAUNCH_BANNER_MOB_c3f2d9d9-59ce-49c9-9270-4366a17aec84.png",
             "mobile_text_vertical_position": "center",
             "mobile_text_horizontal_position": "center",
             "out-background-color": "rgba(0,0,0,0)",
