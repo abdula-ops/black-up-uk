@@ -24,6 +24,7 @@
         },
         "announcement_gYRTgd": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "NOW SHIPPING FROM UK! 2-3 DAYS DELIVERY",
             "link": ""
@@ -31,9 +32,8 @@
         },
         "announcement_hAyzjh": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "FREE SHIPPING WEEKEND ONALL ORDERS",
+            "text": "FREE SHIPPING WEEKEND ON ALL ORDERS",
             "link": "shopify://collections/sales"
           }
         }
