@@ -14,15 +14,14 @@
       "blocks": {
         "slide_YqywkV": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "subheading": "Tell your story",
+            "subheading": "",
             "subheading_disable_on_mobile": false,
-            "heading": "Image slide",
+            "heading": "",
             "heading_disable_on_mobile": false,
             "size_heading": 100,
             "size_heading_mobile": 100,
-            "text": "<p>Tell your brand's story through images</p>",
+            "text": "",
             "text_disable_on_mobile": false,
             "button_select": "primary",
             "button_label": "Button label",
@@ -31,7 +30,7 @@
             "second_button_select": "primary",
             "second_button_label": "",
             "button_disable_on_mobile_second": false,
-            "second_button_link": "",
+            "second_button_link": "shopify://collections/tous-nos-produits",
             "color-body-text": "rgba(0,0,0,0)",
             "color-overlay": "rgba(0,0,0,0)",
             "color-overlay-opacity": 0,
@@ -48,6 +47,7 @@
         "slide_KGiN6z": {
           "type": "slide",
           "name": "UK Launch (Gloss)",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "subheading_disable_on_mobile": false,
