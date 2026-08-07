@@ -680,3 +680,25 @@
     flex: none !important;
   }
 }
+
+/* Cross-sell Quick Buy must sit above the cart drawer (section custom CSS sets cart to z-index: 999) */
+body.page-overlay-cart-on.quick-buy-page-overlay .wt__quick-buy--page-overlay {
+  z-index: 1000;
+}
+
+body.page-overlay-cart-on.quick-buy-page-overlay .wt__quick-buy__container,
+body.page-overlay-cart-on.quick-buy-page-overlay .wt__quick-buy--wrapper,
+body.page-overlay-cart-on.quick-buy-page-overlay .wt__quick-buy nav {
+  z-index: 1001;
+}
+
+/* Cross-sell Quick Buy must sit above the cart drawer (section custom CSS sets cart to z-index: 999) */
+body.page-overlay-cart-on.quick-buy-page-overlay .wt__quick-buy--page-overlay {
+  z-index: 1000;
+}
+
+body.page-overlay-cart-on.quick-buy-page-overlay .wt__quick-buy__container,
+body.page-overlay-cart-on.quick-buy-page-overlay .wt__quick-buy--wrapper,
+body.page-overlay-cart-on.quick-buy-page-overlay .wt__quick-buy nav {
+  z-index: 1001;
+}
