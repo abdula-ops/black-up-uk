@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_DKVb4L": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "FREE SHIPPING FROM £50",
             "link": ""
@@ -32,7 +33,7 @@
           "type": "announcement",
           "disabled": true,
           "settings": {
-            "text": "2-3 DAYS DELIVERY",
+            "text": "FREE SHIPPING WEEKEND ONALL ORDERS",
             "link": "shopify://collections/sales"
           }
         }
