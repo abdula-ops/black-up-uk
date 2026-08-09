@@ -16,7 +16,6 @@
       "blocks": {
         "announcement_DKVb4L": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "FREE SHIPPING FROM £50",
             "link": ""
@@ -24,7 +23,6 @@
         },
         "announcement_gYRTgd": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "NOW SHIPPING FROM UK! 2-3 DAYS DELIVERY",
             "link": ""
@@ -32,6 +30,7 @@
         },
         "announcement_hAyzjh": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "FREE SHIPPING ON ALL ORDERS",
             "link": "shopify://collections/sales"
