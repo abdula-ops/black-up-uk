@@ -12,6 +12,38 @@
     "slideshow_UEReBY": {
       "type": "slideshow",
       "blocks": {
+        "slide_WGFDjy": {
+          "type": "slide",
+          "settings": {
+            "subheading": "",
+            "subheading_disable_on_mobile": false,
+            "heading": "",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "",
+            "text_disable_on_mobile": false,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "shopify://products/glowry-lip-oil",
+            "second_button_select": "primary",
+            "second_button_label": "",
+            "button_disable_on_mobile_second": false,
+            "second_button_link": "",
+            "color-body-text": "rgba(0,0,0,0)",
+            "color-overlay": "rgba(0,0,0,0)",
+            "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/EN_2_png.webp",
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_image": "shopify://shop_images/MOB_EN_png.webp",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center",
+            "out-background-color": "rgba(0,0,0,0)",
+            "out-text-color": "rgba(0,0,0,0)"
+          }
+        },
         "slide_YqywkV": {
           "type": "slide",
           "disabled": true,
@@ -114,6 +146,7 @@
         }
       },
       "block_order": [
+        "slide_WGFDjy",
         "slide_YqywkV",
         "slide_KGiN6z",
         "slide_XMDL97"
@@ -426,7 +459,8 @@
             "button_disable_on_mobile": false,
             "button_link": "",
             "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/DESKTOP_FOCUS_PRODUIT.webp"
+            "desktop_image": "shopify://shop_images/levres_png.webp",
+            "mobile_image": "shopify://shop_images/levres_png.webp"
           }
         },
         "column_MFhEtF": {
@@ -434,9 +468,9 @@
           "settings": {
             "heading": "",
             "heading_disable_on_mobile": false,
-            "text": "<p><strong>The ultra-shiny gloss.</strong></p><p>Mirror-like shine powered by pearlescent pigments. A lightweight, never-sticky texture, available in three shimmering shades.</p>",
+            "text": "<p><strong>Your lips just went 24K.</strong></p><p>Ultra-sparkling 24K shine powered by golden pearls. A soft, comfortable, never-sticky texture to wear alone or as a top coat.</p>",
             "text2": "<p>NEW</p>",
-            "text3": "<p>GLOWRY GLOSS</p>",
+            "text3": "<p>GLOWRY LIP OIL</p>",
             "text_disable_on_mobile": false,
             "button_select": "primary",
             "button_label": "shop now",
@@ -459,8 +493,8 @@
             "button_disable_on_mobile": false,
             "button_link": "",
             "button_link_in_new_window": false,
-            "desktop_image": "shopify://shop_images/DESKTOP_FOCUS_PRODUIT_2.webp",
-            "mobile_image": "shopify://shop_images/DESKTOP_FOCUS_PRODUIT.webp"
+            "desktop_image": "shopify://shop_images/levres_1354x1162_bdaedb6f-54ec-472d-a98c-c21de704a8aa_png.webp",
+            "mobile_image": "shopify://shop_images/levres_1354x1162_bdaedb6f-54ec-472d-a98c-c21de704a8aa_png.webp"
           }
         }
       },
@@ -516,6 +550,13 @@
     "video_reels_kb4KdA": {
       "type": "video-reels",
       "blocks": {
+        "product_NfAap8": {
+          "type": "product",
+          "settings": {
+            "video_hosted": "shopify://files/videos/3275b07c48a343029b9f15fdb85b0c22.HD-1080p-7.2Mbps-92162690.mp4",
+            "featured_product": "glowry-lip-oil"
+          }
+        },
         "product_8FiG9V": {
           "type": "product",
           "settings": {
@@ -574,6 +615,7 @@
         }
       },
       "block_order": [
+        "product_NfAap8",
         "product_8FiG9V",
         "product_iagWHx",
         "product_7jerAh",
