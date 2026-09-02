@@ -207,29 +207,29 @@
           "type": "featured_collection",
           "settings": {
             "collection": "teint",
-            "image_collection": "shopify://shop_images/TEINT_800x_ac1d067c-9ec0-4760-b638-0059d13f8191.jpg",
-            "text_collection": "Complexion"
-          }
-        },
-        "featured_collection_QeDdHf": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "les-yeux",
-            "text_collection": "Eyes"
+            "text_collection": "Face"
           }
         },
         "featured_collection_QarFWU": {
           "type": "featured_collection",
           "settings": {
             "collection": "les-levres",
-            "text_collection": "Lips"
+            "image_collection": "shopify://shop_images/LIP.png",
+            "text_collection": "Lip"
+          }
+        },
+        "featured_collection_QeDdHf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "les-yeux",
+            "text_collection": "Eye"
           }
         }
       },
       "block_order": [
         "featured_collection_9EU7LY",
-        "featured_collection_QeDdHf",
-        "featured_collection_QarFWU"
+        "featured_collection_QarFWU",
+        "featured_collection_QeDdHf"
       ],
       "settings": {
         "heading": "",
