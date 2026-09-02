@@ -222,7 +222,8 @@
           "type": "featured_collection",
           "settings": {
             "collection": "les-levres",
-            "text_collection": "Lips"
+            "image_collection": "shopify://shop_images/PACKSHOT_3.png",
+            "text_collection": "Lip"
           }
         }
       },
