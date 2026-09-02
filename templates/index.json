@@ -473,7 +473,7 @@
             "text3": "<p>GLOWRY LIP OIL</p>",
             "text_disable_on_mobile": false,
             "button_select": "primary",
-            "button_label": "shop now",
+            "button_label": "",
             "button_disable_on_mobile": true,
             "button_link": "shopify://collections/glowry-gloss",
             "button_link_in_new_window": false
