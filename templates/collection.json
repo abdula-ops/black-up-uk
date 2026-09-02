@@ -207,22 +207,22 @@
           "type": "featured_collection",
           "settings": {
             "collection": "teint",
-            "text_collection": "Face"
+            "image_collection": "shopify://shop_images/TEINT_800x_ac1d067c-9ec0-4760-b638-0059d13f8191.jpg",
+            "text_collection": "Complexion"
           }
         },
         "featured_collection_QeDdHf": {
           "type": "featured_collection",
           "settings": {
             "collection": "les-yeux",
-            "text_collection": "Eye"
+            "text_collection": "Eyes"
           }
         },
         "featured_collection_QarFWU": {
           "type": "featured_collection",
           "settings": {
             "collection": "les-levres",
-            "image_collection": "shopify://shop_images/PACKSHOT_3.png",
-            "text_collection": "Lip"
+            "text_collection": "Lips"
           }
         }
       },

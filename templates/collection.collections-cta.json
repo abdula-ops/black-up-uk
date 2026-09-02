@@ -299,6 +299,11 @@
         "featured_collection_N4f4UN",
         "featured_collection_GpMpYL"
       ],
+      "custom_css": [
+        "h2 {font-size: 32px;}",
+        ".card__inner,.card__media,.card__media .media {border-radius: 18px !important; overflow: hidden;}",
+        ".card__media img {border-radius: 18px !important;}"
+      ],
       "settings": {
         "heading": "",
         "enable_swipe": true,
