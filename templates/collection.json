@@ -207,15 +207,14 @@
           "type": "featured_collection",
           "settings": {
             "collection": "teint",
-            "image_collection": "shopify://shop_images/TEINT_800x_ac1d067c-9ec0-4760-b638-0059d13f8191.jpg",
-            "text_collection": "Complexion"
+            "text_collection": "Face"
           }
         },
         "featured_collection_QeDdHf": {
           "type": "featured_collection",
           "settings": {
             "collection": "les-yeux",
-            "text_collection": "Eyes"
+            "text_collection": "Eye"
           }
         },
         "featured_collection_QarFWU": {
