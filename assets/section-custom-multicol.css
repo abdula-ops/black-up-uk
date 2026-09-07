@@ -8,3 +8,19 @@
 .custom-multicol .text3 p strong { font-weight: 400 !important; color:#dc392e; }
 .custom-multicol .hero__pic {  border-radius: 14px; }
 .custom-multicol .hero .hero__pic .hero__img { mix-blend-mode: multiply; border-radius: 14px; }
+
+@media (max-width: 768px) {
+  .custom-multicol .wt-multicol__list {
+    flex-direction: column;
+    gap: calc(var(--gap, 8px) * 2);
+  }
+
+  .custom-multicol .wt-multicol__item {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .custom-multicol .hero__button--gap {
+    margin-bottom: calc(var(--gap, 8px) * 2);
+  }
+}
