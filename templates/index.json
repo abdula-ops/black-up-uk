@@ -475,7 +475,7 @@
             "button_select": "primary",
             "button_label": "shop",
             "button_disable_on_mobile": false,
-            "button_link": "shopify://collections/glowry-gloss",
+            "button_link": "shopify://products/glowry-lip-oil",
             "button_link_in_new_window": false
           }
         },
