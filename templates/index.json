@@ -14,7 +14,6 @@
       "blocks": {
         "slide_mbCmWa": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "subheading": "",
             "subheading_disable_on_mobile": false,
@@ -27,7 +26,7 @@
             "button_select": "primary",
             "button_label": "SHOP EARLY BLACK FRIDAY",
             "button_disable_on_mobile": false,
-            "button_link": "",
+            "button_link": "https://blackup.co.uk/collections/early-bf-deals",
             "second_button_select": "primary",
             "second_button_label": "",
             "button_disable_on_mobile_second": false,
@@ -47,6 +46,7 @@
         },
         "slide_WGFDjy": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "subheading_disable_on_mobile": false,
