@@ -30,9 +30,8 @@
         },
         "announcement_hAyzjh": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "FREE SHIPPING ON ALL ORDERS",
+            "text": "EARLY BLACK FRIDAY DEAL NOW LIVE!",
             "link": "shopify://collections/sales"
           }
         }
