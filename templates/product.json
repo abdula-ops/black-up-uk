@@ -165,6 +165,10 @@
             "show_qty_selector": true
           }
         },
+        "redeemly_rewarded_credits_pdp_H8zJif": {
+          "type": "shopify://apps/redeemly/blocks/rewarded_credits_pdp/fe55f451-e553-4131-a946-354ff46f9d85",
+          "settings": {}
+        },
         "custom_liquid_iJbwXQ": {
           "type": "custom_liquid",
           "settings": {
@@ -231,10 +235,6 @@
             "product_list_limit": 5,
             "image-ratio": "original"
           }
-        },
-        "redeemly_rewarded_credits_pdp_H8zJif": {
-          "type": "shopify://apps/redeemly/blocks/rewarded_credits_pdp/fe55f451-e553-4131-a946-354ff46f9d85",
-          "settings": {}
         }
       },
       "block_order": [
@@ -256,6 +256,7 @@
         "variant_picker",
         "c1ba8695-94d2-40ad-ac06-93ec3b8cf38e",
         "buy_buttons",
+        "redeemly_rewarded_credits_pdp_H8zJif",
         "custom_liquid_iJbwXQ",
         "separator_RrKQ4A",
         "separator_U3FUkp",
@@ -263,8 +264,7 @@
         "collapsible_tab_Q7UFgL",
         "collapsible_tab_tBn3zd",
         "separator_8MTDKi",
-        "complementary_MUXRqm",
-        "redeemly_rewarded_credits_pdp_H8zJif"
+        "complementary_MUXRqm"
       ],
       "custom_css": [
         ".product__tax.caption.rte {display: none;}",
