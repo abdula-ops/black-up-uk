@@ -12,8 +12,43 @@
     "slideshow_UEReBY": {
       "type": "slideshow",
       "blocks": {
+        "slide_MrHr69": {
+          "type": "slide",
+          "name": "BLACK FRIDAY 3 FOR 2",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "subheading_disable_on_mobile": true,
+            "heading": "",
+            "heading_disable_on_mobile": true,
+            "size_heading": 100,
+            "size_heading_mobile": 100,
+            "text": "",
+            "text_disable_on_mobile": true,
+            "button_select": "primary",
+            "button_label": "",
+            "button_disable_on_mobile": false,
+            "button_link": "",
+            "second_button_select": "primary",
+            "second_button_label": "",
+            "button_disable_on_mobile_second": false,
+            "second_button_link": "",
+            "color-body-text": "rgba(0,0,0,0)",
+            "color-overlay": "rgba(0,0,0,0)",
+            "color-overlay-opacity": 0,
+            "desktop_image": "shopify://shop_images/BLACK_FRIDAY_2026_BANNER_DT.png",
+            "desktop_text_vertical_position": "center",
+            "desktop_text_horizontal_position": "center",
+            "mobile_image": "shopify://shop_images/BLACK_FRIDAY_2026_BANNER_MOB.png",
+            "mobile_text_vertical_position": "center",
+            "mobile_text_horizontal_position": "center",
+            "out-background-color": "rgba(0,0,0,0)",
+            "out-text-color": "rgba(0,0,0,0)"
+          }
+        },
         "slide_mbCmWa": {
           "type": "slide",
+          "name": "EARLY BF DEAL",
           "settings": {
             "subheading": "",
             "subheading_disable_on_mobile": false,
@@ -179,6 +214,7 @@
         }
       },
       "block_order": [
+        "slide_MrHr69",
         "slide_mbCmWa",
         "slide_WGFDjy",
         "slide_YqywkV",
