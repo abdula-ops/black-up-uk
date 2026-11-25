@@ -17,6 +17,22 @@
         "margin-bottom": 0
       }
     },
+    "17956204971dd18cd2": {
+      "type": "apps",
+      "blocks": {
+        "redeemly_rewarded_credits_cart_MVLAEt": {
+          "type": "shopify://apps/redeemly/blocks/rewarded_credits_cart/fe55f451-e553-4131-a946-354ff46f9d85",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "redeemly_rewarded_credits_cart_MVLAEt"
+      ],
+      "settings": {
+        "include_margins": true,
+        "anchor_id": ""
+      }
+    },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
@@ -86,6 +102,7 @@
   },
   "order": [
     "cart-items",
+    "17956204971dd18cd2",
     "cart-footer",
     "featured-collection",
     "1795620496858d0633"
