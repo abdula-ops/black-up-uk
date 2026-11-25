@@ -11,7 +11,11 @@
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
-      "settings": {}
+      "settings": {
+        "show_vendor": false,
+        "margin-top": 40,
+        "margin-bottom": 0
+      }
     },
     "cart-footer": {
       "type": "main-cart-footer",
@@ -30,6 +34,7 @@
         "buttons"
       ],
       "settings": {
+        "margin-top": 40,
         "margin-bottom": 40
       }
     },
@@ -40,7 +45,9 @@
         "title": "Others also bought",
         "disable_on_mobile": false,
         "collection": "",
+        "product_list": [],
         "products_to_show": 9,
+        "enable_stack_products": false,
         "show_view_all": true,
         "button_select": "primary",
         "number_of_column_desktop": 3,
@@ -59,11 +66,28 @@
         "margin-top": 0,
         "margin-bottom": 20
       }
+    },
+    "1795620496858d0633": {
+      "type": "apps",
+      "blocks": {
+        "redeemly_rewarded_credits_cart_JE9Agk": {
+          "type": "shopify://apps/redeemly/blocks/rewarded_credits_cart/fe55f451-e553-4131-a946-354ff46f9d85",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "redeemly_rewarded_credits_cart_JE9Agk"
+      ],
+      "settings": {
+        "include_margins": true,
+        "anchor_id": ""
+      }
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
-    "featured-collection"
+    "featured-collection",
+    "1795620496858d0633"
   ]
 }
