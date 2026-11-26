@@ -23,6 +23,7 @@
         },
         "announcement_gYRTgd": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "NOW SHIPPING FROM UK! 2-3 DAYS DELIVERY",
             "link": ""
@@ -31,7 +32,7 @@
         "announcement_hAyzjh": {
           "type": "announcement",
           "settings": {
-            "text": "BLACK FRIDAY SALE !",
+            "text": "BLACK FRIDAY SALE",
             "link": "shopify://collections/sales"
           }
         }
