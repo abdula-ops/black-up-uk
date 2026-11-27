@@ -261,6 +261,14 @@
         "type": "shopify://apps/redeemly/blocks/tracker/fe55f451-e553-4131-a946-354ff46f9d85",
         "disabled": false,
         "settings": {}
+      },
+      "6081313875000816572": {
+        "type": "shopify://apps/redeemly/blocks/cart_drawers_integration/fe55f451-e553-4131-a946-354ff46f9d85",
+        "disabled": false,
+        "settings": {
+          "custom_css_selector": "",
+          "custom_css_selector_position": "before"
+        }
       }
     }
   },
