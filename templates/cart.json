@@ -82,29 +82,12 @@
         "margin-top": 0,
         "margin-bottom": 20
       }
-    },
-    "1795620496858d0633": {
-      "type": "apps",
-      "blocks": {
-        "redeemly_rewarded_credits_cart_JE9Agk": {
-          "type": "shopify://apps/redeemly/blocks/rewarded_credits_cart/fe55f451-e553-4131-a946-354ff46f9d85",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "redeemly_rewarded_credits_cart_JE9Agk"
-      ],
-      "settings": {
-        "include_margins": true,
-        "anchor_id": ""
-      }
     }
   },
   "order": [
     "cart-items",
     "17956204971dd18cd2",
     "cart-footer",
-    "featured-collection",
-    "1795620496858d0633"
+    "featured-collection"
   ]
 }
